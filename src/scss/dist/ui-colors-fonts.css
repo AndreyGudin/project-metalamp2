@@ -1,7 +1,6 @@
-colorrectds100--green, colorrectds100--purple, colorrectds100--ds5, colorrectds100--ds25, colorrectds100--ds50, colorrectds100--ds75 {
+.colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75 {
   width: 70px;
   height: 70px;
-  border: 2px solid;
   border-radius: 6px;
 }
 
@@ -14,26 +13,26 @@ colorrectds100--green, colorrectds100--purple, colorrectds100--ds5, colorrectds1
   height: 610px;
 }
 
-colorrectds100--ds75 {
+.colorrectds100--ds75 {
   background-color: rgba(31, 32, 65, 0.75);
 }
 
-colorrectds100--ds50 {
+.colorrectds100--ds50 {
   background-color: rgba(31, 32, 65, 0.5);
 }
 
-colorrectds100--ds25 {
+.colorrectds100--ds25 {
   background-color: rgba(31, 32, 65, 0.25);
 }
 
-colorrectds100--ds5 {
+.colorrectds100--ds5 {
   background-color: rgba(31, 32, 65, 0.05);
 }
 
-colorrectds100--purple {
+.colorrectds100--purple {
   background-color: #BC9CFF;
 }
 
-colorrectds100--green {
+.colorrectds100--green {
   background-color: #6FCF97;
 }
