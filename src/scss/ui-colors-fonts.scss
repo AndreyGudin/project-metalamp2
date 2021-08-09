@@ -1,14 +1,38 @@
 @import 'variables';
 %rect{
-    width: 70px;
-    height: 70px;
-    border: 2px solid;
-    border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid;
+  border-radius: 6px;
 }
 .body{
-    background-color: white;
+  background-color: white;
 }
 .container-with-colors{
-    width: 280px;
-    height: 610px;
+  width: 280px;
+  height: 610px;
+}
+colorrectds100--ds75{
+  @extend %rect;
+  background-color: $color-ds75;
+}
+colorrectds100--ds50{
+	@extend %rect;
+  background-color: $color-ds50;
+}
+colorrectds100--ds25{
+	@extend %rect;
+  background-color: $color-ds25;
+}
+colorrectds100--ds5{
+	@extend %rect;
+  background-color: $color-ds5;
+}
+colorrectds100--purple{
+	@extend %rect;
+  background-color: $color-purple;
+}
+colorrectds100--green{
+	@extend %rect;
+  background-color: $color-green;
 }
