@@ -1,16 +1,28 @@
-.colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75 {
+.colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75, .colorrectds100 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
+  margin-right: 20px;
 }
 
 .body {
   background-color: white;
 }
 
+.colorrow {
+  display: flex;
+  flex-wrap: row wrap;
+  width: 280px;
+  height: 80px;
+}
+
 .container-with-colors {
   width: 280px;
   height: 610px;
+}
+
+.colorrectds100 {
+  background-color: #1F2041;
 }
 
 .colorrectds100--ds75 {

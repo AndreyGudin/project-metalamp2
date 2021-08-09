@@ -3,13 +3,24 @@
   width: 70px;
   height: 70px;
   border-radius: 6px;
+	margin-right: 20px;
 }
 .body{
   background-color: white;
 }
+.colorrow{
+	display: flex;
+	flex-wrap: row wrap;
+	width: 280px;
+  height: 80px;
+}
 .container-with-colors{
   width: 280px;
   height: 610px;
+}
+.colorrectds100{
+	@extend %rect;
+  background-color: $color-ds100;
 }
 .colorrectds100--ds75{
   @extend %rect;
