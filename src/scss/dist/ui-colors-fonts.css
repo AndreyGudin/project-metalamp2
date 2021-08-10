@@ -16,6 +16,20 @@
   height: 80px;
 }
 
+.textlabel {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.textlabel p:first-child {
+  font-weight: bold;
+}
+.textlabel p {
+  margin-top: 5px;
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
 .container-with-colors {
   width: 280px;
   height: 610px;
