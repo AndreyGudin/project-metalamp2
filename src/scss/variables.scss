@@ -5,3 +5,11 @@ $color-ds25: rgba(31, 32, 65, 0.25);
 $color-ds5: rgba(31, 32, 65, 0.05);
 $color-purple: #BC9CFF;
 $color-green: #6FCF97;
+$font-size: 19px;
+@font-face{
+	font-family: 'Conv_Montserrat-Regular';
+	src: url('./Montserrat-Regular.eot');
+	src: local('☺'), url('./Montserrat-Regular.woff') format('woff'), url('./Montserrat-Regular.ttf') format('truetype'), url('./Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

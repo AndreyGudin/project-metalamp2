@@ -1,3 +1,11 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url("./Montserrat-Regular.eot");
+  src: local("☺"), url("./Montserrat-Regular.woff") format("woff"), url("./Montserrat-Regular.ttf") format("truetype"), url("./Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75, .colorrectds100 {
   width: 70px;
   height: 70px;
@@ -21,13 +29,14 @@
   display: flex;
   flex-direction: column;
 }
-.textlabel p:first-child {
-  font-weight: bold;
-}
 .textlabel p {
+  font-family: "Conv_Montserrat-Regular";
   margin-top: 5px;
   margin-bottom: 9px;
   font-size: 19px;
+}
+.textlabel p:first-child {
+  font-weight: bold;
 }
 
 .container-with-colors {
