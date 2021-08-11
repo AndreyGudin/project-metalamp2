@@ -13,8 +13,12 @@
   margin-right: 20px;
 }
 
-.body {
+body {
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  height: 900px;
 }
 
 .colorrow {
@@ -70,4 +74,16 @@
 
 .colorrectds100--green {
   background-color: #6FCF97;
+}
+
+.fonth1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-for-fonts:first-child {
+  width: 55px;
+  height: 60px;
+  text-align: right;
+  margin-right: 30px;
 }

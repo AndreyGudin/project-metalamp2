@@ -5,8 +5,12 @@
   border-radius: 6px;
 	margin-right: 20px;
 }
-.body{
+body{
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  height: 900px;
 }
 .colorrow{
 	display: flex;
@@ -62,4 +66,14 @@
 .colorrectds100--green{
 	@extend %rect;
   background-color: $color-green;
+}
+.fonth1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-for-fonts:first-child{
+  width: 55px;
+  height: 60px;
+  text-align: right;
+  margin-right: 30px;
 }
