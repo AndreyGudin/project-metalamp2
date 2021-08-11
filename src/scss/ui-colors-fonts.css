@@ -6,6 +6,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Conv_Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.text-for-fonts:first-child h1 {
+  font: 24px "Conv_Montserrat-Bold";
+  opacity: 0.25;
+}
+
 .colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75, .colorrectds100 {
   width: 70px;
   height: 70px;
@@ -86,4 +98,7 @@ body {
   height: 60px;
   text-align: right;
   margin-right: 30px;
+}
+.text-for-fonts h1 {
+  font: 24px "Conv_Montserrat-Bold";
 }

@@ -76,4 +76,12 @@ body{
   height: 60px;
   text-align: right;
   margin-right: 30px;
+
+  & h1{
+    @extend %font-h1;
+  }
+}
+
+.text-for-fonts h1{
+  font: $font-widget-title;
 }
