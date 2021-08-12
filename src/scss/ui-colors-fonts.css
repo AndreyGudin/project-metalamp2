@@ -14,8 +14,33 @@
   font-style: normal;
 }
 .text-for-fonts:first-child h1 {
-  font: 24px "Conv_Montserrat-Bold";
+  font: 24px "Conv_Montserrat-Regular";
   opacity: 0.25;
+}
+
+.text-for-fonts:first-child h2 {
+  font: 19px "Conv_Montserrat-Regular";
+  opacity: 0.25;
+}
+
+.text-for-fonts:first-child h3 {
+  font: 12px "Conv_Montserrat-Regular";
+  opacity: 0.25;
+}
+
+.text-for-fonts p {
+  font: 14px "Conv_Montserrat-Regular";
+  opacity: 0.75;
+}
+
+.text-for-fonts:first-child p {
+  font: 14px "Conv_Montserrat-Regular";
+  opacity: 0.25;
+}
+
+.text-for-fonts h3 {
+  font: 12px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
 }
 
 .colorrectds100--green, .colorrectds100--purple, .colorrectds100--ds5, .colorrectds100--ds25, .colorrectds100--ds50, .colorrectds100--ds75, .colorrectds100 {
@@ -56,8 +81,14 @@ body {
 }
 
 .container-with-colors {
+  margin-top: 145px;
+  margin-left: 150px;
   width: 280px;
   height: 610px;
+}
+
+.container-with-fonts {
+  margin-top: 145px;
 }
 
 .colorrectds100 {
@@ -101,4 +132,7 @@ body {
 }
 .text-for-fonts h1 {
   font: 24px "Conv_Montserrat-Bold";
+}
+.text-for-fonts h2 {
+  font: 19px "Conv_Montserrat-Bold";
 }

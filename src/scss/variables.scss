@@ -30,8 +30,24 @@ $font-h2: 19px 'Conv_Montserrat-Regular';
 	opacity: 0.25;
 }
 $font-h3: 12px 'Conv_Montserrat-Regular';
+%font-h3{	
+	font:$font-h3;
+	opacity: 0.25;
+}
+$font-body: 14px 'Conv_Montserrat-Regular';
+%font-body{
+	font: $font-body;
+	opacity: 0.75;
+}
+%font-body2{
+	font: $font-body;
+	opacity: 0.25;
+}
 $font-widget-title: 24px 'Conv_Montserrat-Bold';
 $font-inside-title:	19px 'Conv_Montserrat-Bold';
 $font-label: 12px 'Conv_Montserrat-Bold';
-$font-body-text:12px 'Conv_Montserrat-Regular';
+%font-label{
+	font:$font-label;
+	text-transform: uppercase;
+}
 $font-size: 19px;

@@ -36,8 +36,13 @@ body{
   }
 }
 .container-with-colors{
+  margin-top: 145px;
+  margin-left: 150px;
   width: 280px;
   height: 610px;
+}
+.container-with-fonts{
+  margin-top: 145px; 
 }
 .colorrectds100{
 	@extend %rect;
@@ -80,8 +85,34 @@ body{
   & h1{
     @extend %font-h1;
   }
+  & h2{
+    @extend %font-h2;
+  }
+
+  & h3{
+    @extend %font-h3;
+  }
+
+  & p{
+    @extend %font-body2;
+  }
 }
 
-.text-for-fonts h1{
+.text-for-fonts {
+
+  & h1{
   font: $font-widget-title;
 }
+  & h2{
+    font:$font-inside-title;
+  }
+
+  & h3{
+    @extend %font-label;
+  }
+
+  & p{
+    @extend %font-body;
+  }
+}
+
