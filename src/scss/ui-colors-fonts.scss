@@ -12,6 +12,13 @@ body{
   width: 1440px;
   height: 900px;
 }
+img{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
 .colorrow{
 	display: flex;
 	flex-wrap: row wrap;
