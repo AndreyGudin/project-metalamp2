@@ -13,17 +13,25 @@
   font-weight: normal;
   font-style: normal;
 }
-.texlabel__title {
+.textlabel__title {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
 
-.texlabel__input {
+.textlabel {
+  width: 320px;
+  height: 67px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textlabel__input {
   width: 320px;
   height: 44px;
   border-radius: 5px;
   opacity: 0.25;
+  margin-top: 5px;
 }
-.texlabel__input:focus, .texlabel__input :hover {
+.textlabel__input:focus, .textlabel__input :hover {
   opacity: 0.75;
 }
