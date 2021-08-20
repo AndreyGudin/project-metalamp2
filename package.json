@@ -1,11 +1,23 @@
 {
-  "requires": true,
-  "lockfileVersion": 1,
+  "name": "project-metalamp2",
+  "version": "1.0.0",
+  "description": "project for metalamp education",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyGudin/project-metalamp2.git"
+  },
+  "author": "Andrey Gudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyGudin/project-metalamp2/issues"
+  },
+  "homepage": "https://github.com/AndreyGudin/project-metalamp2#readme",
   "dependencies": {
-    "jquery": {
-      "version": "3.6.0",
-      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz",
-      "integrity": "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
-    }
+    "jquery": "^3.6.0"
   }
 }

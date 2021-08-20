@@ -1,0 +1,15 @@
+.iqdropdown{
+  width: 320px;
+  height: 64px;
+}
+.button-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.iqdropdown .iqdropdown-menu-close{
+  width: 30px;
+}
+.iqdropdown-menu-clear{
+  margin-bottom: 15px;
+  margin-left: 15px;
+}

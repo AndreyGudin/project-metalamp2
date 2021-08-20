@@ -1,0 +1,46 @@
+<head>                                                             
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="item-quantity-dropdown.min.js"></script>
+  <link href="item-quantity-dropdown.min.css" rel="stylesheet"/>
+  <link href="1.css" rel="stylesheet"/>
+</head>
+<body> 
+  <div class="no-config iqdropdown">
+    <p class="iqdropdown-selection" data-selection-text="passenger" data-text-plural="passengers"></p>
+    <div class="iqdropdown-menu">
+      <div
+        class="iqdropdown-menu-option"
+        data-id="adult"
+        data-defaultcount="1"
+        data-mincount="1"
+      >
+        <div>
+          <p class="iqdropdown-item">Adults</p>
+          <p class="iqdropdown-description">12+ years</p>
+        </div>
+      </div>
+      <div
+        class="iqdropdown-menu-option"
+        data-id="minor"
+        data-defaultcount="0"
+        data-mincount="0"
+      >
+        <div>
+          <p class="iqdropdown-item">Children</p>
+          <p class="iqdropdown-description">2 - 11 years</p>
+        </div>
+      </div>
+      <div class="iqdropdown-menu-option" data-id="infant">
+        <div>
+          <p class="iqdropdown-item">Infants</p>
+          <p class="iqdropdown-description">2 years</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".no-config").iqDropdown();
+    });
+  </script>
+</body>
