@@ -13,3 +13,20 @@
   margin-bottom: 15px;
   margin-left: 15px;
 }
+
+
+.iqdropdown .iqdropdown-item-controls{
+  align-items: center;
+}
+
+.iqdropdown .iqdropdown-item-controls .counter{
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.iqdropdown .iqdropdown-item-controls button.button-decrement,.iqdropdown .iqdropdown-item-controls button.button-increment{
+  width: 30px;
+  height: 30px;
+  padding: 0px 0px;
+  border-radius: 50%;
+}
