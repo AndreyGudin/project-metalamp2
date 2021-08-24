@@ -38,9 +38,9 @@
       var $menu = $this.find('div.iqdropdown-menu');
       var $items = $menu.find('div.iqdropdown-menu-option'); //************************ */
 
-      var $btnapply = $("<button class=\"button-apply\">Apply</button>"); // Кнопка Подтвердить
+      var $btnapply = $("<button class=\"button-apply\">\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C</button>"); // Кнопка Подтвердить
 
-      var $btnclear = $("<button class=\"button-clear\">Clear</button>"); // Кнопка Очистить
+      var $btnclear = $("<button class=\"button-clear\">\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C</button>"); // Кнопка Очистить
       //************************** */
 
       var dataAttrOptions = {

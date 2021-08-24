@@ -32,8 +32,8 @@
       const $menu = $this.find('div.iqdropdown-menu');
       const $items = $menu.find('div.iqdropdown-menu-option');
       //************************ */
-      const $btnapply= $(`<button class="button-apply">Apply</button>`); // Кнопка Подтвердить
-      const $btnclear= $(`<button class="button-clear">Clear</button>`); // Кнопка Очистить
+      const $btnapply= $(`<button class="button-apply">Подтвердить</button>`); // Кнопка Подтвердить
+      const $btnclear= $(`<button class="button-clear">Очистить</button>`); // Кнопка Очистить
       //************************** */
       const dataAttrOptions = {
         selectionText: $selection.data('selection-text'),
