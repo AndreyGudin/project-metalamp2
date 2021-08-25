@@ -93,6 +93,15 @@
             onChange(id, itemCount[id], totalItems);
           }
 
+          if (totalItems == 0) {
+            $decrementButton.css({
+              opacity: 0.10
+            });
+            $btnclear.css({
+              visibility: 'hidden'
+            });
+          }
+
           event.preventDefault();
         });
         $incrementButton.click(function (event) {
@@ -108,6 +117,15 @@
             $counter.html(itemCount[id]);
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
+          }
+
+          if (totalItems == 1) {
+            $decrementButton.css({
+              opacity: 0.25
+            });
+            $btnclear.css({
+              visibility: 'visible'
+            });
           }
 
           event.preventDefault();
@@ -126,6 +144,12 @@
           totalItems = 0;
           itemCount[id] = 0;
           $counter.html(itemCount[id]);
+          $decrementButton.css({
+            opacity: 0.10
+          });
+          $btnclear.css({
+            visibility: 'hidden'
+          });
           updateDisplay();
           event.preventDefault();
           event.stopPropagation();

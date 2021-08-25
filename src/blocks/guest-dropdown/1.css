@@ -54,6 +54,10 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
+.button-clear {
+  visibility: hidden;
+}
+
 .iqdropdown .iqdropdown-item-controls {
   align-items: center;
 }
@@ -64,10 +68,16 @@
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-decrement, .iqdropdown .iqdropdown-item-controls button.button-increment {
+  border: 1px solid #1F2041;
+  opacity: 0.25;
   width: 30px;
   height: 30px;
   padding: 0px 0px;
   border-radius: 50%;
+}
+
+.iqdropdown .iqdropdown-item-controls button.button-decrement {
+  opacity: 0.1;
 }
 
 .iqdropdown .iqdropdown-menu {
@@ -83,4 +93,12 @@
 .iqdropdown .iqdropdown-menu-option {
   width: 320px;
   height: 35px;
+}
+
+.iqdropdown .icon-decrement::after, .iqdropdown .icon-decrement.icon-increment::before {
+  background-color: #1F2041;
+  width: 7px;
+  height: 1px;
+  top: 7px;
+  left: 4px;
 }
