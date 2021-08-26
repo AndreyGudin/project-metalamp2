@@ -89,16 +89,12 @@
             itemCount[id] -= 1;
             totalItems -= 1;
             $counter.html(itemCount[id]);
-
-            if (itemCount[id] == 0) {
-              $decrementButton.css({
-                opacity: 0.10
-              });
-              $btnclear.css({
-                visibility: 'hidden'
-              });
-            }
-
+            if (itemCount[id] == 0) $decrementButton.css({
+              opacity: 0.10
+            });
+            if (totalItems == 0) $btnclear.css({
+              visibility: 'hidden'
+            });
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
           }
