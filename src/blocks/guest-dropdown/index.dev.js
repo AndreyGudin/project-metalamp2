@@ -38,7 +38,7 @@
       var $menu = $this.find('div.iqdropdown-menu');
       var $items = $menu.find('div.iqdropdown-menu-option'); //************************ */
 
-      var $btnapply = $("<button class=\"button-apply\">\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C</button>"); // Кнопка Подтвердить
+      var $btnapply = $("<button class=\"button-apply\">\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C</button>"); // Кнопка Подтвердить
 
       var $btnclear = $("<button class=\"button-clear\">\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C</button>"); // Кнопка Очистить
       //************************** */
@@ -89,17 +89,18 @@
             itemCount[id] -= 1;
             totalItems -= 1;
             $counter.html(itemCount[id]);
+
+            if (itemCount[id] == 0) {
+              $decrementButton.css({
+                opacity: 0.10
+              });
+              $btnclear.css({
+                visibility: 'hidden'
+              });
+            }
+
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
-          }
-
-          if (totalItems == 0) {
-            $decrementButton.css({
-              opacity: 0.10
-            });
-            $btnclear.css({
-              visibility: 'hidden'
-            });
           }
 
           event.preventDefault();
@@ -115,17 +116,18 @@
             itemCount[id] += 1;
             totalItems += 1;
             $counter.html(itemCount[id]);
+
+            if (totalItems >= 1) {
+              $decrementButton.css({
+                opacity: 0.25
+              });
+              $btnclear.css({
+                visibility: 'visible'
+              });
+            }
+
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
-          }
-
-          if (totalItems == 1) {
-            $decrementButton.css({
-              opacity: 0.25
-            });
-            $btnclear.css({
-              visibility: 'visible'
-            });
           }
 
           event.preventDefault();

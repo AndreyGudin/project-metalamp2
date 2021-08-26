@@ -32,7 +32,7 @@
       const $menu = $this.find('div.iqdropdown-menu');
       const $items = $menu.find('div.iqdropdown-menu-option');
       //************************ */
-      const $btnapply= $(`<button class="button-apply">Подтвердить</button>`); // Кнопка Подтвердить
+      const $btnapply= $(`<button class="button-apply">Применить</button>`); // Кнопка Подтвердить
       const $btnclear= $(`<button class="button-clear">Очистить</button>`); // Кнопка Очистить
       //************************** */
       const dataAttrOptions = {
@@ -70,10 +70,6 @@
           </button>
         `);
         const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);
-
-        
-
-
         $item.children('div').addClass(settings.controls.displayCls);
         $controls.append($decrementButton, $counter, $incrementButton);
 
@@ -86,36 +82,35 @@
         $decrementButton.click((event) => {
           const { items, minItems, beforeDecrement, onChange } = settings;
           const allowClick = beforeDecrement(id, itemCount);
-
           if (allowClick && totalItems > minItems && itemCount[id] > items[id].minCount) {
             itemCount[id] -= 1;
             totalItems -= 1;
             $counter.html(itemCount[id]);
+            if (itemCount[id] == 0) {
+              $decrementButton.css({opacity:0.10});
+              $btnclear.css({visibility:'hidden'});
+            }
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
           }
-          if (totalItems == 0) {
-            $decrementButton.css({opacity:0.10});
-            $btnclear.css({visibility:'hidden'});
-          }
+          
           event.preventDefault();
         });
 
         $incrementButton.click((event) => {
           const { items, maxItems, beforeIncrement, onChange } = settings;
           const allowClick = beforeIncrement(id, itemCount);
-
           if (allowClick && totalItems < maxItems && itemCount[id] < items[id].maxCount) {
             itemCount[id] += 1;
             totalItems += 1;
             $counter.html(itemCount[id]);
+            if (totalItems >= 1){
+              $decrementButton.css({opacity:0.25});
+              $btnclear.css({visibility:'visible'});}
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
           }
-          if (totalItems == 1){
-            $decrementButton.css({opacity:0.25});
-            $btnclear.css({visibility:'visible'});}
-
+          
           event.preventDefault();
         });
         
