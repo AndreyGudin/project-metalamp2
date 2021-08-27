@@ -13,6 +13,11 @@
   font-weight: normal;
   font-style: normal;
 }
+.iqdropdown .iqdropdown-selection {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .button-apply, .button-clear, .iqdropdown .iqdropdown-item-controls .counter, .iqdropdown-item {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;

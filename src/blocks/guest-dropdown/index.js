@@ -86,8 +86,10 @@
             itemCount[id] -= 1;
             totalItems -= 1;
             $counter.html(itemCount[id]);
+            //********************************************************** */
             if (itemCount[id] == 0) $decrementButton.css({opacity:0.10});
             if (totalItems == 0) $btnclear.css({visibility:'hidden'});
+            //*********************************************************** */
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
           }
@@ -102,9 +104,12 @@
             itemCount[id] += 1;
             totalItems += 1;
             $counter.html(itemCount[id]);
+            //***************************************** */
             if (totalItems >= 1){
               $decrementButton.css({opacity:0.25});
-              $btnclear.css({visibility:'visible'});}
+              $btnclear.css({visibility:'visible'});
+            }
+            //********************************************* */
             updateDisplay();
             onChange(id, itemCount[id], totalItems);
           }
