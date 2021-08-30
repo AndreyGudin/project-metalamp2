@@ -3,8 +3,10 @@ html(lang="ru")
 	head
 		meta(charset="utf-8")
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-		script(type="text/javascript" src="ui-kit.js")
+		script(type="module" src="ui-kit.js")
 		link(href="ui-forms.css" rel="stylesheet")
 	body
+		include ui-kit-inc.pug
 		.main-container
 			+textlabel('Text field','Email')
+			+guest-quntity-dropdown('Взрослые','Дети','Младенцы')

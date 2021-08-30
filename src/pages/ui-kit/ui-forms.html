@@ -3,10 +3,36 @@
   <head>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="ui-kit.js"></script>
-    <link href="ui-form.css" rel="stylesheet">
+    <script type="module" src="ui-kit.js"></script>
+    <link href="ui-forms.css" rel="stylesheet">
   </head>
   <body>
-    <div class="main-container"></div>
+    <div class="main-container">
+          <div class="textlabel">
+            <label class="textlabel__title" for="textlabel__input">Text field
+              <input class="textlabel__input" type="text" placeholder="Email">
+            </label>
+          </div>
+          <div class="no-config iqdropdown">
+            <p class="iqdropdown-selection"></p>
+            <div class="iqdropdown-menu"> 
+              <div class="iqdropdown-menu-option" data-id="item1">
+                <div>
+                  <p class="iqdropdown-item">Взрослые</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item2">
+                <div>
+                  <p class="iqdropdown-item">Дети</p>
+                </div>
+              </div>
+              <div class="iqdropdown-menu-option" data-id="item3">
+                <div>
+                  <p class="iqdropdown-item">Младенцы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
   </body>
 </html>
