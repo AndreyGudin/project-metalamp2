@@ -1,11 +1,10 @@
-@import '../../scss/variables.scss';
-.textlabel{
+.textfield{
 	width: 320px;
 	height: 67px;
 	display: flex;
 	flex-direction: column;
 }
-.textlabel__input{
+.textfield input{
 	width: 320px;
 	height: 44px;
 	border-radius: 5px;
@@ -17,7 +16,7 @@
 	}
 }
 
-.textlabel__title{
+.textfield label{
 	@extend %font-label;
 }
 

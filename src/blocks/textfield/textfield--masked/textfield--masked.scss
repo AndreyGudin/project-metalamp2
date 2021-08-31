@@ -1,6 +1,5 @@
-@import '../textfield.scss';
-.textfield--masked{
-  &:focus,:hover{
+.textfield .textfield--masked__input{
+  &:hover,:focus{
 		opacity: 0.25;
 	}
 }

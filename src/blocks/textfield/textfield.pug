@@ -1,4 +1,6 @@
-mixin textlabel(title,placeholder)
-	.textlabel
-		label.textlabel__title(for="textlabel__input")=title
-			input.textlabel__input(type="text",placeholder=placeholder)
+mixin textlabel(lclass,title,placeholder)
+	- var lclass_input= lclass + '__input'
+	- var lclass_label= lclass + '__label'
+	div(class=lclass)
+		label(class=lclass_label,for=lclass_input)=title
+			input(class=lclass_input,type="text",placeholder=placeholder)
