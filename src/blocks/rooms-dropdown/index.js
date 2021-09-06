@@ -6,9 +6,9 @@
   const defaults = {
     maxItems: Infinity,
     minItems: 0,
+    hide: 0,
     selectionText: 'item',
     textPlural: 'items',
-    hide: 0, //************************** */
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
@@ -17,7 +17,6 @@
     },
     items: {},
     onChange: () => {},
-    hideButtons: () => {},
     beforeDecrement: () => true,
     beforeIncrement: () => true,
     setSelectionText (itemCount, totalItems) {
@@ -44,7 +43,7 @@
       const settings = $.extend(true, {}, defaults, dataAttrOptions, options);
       const itemCount = {};
       let totalItems = 0;
-      let hide = 0; //******************************* */
+      let hide = 0;
       function updateDisplay () {
         $selection.html(settings.setSelectionText(itemCount, totalItems));
       }
@@ -52,12 +51,13 @@
       function setItemSettings (id, $item) {
         const minCount = Number($item.data('mincount'));
         const maxCount = Number($item.data('maxcount'));
-
+        
         settings.items[id] = {
           minCount: Number.isNaN(Number(minCount)) ? 0 : minCount,
           maxCount: Number.isNaN(Number(maxCount)) ? Infinity : maxCount,
         };
       }
+
 
       function addControls (id, $item) {
         const $controls = $('<div />').addClass(settings.controls.controlsCls);
@@ -137,6 +137,7 @@
           event.preventDefault();
           event.stopPropagation()
         })
+
         //**************************************** */
         $item.click(event => event.stopPropagation());
 
@@ -151,11 +152,12 @@
         const $item = $(this);
         const id = $item.data('id');
         const defaultCount = Number($item.data('defaultcount') || '0');
-        hide = Number($('.iqdropdown-menu').data('hide'));//************************ */
+        hide = Number($('.iqdropdown-menu').data('hide'));
         itemCount[id] = defaultCount;
         totalItems += defaultCount;
         setItemSettings(id, $item);
         addControls(id, $item);
+
       });
 
       updateDisplay();

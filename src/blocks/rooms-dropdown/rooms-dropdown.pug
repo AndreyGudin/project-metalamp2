@@ -1,9 +1,7 @@
-mixin quntity-dropdown(flabel,slabel,tlabel,cls,hide)
-  -var i = cls + ' iqdropdown'
-  -var ii = cls + ' iqdropdown-menu'
-  div(class = i)
+mixin rooms-dropdown(flabel,slabel,tlabel)
+  .rooms-dropdown.iqdropdown
     p.iqdropdown-selection
-    div(class = ii, data-hide = hide) 
+    div.rooms-dropdown.iqdropdown-menu(data-hide="1") 
       .iqdropdown-menu-option(data-id="item1")
         div
           p.iqdropdown-item=flabel

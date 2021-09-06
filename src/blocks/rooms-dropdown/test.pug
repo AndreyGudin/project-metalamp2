@@ -1,0 +1,11 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(type="text/javascript" src="index.js")
+    script(type="text/javascript" src="rooms-dropdown.js")
+    link(href="1.css" rel="stylesheet")
+  body 
+    include rooms-dropdown.pug
+    +rooms-dropdown('спальни','кровати','ванные комнаты')

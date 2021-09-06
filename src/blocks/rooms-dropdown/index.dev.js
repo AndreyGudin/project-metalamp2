@@ -8,10 +8,9 @@
   var defaults = {
     maxItems: Infinity,
     minItems: 0,
+    hide: 0,
     selectionText: 'item',
     textPlural: 'items',
-    hide: 0,
-    //************************** */
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
@@ -20,7 +19,6 @@
     },
     items: {},
     onChange: function onChange() {},
-    hideButtons: function hideButtons() {},
     beforeDecrement: function beforeDecrement() {
       return true;
     },
@@ -53,7 +51,7 @@
       var settings = $.extend(true, {}, defaults, dataAttrOptions, options);
       var itemCount = {};
       var totalItems = 0;
-      var hide = 0; //******************************* */
+      var hide = 0;
 
       function updateDisplay() {
         $selection.html(settings.setSelectionText(itemCount, totalItems));
@@ -173,8 +171,7 @@
         var $item = $(this);
         var id = $item.data('id');
         var defaultCount = Number($item.data('defaultcount') || '0');
-        hide = Number($('.iqdropdown-menu').data('hide')); //************************ */
-
+        hide = Number($('.iqdropdown-menu').data('hide'));
         itemCount[id] = defaultCount;
         totalItems += defaultCount;
         setItemSettings(id, $item);
