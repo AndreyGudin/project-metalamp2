@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".guest-quantity-dropdown").iqDropdown({
+  $(".guest-dropdown").iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t=['гость','гостя','гостей'];
       if (totalItems == 0) return 'Сколько гостей';

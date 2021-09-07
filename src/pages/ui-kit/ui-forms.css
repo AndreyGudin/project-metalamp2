@@ -396,3 +396,11 @@ body {
 .textfield .textfield--masked__input:hover, .textfield .textfield--masked__input :focus {
   opacity: 0.25;
 }
+
+.rooms .iqdropdown {
+  width: 266px;
+}
+
+.rooms .iqdropdown-menu {
+  height: 119px;
+}

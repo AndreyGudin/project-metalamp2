@@ -1,0 +1,13 @@
+"use strict";
+
+$(document).ready(function () {
+  $(".guest-dropdown").iqDropdown({
+    setSelectionText: function setSelectionText(itemCount, totalItems) {
+      var t = ['гость', 'гостя', 'гостей'];
+      if (totalItems == 0) return 'Сколько гостей';
+      if (totalItems == 1) return totalItems + ' ' + t[0];
+      if (totalItems > 1 && totalItems < 5) return totalItems + ' ' + t[1];
+      if (totalItems > 4) return totalItems + ' ' + t[2];
+    }
+  });
+});
