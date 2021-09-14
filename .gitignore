@@ -1,4 +1,5 @@
 /pages/ui-colors-fonts.html
-/rooms-dropdown
+/blocks/rooms-dropdown
+/blocks/date-picker
 /.vscode
 /node_modules

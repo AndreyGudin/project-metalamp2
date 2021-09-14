@@ -1,0 +1,1 @@
+$('.textfield.textfield--date-dropdown__input').datepicker()

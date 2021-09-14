@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(type="text/javascript" src="datepicker.min.js")
+    link(href="test.css" rel="stylesheet")
+body 
+  .warp2
+    .wrap
+      input(class="datepicker-here", type="text", placeholder="ДД.ММ.ГГГГ", readonly)
+  input(class="datepicker-here second", data-multiple-dates-separator=" - ",data-range="true",type="text", placeholder="ДД.ММ.ГГГГ", readonly)
+  script.
+    $('.datepicker-here.second').datepicker({dateFormat:"d M"})

@@ -3,4 +3,4 @@ mixin textlabel(lclass,title,placeholder)
 	- var lclass_label= lclass + '__label'
 	div(class=lclass)
 		label(class=lclass_label,for=lclass_input)=title
-			input(class=lclass_input,type="text",placeholder=placeholder)
+			input(class=lclass_input,type="text",placeholder=placeholder)&attributes(attributes)
