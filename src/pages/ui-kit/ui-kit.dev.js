@@ -9,3 +9,5 @@ require("../../blocks/guest-dropdown/--rooms/guest-dropdown--rooms.js");
 require("../../blocks/textfield/textfield--date-dropdown/datepicker.min.js");
 
 require("../../blocks/textfield/textfield--date-dropdown/textfield--date-dropdown.js");
+
+require("../../blocks/textfield/textfield--filter-date-dropdown/textfield--filter-date-dropdown.js");

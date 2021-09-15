@@ -3,6 +3,7 @@
 	height: 67px;
 	display: flex;
 	flex-direction: column;
+	@extend %font-body;
 }
 .textfield input{
 	width: 320px;
