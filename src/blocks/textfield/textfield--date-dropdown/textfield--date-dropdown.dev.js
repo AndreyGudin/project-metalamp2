@@ -1,3 +1,5 @@
 "use strict";
 
-$('.textfield--date-dropdown__input').datepicker();
+$('.textfield--date-dropdown__input').datepicker({
+  clearButton: true
+});

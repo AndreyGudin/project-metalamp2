@@ -418,6 +418,15 @@ body {
   opacity: 1;
 }
 
+.datepicker {
+  width: 318px;
+  height: 368px;
+}
+
+.datepicker--nav {
+  margin-bottom: 30px;
+}
+
 .textfield .textfield--filter-date-dropdown__input {
   width: 266px;
   height: 44px;
