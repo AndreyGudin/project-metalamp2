@@ -14,7 +14,111 @@
 .datepicker{
   width: 318px;
   height: 368px;
+
 }
+
+.datepicker-here{
+  cursor: pointer;
+}
+
+.datepicker-here{
+  width: 150px;
+  height: 44px;
+  border-radius: 5px;
+	margin-top: 5px;
+  @extend %font-body;
+  padding-left: 15px;
+  background: url(expand_more.svg) no-repeat 140px 20px;
+}
+
 .datepicker--nav{
-  margin-bottom: 30px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  border-bottom: 0px;
+  font: $font-inside-title;
+}
+
+.datepicker--nav-action {
+  width: 24px;
+  height: 24px;
+
+  & svg{
+    width: 17px;
+    height: 18px;
+  }
+
+  & path{
+    margin: 0 auto;
+    stroke-width: 0px;
+    fill:#9c9c9c;
+}}
+
+.datepicker-here.second{
+  width: 266px;
+  height: 44px;
+  background-position: 257px 20px;
+}
+
+
+.datepicker--body.active{
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+}
+
+.datepicker--day-name{
+  color: $color-purple;
+  font: $font-label;
+  text-transform: none;
+}
+
+.datepicker--cells{
+  justify-content: space-evenly;
+
+}
+
+.datepicker--cell{
+  width: 40px;
+  height: 40px;
+  align-self: stretch;
+  font: $font-h3;
+  color: $color-ds50;
+}
+
+.datepicker--buttons{
+  border-top: 0px;
+}
+.datepicker--button{
+  justify-content: left;
+  padding-left: 20px;
+  @extend %font-label;
+  color: $color-purple;
+  &:hover{
+    color:#4EB5E6;
+    background: white;
+    
+  }
+}
+.datepicker--button.apply{
+  justify-content: right;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.datepicker--cell.-selected-{
+  background: rgb(139,164,249);
+  background: linear-gradient(0deg, rgba(139,164,249,1) 0%, rgba(188,156,255,1) 100%);  
+
+}
+
+.datepicker--cell.datepicker--cell-day.-selected-{
+  border-radius: 50%;
+}
+
+.datepicker--cell.-focus-,.-range-to-,.datepicker--cell.-selected-.-focus-{
+  background: rgb(102,210,234);
+  background: linear-gradient(0deg, rgba(102,210,234,1) 0%, rgba(111,207,151,1) 100%);
+ 
 }
