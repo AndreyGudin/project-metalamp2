@@ -6,18 +6,38 @@ html(lang="ru")
     //script(type="text/javascript" src="datepicker.min.js")
     link(href="expandable-chkbox-list.css" rel="stylesheet")
 body
-    details.expandable-chkbox-list 
+    //details.expandable-chkbox-list 
       summary.expandable-chkbox-list__title Expandable Checkbox list
       .wrapper
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Завтрак
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Письменный стол
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Стул для кормления
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Кроватка
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Телевизор
-        input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
-        label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Шампунь
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Завтрак
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Письменный стол
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Стул для кормления
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Кроватка
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Телевизор
+        .wrapper2
+          input.expandable-chkbox-list__input(type="checkbox", name = "expandable-chkbox-list__input")
+          label.expandable-chkbox-list__label(for = "expandable-chkbox-list__input") Шампунь
+          
+mixin expandable-chckbox-list(expclass,exptitle,expitems)
+  - var expclass_title= expclass + '__title'
+  - var expclass_input= expclass + '__input'
+  - var expclass_label= expclass + '__label'
+  details(class=expclass)
+  summary(class=expclass_title)=exptitle
+  .expandable-chckbox-list__container
+    each val in expitems 
+      .wrapper2
+        input(class=expclass_input, type="checkbox", name=expclass_input)
+        label(class=expclass_label, for=expclass_input)=val
+        
++expandable-chckbox-list('expandable-chckbox-list','Expandable CheckBox List',['Завтрак','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
