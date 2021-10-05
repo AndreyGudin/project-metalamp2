@@ -51,7 +51,7 @@ summary {
 }*/
 summary::after {
   content: "";
-  top: 3px;
+  top: 2px;
   right: 17px;
   width: 6px;
   height: 6px;
@@ -62,7 +62,7 @@ summary::after {
 }
 
 details[open] > summary:after {
-  transform-origin: bottom;
+  transform-origin: 40% 70%;
   transform: rotate(135deg);
 }
 
@@ -156,6 +156,7 @@ input[type=checkbox]:checked {
   --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   --o: 1;
   --r: 43deg;
+  background: url(svg/Rectangle2.svg);
 }
 
 input[type=checkbox] + label {
