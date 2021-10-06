@@ -1,24 +1,16 @@
-doctype html
-html(lang="ru")
-  head
-    meta(charset="utf-8")
-    //script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-    //script(type="text/javascript" src="datepicker.min.js")
-    link(href="expandable-chkbox-list.css" rel="stylesheet")
-body
-  mixin expandable-chckbox-list(expclass,exptitle,expitems)
-    - var expclass_title= expclass + ' ' + expclass + '__title'
-    - var expclass_input= expclass + ' ' + expclass + '__input'
-    - var expclass_label= expclass + ' ' + expclass + '__label'
-    - var expclass_container=expclass + ' ' + expclass + '__container'
-    - var expclass_box=expclass + ' ' + expclass + '__box'
-    details(class=expclass)
-      summary(class=expclass_title)=exptitle
-      div(class=expclass_container)
-        each val in expitems 
-          div(class=expclass_box)
-            input(class=expclass_input, type="checkbox", name=expclass_input)
-            label(class=expclass_label, for=expclass_input)=val
-              span
-        
-+expandable-chckbox-list('expandable-chckbox-list','Expandable CheckBox List',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
+mixin expandable-chckbox-list(expclass,exptitle,expitems)
+  - var expclasssep=expclass.split(' ')
+  - var expclass_title= expclass + '__title'
+  - var expclass_input= expclass + '__input'
+  - var expclass_label= expclass + '__label'
+  - var expclass_container=expclass + '__container'
+  - var expclass_box=expclass + '__box'
+  - if (expclasssep.length > 1) {expclass_title =expclasssep[0] + ' ' + expclasssep[0] + '__title' + ' ' + expclasssep[1] + '__title'; expclass_input =expclasssep[0] + ' ' + expclasssep[0] + '__input' + ' ' + expclasssep[1] + '__input';expclass_label = expclasssep[0] + ' ' + expclasssep[0] + '__label' + ' ' + expclasssep[1] + '__label';expclass_container =expclasssep[0] + ' ' + expclasssep[0] + '__container' + ' ' + expclasssep[1] + '__container';expclass_box =expclasssep[0] + ' ' + expclasssep[0] + '__box' + ' ' + expclasssep[1] + '__box'; }
+  details(class=expclass)&attributes(attributes)
+    summary(class=expclass_title)=exptitle
+    div(class=expclass_container)
+      each val in expitems 
+        div(class=expclass_box)
+          input(class=expclass_input, type="checkbox", name=expclass_input)
+          label(class=expclass_label, for=expclass_input)=val
+            span

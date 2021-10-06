@@ -38,17 +38,6 @@ summary {
   position: relative;
 }
 
-/*summary:before{  
-  top: .4em;
-  right: .3em;
-  color: transparent;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
-  width: 1em;
-  height: 1em;  
-  content: "";
-  position: absolute;
-  transition: transform .5s;
-}*/
 summary::after {
   content: "";
   top: 2px;
@@ -107,14 +96,6 @@ details[open] summary ~ * {
 }
 
 input[type=checkbox] {
-  --active: #275EFE;
-  --active-inner: red;
-  --focus: 2px rgba(39, 94, 254, .3);
-  --border: #BBC1E1;
-  --border-hover: #275EFE;
-  --background: #fff;
-  --disabled: #F6F8FF;
-  --disabled-inner: #E1E6F9;
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
