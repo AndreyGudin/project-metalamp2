@@ -9,4 +9,12 @@
 @import '../../blocks/textfield/textfield--filter-date-dropdown/textfield--filter-date-dropdown.scss';
 @import '../../blocks/expandable-chkbox-list/expandable-chkbox-list.scss';
 @import '../../blocks/textfield/textfield--subscription/textfield--subscription.scss';
-@import '../../blocks/expandable-chkbox-list/expandable-chkbox-list--checkbox-buttons/expandable-chkbox-list--checkbox-buttons.scss'
+@import '../../blocks/expandable-chkbox-list/expandable-chkbox-list--checkbox-buttons/expandable-chkbox-list--checkbox-buttons.scss';
+@import '../../blocks/expandable-chkbox-list/expandable-chckbox-list--rich-checkbox-list/expandable-chckbox-list--rich-checkbox-list.scss';
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.wrap{
+  margin-bottom: 10px;
+}

@@ -7,7 +7,7 @@ html(lang="ru")
 		link(href="ui-forms.css" rel="stylesheet")
 	body
 		include ui-kit-inc.pug
-		.main-
+		.main
 			+textlabel('textfield','Text field','Email')
 			+quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','0')
 			+textlabel('textfield textfield--masked','Text field','Email')
@@ -16,4 +16,7 @@ html(lang="ru")
 			+textlabel('textfield textfield--filter-date-dropdown','Dropdown','')(readonly,data-multiple-dates-separator=" - ",data-range="true")
 			+expandable-chckbox-list('expandable-chckbox-list','Expandable CheckBox List',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
 			+textlabel('textfield textfield--subscription','Text field','Email')
-			+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','CheckBox Buttons',['Можно курить2333333333333333333','Можно с питомцами433333333333333333','Можно пригласить гостей(до 10 человек 14222222222222222)'])(open)
+			.wrap
+				+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','CheckBox Buttons',['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])(open)
+			.wrap
+				+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--rich-checkbox-buttons','Rich CheckBox Buttons',{'Можно курить':'1111','Можно с питомцами':'111','Можно пригласить гостей (до 10 человек)':'111'})(open)

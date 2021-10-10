@@ -682,7 +682,7 @@ input[type=checkbox] {
   position: relative;
   margin: 0;
   cursor: pointer;
-  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle.svg);
+  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle.svg) no-repeat;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
 
@@ -713,7 +713,7 @@ input[type=checkbox]:checked {
   --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   --o: 1;
   --r: 43deg;
-  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle2.svg);
+  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle2.svg) no-repeat;
 }
 
 input[type=checkbox] + label {
@@ -722,6 +722,10 @@ input[type=checkbox] + label {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+}
+
+.expandable-chckbox-list__p {
+  visibility: hidden;
 }
 
 .textfield--subscription__label {
@@ -749,5 +753,40 @@ input[type=checkbox] + label {
 }
 
 .expandable-chckbox-list--checkbox-buttons__input {
-  z-index: 5;
+  padding-left: 10px;
+}
+
+.expandable-chckbox-list--checkbox-buttons__label {
+  max-width: 190px;
+  margin-left: 0px;
+  white-space: pre-wrap;
+  hyphens: auto;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__title {
+  pointer-events: none;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__title::after {
+  visibility: hidden;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__input {
+  padding-left: 10px;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__label {
+  max-width: 190px;
+  margin-left: 0px;
+  white-space: pre-wrap;
+  hyphens: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  margin-bottom: 10px;
 }

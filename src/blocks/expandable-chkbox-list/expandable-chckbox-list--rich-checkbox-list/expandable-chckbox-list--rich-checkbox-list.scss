@@ -1,0 +1,20 @@
+
+.expandable-chckbox-list--rich-checkbox-buttons__title{
+  pointer-events: none;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__title::after{
+  visibility: hidden;
+
+}
+.expandable-chckbox-list--rich-checkbox-buttons__input{
+  padding-left: 10px;
+}
+
+
+.expandable-chckbox-list--rich-checkbox-buttons__label{
+  max-width: 190px;
+  margin-left: 0px;
+  white-space: pre-wrap;
+  hyphens: auto;
+}
