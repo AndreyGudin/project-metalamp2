@@ -16,3 +16,7 @@
   white-space: pre-wrap;
   hyphens: auto;
 }
+
+.expandable-chckbox-list--rich-checkbox-buttons__p, .expandable-chckbox-list--rich-checkbox-buttons__box {
+  margin: 0;
+}

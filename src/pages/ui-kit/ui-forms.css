@@ -724,10 +724,6 @@ input[type=checkbox] + label {
   cursor: pointer;
 }
 
-.expandable-chckbox-list__p {
-  visibility: hidden;
-}
-
 .textfield--subscription__label {
   position: relative;
 }
@@ -780,6 +776,17 @@ input[type=checkbox] + label {
   margin-left: 0px;
   white-space: pre-wrap;
   hyphens: auto;
+  font: 14px "Conv_Montserrat-Bold";
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__p, .expandable-chckbox-list--rich-checkbox-buttons__box {
+  margin: 0;
+}
+
+.expandable-chckbox-list--rich-checkbox-buttons__p {
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .main {

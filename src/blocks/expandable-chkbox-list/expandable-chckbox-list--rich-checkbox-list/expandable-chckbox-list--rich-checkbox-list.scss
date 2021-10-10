@@ -17,4 +17,14 @@
   margin-left: 0px;
   white-space: pre-wrap;
   hyphens: auto;
+  font:$font-checkbox-label;
+  color:$color-ds75;
+}
+.expandable-chckbox-list--rich-checkbox-buttons__p,.expandable-chckbox-list--rich-checkbox-buttons__box{
+  margin: 0;
+}
+.expandable-chckbox-list--rich-checkbox-buttons__p{
+  font: $font-h3;
+  color:$color-ds50;
+
 }
