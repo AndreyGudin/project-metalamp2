@@ -648,7 +648,7 @@ details[open] summary ~ * {
   }
 }
 .expandable-chckbox-list__container {
-  width: 222px;
+  width: 280px;
   height: 171px;
   display: flex;
   flex-direction: column;
@@ -755,7 +755,6 @@ input[type=checkbox] + label {
 .expandable-chckbox-list--checkbox-buttons__label {
   max-width: 190px;
   margin-left: 0px;
-  white-space: pre-wrap;
   hyphens: auto;
 }
 
@@ -772,21 +771,19 @@ input[type=checkbox] + label {
 }
 
 .expandable-chckbox-list--rich-checkbox-buttons__label {
-  max-width: 190px;
+  line-height: normal;
+  max-width: 230px;
+  height: 51px;
   margin-left: 0px;
-  white-space: pre-wrap;
   hyphens: auto;
   font: 14px "Conv_Montserrat-Bold";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__p, .expandable-chckbox-list--rich-checkbox-buttons__box {
-  margin: 0;
-}
-
 .expandable-chckbox-list--rich-checkbox-buttons__p {
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
+  margin: 0;
 }
 
 .main {
