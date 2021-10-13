@@ -1,0 +1,15 @@
+mixin radio-buttons(bclass,title,button1,button2)
+  - var bclass_container=bclass + '__container';
+  - var bclass_box=bclass + '__box';
+  - var bclass_title= bclass + '__title' ;
+  - var bclass_button= bclass + '__button';
+  - var bclass_btitle= bclass + '__btitle';
+  div(class=bclass)
+    label(class=bclass_title)=title
+    div(class=bclass_container)
+      div(class=bclass_box)
+        input(type="radio",class=bclass_button,name="sex")
+        label(class=bclass_btitle, for=bclass_button)=button1
+      div(class=bclass_box)
+        input(type="radio",class=bclass_button,name="sex")
+        label(class=bclass_btitle, for=bclass_button)=button2

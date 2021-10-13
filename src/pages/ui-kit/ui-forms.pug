@@ -16,7 +16,6 @@ html(lang="ru")
 			+textlabel('textfield textfield--filter-date-dropdown','Dropdown','')(readonly,data-multiple-dates-separator=" - ",data-range="true")
 			+expandable-chckbox-list('expandable-chckbox-list','Expandable CheckBox List',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])
 			+textlabel('textfield textfield--subscription','Text field','Email')
-			.wrap
-				+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','CheckBox Buttons',['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])(open)
-			.wrap
-				+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--rich-checkbox-buttons','Rich CheckBox Buttons',{'Широкий коридор':'Ширина коридоров в номере не менее 91см','Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})(open)
+			+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','CheckBox Buttons',['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])(open)
+			+expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--rich-checkbox-buttons','Rich CheckBox Buttons',{'Широкий коридор':'Ширина коридоров в номере не менее 91см','Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})(open)
+			+radio-buttons('radio-buttons','Radio buttons','Мужчины','Женщины')
