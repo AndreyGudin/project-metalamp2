@@ -668,10 +668,6 @@ details[open] summary ~ * {
 }
 
 .expandable-chckbox-list__input {
-  appearance: none;
-}
-
-input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -682,11 +678,12 @@ input[type=checkbox] {
   position: relative;
   margin: 0;
   cursor: pointer;
-  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle.svg) no-repeat;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
 
-input[type=checkbox]:after {
+.expandable-chckbox-list__input:after {
   content: "";
   display: block;
   left: 0;
@@ -706,14 +703,15 @@ input[type=checkbox]:after {
   transform: rotate(var(--r, 20deg));
 }
 
-input[type=checkbox]:checked {
+.expandable-chckbox-list__input:checked {
   --bc: var(--active);
   --d-o: .3s;
   --d-t: .6s;
   --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   --o: 1;
   --r: 43deg;
-  background: url(../../blocks/expandable-chkbox-list/svg/Rectangle2.svg) no-repeat;
+  border: 1px solid #BC9CFF;
+  border-radius: 4px;
 }
 
 input[type=checkbox] + label {
@@ -748,10 +746,6 @@ input[type=checkbox] + label {
   visibility: hidden;
 }
 
-.expandable-chckbox-list--checkbox-buttons__input {
-  padding-left: 10px;
-}
-
 .expandable-chckbox-list--checkbox-buttons__label {
   max-width: 190px;
   margin-left: 0px;
@@ -764,10 +758,6 @@ input[type=checkbox] + label {
 
 .expandable-chckbox-list--rich-checkbox-buttons__title::after {
   visibility: hidden;
-}
-
-.expandable-chckbox-list--rich-checkbox-buttons__input {
-  padding-left: 10px;
 }
 
 .expandable-chckbox-list--rich-checkbox-buttons__label {
@@ -846,6 +836,28 @@ input[type=checkbox] + label {
 
 .radio-buttons__button:checked + .radio-buttons__btitle {
   color: rgba(31, 32, 65, 0.75);
+}
+
+.expandable-chckbox-list--toogle__input {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.expandable-chckbox-list--toogle__input:after {
+  opacity: 1;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--bcg, rgba(31, 32, 65, 0.25));
+  border: none;
+  left: 3px;
+  transform: translateX(var(--x, 0));
+}
+
+.expandable-chckbox-list--toogle__input:checked {
+  --x: 17px;
+  border-radius: 10px;
+  --bcg: #BC9CFF;
 }
 
 .main {

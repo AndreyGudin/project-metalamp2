@@ -1,0 +1,20 @@
+.expandable-chckbox-list--toogle__input{
+  width: 40px;
+  border-radius: 10px;
+}
+.expandable-chckbox-list--toogle__input:after{
+  opacity: 1;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--bcg,$color-ds25);
+  border:none;
+  left:3px;
+  transform: translateX(var(--x, 0));
+}
+
+.expandable-chckbox-list--toogle__input:checked{
+  --x: 17px;
+  border-radius: 10px;
+  --bcg: #BC9CFF;
+}

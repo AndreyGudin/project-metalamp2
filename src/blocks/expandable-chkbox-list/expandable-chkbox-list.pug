@@ -6,7 +6,8 @@ mixin expandable-chckbox-list(expclass,exptitle,expitems)
   - var expclass_container=expclass + '__container'
   - var expclass_box=expclass + '__box'
   - var expclass_p=expclass + '__p'
-  - if (expclasssep.length > 1) {expclass_title =expclasssep[0] + ' ' + expclasssep[0] + '__title' + ' ' + expclasssep[1] + '__title'; expclass_input =expclasssep[0] + ' ' + expclasssep[0] + '__input' + ' ' + expclasssep[1] + '__input';expclass_label = expclasssep[0] + ' ' + expclasssep[0] + '__label' + ' ' + expclasssep[1] + '__label';expclass_container =expclasssep[0] + ' ' + expclasssep[0] + '__container' + ' ' + expclasssep[1] + '__container';expclass_box =expclasssep[0] + ' ' + expclasssep[0] + '__box' + ' ' + expclasssep[1] + '__box';expclass_p =expclasssep[0] + ' ' + expclasssep[0] + '__p' + ' ' + expclasssep[1] + '__p'; }
+  - var i=0;
+  - if (expclasssep.length > 1) {expclass_title =expclass_input =expclass_label=expclass_container=expclass_box=expclass_p=expclasssep[0];while (i<=expclasssep.length-1) {expclass_title +=' ' + expclasssep[i] + '__title' ; expclass_input +=' ' + expclasssep[i] + '__input';expclass_label += ' ' + expclasssep[i] + '__label';expclass_container +=' ' + expclasssep[i] + '__container';expclass_box +=' ' + expclasssep[i] + '__box';expclass_p =' ' + expclasssep[i] + '__p'; i++;}}
   details(class=expclass)&attributes(attributes)
     summary(class=expclass_title)=exptitle
     div(class=expclass_container)
