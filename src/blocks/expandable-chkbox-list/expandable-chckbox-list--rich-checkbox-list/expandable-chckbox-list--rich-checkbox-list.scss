@@ -10,17 +10,14 @@
 
 
 .expandable-chckbox-list--rich-checkbox-buttons__label{
-  //max-width: 190px;
   line-height: normal;
   max-width: 230px;
   height: 51px;
-  margin-left: 0px;
   hyphens: auto;
   font:$font-checkbox-label;
   color:$color-ds75;
 }
-.expandable-chckbox-list--rich-checkbox-buttons__p,.expandable-chckbox-list--rich-checkbox-buttons__box{
-}
+
 .expandable-chckbox-list--rich-checkbox-buttons__p{
   font: $font-h3;
   color:$color-ds50;

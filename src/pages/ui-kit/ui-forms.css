@@ -748,7 +748,6 @@ input[type=checkbox] + label {
 
 .expandable-chckbox-list--checkbox-buttons__label {
   max-width: 190px;
-  margin-left: 0px;
   hyphens: auto;
 }
 
@@ -764,7 +763,6 @@ input[type=checkbox] + label {
   line-height: normal;
   max-width: 230px;
   height: 51px;
-  margin-left: 0px;
   hyphens: auto;
   font: 14px "Conv_Montserrat-Bold";
   color: rgba(31, 32, 65, 0.75);
