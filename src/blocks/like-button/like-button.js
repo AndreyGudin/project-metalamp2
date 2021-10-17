@@ -1,6 +1,5 @@
  $(document).on("click",".butt.add",function() {
-    $(".butt").addClass("active");
-    $(".butt").removeClass("add");
+    $(".butt").addClass("active").removeClass("add");
     $(".spanb").html(function(numberp){
       numberp=parseInt($(".spanb").html());
       console.log(numberp+' add');
@@ -16,6 +15,5 @@
       console.log(numberp+' min');
       if (numberp>0) {numberp--;console.log(numberp);return numberp.toString();}
     });
-    $(".butt").removeClass("active");
-    $(".butt").addClass("add");
+    $(".butt").removeClass("active").addClass("add");
   })

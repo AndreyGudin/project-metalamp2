@@ -1,8 +1,7 @@
 "use strict";
 
 $(document).on("click", ".butt.add", function () {
-  $(".butt").addClass("active");
-  $(".butt").removeClass("add");
+  $(".butt").addClass("active").removeClass("add");
   $(".spanb").html(function (numberp) {
     numberp = parseInt($(".spanb").html());
     console.log(numberp + ' add');
@@ -22,6 +21,5 @@ $(document).on("click", ".active", function () {
       return numberp.toString();
     }
   });
-  $(".butt").removeClass("active");
-  $(".butt").addClass("add");
+  $(".butt").removeClass("active").addClass("add");
 });
