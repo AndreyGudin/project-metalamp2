@@ -858,6 +858,26 @@ input[type=checkbox] + label {
   --bcg: #BC9CFF;
 }
 
+.butt {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  color: var(--cc, rgba(31, 32, 65, 0.25));
+}
+
+.heart {
+  stroke-width: 1px;
+  stroke: var(--sc, rgba(31, 32, 65, 0.25));
+  fill: var(--fc, none);
+}
+
+.butt.active {
+  --cc:#BC9CFF;
+  --fc:#BC9CFF;
+  --sc:#BC9CFF;
+  border-color: #BC9CFF;
+}
+
 .main {
   display: flex;
   flex-direction: column;
