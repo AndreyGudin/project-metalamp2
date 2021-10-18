@@ -858,20 +858,20 @@ input[type=checkbox] + label {
   --bcg: #BC9CFF;
 }
 
-.butt {
+.like-button__button {
   width: 40px;
   height: 20px;
   border-radius: 10px;
   color: var(--cc, rgba(31, 32, 65, 0.25));
 }
 
-.heart {
+.like-button__svg {
   stroke-width: 1px;
   stroke: var(--sc, rgba(31, 32, 65, 0.25));
   fill: var(--fc, none);
 }
 
-.butt.active {
+.like-button__button.active {
   --cc:#BC9CFF;
   --fc:#BC9CFF;
   --sc:#BC9CFF;

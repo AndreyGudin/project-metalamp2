@@ -1,7 +1,7 @@
- $(document).on("click",".butt.add",function() {
-    $(".butt").addClass("active").removeClass("add");
-    $(".spanb").html(function(numberp){
-      numberp=parseInt($(".spanb").html());
+ $(document).on("click",".like-button__button.add",function() {
+    $(".like-button__button").addClass("active").removeClass("add");
+    $(".like-button__span").html(function(numberp){
+      numberp=parseInt($(".like-button__span").html());
       console.log(numberp+' add');
       numberp++;
       console.log(numberp);
@@ -10,10 +10,10 @@
   })
 
   $(document).on("click",".active",function() {
-    $(".spanb").html(function(numberp){
-      numberp=parseInt($(".spanb").html());
+    $(".like-button__span").html(function(numberp){
+      numberp=parseInt($(".like-button__span").html());
       console.log(numberp+' min');
       if (numberp>0) {numberp--;console.log(numberp);return numberp.toString();}
     });
-    $(".butt").removeClass("active").addClass("add");
+    $(".like-button__button").removeClass("active").addClass("add");
   })
