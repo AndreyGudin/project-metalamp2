@@ -878,6 +878,48 @@ input[type=checkbox] + label {
   border-color: #BC9CFF;
 }
 
+.rate-button__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rate-button__starhref {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1px;
+  stroke: url(#rate-button__gradient);
+  fill: none;
+  text-align: center;
+}
+
+.rate-button__star-source {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.rate-button__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.rate-button__input {
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  margin-left: -2px;
+}
+
+.rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
+.rate-button__starhref:hover,
+.rate-button__input:focus ~ .rate-button__label .rate-button__starhref,
+.rate-button__input:checked ~ .rate-button__label .rate-button__starhref {
+  fill: url(#rate-button__gradient);
+}
+
 .main {
   display: flex;
   flex-direction: column;

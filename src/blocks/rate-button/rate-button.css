@@ -1,40 +1,41 @@
-body {
-  background: #F4F2F3;
+.rate-button__container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.star {
-  width: 17px;
-  height: 16px;
+.rate-button__starhref {
+  width: 20px;
+  height: 20px;
   stroke-width: 1px;
-  stroke: black;
+  stroke: url(#rate-button__gradient);
   fill: none;
   text-align: center;
 }
 
-.star-source {
+.rate-button__star-source {
+  width: 0;
+  height: 0;
   visibility: hidden;
 }
 
-.star-container {
+.rate-button__container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
 }
 
-input[name=star] {
+.rate-button__input {
   display: inline-block;
   width: 0;
   opacity: 0;
   margin-left: -2px;
 }
 
-label:hover ~ label .star,
-svg.star:hover,
-input[name=star]:focus ~ label .star,
-input[name=star]:checked ~ label .star {
-  fill: red;
+.rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
+.rate-button__starhref:hover,
+.rate-button__input:focus ~ .rate-button__label .rate-button__starhref,
+.rate-button__input:checked ~ .rate-button__label .rate-button__starhref {
+  fill: url(#rate-button__gradient);
 }

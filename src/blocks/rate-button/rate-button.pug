@@ -1,18 +1,18 @@
-doctype html
-html(lang="ru")
-  head
-    meta(charset="utf-8")
-    link(href="rate-button.css" rel="stylesheet")
-  body
-    .rate-button 
-      .rate-button__wrap
-        input(class="star-rating__input",id="star-rating-5", type="radio",name="rating", value="5")
-        label(class="star-rating__ico",for="star-rating-5",title="5 out of 5 stars")
-        input(class="star-rating__input",id="star-rating-4", type="radio",name="rating", value="4")
-        label(class="star-rating__ico",for="star-rating-4",title="4 out of 5 stars")
-        input(class="star-rating__input",id="star-rating-3", type="radio",name="rating", value="3")
-        label(class="star-rating__ico",for="star-rating-3",title="3 out of 5 stars")
-        input(class="star-rating__input",id="star-rating-2", type="radio",name="rating", value="2")
-        label(class="star-rating__ico",for="star-rating-2",title="2 out of 5 stars")
-        input(class="star-rating__input",id="star-rating-1", type="radio",name="rating", value="1")
-        label(class="star-rating__ico",for="star-rating-1",title="1 out of 5 stars")
+mixin rate-button(rclass,rchecked)
+  div(class=rclass)
+    div(class=rclass + "__star-source")
+      svg(class=rclass+"__star",xmlns="http://www.w3.org/2000/svg")
+        symbol(id=rclass +"__stars")
+          path(d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z")
+          defs 
+            linearGradient(id=rclass+"__gradient",x1="10",y1="-2",x2="10",y2="22",gradientUnits="userSpaceOnUse")
+              stop(stop-color="#BC9CFF")/ 
+              stop(offset="1",stop-color="#8BA4F9")/
+    div(class=rclass + "__container")
+      -var i=0
+      while (i<5)
+        input(type="radio" name="star", class=rclass + "__input", value=5)
+        label(for=rclass + "__input", class=rclass + "__label")
+          svg(class=rclass + "__starhref")
+            use(xlink:href="#"+rclass+"__stars")
+        -i++
