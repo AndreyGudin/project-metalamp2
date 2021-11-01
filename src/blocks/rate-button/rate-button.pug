@@ -9,10 +9,17 @@ mixin rate-button(rclass,rchecked)
               stop(stop-color="#BC9CFF")/ 
               stop(offset="1",stop-color="#8BA4F9")/
     div(class=rclass + "__container")
-      -var i=0
+      -var i=0;
+      -var j=5-(parseInt(rchecked)-1);
       while (i<5)
-        input(type="radio" name="star", class=rclass + "__input", value=5)
-        label(for=rclass + "__input", class=rclass + "__label")
-          svg(class=rclass + "__starhref")
-            use(xlink:href="#"+rclass+"__stars")
+        if (j==(5-i))
+          input(type="radio" name="star", class=rclass + "__input", value=5-i, id=5-i, checked)
+          label(for=5-i, class=rclass + "__label")
+            svg(class=rclass + "__starhref")
+              use(xlink:href="#"+rclass+"__stars")/
+        else
+          input(type="radio" name="star", class=rclass + "__input", value=5-i, id=5-i)
+          label(for=5-i, class=rclass + "__label")
+            svg(class=rclass + "__starhref")
+              use(xlink:href="#"+rclass+"__stars")/
         -i++
