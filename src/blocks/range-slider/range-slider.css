@@ -1,0 +1,27 @@
+#slider-range::before {
+  content: "Value: ";
+}
+
+.noUi-target {
+  width: 266px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #66d2ea;
+  background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
+  box-shadow: none;
+}
+
+.noUi-connect {
+  background: #66d2ea;
+  background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
+  left: 5px;
+}
