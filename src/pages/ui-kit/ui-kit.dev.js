@@ -13,3 +13,7 @@ require("../../blocks/textfield/textfield--date-dropdown/textfield--date-dropdow
 require("../../blocks/textfield/textfield--filter-date-dropdown/textfield--filter-date-dropdown.js");
 
 require("../../blocks/like-button/like-button.js");
+
+require("../../blocks/range-slider/nouislider.js");
+
+require("../../blocks/range-slider/range-slider.js");

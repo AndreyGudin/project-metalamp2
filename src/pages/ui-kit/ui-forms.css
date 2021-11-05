@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import '../../blocks/textfield/textfield--date-dropdown/datepicker.min.css';
+@import '../../blocks/range-slider/nouislider.css';
 html {
   box-sizing: border-box;
 }
@@ -911,6 +912,55 @@ svg.rate-button__starhref:hover,
 input[class=rate-button__input]:focus ~ .rate-button__label .rate-button__starhref,
 input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__starhref {
   fill: url(#rate-button__gradient);
+}
+
+.range-slider__range::before {
+  content: "";
+}
+
+.noUi-target {
+  width: 266px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #66d2ea;
+  background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
+  box-shadow: none;
+  right: -7px;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.noUi-connect {
+  background: #66d2ea;
+  background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
+  left: 5px;
+}
+
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  height: 47px;
+}
+
+.range-slider__range {
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  font: 12px "Conv_Montserrat-Regular";
+  margin-bottom: 20px;
 }
 
 .main {

@@ -1,5 +1,5 @@
-#slider-range::before{
-  content: "Value: ";
+.range-slider__range::before{
+  content: "";
 }
 
 .noUi-target{
@@ -17,10 +17,30 @@
   background: rgb(102,210,234);
   background: linear-gradient(0deg, rgba(102,210,234,1) 0%, rgba(111,207,151,1) 100%);
   box-shadow: none;
+  right:-7px;
+}
+
+.noUi-handle:before, .noUi-handle:after{
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .noUi-connect{
   background: rgb(102,210,234);
   background: linear-gradient(0deg, rgba(102,210,234,1) 0%, rgba(111,207,151,1) 100%);
   left:5px;
+}
+
+.range-slider{
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  height: 47px;
+}
+.range-slider__range{
+  text-align: right;
+  color: $color-ds50;
+  font:$font-h3;
+  margin-bottom: 20px;
 }
