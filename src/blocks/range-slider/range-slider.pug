@@ -1,4 +1,6 @@
-mixin range-slider(rsclass)
+mixin range-slider(rsclass,rstitle)
   div(class=rsclass)
-    span(class=rsclass + '__range')
+    div(class=rsclass + '__box')
+      label(class=rsclass + '__title')=rstitle
+      span(class=rsclass + '__range')
     div(class=rsclass + '__slider')
