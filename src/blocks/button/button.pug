@@ -1,3 +1,8 @@
 mixin button(bclass,btitle)
-  div(class=bclass)
-    button(class=bclass + '__button')=btitle
+  - var bclass_spl=bclass.split(' ');
+  if (bclass_spl.length > 1)
+    div(class=bclass)
+      button(class=bclass_spl[0] + '__button' + ' ' + bclass_spl[1] + '__button')=btitle
+  else 
+    div(class=bclass)
+      button(class=bclass + '__button')=btitle
