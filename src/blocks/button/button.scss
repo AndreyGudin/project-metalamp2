@@ -1,0 +1,15 @@
+.button__button{
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: rgb(139,164,249);
+  background: linear-gradient(0deg, rgba(139,164,249,1) 0%, rgba(188,156,255,1) 100%);
+  $font-label: 12px 'Conv_Montserrat-Bold';
+  @extend %font-label;
+  color: white;
+  border: none;
+}
+
+.button__button:active{
+  background: linear-gradient(0deg, rgba(139,164,249,0.5) 0%, rgba(188,156,255,0.5) 100%);
+}

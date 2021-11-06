@@ -1,0 +1,7 @@
+.button__button {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: #8ba4f9;
+  background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
+}

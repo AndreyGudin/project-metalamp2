@@ -287,7 +287,7 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.range-slider__title, .radio-buttons__title, summary, .datepicker--button, .textfield label, .button-apply, .button-clear, .iqdropdown .iqdropdown-item-controls .counter, .iqdropdown-item {
+.button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .textfield label, .button-apply, .button-clear, .iqdropdown .iqdropdown-item-controls .counter, .iqdropdown-item {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -966,6 +966,20 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   color: rgba(31, 32, 65, 0.5);
   font: 12px "Conv_Montserrat-Regular";
   margin-bottom: 20px;
+}
+
+.button__button {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: #8ba4f9;
+  background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
+  color: white;
+  border: none;
+}
+
+.button__button:active {
+  background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
 
 .main {
