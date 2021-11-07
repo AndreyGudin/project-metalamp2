@@ -976,6 +976,7 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .button__button:active {
@@ -991,6 +992,20 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
 .button-without-fill__button:active {
   background: transparent;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+}
+
+.button-hypertext__button {
+  background: transparent;
+  color: #BC9CFF;
+  width: auto;
+  height: 15px;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.button-hypertext__button:active {
+  background: transparent;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .main {
