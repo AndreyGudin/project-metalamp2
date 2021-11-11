@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AndreyGudin/project-metalamp2#readme",
   "dependencies": {
     "jquery": "^3.6.0",
-    "nouislider": "^15.5.0"
+    "nouislider": "^15.5.0",
+    "paginationjs": "^2.1.5"
   }
 }

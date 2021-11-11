@@ -17,3 +17,7 @@ require("../../blocks/like-button/like-button.js");
 require("../../blocks/range-slider/nouislider.js");
 
 require("../../blocks/range-slider/range-slider.js");
+
+require("../../blocks/pagination/pagination.min.js");
+
+require("../../blocks/pagination/paginationblock.js");

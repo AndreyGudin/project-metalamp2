@@ -7,3 +7,5 @@ import '../../blocks/textfield/textfield--filter-date-dropdown/textfield--filter
 import '../../blocks/like-button/like-button.js'
 import '../../blocks/range-slider/nouislider.js'
 import '../../blocks/range-slider/range-slider.js'
+import '../../blocks/pagination/pagination.min.js'
+import '../../blocks/pagination/paginationblock.js'

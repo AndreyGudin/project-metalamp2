@@ -1023,6 +1023,65 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   top: 14px;
 }
 
+.pagination__data {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.paginationjs-pages ul {
+  display: flex;
+  padding: 0px;
+}
+
+.paginationjs .paginationjs-pages li {
+  padding: 0px;
+  display: block;
+  list-style: none;
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.paginationjs-page.J-paginationjs-page.active {
+  background: #8ba4f9;
+  background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
+  color: white;
+}
+
+.paginationjs-pages a {
+  padding: 0px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.paginationjs-next.J-paginationjs-next {
+  position: relative;
+  background: #66d2ea;
+  background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
+}
+
+.paginationjs-next.J-paginationjs-next a::after {
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  background: no-repeat url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z' fill='white'/%3E%3C/svg%3E%0A");
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
+.paginationjs-next.J-paginationjs-next a {
+  color: transparent;
+}
+
 .main {
   display: flex;
   flex-direction: column;
