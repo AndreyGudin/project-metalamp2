@@ -1,0 +1,6 @@
+mixin bullet-list(mclass,mtitle,mtext)
+  div(class=mclass)
+    label(class=mclass + "__title")=mtitle
+    ul(class=mclass + "__ul")
+      each val in mtext
+        li(class=mclass + "__li")=val
