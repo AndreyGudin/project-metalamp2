@@ -3,4 +3,5 @@ mixin bullet-list(mclass,mtitle,mtext)
     label(class=mclass + "__title")=mtitle
     ul(class=mclass + "__ul")
       each val in mtext
-        li(class=mclass + "__li")=val
+        li(class=mclass + "__li")
+          span(class=mclass+ "__span")=val
