@@ -1,0 +1,11 @@
+mixin icon-text-list(iclass,itexts,ipaths)
+  - var i=0
+  div(class=iclass)
+    each val,keys in itexts
+      div(class=iclass + "__container")
+        img(src=ipaths[i])
+        div(class=iclass + "__box")
+          span(class=iclass+"__title")=keys
+          span(class=iclass+"__text")=val
+        -i++
+
