@@ -1,7 +1,7 @@
 .icon-text-list{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .icon-text-list__box{
@@ -9,12 +9,13 @@
   flex-direction: column;
   margin-left: 15px;
   justify-content: center;
-  gap:10px;
+  gap:5px;
 }
 .icon-text-list__container{
   display: flex;
   width: 291px;
-  height: 68px;
+  height: 80px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 
 .icon-text-list__title{
