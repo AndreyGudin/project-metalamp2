@@ -282,9 +282,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield, .iqdropdown .iqdropdown-selection {
+.icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
+}
+
+.icon-text-list__title {
+  font: 14px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
 }
 
 .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .textfield label, .button-apply, .button-clear, .iqdropdown .iqdropdown-item-controls .counter, .iqdropdown-item {
@@ -1115,6 +1120,31 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   position: relative;
   right: 8px;
   bottom: 3px;
+}
+
+.icon-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-text-list__box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-text-list__container {
+  display: flex;
+  width: 291px;
+  height: 68px;
+}
+
+.icon-text-list__img {
+  width: 40px;
+  height: 68px;
 }
 
 .main {

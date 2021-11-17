@@ -47,6 +47,12 @@ $font-widget-title: 24px 'Conv_Montserrat-Bold';
 $font-inside-title:	19px 'Conv_Montserrat-Bold';
 $font-checkbox-label:14px 'Conv_Montserrat-Bold';
 $font-label: 12px 'Conv_Montserrat-Bold';
+
+%font-title{
+	font:$font-checkbox-label;
+	text-transform: uppercase;
+}
+
 %font-label{
 	font:$font-label;
 	text-transform: uppercase;

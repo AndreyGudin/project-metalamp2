@@ -1,0 +1,30 @@
+.icon-text-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-text-list__box{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: center;
+  gap:10px;
+}
+.icon-text-list__container{
+  display: flex;
+  width: 291px;
+  height: 68px;
+}
+
+.icon-text-list__title{
+  @extend %font-title;
+}
+.icon-text-list__text{
+  @extend %font-body;
+}
+
+.icon-text-list__img{
+  width: 40px;
+  height: 68px;
+}

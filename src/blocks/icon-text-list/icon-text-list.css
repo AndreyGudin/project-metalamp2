@@ -1,0 +1,8 @@
+.icon-text-list__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text-list__container {
+  display: flex;
+}

@@ -3,7 +3,7 @@ mixin icon-text-list(iclass,itexts,ipaths)
   div(class=iclass)
     each val,keys in itexts
       div(class=iclass + "__container")
-        img(src=ipaths[i])
+        img(src=ipaths[i],class=iclass +"__img")
         div(class=iclass + "__box")
           span(class=iclass+"__title")=keys
           span(class=iclass+"__text")=val
