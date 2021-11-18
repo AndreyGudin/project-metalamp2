@@ -1,0 +1,13 @@
+mixin review-card(rclass,imagepath,rname,rtime,rtext)
+  include ..\like-button\like-button.pug
+  div(class=rclass)
+    div(class=rclass + "__container")
+      div(class=rclass + "__imagebox")
+        img(class=rclass + "__image",src=imagepath)
+      div( class=rclass + "__box")
+        span(class=rclass + "__name")=rname
+        span(class=rclass+ "__time")=rtime
+    div(class=rclass + "__container")
+      div(class=rclass + "__likebox")
+        +like-button('like-button','2')
+      label(class=rclass + "__textarea")=rtext
