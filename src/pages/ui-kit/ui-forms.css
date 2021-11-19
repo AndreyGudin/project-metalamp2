@@ -282,12 +282,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield, .iqdropdown .iqdropdown-selection {
+.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.icon-text-list__title {
+.review-card__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -1155,6 +1155,7 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
 .review-card__box {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .review-card__textarea {

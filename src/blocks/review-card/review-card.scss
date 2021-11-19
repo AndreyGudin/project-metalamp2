@@ -4,6 +4,7 @@
 .review-card__box{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .review-card__textarea{
   width: 653px;
@@ -17,4 +18,12 @@
 .review-card__imagebox,.review-card__likebox{
   width: 50px;
   height: 50px;
+}
+
+.review-card__time,.review-card__textarea{
+  @extend %font-body;
+}
+
+.review-card__name{
+  @extend %font-title;
 }
