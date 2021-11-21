@@ -1,5 +1,20 @@
 .box {
   position: relative;
-  width: 611px;
-  height: 270px;
+  width: 311px;
+  height: 170px;
+}
+
+.inner {
+  margin-top: -70px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+
+.sp1 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.sp2 {
+  font-size: 12px;
 }
