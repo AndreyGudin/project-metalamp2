@@ -11,6 +11,7 @@
       <div class="inner"><span class="sp1">240</span><span class="sp2">голосов</span></div>
     </div>
     <script>
+      Chart.defaults.font.family = 'Conv_Montserrat-Regular,Conv_Montserrat-Bold,Tahoma, Arial, sans-serif';
       const ctx = document.getElementById('myChart').getContext('2d');
       var gradient1 = ctx.createLinearGradient(20,0, 20,250);
       var gradient2 = ctx.createLinearGradient(20,200,0,100);
@@ -35,11 +36,11 @@
           ],
           datasets: [{
             label: 'My First Dataset',
-            data: [600, 300, 300, 0],
+            data: [130, 65, 65, 0],
             backgroundColor: [
               gradient1,
-              gradient2,
               gradient3,
+              gradient2,
               gradient4
             ]
             }]
@@ -53,17 +54,28 @@
                 legend:{
                   display:true,
                   position:'right',
+                  align: 'end',
                   labels:{
                     boxHeight:10,
                     boxWidth:10,
                     usePointStyle: true,
-                    pointStyle:'circle'
+                    pointStyle:'circle',
+                    font:{
+                      size: 14
+                      }
                   }
                 },
                 title:{
                   display:true,
                   position:'top',
-                  text:'Впечатления от номера'
+                  text:'Впечатления от номера',
+                  font:{
+                    size: 19,
+                    family:'Conv_Montserrat-Bold'
+                  },
+                  padding:{
+                    bottom: 15
+                  }
                 }
       
               }
