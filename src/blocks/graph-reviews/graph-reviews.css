@@ -15,21 +15,32 @@
 }
 .box {
   position: relative;
-  width: 311px;
+  width: 350px;
   height: 170px;
 }
 
 .inner {
-  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 70px;
+  height: 50px;
+  margin-top: -92px;
   margin-bottom: 100px;
-  margin-left: 50px;
+  margin-left: 42px;
 }
 
 .sp1 {
   margin-bottom: 5px;
   margin-top: 0;
+  margin-bottom: 0;
+  font: 24px "Conv_Montserrat-Bold";
+  color: #BC9CFF;
+  text-align: center;
 }
 
 .sp2 {
-  font-size: 12px;
+  font: 14px "Conv_Montserrat-Bold";
+  color: #BC9CFF;
+  text-align: center;
 }
