@@ -1172,6 +1172,38 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   height: 50px;
 }
 
+.graph-reviews {
+  position: relative;
+  width: 350px;
+  height: 170px;
+}
+
+.graph-reviews__box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 70px;
+  height: 50px;
+  margin-top: -92px;
+  margin-bottom: 100px;
+  margin-left: 47px;
+}
+
+.graph-reviews__count {
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 24px "Conv_Montserrat-Bold";
+  color: #BC9CFF;
+  text-align: center;
+}
+
+.graph-reviews__voices {
+  font: 14px "Conv_Montserrat-Bold";
+  color: #BC9CFF;
+  text-align: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;

@@ -1,10 +1,12 @@
-.graph-reviews{
+@import '../../scss/variables.scss';
+
+.box{
   position: relative;
   width: 350px;
   height: 170px;
 }
 
-.graph-reviews__box{
+.inner{
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -14,7 +16,7 @@
   margin-bottom: 100px;
   margin-left: 47px;
 }
-.graph-reviews__count{
+.sp1{
   margin-bottom: 5px;
   margin-top: 0;
   margin-bottom: 0;
@@ -23,7 +25,7 @@
   text-align: center;
 }
 
-.graph-reviews__voices{
+.sp2{
   font:$font-checkbox-label;
   color:$color-purple;
   text-align: center;

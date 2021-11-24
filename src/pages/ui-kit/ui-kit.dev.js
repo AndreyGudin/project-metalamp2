@@ -21,3 +21,7 @@ require("../../blocks/range-slider/range-slider.js");
 require("../../blocks/pagination/pagination.min.js");
 
 require("../../blocks/pagination/paginationblock.js");
+
+require("../../blocks/graph-reviews/chart.min.js");
+
+require("../../blocks/graph-reviews/graph-reviews.js");
