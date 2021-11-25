@@ -17,7 +17,7 @@ html(lang="ru")
       var gradient2 = ctx.createLinearGradient(200,200,280,0);
       var gradient3 = ctx.createLinearGradient(0,90,0,160);
       var gradient4 = ctx.createLinearGradient(100,100, 100,250);
-      var gradient1Legend = ctx.createLinearGradient(10,0, 10,10);
+      var gradient1Legend = ctx.createLinearGradient(175,0, 175,170);
       var gradient2Legend = ctx.createLinearGradient(10,0, 10,10);
       var gradient3Legend = ctx.createLinearGradient(10,0, 10,10);
       var gradient4Legend = ctx.createLinearGradient(10,0, 5,5);
@@ -89,8 +89,18 @@ html(lang="ru")
                   padding:{
                     bottom: 15
                   }
-                }
-
+                }           
               }
-            }
+            },
+            plugins:[{
+              beforeDraw: function(c) {
+                  var legends = c.legend.legendItems;
+                  let gradients=[gradient1Legend,gradient2Legend,gradient3Legend,gradient4Legend]
+                  let i=0;
+                  legends.forEach(function(e) {
+                    e.fillStyle = gradients[i];
+                    i++;
+                  });
+                }
+            }]
             })
