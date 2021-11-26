@@ -11,15 +11,6 @@
   @extend %font-body;
   margin-bottom: 13px;
 }
-/*.bullet-list__li::before{
-  content: "•";
-  font-size: 60px;
-  line-height: 0px;
-  color:$color-ds50;
-  position: relative;
-  top:10px;
-  margin-right: 6px;
-}*/
 
 .bullet-list__li::marker{
   color:$color-ds50;
