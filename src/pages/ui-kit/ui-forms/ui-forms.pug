@@ -3,6 +3,7 @@ html(lang="ru")
 	head
 		meta(charset="utf-8")
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+		script(src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js")
 		script(type="module" src="ui-kit.js")
 		link(href="ui-forms.css" rel="stylesheet")
 	body
@@ -10,7 +11,7 @@ html(lang="ru")
 		.main
 			+textlabel('textfield','Text field','Email')
 			+quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','0')
-			+textlabel('textfield textfield--masked','Text field','Email')
+			+textlabel('textfield textfield--masked','Text field','ДД.ММ.ГГГГ')
 			+quantity-dropdown('Спальни','Кровати','Ванные комнаты','rooms','1')
 			+textlabel('textfield textfield--date-dropdown','Dropdown','ДД.ММ.ГГГГ')(readonly)
 			+textlabel('textfield textfield--filter-date-dropdown','Dropdown','')(readonly,data-multiple-dates-separator=" - ",data-range="true")

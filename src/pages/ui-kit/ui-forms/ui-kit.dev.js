@@ -25,3 +25,5 @@ require("../../../blocks/pagination/paginationblock.js");
 require("../../../blocks/graph-reviews/chart.min.js");
 
 require("../../../blocks/graph-reviews/graph-reviews.js");
+
+require("../../../blocks/textfield/textfield--masked/textfield--masked.js");

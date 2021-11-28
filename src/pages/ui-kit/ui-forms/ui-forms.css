@@ -134,10 +134,6 @@
   opacity: 0.75;
 }
 
-.textfield .textfield--masked__input:hover, .textfield .textfield--masked__input :focus {
-  opacity: 0.25;
-}
-
 .rooms .iqdropdown {
   width: 266px;
 }
@@ -839,15 +835,6 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   margin-bottom: 13px;
 }
 
-/*.bullet-list__li::before{
-  content: "•";
-  font-size: 60px;
-  line-height: 0px;
-  color:$color-ds50;
-  position: relative;
-  top:10px;
-  margin-right: 6px;
-}*/
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
   line-height: 0px;
