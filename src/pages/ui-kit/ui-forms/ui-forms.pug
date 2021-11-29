@@ -10,9 +10,9 @@ html(lang="ru")
 		include ui-kit-inc.pug
 		.main
 			+textlabel('textfield','Text field','Email')
-			+quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','0')
+			+quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Dropdown','0')
 			+textlabel('textfield textfield--masked','Text field','ДД.ММ.ГГГГ')
-			+quantity-dropdown('Спальни','Кровати','Ванные комнаты','rooms','1')
+			+quantity-dropdown('Спальни','Кровати','Ванные комнаты','rooms','Dropdown','1')
 			+textlabel('textfield textfield--date-dropdown','Dropdown','ДД.ММ.ГГГГ')(readonly)
 			+textlabel('textfield textfield--filter-date-dropdown','Dropdown','')(readonly,data-multiple-dates-separator=" - ",data-range="true")
 			+expandable-chckbox-list('expandable-chckbox-list','Expandable CheckBox List',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])

@@ -1,11 +1,23 @@
-.iqdropdown{
+.guest-dropdown-block{
+  width: 320px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.iqdropdown{   // размеры панели дропдауна и радиусы рамки
   width: 320px;
   height: 44px;
   border-radius: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.button-wrapper{
+
+.guest-dropdown__title{  //подпись
+  @extend %font-label;
+  margin-bottom: 5px;
+}
+.button-wrapper{ // контейнер для кнопок
   display: flex;
   justify-content: space-between;
   margin-top: 29px;
@@ -48,6 +60,7 @@
 
 .iqdropdown .iqdropdown-item-controls{
   align-items: center;
+  margin-left: 15px;
 }
 
 .iqdropdown .iqdropdown-item-controls .counter{
