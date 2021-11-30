@@ -136,13 +136,12 @@
 .rooms .iqdropdown {
   width: 266px;
 }
+.rooms .iqdropdown-menu {
+  height: 119px;
+}
 
 .rooms__title {
   margin-bottom: 5px;
-}
-
-.rooms .iqdropdown-menu {
-  height: 119px;
 }
 
 .textfield .textfield--date-dropdown__input {
