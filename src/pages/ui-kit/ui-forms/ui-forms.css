@@ -133,15 +133,27 @@
   opacity: 0.75;
 }
 
-.rooms .iqdropdown {
+.rooms-block {
   width: 266px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
 }
-.rooms .iqdropdown-menu {
-  height: 119px;
+
+.rooms.iqdropdown {
+  width: 266px;
 }
 
 .rooms__title {
   margin-bottom: 5px;
+}
+
+.rooms.iqdropdown-menu {
+  width: 266px;
+  height: 119px;
+}
+.rooms.iqdropdown-menu .iqdropdown-menu-option {
+  width: 266px;
 }
 
 .textfield .textfield--date-dropdown__input {

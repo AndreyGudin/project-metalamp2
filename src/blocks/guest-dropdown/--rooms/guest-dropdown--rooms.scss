@@ -1,13 +1,27 @@
-.rooms {
-  .iqdropdown {
-    width: 266px;
-  }
-
-  .iqdropdown-menu {
-    height: 119px;
-  }
+.rooms-block {
+  width: 266px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
 }
+
+.rooms.iqdropdown {
+  width: 266px;
+}
+
 .rooms__title {
   @extend %font-label;
   margin-bottom: 5px;
 }
+
+.rooms.iqdropdown-menu {
+  width: 266px;
+  height: 119px;
+
+  .iqdropdown-menu-option{
+    width: 266px;
+  }
+}
+
+
+
