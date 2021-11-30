@@ -20,7 +20,7 @@
 .button-wrapper{ // контейнер для кнопок
   display: flex;
   justify-content: space-between;
-  margin-top: 29px;
+  margin-top: 20px;
   padding: 0px 15px 0px 15px;
 }
 .iqdropdown .iqdropdown-menu-close{
@@ -41,12 +41,12 @@
 
 .iqdropdown .iqdropdown-item-controls .counter{
   @extend %font-label;
-  width: 45px;
+  width: 30px;
   height: 37px;
-  padding: 0px auto;
   text-align: center;
-  align-items: center;
-
+  vertical-align: middle;
+  padding: 0 5px;
+  line-height: 37px;
 }
 
 .button-apply,.button-clear{
@@ -60,7 +60,6 @@
 
 .iqdropdown .iqdropdown-item-controls{
   align-items: center;
-  margin-left: 15px;
 }
 
 .iqdropdown .iqdropdown-item-controls .counter{
@@ -95,6 +94,8 @@
 .iqdropdown .iqdropdown-menu-option{
   width: 320px;
   height: 35px;
+  padding: 0 8px;
+  margin-bottom: 3px;
 }
 
 

@@ -16,7 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield, .iqdropdown .iqdropdown-selection {
+.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
@@ -53,7 +53,7 @@
 .button-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 29px;
+  margin-top: 20px;
   padding: 0px 15px 0px 15px;
 }
 
@@ -67,11 +67,12 @@
 }
 
 .iqdropdown .iqdropdown-item-controls .counter {
-  width: 45px;
+  width: 30px;
   height: 37px;
-  padding: 0px auto;
   text-align: center;
-  align-items: center;
+  vertical-align: middle;
+  padding: 0 5px;
+  line-height: 37px;
 }
 
 .button-apply, .button-clear {
@@ -84,7 +85,6 @@
 
 .iqdropdown .iqdropdown-item-controls {
   align-items: center;
-  margin-left: 15px;
 }
 
 .iqdropdown .iqdropdown-item-controls .counter {
@@ -118,6 +118,8 @@
 .iqdropdown .iqdropdown-menu-option {
   width: 320px;
   height: 35px;
+  padding: 0 8px;
+  margin-bottom: 3px;
 }
 
 .iqdropdown .icon-decrement::after, .iqdropdown .icon-decrement.icon-increment::before {
