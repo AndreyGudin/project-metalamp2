@@ -26,7 +26,8 @@
   text-transform: uppercase;
 }
 
-.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield label, .button-apply, .button-clear, .iqdropdown .iqdropdown-item-controls .counter, .iqdropdown-item, .guest-dropdown__title {
+.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield label, .button-apply,
+.button-clear, .iqdropdown-item, .guest-dropdown__title, .iqdropdown .iqdropdown-item-controls .counter {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -45,6 +46,54 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+.iqdropdown .iqdropdown-menu {
+  width: 320px;
+  height: 160px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: -8px -1px -1px;
+}
+.iqdropdown .iqdropdown-item-controls {
+  align-items: center;
+}
+.iqdropdown .iqdropdown-item-controls .counter {
+  width: 30px;
+  height: 37px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 5px;
+  line-height: 37px;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+.iqdropdown .iqdropdown-item-controls button.button-decrement,
+.iqdropdown .iqdropdown-item-controls button.button-increment {
+  border: 1px solid #1f2041;
+  opacity: 0.25;
+  width: 30px;
+  height: 30px;
+  padding: 0px 0px;
+  border-radius: 50%;
+}
+.iqdropdown .iqdropdown-item-controls button.button-decrement {
+  opacity: 0.1;
+}
+.iqdropdown .iqdropdown-menu-option {
+  width: 320px;
+  height: 35px;
+  padding: 0 8px;
+  margin-bottom: 3px;
+}
+.iqdropdown .icon-decrement::after,
+.iqdropdown .icon-decrement.icon-increment::before {
+  background-color: #1f2041;
+  width: 7px;
+  height: 1px;
+  top: 7px;
+  left: 4px;
+}
 
 .guest-dropdown__title {
   margin-bottom: 5px;
@@ -57,77 +106,13 @@
   padding: 0px 15px 0px 15px;
 }
 
-.iqdropdown .iqdropdown-menu-close {
-  width: 30px;
-}
-
-.iqdropdown-menu-clear {
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-
-.iqdropdown .iqdropdown-item-controls .counter {
-  width: 30px;
-  height: 37px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0 5px;
-  line-height: 37px;
-}
-
-.button-apply, .button-clear {
+.button-apply,
+.button-clear {
   color: rgba(31, 32, 65, 0.25);
 }
 
 .button-clear {
   visibility: hidden;
-}
-
-.iqdropdown .iqdropdown-item-controls {
-  align-items: center;
-}
-
-.iqdropdown .iqdropdown-item-controls .counter {
-  border-bottom: 0px;
-  border-top: 0px;
-}
-
-.iqdropdown .iqdropdown-item-controls button.button-decrement, .iqdropdown .iqdropdown-item-controls button.button-increment {
-  border: 1px solid #1F2041;
-  opacity: 0.25;
-  width: 30px;
-  height: 30px;
-  padding: 0px 0px;
-  border-radius: 50%;
-}
-
-.iqdropdown .iqdropdown-item-controls button.button-decrement {
-  opacity: 0.1;
-}
-
-.iqdropdown .iqdropdown-menu {
-  width: 320px;
-  height: 160px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin: -8px -1px -1px;
-}
-
-.iqdropdown .iqdropdown-menu-option {
-  width: 320px;
-  height: 35px;
-  padding: 0 8px;
-  margin-bottom: 3px;
-}
-
-.iqdropdown .icon-decrement::after, .iqdropdown .icon-decrement.icon-increment::before {
-  background-color: #1F2041;
-  width: 7px;
-  height: 1px;
-  top: 7px;
-  left: 4px;
 }
 
 .textfield {
