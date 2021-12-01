@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import '../../../blocks/guest-dropdown/item-quantity-dropdown.min.css';
-@import '../../../blocks/textfield/textfield--date-dropdown/datepicker.min.css';
-@import '../../../blocks/range-slider/nouislider.css';
+@import "../../../blocks/guest-dropdown/item-quantity-dropdown.min.css";
+@import "../../../blocks/textfield/textfield--date-dropdown/datepicker.min.css";
+@import "../../../blocks/range-slider/nouislider.css";
 @font-face {
   font-family: "Conv_Montserrat-Regular";
   src: url("../../../fonts/Montserrat-Regular.eot");
