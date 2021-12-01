@@ -121,7 +121,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .textfield input {
   width: 320px;
   height: 44px;
@@ -129,10 +128,10 @@
   opacity: 0.25;
   margin-top: 5px;
 }
-.textfield input:hover, .textfield input :focus {
+.textfield input:hover,
+.textfield input :focus {
   opacity: 0.75;
 }
-
 .rooms-block {
   width: 266px;
   height: 65px;
@@ -154,6 +153,10 @@
 }
 .rooms.iqdropdown-menu .iqdropdown-menu-option {
   width: 266px;
+}
+
+.textfield--date-dropdown, .textfield--date-dropdown__label {
+  width: 150px;
 }
 
 .textfield .textfield--date-dropdown__input {
@@ -315,8 +318,15 @@
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.25) 0%, rgba(188, 156, 255, 0.25) 100%);
 }
 
-.datepicker--cell.-range-from-, .datepicker--cell.-range-to-, .-focus-, .-focus-.-in-range- {
+.datepicker--cell.-range-from-,
+.datepicker--cell.-range-to-,
+.-focus-,
+.-focus-.-in-range- {
   border-radius: 50%;
+}
+
+.datepicker--cell.datepicker--cell-day.-range-from-.-focus-.-selected-::after {
+  background: transparent;
 }
 
 .datepicker--cell.datepicker--cell-day.-in-range- {
