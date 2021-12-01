@@ -1,25 +1,22 @@
-
-.expandable-chckbox-list--rich-checkbox-buttons__title{
+.expandable-chckbox-list--rich-checkbox-buttons__title {
   pointer-events: none;
+
+  &::after {
+    visibility: hidden;
+  }
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__title::after{
-  visibility: hidden;
-
-}
-
-
-.expandable-chckbox-list--rich-checkbox-buttons__label{
+.expandable-chckbox-list--rich-checkbox-buttons__label {
   line-height: normal;
   max-width: 230px;
   height: 51px;
   hyphens: auto;
-  font:$font-checkbox-label;
-  color:$color-ds75;
+  font: $font-checkbox-label;
+  color: $color-ds75;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__p{
+.expandable-chckbox-list--rich-checkbox-buttons__p {
   font: $font-h3;
-  color:$color-ds50;
+  color: $color-ds50;
   margin: 0;
 }

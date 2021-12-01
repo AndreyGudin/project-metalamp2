@@ -354,16 +354,8 @@
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.25) 0%, rgba(188, 156, 255, 0.25) 100%);
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::-moz-list-bullet {
-  list-style-type: none;
-}
-
-summary::marker {
-  display: none;
+.expandable-chckbox-list {
+  width: 266px;
 }
 
 summary {
@@ -373,7 +365,15 @@ summary {
   cursor: pointer;
   position: relative;
 }
-
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+summary::marker {
+  display: none;
+}
 summary::after {
   content: "";
   top: 2px;
@@ -409,7 +409,7 @@ details[open] summary ~ * {
 }
 .expandable-chckbox-list__container {
   width: 280px;
-  height: 171px;
+  height: auto;
   display: flex;
   flex-direction: column;
   font: 14px "Conv_Montserrat-Regular";
@@ -442,7 +442,6 @@ details[open] summary ~ * {
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
-
 .expandable-chckbox-list__input:after {
   content: "";
   display: block;
@@ -462,19 +461,18 @@ details[open] summary ~ * {
   top: 4px;
   transform: rotate(var(--r, 20deg));
 }
-
 .expandable-chckbox-list__input:checked {
   --bc: var(--active);
-  --d-o: .3s;
-  --d-t: .6s;
-  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  --d-o: 0.3s;
+  --d-t: 0.6s;
+  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   --o: 1;
   --r: 43deg;
   border: 1px solid #BC9CFF;
   border-radius: 4px;
 }
 
-input[type=checkbox] + label {
+.expandable-chckbox-list__input + .expandable-chckbox-list__label {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -498,6 +496,10 @@ input[type=checkbox] + label {
   background: url(../../../blocks/textfield/textfield--subscription/svg/arrow_forward.svg) no-repeat 12px 12px;
 }
 
+.expandable-chckbox-list--checkbox-buttons {
+  height: auto;
+}
+
 .expandable-chckbox-list--checkbox-buttons__title {
   pointer-events: none;
 }
@@ -514,7 +516,6 @@ input[type=checkbox] + label {
 .expandable-chckbox-list--rich-checkbox-buttons__title {
   pointer-events: none;
 }
-
 .expandable-chckbox-list--rich-checkbox-buttons__title::after {
   visibility: hidden;
 }
@@ -600,7 +601,6 @@ input[type=checkbox] + label {
   width: 40px;
   border-radius: 10px;
 }
-
 .expandable-chckbox-list--toogle__input:after {
   opacity: 1;
   border-radius: 50%;
@@ -611,11 +611,14 @@ input[type=checkbox] + label {
   left: 3px;
   transform: translateX(var(--x, 0));
 }
-
 .expandable-chckbox-list--toogle__input:checked {
   --x: 17px;
   border-radius: 10px;
-  --bcg: #BC9CFF;
+  --bcg: #bc9cff;
+}
+
+.expandable-chckbox-list--toogle__label {
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .like-button {
