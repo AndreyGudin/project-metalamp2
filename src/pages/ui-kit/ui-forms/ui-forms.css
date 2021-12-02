@@ -155,7 +155,8 @@
   width: 266px;
 }
 
-.textfield--date-dropdown, .textfield--date-dropdown__label {
+.textfield--date-dropdown,
+.textfield--date-dropdown__label {
   width: 150px;
 }
 
@@ -252,7 +253,7 @@
   color: #BC9CFF;
 }
 .datepicker--button:hover {
-  color: #4EB5E6;
+  color: #4eb5e6;
   background: white;
 }
 
@@ -271,7 +272,9 @@
   border-radius: 50%;
 }
 
-.datepicker--cell.-focus-, .-range-to-, .datepicker--cell.-selected-.-focus- {
+.datepicker--cell.-focus-,
+.-range-to-,
+.datepicker--cell.-selected-.-focus- {
   background: #66d2ea;
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
 }
@@ -564,10 +567,9 @@ details[open] summary ~ * {
   position: relative;
   margin: 0;
   cursor: pointer;
-  background: url(../../../blocks/radio-buttons/svg/radiobutton.svg) no-repeat;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHJ4PSI5LjUiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNCQzlDRkYiLz4NCjwvc3ZnPg0K") no-repeat;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
-
 .radio-buttons__button:after {
   content: "";
   display: block;
@@ -583,14 +585,13 @@ details[open] summary ~ * {
   background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
   transform: scale(var(--s, 0.7));
 }
-
 .radio-buttons__button:checked {
-  --d-o: .3s;
-  --d-t: .6s;
-  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  --d-o: 0.3s;
+  --d-t: 0.6s;
+  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   --o: 1;
   --r: 43deg;
-  background: url(../../blocks/radio-buttons/svg/radiobuttonchecked.svg) no-repeat;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHJ4PSI5LjUiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNCQzlDRkYiLz4NCjwvc3ZnPg0K") no-repeat;
 }
 
 .radio-buttons__button:checked + .radio-buttons__btitle {
