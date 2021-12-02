@@ -1,10 +1,10 @@
-.graph-reviews{
+.graph-reviews {
   position: relative;
   width: 350px;
   height: 170px;
 }
 
-.graph-reviews__box{
+.graph-reviews__box {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -14,17 +14,17 @@
   margin-bottom: 100px;
   margin-left: 47px;
 }
-.graph-reviews__count{
+.graph-reviews__count {
   margin-bottom: 5px;
   margin-top: 0;
   margin-bottom: 0;
   font: $font-widget-title;
-  color:$color-purple;
+  color: $color-purple;
   text-align: center;
 }
 
-.graph-reviews__voices{
-  font:$font-checkbox-label;
-  color:$color-purple;
+.graph-reviews__voices {
+  font: $font-checkbox-label;
+  color: $color-purple;
   text-align: center;
 }
