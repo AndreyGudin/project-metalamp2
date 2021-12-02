@@ -862,7 +862,6 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
 .bullet-list__li {
   margin-bottom: 13px;
 }
-
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
   line-height: 0px;

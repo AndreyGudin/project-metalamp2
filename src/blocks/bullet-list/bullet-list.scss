@@ -1,29 +1,29 @@
-.bullet-list{
+.bullet-list {
   width: 300px;
   height: 150px;
 }
 
-.bullet-list__ul{
+.bullet-list__ul {
   padding-inline-start: 25px;
 }
 
-.bullet-list__li{
+.bullet-list__li {
   @extend %font-body;
   margin-bottom: 13px;
+
+  &::marker {
+    color: $color-ds50;
+    line-height: 0px;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
 }
 
-.bullet-list__li::marker{
-  color:$color-ds50;
-  line-height: 0px;
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-
-.bullet-list__span{
+.bullet-list__span {
   position: relative;
   right: 8px;
   bottom: 3px;
 }
-.bullet-list__title{
+.bullet-list__title {
   @extend %font-label;
 }
