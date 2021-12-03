@@ -1,23 +1,23 @@
-.like-button{
+.like-button {
   width: 40px;
   height: 20px;
 }
-.like-button__button{
+.like-button__button {
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  color:var(--cc,$color-ds25);
+  color: var(--cc, $color-ds25);
 }
 
-.like-button__svg{
+.like-button__svg {
   stroke-width: 1px;
-  stroke: var(--sc,$color-ds25);
-  fill:var(--fc,none);
+  stroke: var(--sc, $color-ds25);
+  fill: var(--fc, none);
 }
 
-.like-button__button.active{
-  --cc:#BC9CFF;
-  --fc:#BC9CFF;
-  --sc:#BC9CFF;
-  border-color: #BC9CFF;
+.like-button__button.active {
+  --cc: #bc9cff;
+  --fc: #bc9cff;
+  --sc: #bc9cff;
+  border-color: #bc9cff;
 }

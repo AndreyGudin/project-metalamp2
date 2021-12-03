@@ -641,10 +641,10 @@ details[open] summary ~ * {
 }
 
 .like-button__button.active {
-  --cc:#BC9CFF;
-  --fc:#BC9CFF;
-  --sc:#BC9CFF;
-  border-color: #BC9CFF;
+  --cc: #bc9cff;
+  --fc: #bc9cff;
+  --sc: #bc9cff;
+  border-color: #bc9cff;
 }
 
 .rate-button__starhref {
