@@ -1,13 +1,13 @@
-.button-hypertext__button{
+.button-hypertext__button {
   background: transparent;
-  color:$color-purple;
+  color: $color-purple;
   width: auto;
   height: 15px;
   border-radius: 0px;
   padding: 0px;
 
-  &:active{
+  &:active {
     background: transparent;
-    color:$color-ds50;
+    color: $color-ds50;
   }
 }

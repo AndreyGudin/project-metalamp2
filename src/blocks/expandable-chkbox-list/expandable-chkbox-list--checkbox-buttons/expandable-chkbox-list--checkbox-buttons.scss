@@ -1,17 +1,15 @@
-.expandable-chckbox-list--checkbox-buttons{
+.expandable-chckbox-list--checkbox-buttons {
   height: auto;
 }
-.expandable-chckbox-list--checkbox-buttons__title{
+.expandable-chckbox-list--checkbox-buttons__title {
   pointer-events: none;
 }
 
-.expandable-chckbox-list--checkbox-buttons__title::after{
+.expandable-chckbox-list--checkbox-buttons__title::after {
   visibility: hidden;
-
 }
 
-
-.expandable-chckbox-list--checkbox-buttons__label{
+.expandable-chckbox-list--checkbox-buttons__label {
   max-width: 190px;
   hyphens: auto;
 }
