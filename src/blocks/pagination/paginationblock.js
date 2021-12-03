@@ -1,4 +1,4 @@
-var generateData = function(number) {
+var generateData = function (number) {
   var result = [];
 
   for (var i = 1; i < number + 1; i++) {
@@ -9,21 +9,28 @@ var generateData = function(number) {
 };
 
 function template(data) {
-  var html = '<ul>';
-  $.each(data, function(index, item){
-      html += '<li>'+ item +'</li>';
+  var html = "<ul>";
+  $.each(data, function (index, item) {
+    html += "<li>" + item + "</li>";
   });
-  html += '</ul>';
+  html += "</ul>";
   return html;
 }
 
-
-$('.pagination__pagination').pagination({
-  dataSource: generateData(195),
-  showPrevious:false,
-  callback: function(data, pagination) {
-      // template method of yourself
-      var html = template(data);
-      $('pagination__data').html(html);
-  }
-})
+$(".pagination__pagination").pagination({
+  dataSource: generateData(500),
+  showNavigator: true,
+  formatNavigator: "<%= totalNumber %> entries",
+  showPrevious: false,
+  callback: function (data, pagination) {
+    // template method of yourself
+    var html = template(data);
+    $("pagination__data").html(html);
+  },
+  afterPageOnClick: function () {
+    let result = $(".pagination__pagination").pagination("getSelectedPageData");
+    let totalPage=$(".pagination__pagination").pagination("getTotalPage");
+    console.log(result);
+    $(".paginationjs-nav.J-paginationjs-nav").prepend(`${result.length.toString()} из `);
+  },
+});

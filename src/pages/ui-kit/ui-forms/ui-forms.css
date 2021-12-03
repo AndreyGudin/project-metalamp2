@@ -788,15 +788,14 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   top: 14px;
 }
 
-.pagination__data {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
 .paginationjs-pages ul {
   display: flex;
   padding: 0px;
+}
+.paginationjs-pages a {
+  padding: 0px;
+  line-height: 40px;
+  text-decoration: none;
 }
 
 .paginationjs .paginationjs-pages li {
@@ -810,6 +809,7 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   text-align: center;
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
 }
 
 .paginationjs-page.J-paginationjs-page.active {
@@ -818,18 +818,14 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   color: white;
 }
 
-.paginationjs-pages a {
-  padding: 0px;
-  line-height: 40px;
-  text-decoration: none;
-}
-
 .paginationjs-next.J-paginationjs-next {
   position: relative;
   background: #66d2ea;
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
 }
-
+.paginationjs-next.J-paginationjs-next a {
+  color: transparent;
+}
 .paginationjs-next.J-paginationjs-next a::after {
   content: "";
   top: 0px;
@@ -841,10 +837,6 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   position: absolute;
   top: 11px;
   left: 11px;
-}
-
-.paginationjs-next.J-paginationjs-next a {
-  color: transparent;
 }
 
 .bullet-list {

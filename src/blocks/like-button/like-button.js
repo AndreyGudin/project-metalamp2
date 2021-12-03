@@ -12,7 +12,6 @@ $(document).on("click", ".active", function () {
     numberp = parseInt($(".like-button__span").html());
     if (numberp > 0) {
       numberp--;
-      console.log(numberp);
       return numberp.toString();
     }
   });

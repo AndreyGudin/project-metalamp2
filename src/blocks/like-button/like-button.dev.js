@@ -14,7 +14,6 @@ $(document).on("click", ".active", function () {
 
     if (numberp > 0) {
       numberp--;
-      console.log(numberp);
       return numberp.toString();
     }
   });
