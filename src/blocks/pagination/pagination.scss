@@ -1,8 +1,12 @@
-// .pagination__data {
-//   visibility: hidden;
-//   width: 0;
-//   height: 0;
-// }
+.pagination{
+  max-width: 450px;
+}
+
+.pagination__data {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 .paginationjs-pages {
   ul {
@@ -66,4 +70,9 @@
       left: 11px;
     }
   }
+}
+
+.paginationjs-nav.J-paginationjs-nav{
+  @extend %font-body;
+  text-align: center;
 }

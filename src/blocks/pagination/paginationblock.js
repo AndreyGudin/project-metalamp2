@@ -20,7 +20,7 @@ function template(data) {
 $(".pagination__pagination").pagination({
   dataSource: generateData(500),
   showNavigator: true,
-  formatNavigator: "<%= totalNumber %> entries",
+  formatNavigator: "<%= totalNumber %> вариантов аренды",
   showPrevious: false,
   callback: function (data, pagination) {
     // template method of yourself
@@ -29,8 +29,23 @@ $(".pagination__pagination").pagination({
   },
   afterPageOnClick: function () {
     let result = $(".pagination__pagination").pagination("getSelectedPageData");
-    let totalPage=$(".pagination__pagination").pagination("getTotalPage");
-    console.log(result);
-    $(".paginationjs-nav.J-paginationjs-nav").prepend(`${result.length.toString()} из `);
+    let pagenumb = $(".pagination__pagination").pagination(
+      "getSelectedPageNum"
+    );
+    let sum = 1;
+    sum = result.length * pagenumb;
+    let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+    $(".paginationjs-nav.J-paginationjs-nav").prepend(
+      `${sum - result.length + 1} - ${sum} из `
+    );
   },
 });
+
+let result = $(".pagination__pagination").pagination("getSelectedPageData");
+let pagenumb = $(".pagination__pagination").pagination("getSelectedPageNum");
+let sum = 1;
+sum = result.length * pagenumb;
+let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+$(".paginationjs-nav.J-paginationjs-nav").prepend(
+  `${sum - result.length + 1} - ${sum} из `
+);

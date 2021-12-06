@@ -16,7 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
@@ -788,6 +788,16 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   top: 14px;
 }
 
+.pagination {
+  max-width: 450px;
+}
+
+.pagination__data {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .paginationjs-pages ul {
   display: flex;
   padding: 0px;
@@ -837,6 +847,10 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   position: absolute;
   top: 11px;
   left: 11px;
+}
+
+.paginationjs-nav.J-paginationjs-nav {
+  text-align: center;
 }
 
 .bullet-list {

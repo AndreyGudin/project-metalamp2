@@ -22,7 +22,7 @@ function template(data) {
 $(".pagination__pagination").pagination({
   dataSource: generateData(500),
   showNavigator: true,
-  formatNavigator: "<%= totalNumber %> entries",
+  formatNavigator: "<%= totalNumber %> вариантов аренды",
   showPrevious: false,
   callback: function callback(data, pagination) {
     // template method of yourself
@@ -31,8 +31,16 @@ $(".pagination__pagination").pagination({
   },
   afterPageOnClick: function afterPageOnClick() {
     var result = $(".pagination__pagination").pagination("getSelectedPageData");
+    var pagenumb = $(".pagination__pagination").pagination("getSelectedPageNum");
+    var sum = 1;
+    sum = result.length * pagenumb;
     var totalPage = $(".pagination__pagination").pagination("getTotalPage");
-    console.log(result);
-    $(".paginationjs-nav.J-paginationjs-nav").prepend("".concat(result.length.toString(), " \u0438\u0437 "));
+    $(".paginationjs-nav.J-paginationjs-nav").prepend("".concat(sum - result.length + 1, " - ").concat(sum, " \u0438\u0437 "));
   }
 });
+var result = $(".pagination__pagination").pagination("getSelectedPageData");
+var pagenumb = $(".pagination__pagination").pagination("getSelectedPageNum");
+var sum = 1;
+sum = result.length * pagenumb;
+var totalPage = $(".pagination__pagination").pagination("getTotalPage");
+$(".paginationjs-nav.J-paginationjs-nav").prepend("".concat(sum - result.length + 1, " - ").concat(sum, " \u0438\u0437 "));
