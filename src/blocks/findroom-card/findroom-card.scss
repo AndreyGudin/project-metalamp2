@@ -1,0 +1,17 @@
+.findroom-card,.findroom-card__form{
+  width: 380px;
+  height: 374px;
+}
+
+.findroom-card__form{
+  display: flex;
+  flex-direction: column;
+}
+
+.findroom-card__container{
+  display: flex;
+}
+
+.findroom-card__title{
+  font: $font-widget-title;
+}

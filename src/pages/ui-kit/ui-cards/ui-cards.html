@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js"></script>
+    <script type="module" src="../ui-forms/ui-kit.js"></script>
+    <link href="../ui-forms/ui-forms.css" rel="stylesheet">
+  </head>
+  <body>
+        <div class="findroom-card">
+          <form class="findroom-card__form">
+            <label class="findroom-card__title">Найдём номера под ваши пожелания</label>
+            <div class="findroom-card__container">
+                  <div class="textfield textfield--date-dropdown">
+                    <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Прибытие
+                      <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                    </label>
+                  </div>
+                  <div class="textfield textfield--date-dropdown">
+                    <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Выезд
+                      <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                    </label>
+                  </div>
+            </div>
+                <div class="guest-dropdown-block">
+                  <label class="guest-dropdown__title">Гости</label>
+                  <div class="guest-dropdown iqdropdown">
+                    <p class="iqdropdown-selection"></p>
+                    <div class="guest-dropdown iqdropdown-menu" data-hide="0"> 
+                      <div class="iqdropdown-menu-option" data-id="item1">
+                        <div>
+                          <p class="iqdropdown-item">Взрослые</p>
+                        </div>
+                      </div>
+                      <div class="iqdropdown-menu-option" data-id="item2">
+                        <div>
+                          <p class="iqdropdown-item">Дети</p>
+                        </div>
+                      </div>
+                      <div class="iqdropdown-menu-option" data-id="item3">
+                        <div>
+                          <p class="iqdropdown-item">Младенцы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button button-with-arrow">
+                  <button class="button__button button-with-arrow__button">Подобрать номер</button>
+                </div>
+          </form>
+        </div>
+  </body>
+</html>

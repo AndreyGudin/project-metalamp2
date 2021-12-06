@@ -1,0 +1,9 @@
+mixin findroom-card(fclass, ftitle)
+  div(class=fclass)
+    form(class=fclass + '__form')
+      label(class=fclass + '__title')=ftitle
+      div(class=fclass + "__container")
+        +textlabel('textfield textfield--date-dropdown','Прибытие','ДД.ММ.ГГГГ')(readonly)
+        +textlabel('textfield textfield--date-dropdown','Выезд','ДД.ММ.ГГГГ')(readonly)
+      +quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Гости','0')
+      +button('button button-with-arrow','Подобрать номер')

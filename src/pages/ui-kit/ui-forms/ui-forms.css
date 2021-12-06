@@ -705,7 +705,8 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   right: -7px;
 }
 
-.noUi-handle:before, .noUi-handle:after {
+.noUi-handle:before,
+.noUi-handle:after {
   visibility: hidden;
   width: 0;
   height: 0;
@@ -958,6 +959,24 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   font: 14px "Conv_Montserrat-Bold";
   color: #BC9CFF;
   text-align: center;
+}
+
+.findroom-card, .findroom-card__form {
+  width: 380px;
+  height: 374px;
+}
+
+.findroom-card__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.findroom-card__container {
+  display: flex;
+}
+
+.findroom-card__title {
+  font: 24px "Conv_Montserrat-Bold";
 }
 
 .main {
