@@ -1,57 +1,65 @@
-.range-slider__range::before{
+.range-slider__range::before {
   content: "";
 }
 
-.noUi-target{
+.noUi-target {
   width: 266px;
-
 }
-.noUi-horizontal{
+.noUi-horizontal {
   height: 6px;
 }
-.noUi-horizontal .noUi-handle{
+.noUi-horizontal .noUi-handle {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border:2px solid white;
-  background: rgb(102,210,234);
-  background: linear-gradient(0deg, rgba(102,210,234,1) 0%, rgba(111,207,151,1) 100%);
+  border: 2px solid white;
+  background: rgb(102, 210, 234);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 210, 234, 1) 0%,
+    rgba(111, 207, 151, 1) 100%
+  );
   box-shadow: none;
-  right:-7px;
+  right: -7px;
 }
 
-.noUi-handle:before, .noUi-handle:after{
+.noUi-handle:before,
+.noUi-handle:after {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.noUi-connect{
-  background: rgb(102,210,234);
-  background: linear-gradient(0deg, rgba(102,210,234,1) 0%, rgba(111,207,151,1) 100%);
-  left:5px;
+.noUi-connect {
+  background: rgb(102, 210, 234);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 210, 234, 1) 0%,
+    rgba(111, 207, 151, 1) 100%
+  );
+  left: 5px;
 }
 
-.range-slider__box{
+.range-slider__box {
   display: flex;
   justify-content: space-between;
 }
 
-.range-slider{
+.range-slider {
   display: flex;
   flex-direction: column;
   width: 266px;
   height: 47px;
 }
 
-.range-slider__title{
-  $font-label: 12px 'Conv_Montserrat-Bold';
+.range-slider__title {
+  $font-label: 12px "Conv_Montserrat-Bold";
   @extend %font-label;
 }
 
-.range-slider__range{
+.range-slider__range {
   text-align: right;
   color: $color-ds50;
-  font:$font-h3;
+  font: $font-h3;
   margin-bottom: 20px;
 }
