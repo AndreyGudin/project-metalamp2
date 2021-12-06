@@ -1,5 +1,4 @@
-
-.rate-button__starhref{
+.rate-button__starhref {
   width: 20px;
   height: 20px;
   stroke-width: 1px;
@@ -7,20 +6,19 @@
   fill: none;
   text-align: center;
 }
-.rate-button__star-source{
+.rate-button__star-source {
   width: 0;
   height: 0;
-
   visibility: hidden;
 }
 
-.rate-button__container{
+.rate-button__container {
   display: flex;
   flex-direction: row-reverse;
-  justify-content:left;
+  justify-content: left;
 }
 
-.rate-button__input{
+.rate-button__input {
   display: inline-block;
   width: 0;
   opacity: 0;
@@ -29,8 +27,11 @@
 
 .rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
 svg.rate-button__starhref:hover,
-input[class=rate-button__input]:focus ~ .rate-button__label .rate-button__starhref,
-input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__starhref {
+input[class="rate-button__input"]:focus
+  ~ .rate-button__label
+  .rate-button__starhref,
+input[class="rate-button__input"]:checked
+  ~ .rate-button__label
+  .rate-button__starhref {
   fill: url(#rate-button__gradient);
 }
-
