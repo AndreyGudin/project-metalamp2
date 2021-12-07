@@ -3,10 +3,11 @@
 }
 summary {
   width: 266px;
-  height: 32px;
+  height: auto;
   display: inline-block;
   cursor: pointer;
   position: relative;
+  margin-bottom: 18px;
   @extend %font-label;
 
   &::-webkit-details-marker {

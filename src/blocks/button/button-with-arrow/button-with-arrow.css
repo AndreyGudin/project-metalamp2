@@ -1,3 +1,7 @@
+.button.button-with-arrow {
+  width: 320px;
+}
+
 .button-with-arrow__button {
   width: 320px;
   position: relative;

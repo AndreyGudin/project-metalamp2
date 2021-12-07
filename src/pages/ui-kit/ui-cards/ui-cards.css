@@ -16,7 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.account-registration__label, .review-card__time, .review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
@@ -974,6 +974,120 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   font: 14px "Conv_Montserrat-Bold";
   color: #BC9CFF;
   text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.findroom-card {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.findroom-card,
+.findroom-card__form {
+  width: 380px;
+  height: 374px;
+}
+
+.findroom-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.findroom-card__container {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.findroom-card__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+
+.guest-dropdown-block {
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.account-registration {
+  width: 380px;
+  height: 646px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.account-registration__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+
+.account-registration__reg-form,
+.account-registration__login-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.textfield {
+  align-self: center;
+}
+
+.radio-buttons {
+  margin: 5px 0px 20px 30px;
+}
+
+.radio-buttons__container {
+  margin-top: 0px;
+}
+
+.textfield {
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.expandable-chckbox-list.expandable-chckbox-list__title.expandable-chckbox-list--checkbox-buttons__title.expandable-chckbox-list--toogle__title {
+  display: none;
+}
+
+.expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle {
+  margin: 5px 0px 0px 30px;
+}
+
+.expandable-chckbox-list.expandable-chckbox-list__box.expandable-chckbox-list--checkbox-buttons__box.expandable-chckbox-list--toogle__box {
+  margin-bottom: 0;
+}
+
+.button.button-with-arrow {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.account-registration__container {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.account-registration__label {
+  line-height: 44px;
 }
 
 .main {

@@ -1,0 +1,9 @@
+@import "../ui-forms/ui-forms.scss";
+@import "../../../blocks/findroom-card/findroom-card.scss";
+@import "../../../blocks/account-registration/account-registration.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}

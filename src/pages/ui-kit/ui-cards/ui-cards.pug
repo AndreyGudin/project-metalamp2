@@ -5,7 +5,9 @@ html(lang="ru")
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
     script(src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js")
     script(type="module" src="../ui-forms/ui-kit.js")
-    link(href="../ui-forms/ui-forms.css" rel="stylesheet")
+    link(href="ui-cards.css" rel="stylesheet")
   body
     include ../ui-forms/ui-kit-inc.pug
-    +findroom-card('findroom-card','Найдём номера под ваши пожелания')
+    .main
+      +findroom-card('findroom-card','Найдём номера под ваши пожелания')
+      +account-registration('account-registration','Регистрация аккаунта')
