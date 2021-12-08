@@ -11,7 +11,7 @@ mixin account-registration(aclass,atitle)
       +textlabel('textfield','','Пароль')
       +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons expandable-chckbox-list--toogle'
       ,'',['Получать спецпредложения'])(open)
-      +button('button button-with-arrow','Перейти к оплате')
+      +button('button button-with-arrow reg-button','Перейти к оплате')
     div(class=aclass + '__container')
       label(class=aclass + '__label') Уже есть аккаунт на Toxin
       +button('button button-without-fill','Войти')

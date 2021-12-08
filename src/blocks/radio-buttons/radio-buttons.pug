@@ -8,7 +8,7 @@ mixin radio-buttons(bclass,title,button1,button2)
     label(class=bclass_title)=title
     div(class=bclass_container)
       div(class=bclass_box)
-        input(type="radio",class=bclass_button,name="sex")
+        input(type="radio",class=bclass_button,name="sex", checked)
         label(class=bclass_btitle, for=bclass_button)=button1
       div(class=bclass_box)
         input(type="radio",class=bclass_button,name="sex")

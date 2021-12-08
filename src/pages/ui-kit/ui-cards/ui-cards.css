@@ -1072,7 +1072,7 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   margin-bottom: 0;
 }
 
-.button.button-with-arrow {
+.button.button-with-arrow.reg-button {
   margin-top: 20px;
   align-self: center;
 }
