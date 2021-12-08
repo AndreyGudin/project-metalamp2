@@ -1,0 +1,41 @@
+.login-card{
+  width: 380px;
+  height: 358px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-card__title{
+  font: $font-widget-title;
+  margin: 40px 0px 20px 30px;
+
+}
+
+.login-card__container{
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.login-card__label{
+  @extend %font-body;
+  line-height: 44px;
+}
+
+.button.button-with-arrow.login-button{
+  margin-top: 20px;
+  align-self: center;
+}
