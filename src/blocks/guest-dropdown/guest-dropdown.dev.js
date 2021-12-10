@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(".guest-dropdown,.booking-room-guest-dropdown").iqDropdown({
     setSelectionText: function setSelectionText(itemCount, totalItems) {
       var t = ["гость", "гостя", "гостей"];
       if (totalItems == 0) return "Сколько гостей";

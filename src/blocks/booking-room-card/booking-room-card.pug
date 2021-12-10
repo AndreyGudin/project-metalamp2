@@ -9,19 +9,20 @@ mixin booking-room-card(bclass,bnumber,btype,bprice)
       div(class=bclass + "__container")
         +textlabel('textfield textfield--date-dropdown','Прибытие','ДД.ММ.ГГГГ')(readonly)
         +textlabel('textfield textfield--date-dropdown','Выезд','ДД.ММ.ГГГГ')(readonly)
-      +quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Гости','0')
+      +quantity-dropdown('Взрослые','Дети','Младенцы','booking-room-guest-dropdown','Гости','0')
       div(class=`${bclass}__price-for-days-container`)
         span(class=`${bclass}__price-for-days`)=`${bprice}₽ х 4 суток`
-        span(class=`${bclass}__total-price`)='39660₽'
+        span(class=`${bclass}__total-price`)='39 660₽'
       div(class=`${bclass}__service-fee-container`)
         span(class=`${bclass}__service-fee-title`)=`Сбор за услуги: скидка 2 179₽`
-        span(class=`${bclass}__total-service-fee`)='39660₽'
+        span(class=`${bclass}__total-service-fee`)='39 660₽'
       div(class=`${bclass}__addtnl-service-fee-container`)
         span(class=`${bclass}__addtnl-service-fee-title`)='Сбор за дополнительные услуги'
         span(class=`${bclass}__total-addtnl-service-fee`)='300₽'
       div(class=`${bclass}__total-price-container`)
         span(class=`${bclass}__total-price-title`)='Итого'
-        span(class=`${bclass}__total-price`)='38081₽'
+        div(class=`${bclass}__total-price-dots`)
+        span(class=`${bclass}__total-price`)='38 081₽'
       +button('button button-with-arrow booking-button','Забронировать')
       
         

@@ -10,7 +10,6 @@
 .booking-room-card__form{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .booking-room-card__container{
@@ -27,10 +26,17 @@
   margin: 30px 30px 0px 30px;
 }
 
-.booking-room-card__price-for-days-container{
+.booking-room-card__price-for-days-container,.booking-room-card__service-fee-container,.booking-room-card__addtnl-service-fee-container,.booking-room-card__total-price-container{
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin: 0px 30px 10px 30px;
+  @extend %font-body;
+}
+
+.booking-room-card__total-price-container{
+  @extend %font-title;
+  color: black;
 }
 
 .booking-room-card__number{
@@ -57,4 +63,59 @@
   font:$font-h3;
   color:$color-ds50;
   margin-left: 3px;
+}
+
+.booking-room-guest-dropdown-block{
+  align-self: center;
+  margin-bottom: 20px;
+}
+.booking-room-card__service-fee-container,.booking-room-card__addtnl-service-fee-container{
+  position: relative;
+}
+
+.booking-room-card__service-fee-title,.booking-room-card__addtnl-service-fee-title{
+  max-width: 215px;
+}
+
+.booking-room-card__service-fee-title::after{
+  content: "";
+  background:no-repeat url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==");
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 218px;
+}
+
+.booking-room-card__addtnl-service-fee-title::after{
+  content: "";
+  background:no-repeat url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==");
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 17px;
+  left: 218px;
+}
+
+.booking-room-card__total-price-dots{
+  width: 100%;
+  height: 15px;
+  align-self: stretch;
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);;
+}
+
+.booking-room-card__total-price{
+  white-space: nowrap;
+}
+
+.booking-button{
+  align-self: center;
+  margin-top: 20px;
+}
+
+.booking-room-guest-dropdown__title{
+  @extend %font-title;
+  margin-bottom: 5px;
 }

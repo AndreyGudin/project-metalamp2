@@ -41,9 +41,10 @@
       var $menu = $this.find('div.iqdropdown-menu');
       var $items = $menu.find('div.iqdropdown-menu-option'); //************************ */
 
-      var $btnapply = $("<button class=\"button-apply\">\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C</button>"); // Кнопка Подтвердить
+      var classDropdown = $this.attr('class').split(' ');
+      var $btnapply = $("<button class=\"".concat(classDropdown[0], " button-apply\">\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C</button>")); // Кнопка Подтвердить
 
-      var $btnclear = $("<button class=\"button-clear\">\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C</button>"); // Кнопка Очистить
+      var $btnclear = $("<button class=\"".concat(classDropdown[0], " button-clear\">\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u044C</button>")); // Кнопка Очистить
       //************************** */
 
       var dataAttrOptions = {
@@ -136,11 +137,11 @@
           event.preventDefault();
         }); //************************************* */
 
-        if (!$(".button-apply").length && hide == 0) // Проверка на наличие уже созданных кнопок
+        if (!$(".".concat(classDropdown[0], " .button-apply")).length && hide == 0) // Проверка на наличие уже созданных кнопок
           {
             $menu.append($btnclear, $btnapply); // Добавление кнопок в конец меню
 
-            $(".button-apply,.button-clear").wrapAll("<div class='button-wrapper' />"); // 
+            $(".".concat(classDropdown[0], " .button-apply,.").concat(classDropdown[0], " .button-clear")).wrapAll("<div class='button-wrapper' />"); // 
           } //************************************** */
 
 
