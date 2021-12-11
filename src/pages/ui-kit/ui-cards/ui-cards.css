@@ -1248,8 +1248,18 @@ input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__star
   margin-bottom: 5px;
 }
 
+.room-card {
+  width: 270px;
+  height: 257px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  align-items: center;
 }
