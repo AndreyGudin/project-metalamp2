@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <script src="splide.js"></script>
+    <link href="splide.min.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="img/room.png"></li>
+      <li class="splide__slide"><img src="img/room2.png"></li>
+      <li class="splide__slide"><img src="img/room3.png"></li>
+    </ul>
+  </div>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide',{
+        width: 271,
+        height: 152,
+      } );
+      splide.mount();
+    } );
+  </script>
+</div>
