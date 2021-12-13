@@ -5,17 +5,18 @@ mixin room-card(rclass,rpath,rnumber,rtype,rprice,rreviews,rstars)
         div(class='splide__track')
           ul(class='splide__list')
             li(class='splide__slide')
-              img(src=rpath[0])
+              img(src=rpath[0],class=`${rclass}__img`)
             li(class='splide__slide')
-              img(src=rpath[1])
+              img(src=rpath[1],class=`${rclass}__img`)
             li(class='splide__slide')
-              img(src=rpath[2])
+              img(src=rpath[2],class=`${rclass}__img`)
     div(class=`${rclass}__container-price`)
       span(class=`${rclass}__number`)=`№${rnumber}` 
       span(class=`${rclass}__type`)=rtype 
       span(class=`${rclass}__price`)=rprice
       span(class=`${rclass}__price2`)='₽ в сутки'  
     div(class=`${rclass}__review-container`)
-      +rate-button('rate-button',rstars) 
-      span(class=`${rclass}__reviews`)=rreviews 
-      span(class=`${rclass}__reviews2`)='Отзывов'
+      +rate-button('rate-button',rstars)
+      div(class=`${rclass}__review-container2`) 
+        span(class=`${rclass}__reviews`)=rreviews 
+        span(class=`${rclass}__reviews2`)='Отзывов'
