@@ -2,7 +2,7 @@
   width: 20px;
   height: 20px;
   stroke-width: 1px;
-  stroke: url(#rate-button__gradient);
+  stroke: url(#gradient);
   fill: none;
   text-align: center;
 }
@@ -27,11 +27,22 @@
 
 .rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
 svg.rate-button__starhref:hover,
-input[class="rate-button__input"]:focus
+input[class~="rate-button__input"]:focus
   ~ .rate-button__label
   .rate-button__starhref,
-input[class="rate-button__input"]:checked
+input[class~="rate-button__input"]:checked
   ~ .rate-button__label
   .rate-button__starhref {
-  fill: url(#rate-button__gradient);
+  fill: url(#gradient);
 }
+
+// .rate-button-room-card840__label:hover ~ .rate-button-room-card840__label .rate-button-room-card840__starhref,
+// svg.rate-button-room-card840__starhref:hover,
+// input[class~="rate-button-room-card840__input"]:focus
+//   ~ .rate-button-room-card840__label
+//   svg.rate-button-room-card840__starhref,
+// input[class~="rate-button-room-card840__input"]:checked
+//   ~ .rate-button-room-card840__label
+//   svg.rate-button-room-card840__starhref {
+//   fill: url(#gradient);
+// }

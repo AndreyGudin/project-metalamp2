@@ -2,7 +2,7 @@
   width: 20px;
   height: 20px;
   stroke-width: 1px;
-  stroke: url(#rate-button__gradient);
+  stroke: url(#gradient);
   fill: none;
   text-align: center;
 }
@@ -28,7 +28,7 @@
 
 .rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
 svg.rate-button__starhref:hover,
-input[class=rate-button__input]:focus ~ .rate-button__label .rate-button__starhref,
-input[class=rate-button__input]:checked ~ .rate-button__label .rate-button__starhref {
-  fill: url(#rate-button__gradient);
+input[class~=rate-button__input]:focus ~ .rate-button__label .rate-button__starhref,
+input[class~=rate-button__input]:checked ~ .rate-button__label .rate-button__starhref {
+  fill: url(#gradient);
 }

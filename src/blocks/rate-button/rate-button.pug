@@ -1,25 +1,26 @@
 mixin rate-button(rclass,rchecked)
+  - var rclassArr=rclass.split(' ')
   div(class=rclass)
-    div(class=rclass + "__star-source")
-      svg(class=rclass+"__star",xmlns="http://www.w3.org/2000/svg")
-        symbol(id=rclass +"__stars")
+    div(class=rclassArr.map((item)=>`${item}__star-source`).join(' '))
+      svg(class=rclassArr.map((item)=>`${item}__star`).join(' '),xmlns="http://www.w3.org/2000/svg")
+        symbol(id=`${rclassArr[rclassArr.length-1]}__stars`)
           path(d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z")
           defs 
-            linearGradient(id=rclass+"__gradient",x1="10",y1="-2",x2="10",y2="22",gradientUnits="userSpaceOnUse")
+            linearGradient(id='gradient',x1="10",y1="-2",x2="10",y2="22",gradientUnits="userSpaceOnUse")
               stop(stop-color="#BC9CFF")/ 
               stop(offset="1",stop-color="#8BA4F9")/
-    div(class=rclass + "__container")
+    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
       -var i=0;
       -var j=5-(parseInt(rchecked)-1);
       while (i<5)
         if (j==(5-i))
-          input(type="radio" name="star", class=rclass + "__input", value=5-i, id=5-i, checked)
-          label(for=5-i, class=rclass + "__label")
-            svg(class=rclass + "__starhref")
-              use(xlink:href="#"+rclass+"__stars")/
+          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`, checked)
+          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '))
+            svg(class=rclassArr.map((item)=>`${item}__starhref`).join(' '))
+              use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
         else
-          input(type="radio" name="star", class=rclass + "__input", value=5-i, id=5-i)
-          label(for=5-i, class=rclass + "__label")
-            svg(class=rclass + "__starhref")
-              use(xlink:href="#"+rclass+"__stars")/
+          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`)
+          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '))
+            svg(class=rclassArr.map((item)=>`${item}__starhref`).join(' '))
+              use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
         -i++
