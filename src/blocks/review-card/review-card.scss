@@ -1,29 +1,31 @@
-.review-card__container{
+.review-card__container {
   display: flex;
 }
-.review-card__box{
+.review-card__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.review-card__textarea{
+.review-card__textarea {
   width: 653px;
   height: auto;
 }
 
-.like-button{
+.like-button {
   text-align: center;
 }
 
-.review-card__imagebox,.review-card__likebox{
+.review-card__imagebox,
+.review-card__likebox {
   width: 50px;
   height: 50px;
 }
 
-.review-card__time,.review-card__textarea{
+.review-card__time,
+.review-card__textarea {
   @extend %font-body;
 }
 
-.review-card__name{
+.review-card__name {
   @extend %font-title;
 }
