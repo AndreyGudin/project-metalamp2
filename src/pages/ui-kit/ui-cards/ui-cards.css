@@ -687,10 +687,17 @@ details[open] summary ~ * {
   margin-left: -2px;
 }
 
-.rate-button__label:hover ~ .rate-button__label .rate-button__starhref,
-svg.rate-button__starhref:hover,
-input[class~=rate-button__input]:focus ~ .rate-button__label .rate-button__starhref,
-input[class~=rate-button__input]:checked ~ .rate-button__label .rate-button__starhref {
+.rate-button__label.rate-button-room-card__label:hover ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref,
+svg.rate-button__starhref.rate-button-room-card__starhref:hover,
+input[class="rate-button__input rate-button-room-card__input"]:focus ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref,
+input[class="rate-button__input rate-button-room-card__input"]:checked ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref {
+  fill: url(#gradient);
+}
+
+.rate-button__label.rate-button-room-card840__label:hover ~ .rate-button__label.rate-button-room-card840__label .rate-button__starhref.rate-button-room-card840__starhref,
+svg.rate-button__starhref.rate-button-room-card840__starhref:hover,
+input[class="rate-button__input rate-button-room-card840__input"]:focus ~ .rate-button__label.rate-button-room-card840__label svg.rate-button__starhref.rate-button-room-card840__starhref,
+input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rate-button__label.rate-button-room-card840__label svg.rate-button__starhref.rate-button-room-card840__starhref {
   fill: url(#gradient);
 }
 
