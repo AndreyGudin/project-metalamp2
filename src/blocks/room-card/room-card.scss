@@ -1,4 +1,4 @@
-.room-card{
+.room-card {
   width: 270px;
   height: 257px;
   border-radius: 4px;
@@ -7,39 +7,39 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-.splide__arrow svg{
+.splide__arrow svg {
   fill: white;
 }
 
-.splide__arrow{
+.splide__arrow {
   background: transparent;
   opacity: 1;
 }
 
-.splide__pagination{
+.splide__pagination {
   left: auto;
 }
-.splide__pagination__page{
+.splide__pagination__page {
   opacity: 1;
   background: transparent;
   border: solid 1px white;
 }
 
-.splide__pagination__page.is-active{
+.splide__pagination__page.is-active {
   transform: none;
 }
-.splide__slide{
+.splide__slide {
   border-radius: 4px;
 }
 
-.room-card__number{
-  font:$font-widget-title;
-  &::first-letter{
+.room-card__number {
+  font: $font-widget-title;
+  &::first-letter {
     font-size: 14px;
   }
 }
 
-.room-card__container-price{
+.room-card__container-price {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -48,41 +48,44 @@
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 
-.room-card__type{
+.room-card__type {
   @extend %font-label;
-  color:$color-purple;
+  color: $color-purple;
   margin-right: auto;
   margin-left: 3px;
 }
 
-.room-card__price,.room-card__price2::first-letter,.room-card__reviews{
-  font:$font-checkbox-label;
-  color:$color-ds50;
+.room-card__price,
+.room-card__price2::first-letter,
+.room-card__reviews {
+  font: $font-checkbox-label;
+  color: $color-ds50;
 }
 
-.room-card__price2,.room-card__reviews2{
-  font:$font-h3;
-  color:$color-ds50;
+.room-card__price2,
+.room-card__reviews2 {
+  font: $font-h3;
+  color: $color-ds50;
   margin-left: 3px;
 }
 
-.room-card__review-container{
+.room-card__review-container {
   display: flex;
   justify-content: space-between;
   height: auto;
   margin: 10px 20px 0px 20px;
 }
 
-.room-card__review-container2{
+.room-card__review-container2 {
   display: flex;
   align-items: baseline;
 }
 
-.room-card__reviews{
+.room-card__reviews {
   margin-left: auto;
 }
 
-.rate-button{
+.rate-button {
   width: 105px;
   height: 24px;
 }

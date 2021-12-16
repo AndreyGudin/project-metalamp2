@@ -1,4 +1,4 @@
-.login-card{
+.login-card {
   width: 380px;
   height: 358px;
   border-radius: 4px;
@@ -9,19 +9,18 @@
   flex-direction: column;
 }
 
-.login-card__form{
+.login-card__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.login-card__title{
+.login-card__title {
   font: $font-widget-title;
   margin: 40px 0px 20px 30px;
-
 }
 
-.login-card__container{
+.login-card__container {
   display: flex;
   width: 320px;
   height: 44px;
@@ -30,12 +29,12 @@
   align-self: center;
 }
 
-.login-card__label{
+.login-card__label {
   @extend %font-body;
   line-height: 44px;
 }
 
-.button.button-with-arrow.login-button{
+.button.button-with-arrow.login-button {
   margin-top: 20px;
   align-self: center;
 }
