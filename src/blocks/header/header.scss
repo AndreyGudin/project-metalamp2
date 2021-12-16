@@ -1,0 +1,27 @@
+.header{
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.header__container,.header{
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.header-menu-item-button__button{
+  width: 196px;
+}
+
+.header__label-about{
+  font:$font-checkbox-label;
+}
+
+.header-menu-expandable-services__title,.header-menu-expandable-agreements__title,.header__label-jobs,.header__label-news{
+  font: $font-body;
+  color: $color-ds50;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.header-menu-expandable-services,.header-menu-expandable-agreements{
+  align-items: center;
+}
