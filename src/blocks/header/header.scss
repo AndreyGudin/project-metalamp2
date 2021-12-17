@@ -25,3 +25,16 @@
 .header-menu-expandable-services,.header-menu-expandable-agreements{
   align-items: center;
 }
+
+.header-menu-expandable-services[open],.header-menu-expandable-agreements[open]{
+  position: relative;
+  top:93px;
+}
+
+.header-menu-expandable-services{
+  width: 74px;
+}
+
+.header-menu-expandable-agreements{
+  width: 116px;
+}

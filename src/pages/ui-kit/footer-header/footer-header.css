@@ -1013,8 +1013,22 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   text-transform: none;
+  margin-bottom: 0;
 }
 
 .header-menu-expandable-services, .header-menu-expandable-agreements {
   align-items: center;
+}
+
+.header-menu-expandable-services[open], .header-menu-expandable-agreements[open] {
+  position: relative;
+  top: 93px;
+}
+
+.header-menu-expandable-services {
+  width: 74px;
+}
+
+.header-menu-expandable-agreements {
+  width: 116px;
 }
