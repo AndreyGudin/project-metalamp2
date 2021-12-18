@@ -993,6 +993,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .header {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  justify-content: space-around;
 }
 
 .header__container, .header {
@@ -1001,8 +1002,28 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
+.header__container {
+  gap: 20px;
+}
+
 .header-menu-item-button__button {
   width: 196px;
+  height: 34px;
+}
+
+.button-without-fill__button {
+  width: 87px;
+  height: 34px;
+}
+
+.button-without-fill__button {
+  background: transparent;
+  color: #BC9CFF;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+}
+.button-without-fill__button:active {
+  background: transparent;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
 
 .header__label-about {
@@ -1025,10 +1046,15 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   top: 93px;
 }
 
-.header-menu-expandable-services {
+.header-menu-expandable-services, .header-menu-expandable-services__title {
   width: 74px;
 }
 
-.header-menu-expandable-agreements {
+.header-menu-expandable-services__title::after, .header-menu-expandable-agreements__title::after {
+  top: 4px;
+  right: 10px;
+}
+
+.header-menu-expandable-agreements, .header-menu-expandable-agreements__title {
   width: 116px;
 }
