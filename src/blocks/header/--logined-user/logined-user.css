@@ -1,0 +1,9 @@
+.header--logined-user-reg-button, .header--logined-user-login-button {
+  display: none;
+}
+
+.header--logined-user__user {
+  width: auto;
+  height: 30px;
+  text-align: center;
+}

@@ -1058,3 +1058,17 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .header-menu-expandable-agreements, .header-menu-expandable-agreements__title {
   width: 116px;
 }
+
+.header--logined-user-reg-button, .header--logined-user-login-button {
+  display: none;
+}
+
+.header--logined-user__user {
+  width: auto;
+  height: 30px;
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 30px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
