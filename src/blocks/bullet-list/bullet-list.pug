@@ -1,7 +1,8 @@
 mixin bullet-list(mclass,mtitle,mtext)
+  - var mclass_spl=mclass.split(' ');
   div(class=mclass)
-    label(class=mclass + "__title")=mtitle
-    ul(class=mclass + "__ul")
+    label(class=mclass_spl.map((item)=>`${item}__title`).join(' '))=mtitle
+    ul(class=mclass_spl.map((item)=>`${item}__ul`).join(' '))
       each val in mtext
-        li(class=mclass + "__li")
-          span(class=mclass+ "__span")=val
+        li(class=mclass_spl.map((item)=>`${item}__li`).join(' '))
+          span(class=mclass_spl.map((item)=>`${item}__span`).join(' '))=val
