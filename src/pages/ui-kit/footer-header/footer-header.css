@@ -996,7 +996,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   justify-content: space-around;
 }
 
-.header__container, .header {
+.header__container,
+.header {
   display: flex;
   height: 70px;
   align-items: center;
@@ -1030,33 +1031,49 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   font: 14px "Conv_Montserrat-Bold";
 }
 
-.header-menu-expandable-services__title, .header-menu-expandable-agreements__title, .header__label-jobs, .header__label-news {
+.header-menu-expandable-services__title,
+.header-menu-expandable-agreements__title,
+.header__label-jobs,
+.header__label-news {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   text-transform: none;
   margin-bottom: 0;
 }
 
-.header-menu-expandable-services, .header-menu-expandable-agreements {
+.header-menu-expandable-services,
+.header-menu-expandable-agreements {
   align-items: center;
 }
 
-.header-menu-expandable-services[open], .header-menu-expandable-agreements[open] {
+.header-menu-expandable-services[open],
+.header-menu-expandable-agreements[open] {
   position: relative;
-  top: 93px;
+  top: 90px;
 }
 
-.header-menu-expandable-services, .header-menu-expandable-services__title {
+.header-menu-expandable-services,
+.header-menu-expandable-services__title {
   width: 74px;
 }
 
-.header-menu-expandable-services__title::after, .header-menu-expandable-agreements__title::after {
+.header-menu-expandable-services__title::after,
+.header-menu-expandable-agreements__title::after {
   top: 4px;
   right: 10px;
 }
 
-.header-menu-expandable-agreements, .header-menu-expandable-agreements__title {
+.header-menu-expandable-agreements,
+.header-menu-expandable-agreements__title {
   width: 116px;
+}
+
+.header-menu-expandable-services__input, .header-menu-expandable-agreements__input {
+  display: none;
+}
+
+.header-menu-expandable-services__label, .header-menu-expandable-agreements__label {
+  margin-left: 0px;
 }
 
 .header--logined-user-reg-button, .header--logined-user-login-button {

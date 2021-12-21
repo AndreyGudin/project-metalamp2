@@ -1,12 +1,13 @@
-.header--logined-user-reg-button,.header--logined-user-login-button{
+.header--logined-user-reg-button,
+.header--logined-user-login-button {
   display: none;
 }
 
-.header--logined-user__user{
+.header--logined-user__user {
   width: auto;
   height: 30px;
-  font:$font-body;
-  color:$color-ds50;
+  font: $font-body;
+  color: $color-ds50;
   line-height: 30px;
   padding-left: 20px;
   border-left: 1px solid rgba(31, 32, 65, 0.1);
