@@ -1324,12 +1324,15 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-left: 3px;
 }
 
-.room-card__price, .room-card__price2::first-letter, .room-card__reviews {
+.room-card__price,
+.room-card__price2::first-letter,
+.room-card__reviews {
   font: 14px "Conv_Montserrat-Bold";
   color: rgba(31, 32, 65, 0.5);
 }
 
-.room-card__price2, .room-card__reviews2 {
+.room-card__price2,
+.room-card__reviews2 {
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   margin-left: 3px;

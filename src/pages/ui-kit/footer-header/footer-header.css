@@ -1068,15 +1068,18 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   width: 116px;
 }
 
-.header-menu-expandable-services__input, .header-menu-expandable-agreements__input {
+.header-menu-expandable-services__input,
+.header-menu-expandable-agreements__input {
   display: none;
 }
 
-.header-menu-expandable-services__label, .header-menu-expandable-agreements__label {
+.header-menu-expandable-services__label,
+.header-menu-expandable-agreements__label {
   margin-left: 0px;
 }
 
-.header--logined-user-reg-button, .header--logined-user-login-button {
+.header--logined-user-reg-button,
+.header--logined-user-login-button {
   display: none;
 }
 
@@ -1090,7 +1093,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border-left: 1px solid rgba(31, 32, 65, 0.1);
 }
 
-.footer, .footer__nav-footer, .footer__nav-description, .footer__nav-footer-copyrights {
+.footer,
+.footer__nav-footer,
+.footer__nav-description,
+.footer__nav-footer-copyrights {
   display: flex;
 }
 
@@ -1099,7 +1105,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
-.footer__nav-description, .footer {
+.footer__nav-description,
+.footer {
   flex-direction: column;
 }
 
@@ -1115,15 +1122,26 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin: 0px 140px;
 }
 
-.footer__nav-navigation, .bl-nav, .bl-nav__ul, .footer__nav-about, .bl-about, .bl-about__ul, .footer__nav-service, .bl-service, .bl-service__ul {
+.footer__nav-navigation,
+.bl-nav,
+.bl-nav__ul,
+.footer__nav-about,
+.bl-about,
+.bl-about__ul,
+.footer__nav-service,
+.bl-service,
+.bl-service__ul {
   width: auto;
 }
 
-.footer__nav-subscribe, .bl-subscribe, .bl-subscribe__ul {
+.footer__nav-subscribe,
+.bl-subscribe,
+.bl-subscribe__ul {
   width: 260px;
 }
 
-.bl-subscribe, .bl-subscribe__ul {
+.bl-subscribe,
+.bl-subscribe__ul {
   height: auto;
 }
 
@@ -1132,19 +1150,29 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 132px;
 }
 
-.bl-nav__li, .bl-about__li, .bl-service__li, .bl-subscribe__li {
+.bl-nav__li,
+.bl-about__li,
+.bl-service__li,
+.bl-subscribe__li {
   list-style-type: none;
 }
 
-.bl-nav__ul, .bl-about__ul, .bl-service__ul, .bl-subscribe__ul {
+.bl-nav__ul,
+.bl-about__ul,
+.bl-service__ul,
+.bl-subscribe__ul {
   padding-left: 0;
 }
 
-.bl-nav__span, .bl-about__span, .bl-service__span, .bl-subscribe__span {
+.bl-nav__span,
+.bl-about__span,
+.bl-service__span,
+.bl-subscribe__span {
   position: static;
 }
 
-.textfield.textfield--subscription__input, .textfield--subscription {
+.textfield.textfield--subscription__input,
+.textfield--subscription {
   width: 260px;
 }
 
@@ -1153,6 +1181,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .textfield.textfield--subscription__label::after {
+  height: 67px;
   top: 7px;
   right: 62px;
 }
