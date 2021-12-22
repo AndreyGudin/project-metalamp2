@@ -1,0 +1,42 @@
+@import "../../ui-kit/ui-forms/ui-forms.scss";
+@import "../../../blocks/findroom-card/findroom-card.scss";
+@import "../../../blocks/account-registration/account-registration.scss";
+@import "../../../blocks/login-card/login-card.scss";
+@import "../../../blocks/booking-room-card/booking-room-card.scss";
+@import "../../../blocks/room-card/room-card.scss";
+@import "../../../blocks/room-card/splide.min.css";
+@import "../../../blocks/header/header.scss";
+@import "../../../blocks/header/--logined-user/logined-user.scss";
+@import "../../../blocks/footer/footer.scss";
+@import "../../../blocks/footer-creative/footer-creative.scss";
+
+.search-room-page__container-body{
+  display: flex;
+}
+
+.search-room-page__container-filter{
+  height: 100%;
+  width: 366px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-room-page__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-room-page__container-rooms{
+  width: 900px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.guest-dropdown-block,.guest-dropdown__title,.guest-dropdown.iqdropdown,.textfield.textfield--date-dropdown__input,.textfield.textfield--date-dropdown__label,.textfield.textfield--date-dropdown{
+  width: 260px;
+}
+
