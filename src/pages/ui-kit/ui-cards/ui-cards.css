@@ -1046,7 +1046,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .account-registration__title {
   font: 24px "Conv_Montserrat-Bold";
   text-align: center;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 15px 0px;
 }
 
 .account-registration__reg-form,
@@ -1054,6 +1054,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.account-registration__login-form {
+  margin-top: 17px;
 }
 
 .textfield {
@@ -1068,7 +1072,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-top: 0px;
 }
 
-.textfield {
+.acc-reg-textfield__label {
+  height: auto;
+}
+
+.acc-reg-textfield {
   height: auto;
   margin-bottom: 5px;
 }

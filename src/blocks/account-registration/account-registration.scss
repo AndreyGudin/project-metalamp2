@@ -1,4 +1,5 @@
 .account-registration {
+  background-color: white;
   width: 380px;
   height: 646px;
   border-radius: 4px;
@@ -12,7 +13,7 @@
 .account-registration__title {
   font: $font-widget-title;
   text-align: center;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 15px 0px;
 }
 
 .account-registration__reg-form,
@@ -20,6 +21,10 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.account-registration__login-form{
+  margin-top: 17px;
 }
 
 .textfield {
@@ -33,8 +38,10 @@
 .radio-buttons__container {
   margin-top: 0px;
 }
-
-.textfield {
+.acc-reg-textfield__label{
+  height: auto;
+}
+.acc-reg-textfield {
   height: auto;
   margin-bottom: 5px;
 }

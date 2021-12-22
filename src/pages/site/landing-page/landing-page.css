@@ -17,7 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
+.landing-page__label, .footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
 .booking-room-card__addtnl-service-fee-container,
 .booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review-card__time,
@@ -1000,6 +1000,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .findroom-card,
@@ -1033,6 +1034,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .account-registration {
+  background-color: white;
   width: 380px;
   height: 646px;
   border-radius: 4px;
@@ -1046,7 +1048,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .account-registration__title {
   font: 24px "Conv_Montserrat-Bold";
   text-align: center;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 15px 0px;
 }
 
 .account-registration__reg-form,
@@ -1054,6 +1056,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.account-registration__login-form {
+  margin-top: 17px;
 }
 
 .textfield {
@@ -1068,7 +1074,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-top: 0px;
 }
 
-.textfield {
+.acc-reg-textfield__label {
+  height: auto;
+}
+
+.acc-reg-textfield {
   height: auto;
   margin-bottom: 5px;
 }
@@ -1539,7 +1549,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   position: static;
 }
 
-.textfield.textfield--subscription__input,
+.textfield.textfield--subscription__input, .textfield.textfield--subscription__label,
 .textfield--subscription {
   width: 260px;
 }
@@ -1551,7 +1561,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .textfield.textfield--subscription__label::after {
   height: 67px;
   top: 7px;
-  right: 62px;
 }
 
 .footer__description {
@@ -1582,4 +1591,23 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .footer-creative__socmedia-icons {
   display: flex;
   gap: 20px;
+}
+
+.landing-page__container-finding-room {
+  width: 100%;
+  height: 870px;
+  background: no-repeat url("img/landing-page-background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.findroom-card {
+  margin: 70px 0px 0px 140px;
+}
+
+.landing-page__label {
+  width: 297px;
+  text-align: right;
+  margin: auto 134px 18px auto;
 }

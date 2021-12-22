@@ -11,5 +11,9 @@ html(lang="ru")
     link(href="landing-page.css" rel="stylesheet")
   body
     include ../../ui-kit/ui-forms/ui-kit-inc.pug
-    +header('header','')
-    +footer('footer')
+    .landing-page
+      +header('header','')
+      .landing-page__container-finding-room
+        +findroom-card('findroom-card','Найдём номера под ваши пожелания')
+        label.landing-page__label Лучшие номера для вашей работы, отдыха и просто вдохновения
+      +footer('footer')

@@ -1171,7 +1171,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   position: static;
 }
 
-.textfield.textfield--subscription__input,
+.textfield.textfield--subscription__input, .textfield.textfield--subscription__label,
 .textfield--subscription {
   width: 260px;
 }
@@ -1183,7 +1183,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .textfield.textfield--subscription__label::after {
   height: 67px;
   top: 7px;
-  right: 62px;
 }
 
 .footer__description {

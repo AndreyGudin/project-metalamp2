@@ -9,3 +9,23 @@
 @import "../../../blocks/header/--logined-user/logined-user.scss";
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
+
+.landing-page__container-finding-room{
+  width: 100%;
+  height: 870px;
+  background:no-repeat url('img/landing-page-background.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.findroom-card{
+  margin: 70px 0px 0px 140px;
+}
+
+.landing-page__label{
+  @extend %font-body;
+  width: 297px;
+  text-align: right;
+  margin:auto 134px 18px auto;
+}
