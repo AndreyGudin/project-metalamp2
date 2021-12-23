@@ -110,9 +110,9 @@
           </div>
       <div class="search-room-page__container-body">
         <div class="search-room-page__container-filter">
-              <div class="textfield textfield--date-dropdown">
-                <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Дата пребывания в отеле
-                  <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+              <div class="textfield textfield--date-dropdown search-room__data-of-arrival">
+                <label class="textfield__label textfield--date-dropdown__label search-room__data-of-arrival__label" for="textfield__input textfield--date-dropdown__input search-room__data-of-arrival__input">Дата пребывания в отеле
+                  <input class="textfield__input textfield--date-dropdown__input search-room__data-of-arrival__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
                 </label>
               </div>
               <div class="guest-dropdown-block">
@@ -138,12 +138,15 @@
                   </div>
                 </div>
               </div>
-              <div class="range-slider">
-                <div class="range-slider__box">
-                  <label class="range-slider__title">Диапазон цены</label><span class="range-slider__range"></span>
+          <div class="search-room-page__container-range-slider">
+                <div class="range-slider">
+                  <div class="range-slider__box">
+                    <label class="range-slider__title">Диапазон цены</label><span class="range-slider__range"></span>
+                  </div>
+                  <div class="range-slider__slider"></div>
                 </div>
-                <div class="range-slider__slider"></div>
-              </div>
+            <label class="search-room-page__range-slider-label">Стоимость за сутки пребывания в номере</label>
+          </div>
               <details class="expandable-chckbox-list expandable-chckbox-list--checkbox-buttons" open>
                 <summary class="expandable-chckbox-list expandable-chckbox-list__title expandable-chckbox-list--checkbox-buttons__title">Правила дома</summary>
                 <div class="expandable-chckbox-list expandable-chckbox-list__container expandable-chckbox-list--checkbox-buttons__container">
@@ -232,776 +235,778 @@
               </details>
         </div>
         <div class="search-room-page__container">
-          <label class="search-room-page__container-rooms-label">Номера, которые мы для вас подобрали</label>
           <div class="search-room-page__container-rooms">
-                <div class="room-card">
-                  <div class="room-card__photos">
-                    <div class="splide" id="room-card__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
+            <label class="search-room-page__container-rooms-label">Номера, которые мы для вас подобрали</label>
+            <div class="search-room-page__container-only-rooms">
+                  <div class="room-card">
+                    <div class="room-card__photos">
+                      <div class="splide" id="room-card__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price"><span class="room-card__number">№888</span><span class="room-card__type">Люкс</span><span class="room-card__price">9990</span><span class="room-card__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container">
-                        <div class="rate-button rate-button-room-card">
-                          <div class="rate-button__star-source rate-button-room-card__star-source">
-                            <svg class="rate-button__star rate-button-room-card__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price"><span class="room-card__number">№888</span><span class="room-card__type">Люкс</span><span class="room-card__price">9990</span><span class="room-card__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container">
+                          <div class="rate-button rate-button-room-card">
+                            <div class="rate-button__star-source rate-button-room-card__star-source">
+                              <svg class="rate-button__star rate-button-room-card__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card__container">
+                              <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="5" id="rate-button-room-card-5">
+                              <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-5">
+                                <svg class="rate-button__starhref rate-button-room-card__starhref">
+                                  <use xlink:href="#rate-button-room-card__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="4" id="rate-button-room-card-4">
+                              <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-4">
+                                <svg class="rate-button__starhref rate-button-room-card__starhref">
+                                  <use xlink:href="#rate-button-room-card__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="3" id="rate-button-room-card-3" checked>
+                              <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-3">
+                                <svg class="rate-button__starhref rate-button-room-card__starhref">
+                                  <use xlink:href="#rate-button-room-card__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="2" id="rate-button-room-card-2">
+                              <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-2">
+                                <svg class="rate-button__starhref rate-button-room-card__starhref">
+                                  <use xlink:href="#rate-button-room-card__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="1" id="rate-button-room-card-1">
+                              <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-1">
+                                <svg class="rate-button__starhref rate-button-room-card__starhref">
+                                  <use xlink:href="#rate-button-room-card__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card__container">
-                            <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="5" id="rate-button-room-card-5">
-                            <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-5">
-                              <svg class="rate-button__starhref rate-button-room-card__starhref">
-                                <use xlink:href="#rate-button-room-card__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="4" id="rate-button-room-card-4">
-                            <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-4">
-                              <svg class="rate-button__starhref rate-button-room-card__starhref">
-                                <use xlink:href="#rate-button-room-card__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="3" id="rate-button-room-card-3" checked>
-                            <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-3">
-                              <svg class="rate-button__starhref rate-button-room-card__starhref">
-                                <use xlink:href="#rate-button-room-card__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="2" id="rate-button-room-card-2">
-                            <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-2">
-                              <svg class="rate-button__starhref rate-button-room-card__starhref">
-                                <use xlink:href="#rate-button-room-card__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="1" id="rate-button-room-card-1">
-                            <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-1">
-                              <svg class="rate-button__starhref rate-button-room-card__starhref">
-                                <use xlink:href="#rate-button-room-card__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2"> <span class="room-card__reviews">145</span><span class="room-card__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card840">
-                  <div class="room-card__photos room-card840__photos">
-                    <div class="splide" id="room-card840__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2"> <span class="room-card__reviews">145</span><span class="room-card__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card840__container-price"><span class="room-card__number room-card840__number">№840</span><span class="room-card__type room-card840__type"></span><span class="room-card__price room-card840__price">9990</span><span class="room-card__price2 room-card840__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card840__review-container">
-                        <div class="rate-button rate-button-room-card840">
-                          <div class="rate-button__star-source rate-button-room-card840__star-source">
-                            <svg class="rate-button__star rate-button-room-card840__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card840__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card840__container">
-                            <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="5" id="rate-button-room-card840-5">
-                            <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-5">
-                              <svg class="rate-button__starhref rate-button-room-card840__starhref">
-                                <use xlink:href="#rate-button-room-card840__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="4" id="rate-button-room-card840-4">
-                            <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-4">
-                              <svg class="rate-button__starhref rate-button-room-card840__starhref">
-                                <use xlink:href="#rate-button-room-card840__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="3" id="rate-button-room-card840-3" checked>
-                            <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-3">
-                              <svg class="rate-button__starhref rate-button-room-card840__starhref">
-                                <use xlink:href="#rate-button-room-card840__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="2" id="rate-button-room-card840-2">
-                            <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-2">
-                              <svg class="rate-button__starhref rate-button-room-card840__starhref">
-                                <use xlink:href="#rate-button-room-card840__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="1" id="rate-button-room-card840-1">
-                            <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-1">
-                              <svg class="rate-button__starhref rate-button-room-card840__starhref">
-                                <use xlink:href="#rate-button-room-card840__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card840">
+                    <div class="room-card__photos room-card840__photos">
+                      <div class="splide" id="room-card840__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card840__review-container2"> <span class="room-card__reviews room-card840__reviews">65</span><span class="room-card__reviews2 room-card840__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card980">
-                  <div class="room-card__photos room-card980__photos">
-                    <div class="splide" id="room-card980__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price room-card980__container-price"><span class="room-card__number room-card980__number">№980</span><span class="room-card__type room-card980__type"></span><span class="room-card__price room-card980__price">8500</span><span class="room-card__price2 room-card980__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card980__review-container">
-                        <div class="rate-button rate-button-room-card980">
-                          <div class="rate-button__star-source rate-button-room-card980__star-source">
-                            <svg class="rate-button__star rate-button-room-card980__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card980__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price room-card840__container-price"><span class="room-card__number room-card840__number">№840</span><span class="room-card__type room-card840__type"></span><span class="room-card__price room-card840__price">9990</span><span class="room-card__price2 room-card840__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card840__review-container">
+                          <div class="rate-button rate-button-room-card840">
+                            <div class="rate-button__star-source rate-button-room-card840__star-source">
+                              <svg class="rate-button__star rate-button-room-card840__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card840__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card840__container">
+                              <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="5" id="rate-button-room-card840-5">
+                              <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-5">
+                                <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                                  <use xlink:href="#rate-button-room-card840__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="4" id="rate-button-room-card840-4">
+                              <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-4">
+                                <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                                  <use xlink:href="#rate-button-room-card840__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="3" id="rate-button-room-card840-3" checked>
+                              <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-3">
+                                <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                                  <use xlink:href="#rate-button-room-card840__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="2" id="rate-button-room-card840-2">
+                              <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-2">
+                                <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                                  <use xlink:href="#rate-button-room-card840__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="1" id="rate-button-room-card840-1">
+                              <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-1">
+                                <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                                  <use xlink:href="#rate-button-room-card840__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card980__container">
-                            <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="5" id="rate-button-room-card980-5">
-                            <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-5">
-                              <svg class="rate-button__starhref rate-button-room-card980__starhref">
-                                <use xlink:href="#rate-button-room-card980__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="4" id="rate-button-room-card980-4">
-                            <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-4">
-                              <svg class="rate-button__starhref rate-button-room-card980__starhref">
-                                <use xlink:href="#rate-button-room-card980__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="3" id="rate-button-room-card980-3" checked>
-                            <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-3">
-                              <svg class="rate-button__starhref rate-button-room-card980__starhref">
-                                <use xlink:href="#rate-button-room-card980__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="2" id="rate-button-room-card980-2">
-                            <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-2">
-                              <svg class="rate-button__starhref rate-button-room-card980__starhref">
-                                <use xlink:href="#rate-button-room-card980__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="1" id="rate-button-room-card980-1">
-                            <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-1">
-                              <svg class="rate-button__starhref rate-button-room-card980__starhref">
-                                <use xlink:href="#rate-button-room-card980__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2 room-card980__review-container2"> <span class="room-card__reviews room-card980__reviews">35</span><span class="room-card__reviews2 room-card980__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card856">
-                  <div class="room-card__photos room-card856__photos">
-                    <div class="splide" id="room-card856__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2 room-card840__review-container2"> <span class="room-card__reviews room-card840__reviews">65</span><span class="room-card__reviews2 room-card840__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card856__container-price"><span class="room-card__number room-card856__number">№856</span><span class="room-card__type room-card856__type"></span><span class="room-card__price room-card856__price">7300</span><span class="room-card__price2 room-card856__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card856__review-container">
-                        <div class="rate-button rate-button-room-card856">
-                          <div class="rate-button__star-source rate-button-room-card856__star-source">
-                            <svg class="rate-button__star rate-button-room-card856__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card856__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card856__container">
-                            <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="5" id="rate-button-room-card856-5">
-                            <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-5">
-                              <svg class="rate-button__starhref rate-button-room-card856__starhref">
-                                <use xlink:href="#rate-button-room-card856__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="4" id="rate-button-room-card856-4">
-                            <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-4">
-                              <svg class="rate-button__starhref rate-button-room-card856__starhref">
-                                <use xlink:href="#rate-button-room-card856__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="3" id="rate-button-room-card856-3" checked>
-                            <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-3">
-                              <svg class="rate-button__starhref rate-button-room-card856__starhref">
-                                <use xlink:href="#rate-button-room-card856__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="2" id="rate-button-room-card856-2">
-                            <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-2">
-                              <svg class="rate-button__starhref rate-button-room-card856__starhref">
-                                <use xlink:href="#rate-button-room-card856__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="1" id="rate-button-room-card856-1">
-                            <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-1">
-                              <svg class="rate-button__starhref rate-button-room-card856__starhref">
-                                <use xlink:href="#rate-button-room-card856__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card980">
+                    <div class="room-card__photos room-card980__photos">
+                      <div class="splide" id="room-card980__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card856__review-container2"> <span class="room-card__reviews room-card856__reviews">19</span><span class="room-card__reviews2 room-card856__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card740">
-                  <div class="room-card__photos room-card740__photos">
-                    <div class="splide" id="room-card740__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price room-card740__container-price"><span class="room-card__number room-card740__number">№740</span><span class="room-card__type room-card740__type"></span><span class="room-card__price room-card740__price">6000</span><span class="room-card__price2 room-card740__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card740__review-container">
-                        <div class="rate-button rate-button-room-card740">
-                          <div class="rate-button__star-source rate-button-room-card740__star-source">
-                            <svg class="rate-button__star rate-button-room-card740__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card740__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price room-card980__container-price"><span class="room-card__number room-card980__number">№980</span><span class="room-card__type room-card980__type"></span><span class="room-card__price room-card980__price">8500</span><span class="room-card__price2 room-card980__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card980__review-container">
+                          <div class="rate-button rate-button-room-card980">
+                            <div class="rate-button__star-source rate-button-room-card980__star-source">
+                              <svg class="rate-button__star rate-button-room-card980__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card980__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card980__container">
+                              <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="5" id="rate-button-room-card980-5">
+                              <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-5">
+                                <svg class="rate-button__starhref rate-button-room-card980__starhref">
+                                  <use xlink:href="#rate-button-room-card980__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="4" id="rate-button-room-card980-4">
+                              <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-4">
+                                <svg class="rate-button__starhref rate-button-room-card980__starhref">
+                                  <use xlink:href="#rate-button-room-card980__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="3" id="rate-button-room-card980-3" checked>
+                              <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-3">
+                                <svg class="rate-button__starhref rate-button-room-card980__starhref">
+                                  <use xlink:href="#rate-button-room-card980__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="2" id="rate-button-room-card980-2">
+                              <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-2">
+                                <svg class="rate-button__starhref rate-button-room-card980__starhref">
+                                  <use xlink:href="#rate-button-room-card980__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card980__input" type="radio" name="star" value="1" id="rate-button-room-card980-1">
+                              <label class="rate-button__label rate-button-room-card980__label" for="rate-button-room-card980-1">
+                                <svg class="rate-button__starhref rate-button-room-card980__starhref">
+                                  <use xlink:href="#rate-button-room-card980__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card740__container">
-                            <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="5" id="rate-button-room-card740-5">
-                            <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-5">
-                              <svg class="rate-button__starhref rate-button-room-card740__starhref">
-                                <use xlink:href="#rate-button-room-card740__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="4" id="rate-button-room-card740-4">
-                            <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-4">
-                              <svg class="rate-button__starhref rate-button-room-card740__starhref">
-                                <use xlink:href="#rate-button-room-card740__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="3" id="rate-button-room-card740-3" checked>
-                            <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-3">
-                              <svg class="rate-button__starhref rate-button-room-card740__starhref">
-                                <use xlink:href="#rate-button-room-card740__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="2" id="rate-button-room-card740-2">
-                            <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-2">
-                              <svg class="rate-button__starhref rate-button-room-card740__starhref">
-                                <use xlink:href="#rate-button-room-card740__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="1" id="rate-button-room-card740-1">
-                            <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-1">
-                              <svg class="rate-button__starhref rate-button-room-card740__starhref">
-                                <use xlink:href="#rate-button-room-card740__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2 room-card740__review-container2"> <span class="room-card__reviews room-card740__reviews">44</span><span class="room-card__reviews2 room-card740__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card982">
-                  <div class="room-card__photos room-card982__photos">
-                    <div class="splide" id="room-card982__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2 room-card980__review-container2"> <span class="room-card__reviews room-card980__reviews">35</span><span class="room-card__reviews2 room-card980__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card982__container-price"><span class="room-card__number room-card982__number">№982</span><span class="room-card__type room-card982__type"></span><span class="room-card__price room-card982__price">5800</span><span class="room-card__price2 room-card982__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card982__review-container">
-                        <div class="rate-button rate-button-room-card982">
-                          <div class="rate-button__star-source rate-button-room-card982__star-source">
-                            <svg class="rate-button__star rate-button-room-card982__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card982__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card982__container">
-                            <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="5" id="rate-button-room-card982-5">
-                            <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-5">
-                              <svg class="rate-button__starhref rate-button-room-card982__starhref">
-                                <use xlink:href="#rate-button-room-card982__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="4" id="rate-button-room-card982-4">
-                            <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-4">
-                              <svg class="rate-button__starhref rate-button-room-card982__starhref">
-                                <use xlink:href="#rate-button-room-card982__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="3" id="rate-button-room-card982-3" checked>
-                            <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-3">
-                              <svg class="rate-button__starhref rate-button-room-card982__starhref">
-                                <use xlink:href="#rate-button-room-card982__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="2" id="rate-button-room-card982-2">
-                            <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-2">
-                              <svg class="rate-button__starhref rate-button-room-card982__starhref">
-                                <use xlink:href="#rate-button-room-card982__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="1" id="rate-button-room-card982-1">
-                            <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-1">
-                              <svg class="rate-button__starhref rate-button-room-card982__starhref">
-                                <use xlink:href="#rate-button-room-card982__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card856">
+                    <div class="room-card__photos room-card856__photos">
+                      <div class="splide" id="room-card856__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card982__review-container2"> <span class="room-card__reviews room-card982__reviews">56</span><span class="room-card__reviews2 room-card982__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card678">
-                  <div class="room-card__photos room-card678__photos">
-                    <div class="splide" id="room-card678__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price room-card678__container-price"><span class="room-card__number room-card678__number">№678</span><span class="room-card__type room-card678__type"></span><span class="room-card__price room-card678__price">5500</span><span class="room-card__price2 room-card678__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card678__review-container">
-                        <div class="rate-button rate-button-room-card678">
-                          <div class="rate-button__star-source rate-button-room-card678__star-source">
-                            <svg class="rate-button__star rate-button-room-card678__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card678__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price room-card856__container-price"><span class="room-card__number room-card856__number">№856</span><span class="room-card__type room-card856__type"></span><span class="room-card__price room-card856__price">7300</span><span class="room-card__price2 room-card856__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card856__review-container">
+                          <div class="rate-button rate-button-room-card856">
+                            <div class="rate-button__star-source rate-button-room-card856__star-source">
+                              <svg class="rate-button__star rate-button-room-card856__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card856__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card856__container">
+                              <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="5" id="rate-button-room-card856-5">
+                              <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-5">
+                                <svg class="rate-button__starhref rate-button-room-card856__starhref">
+                                  <use xlink:href="#rate-button-room-card856__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="4" id="rate-button-room-card856-4">
+                              <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-4">
+                                <svg class="rate-button__starhref rate-button-room-card856__starhref">
+                                  <use xlink:href="#rate-button-room-card856__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="3" id="rate-button-room-card856-3" checked>
+                              <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-3">
+                                <svg class="rate-button__starhref rate-button-room-card856__starhref">
+                                  <use xlink:href="#rate-button-room-card856__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="2" id="rate-button-room-card856-2">
+                              <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-2">
+                                <svg class="rate-button__starhref rate-button-room-card856__starhref">
+                                  <use xlink:href="#rate-button-room-card856__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card856__input" type="radio" name="star" value="1" id="rate-button-room-card856-1">
+                              <label class="rate-button__label rate-button-room-card856__label" for="rate-button-room-card856-1">
+                                <svg class="rate-button__starhref rate-button-room-card856__starhref">
+                                  <use xlink:href="#rate-button-room-card856__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card678__container">
-                            <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="5" id="rate-button-room-card678-5">
-                            <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-5">
-                              <svg class="rate-button__starhref rate-button-room-card678__starhref">
-                                <use xlink:href="#rate-button-room-card678__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="4" id="rate-button-room-card678-4">
-                            <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-4">
-                              <svg class="rate-button__starhref rate-button-room-card678__starhref">
-                                <use xlink:href="#rate-button-room-card678__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="3" id="rate-button-room-card678-3" checked>
-                            <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-3">
-                              <svg class="rate-button__starhref rate-button-room-card678__starhref">
-                                <use xlink:href="#rate-button-room-card678__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="2" id="rate-button-room-card678-2">
-                            <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-2">
-                              <svg class="rate-button__starhref rate-button-room-card678__starhref">
-                                <use xlink:href="#rate-button-room-card678__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="1" id="rate-button-room-card678-1">
-                            <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-1">
-                              <svg class="rate-button__starhref rate-button-room-card678__starhref">
-                                <use xlink:href="#rate-button-room-card678__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2 room-card678__review-container2"> <span class="room-card__reviews room-card678__reviews">45</span><span class="room-card__reviews2 room-card678__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card450">
-                  <div class="room-card__photos room-card450__photos">
-                    <div class="splide" id="room-card450__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2 room-card856__review-container2"> <span class="room-card__reviews room-card856__reviews">19</span><span class="room-card__reviews2 room-card856__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card450__container-price"><span class="room-card__number room-card450__number">№450</span><span class="room-card__type room-card450__type"></span><span class="room-card__price room-card450__price">5300</span><span class="room-card__price2 room-card450__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card450__review-container">
-                        <div class="rate-button rate-button-room-card450">
-                          <div class="rate-button__star-source rate-button-room-card450__star-source">
-                            <svg class="rate-button__star rate-button-room-card450__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card450__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card450__container">
-                            <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="5" id="rate-button-room-card450-5">
-                            <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-5">
-                              <svg class="rate-button__starhref rate-button-room-card450__starhref">
-                                <use xlink:href="#rate-button-room-card450__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="4" id="rate-button-room-card450-4">
-                            <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-4">
-                              <svg class="rate-button__starhref rate-button-room-card450__starhref">
-                                <use xlink:href="#rate-button-room-card450__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="3" id="rate-button-room-card450-3" checked>
-                            <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-3">
-                              <svg class="rate-button__starhref rate-button-room-card450__starhref">
-                                <use xlink:href="#rate-button-room-card450__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="2" id="rate-button-room-card450-2">
-                            <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-2">
-                              <svg class="rate-button__starhref rate-button-room-card450__starhref">
-                                <use xlink:href="#rate-button-room-card450__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="1" id="rate-button-room-card450-1">
-                            <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-1">
-                              <svg class="rate-button__starhref rate-button-room-card450__starhref">
-                                <use xlink:href="#rate-button-room-card450__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card740">
+                    <div class="room-card__photos room-card740__photos">
+                      <div class="splide" id="room-card740__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card450__review-container2"> <span class="room-card__reviews room-card450__reviews">39</span><span class="room-card__reviews2 room-card450__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card350">
-                  <div class="room-card__photos room-card350__photos">
-                    <div class="splide" id="room-card350__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price room-card350__container-price"><span class="room-card__number room-card350__number">№350</span><span class="room-card__type room-card350__type"></span><span class="room-card__price room-card350__price">5000</span><span class="room-card__price2 room-card350__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card350__review-container">
-                        <div class="rate-button rate-button-room-card350">
-                          <div class="rate-button__star-source rate-button-room-card350__star-source">
-                            <svg class="rate-button__star rate-button-room-card350__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card350__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price room-card740__container-price"><span class="room-card__number room-card740__number">№740</span><span class="room-card__type room-card740__type"></span><span class="room-card__price room-card740__price">6000</span><span class="room-card__price2 room-card740__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card740__review-container">
+                          <div class="rate-button rate-button-room-card740">
+                            <div class="rate-button__star-source rate-button-room-card740__star-source">
+                              <svg class="rate-button__star rate-button-room-card740__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card740__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card740__container">
+                              <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="5" id="rate-button-room-card740-5">
+                              <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-5">
+                                <svg class="rate-button__starhref rate-button-room-card740__starhref">
+                                  <use xlink:href="#rate-button-room-card740__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="4" id="rate-button-room-card740-4">
+                              <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-4">
+                                <svg class="rate-button__starhref rate-button-room-card740__starhref">
+                                  <use xlink:href="#rate-button-room-card740__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="3" id="rate-button-room-card740-3" checked>
+                              <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-3">
+                                <svg class="rate-button__starhref rate-button-room-card740__starhref">
+                                  <use xlink:href="#rate-button-room-card740__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="2" id="rate-button-room-card740-2">
+                              <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-2">
+                                <svg class="rate-button__starhref rate-button-room-card740__starhref">
+                                  <use xlink:href="#rate-button-room-card740__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card740__input" type="radio" name="star" value="1" id="rate-button-room-card740-1">
+                              <label class="rate-button__label rate-button-room-card740__label" for="rate-button-room-card740-1">
+                                <svg class="rate-button__starhref rate-button-room-card740__starhref">
+                                  <use xlink:href="#rate-button-room-card740__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card350__container">
-                            <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="5" id="rate-button-room-card350-5">
-                            <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-5">
-                              <svg class="rate-button__starhref rate-button-room-card350__starhref">
-                                <use xlink:href="#rate-button-room-card350__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="4" id="rate-button-room-card350-4">
-                            <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-4">
-                              <svg class="rate-button__starhref rate-button-room-card350__starhref">
-                                <use xlink:href="#rate-button-room-card350__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="3" id="rate-button-room-card350-3" checked>
-                            <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-3">
-                              <svg class="rate-button__starhref rate-button-room-card350__starhref">
-                                <use xlink:href="#rate-button-room-card350__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="2" id="rate-button-room-card350-2">
-                            <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-2">
-                              <svg class="rate-button__starhref rate-button-room-card350__starhref">
-                                <use xlink:href="#rate-button-room-card350__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="1" id="rate-button-room-card350-1">
-                            <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-1">
-                              <svg class="rate-button__starhref rate-button-room-card350__starhref">
-                                <use xlink:href="#rate-button-room-card350__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2 room-card350__review-container2"> <span class="room-card__reviews room-card350__reviews">77</span><span class="room-card__reviews2 room-card350__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card666">
-                  <div class="room-card__photos room-card666__photos">
-                    <div class="splide" id="room-card666__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2 room-card740__review-container2"> <span class="room-card__reviews room-card740__reviews">44</span><span class="room-card__reviews2 room-card740__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card666__container-price"><span class="room-card__number room-card666__number">№666</span><span class="room-card__type room-card666__type"></span><span class="room-card__price room-card666__price">5000</span><span class="room-card__price2 room-card666__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card666__review-container">
-                        <div class="rate-button rate-button-room-card666">
-                          <div class="rate-button__star-source rate-button-room-card666__star-source">
-                            <svg class="rate-button__star rate-button-room-card666__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card666__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card666__container">
-                            <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="5" id="rate-button-room-card666-5">
-                            <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-5">
-                              <svg class="rate-button__starhref rate-button-room-card666__starhref">
-                                <use xlink:href="#rate-button-room-card666__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="4" id="rate-button-room-card666-4">
-                            <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-4">
-                              <svg class="rate-button__starhref rate-button-room-card666__starhref">
-                                <use xlink:href="#rate-button-room-card666__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="3" id="rate-button-room-card666-3" checked>
-                            <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-3">
-                              <svg class="rate-button__starhref rate-button-room-card666__starhref">
-                                <use xlink:href="#rate-button-room-card666__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="2" id="rate-button-room-card666-2">
-                            <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-2">
-                              <svg class="rate-button__starhref rate-button-room-card666__starhref">
-                                <use xlink:href="#rate-button-room-card666__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="1" id="rate-button-room-card666-1">
-                            <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-1">
-                              <svg class="rate-button__starhref rate-button-room-card666__starhref">
-                                <use xlink:href="#rate-button-room-card666__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card982">
+                    <div class="room-card__photos room-card982__photos">
+                      <div class="splide" id="room-card982__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card666__review-container2"> <span class="room-card__reviews room-card666__reviews">25</span><span class="room-card__reviews2 room-card666__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card444">
-                  <div class="room-card__photos room-card444__photos">
-                    <div class="splide" id="room-card444__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div class="room-card__container-price room-card444__container-price"><span class="room-card__number room-card444__number">№444</span><span class="room-card__type room-card444__type"></span><span class="room-card__price room-card444__price">5000</span><span class="room-card__price2 room-card444__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card444__review-container">
-                        <div class="rate-button rate-button-room-card444">
-                          <div class="rate-button__star-source rate-button-room-card444__star-source">
-                            <svg class="rate-button__star rate-button-room-card444__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card444__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
+                    <div class="room-card__container-price room-card982__container-price"><span class="room-card__number room-card982__number">№982</span><span class="room-card__type room-card982__type"></span><span class="room-card__price room-card982__price">5800</span><span class="room-card__price2 room-card982__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card982__review-container">
+                          <div class="rate-button rate-button-room-card982">
+                            <div class="rate-button__star-source rate-button-room-card982__star-source">
+                              <svg class="rate-button__star rate-button-room-card982__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card982__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card982__container">
+                              <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="5" id="rate-button-room-card982-5">
+                              <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-5">
+                                <svg class="rate-button__starhref rate-button-room-card982__starhref">
+                                  <use xlink:href="#rate-button-room-card982__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="4" id="rate-button-room-card982-4">
+                              <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-4">
+                                <svg class="rate-button__starhref rate-button-room-card982__starhref">
+                                  <use xlink:href="#rate-button-room-card982__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="3" id="rate-button-room-card982-3" checked>
+                              <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-3">
+                                <svg class="rate-button__starhref rate-button-room-card982__starhref">
+                                  <use xlink:href="#rate-button-room-card982__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="2" id="rate-button-room-card982-2">
+                              <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-2">
+                                <svg class="rate-button__starhref rate-button-room-card982__starhref">
+                                  <use xlink:href="#rate-button-room-card982__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card982__input" type="radio" name="star" value="1" id="rate-button-room-card982-1">
+                              <label class="rate-button__label rate-button-room-card982__label" for="rate-button-room-card982-1">
+                                <svg class="rate-button__starhref rate-button-room-card982__starhref">
+                                  <use xlink:href="#rate-button-room-card982__stars"/>
+                                </svg>
+                              </label>
+                            </div>
                           </div>
-                          <div class="rate-button__container rate-button-room-card444__container">
-                            <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="5" id="rate-button-room-card444-5">
-                            <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-5">
-                              <svg class="rate-button__starhref rate-button-room-card444__starhref">
-                                <use xlink:href="#rate-button-room-card444__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="4" id="rate-button-room-card444-4">
-                            <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-4">
-                              <svg class="rate-button__starhref rate-button-room-card444__starhref">
-                                <use xlink:href="#rate-button-room-card444__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="3" id="rate-button-room-card444-3" checked>
-                            <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-3">
-                              <svg class="rate-button__starhref rate-button-room-card444__starhref">
-                                <use xlink:href="#rate-button-room-card444__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="2" id="rate-button-room-card444-2">
-                            <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-2">
-                              <svg class="rate-button__starhref rate-button-room-card444__starhref">
-                                <use xlink:href="#rate-button-room-card444__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="1" id="rate-button-room-card444-1">
-                            <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-1">
-                              <svg class="rate-button__starhref rate-button-room-card444__starhref">
-                                <use xlink:href="#rate-button-room-card444__stars"/>
-                              </svg>
-                            </label>
-                          </div>
-                        </div>
-                    <div class="room-card__review-container2 room-card444__review-container2"> <span class="room-card__reviews room-card444__reviews">15</span><span class="room-card__reviews2 room-card444__reviews2">Отзывов</span></div>
-                  </div>
-                </div>
-                <div class="room-card room-card352">
-                  <div class="room-card__photos room-card352__photos">
-                    <div class="splide" id="room-card352__splide">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                          <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
-                        </ul>
-                      </div>
+                      <div class="room-card__review-container2 room-card982__review-container2"> <span class="room-card__reviews room-card982__reviews">56</span><span class="room-card__reviews2 room-card982__reviews2">Отзывов</span></div>
                     </div>
                   </div>
-                  <div class="room-card__container-price room-card352__container-price"><span class="room-card__number room-card352__number">№980</span><span class="room-card__type room-card352__type"></span><span class="room-card__price room-card352__price">8500</span><span class="room-card__price2 room-card352__price2">₽ в сутки</span></div>
-                  <div class="room-card__review-container room-card352__review-container">
-                        <div class="rate-button rate-button-room-card352">
-                          <div class="rate-button__star-source rate-button-room-card352__star-source">
-                            <svg class="rate-button__star rate-button-room-card352__star" xmlns="http://www.w3.org/2000/svg">
-                              <symbol id="rate-button-room-card352__stars">
-                                <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
-                                <defs> 
-                                  <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#BC9CFF"/> 
-                                    <stop offset="1" stop-color="#8BA4F9"/>
-                                  </linearGradient>
-                                </defs>
-                              </symbol>
-                            </svg>
-                          </div>
-                          <div class="rate-button__container rate-button-room-card352__container">
-                            <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="5" id="rate-button-room-card352-5">
-                            <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-5">
-                              <svg class="rate-button__starhref rate-button-room-card352__starhref">
-                                <use xlink:href="#rate-button-room-card352__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="4" id="rate-button-room-card352-4">
-                            <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-4">
-                              <svg class="rate-button__starhref rate-button-room-card352__starhref">
-                                <use xlink:href="#rate-button-room-card352__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="3" id="rate-button-room-card352-3" checked>
-                            <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-3">
-                              <svg class="rate-button__starhref rate-button-room-card352__starhref">
-                                <use xlink:href="#rate-button-room-card352__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="2" id="rate-button-room-card352-2">
-                            <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-2">
-                              <svg class="rate-button__starhref rate-button-room-card352__starhref">
-                                <use xlink:href="#rate-button-room-card352__stars"/>
-                              </svg>
-                            </label>
-                            <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="1" id="rate-button-room-card352-1">
-                            <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-1">
-                              <svg class="rate-button__starhref rate-button-room-card352__starhref">
-                                <use xlink:href="#rate-button-room-card352__stars"/>
-                              </svg>
-                            </label>
-                          </div>
+                  <div class="room-card room-card678">
+                    <div class="room-card__photos room-card678__photos">
+                      <div class="splide" id="room-card678__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
                         </div>
-                    <div class="room-card__review-container2 room-card352__review-container2"> <span class="room-card__reviews room-card352__reviews">55</span><span class="room-card__reviews2 room-card352__reviews2">Отзывов</span></div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card678__container-price"><span class="room-card__number room-card678__number">№678</span><span class="room-card__type room-card678__type"></span><span class="room-card__price room-card678__price">5500</span><span class="room-card__price2 room-card678__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card678__review-container">
+                          <div class="rate-button rate-button-room-card678">
+                            <div class="rate-button__star-source rate-button-room-card678__star-source">
+                              <svg class="rate-button__star rate-button-room-card678__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card678__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card678__container">
+                              <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="5" id="rate-button-room-card678-5">
+                              <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-5">
+                                <svg class="rate-button__starhref rate-button-room-card678__starhref">
+                                  <use xlink:href="#rate-button-room-card678__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="4" id="rate-button-room-card678-4">
+                              <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-4">
+                                <svg class="rate-button__starhref rate-button-room-card678__starhref">
+                                  <use xlink:href="#rate-button-room-card678__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="3" id="rate-button-room-card678-3" checked>
+                              <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-3">
+                                <svg class="rate-button__starhref rate-button-room-card678__starhref">
+                                  <use xlink:href="#rate-button-room-card678__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="2" id="rate-button-room-card678-2">
+                              <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-2">
+                                <svg class="rate-button__starhref rate-button-room-card678__starhref">
+                                  <use xlink:href="#rate-button-room-card678__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card678__input" type="radio" name="star" value="1" id="rate-button-room-card678-1">
+                              <label class="rate-button__label rate-button-room-card678__label" for="rate-button-room-card678-1">
+                                <svg class="rate-button__starhref rate-button-room-card678__starhref">
+                                  <use xlink:href="#rate-button-room-card678__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card678__review-container2"> <span class="room-card__reviews room-card678__reviews">45</span><span class="room-card__reviews2 room-card678__reviews2">Отзывов</span></div>
+                    </div>
                   </div>
-                </div>
+                  <div class="room-card room-card450">
+                    <div class="room-card__photos room-card450__photos">
+                      <div class="splide" id="room-card450__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card450__container-price"><span class="room-card__number room-card450__number">№450</span><span class="room-card__type room-card450__type"></span><span class="room-card__price room-card450__price">5300</span><span class="room-card__price2 room-card450__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card450__review-container">
+                          <div class="rate-button rate-button-room-card450">
+                            <div class="rate-button__star-source rate-button-room-card450__star-source">
+                              <svg class="rate-button__star rate-button-room-card450__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card450__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card450__container">
+                              <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="5" id="rate-button-room-card450-5">
+                              <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-5">
+                                <svg class="rate-button__starhref rate-button-room-card450__starhref">
+                                  <use xlink:href="#rate-button-room-card450__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="4" id="rate-button-room-card450-4">
+                              <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-4">
+                                <svg class="rate-button__starhref rate-button-room-card450__starhref">
+                                  <use xlink:href="#rate-button-room-card450__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="3" id="rate-button-room-card450-3" checked>
+                              <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-3">
+                                <svg class="rate-button__starhref rate-button-room-card450__starhref">
+                                  <use xlink:href="#rate-button-room-card450__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="2" id="rate-button-room-card450-2">
+                              <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-2">
+                                <svg class="rate-button__starhref rate-button-room-card450__starhref">
+                                  <use xlink:href="#rate-button-room-card450__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card450__input" type="radio" name="star" value="1" id="rate-button-room-card450-1">
+                              <label class="rate-button__label rate-button-room-card450__label" for="rate-button-room-card450-1">
+                                <svg class="rate-button__starhref rate-button-room-card450__starhref">
+                                  <use xlink:href="#rate-button-room-card450__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card450__review-container2"> <span class="room-card__reviews room-card450__reviews">39</span><span class="room-card__reviews2 room-card450__reviews2">Отзывов</span></div>
+                    </div>
+                  </div>
+                  <div class="room-card room-card350">
+                    <div class="room-card__photos room-card350__photos">
+                      <div class="splide" id="room-card350__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card350__container-price"><span class="room-card__number room-card350__number">№350</span><span class="room-card__type room-card350__type"></span><span class="room-card__price room-card350__price">5000</span><span class="room-card__price2 room-card350__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card350__review-container">
+                          <div class="rate-button rate-button-room-card350">
+                            <div class="rate-button__star-source rate-button-room-card350__star-source">
+                              <svg class="rate-button__star rate-button-room-card350__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card350__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card350__container">
+                              <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="5" id="rate-button-room-card350-5">
+                              <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-5">
+                                <svg class="rate-button__starhref rate-button-room-card350__starhref">
+                                  <use xlink:href="#rate-button-room-card350__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="4" id="rate-button-room-card350-4">
+                              <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-4">
+                                <svg class="rate-button__starhref rate-button-room-card350__starhref">
+                                  <use xlink:href="#rate-button-room-card350__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="3" id="rate-button-room-card350-3" checked>
+                              <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-3">
+                                <svg class="rate-button__starhref rate-button-room-card350__starhref">
+                                  <use xlink:href="#rate-button-room-card350__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="2" id="rate-button-room-card350-2">
+                              <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-2">
+                                <svg class="rate-button__starhref rate-button-room-card350__starhref">
+                                  <use xlink:href="#rate-button-room-card350__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card350__input" type="radio" name="star" value="1" id="rate-button-room-card350-1">
+                              <label class="rate-button__label rate-button-room-card350__label" for="rate-button-room-card350-1">
+                                <svg class="rate-button__starhref rate-button-room-card350__starhref">
+                                  <use xlink:href="#rate-button-room-card350__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card350__review-container2"> <span class="room-card__reviews room-card350__reviews">77</span><span class="room-card__reviews2 room-card350__reviews2">Отзывов</span></div>
+                    </div>
+                  </div>
+                  <div class="room-card room-card666">
+                    <div class="room-card__photos room-card666__photos">
+                      <div class="splide" id="room-card666__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card666__container-price"><span class="room-card__number room-card666__number">№666</span><span class="room-card__type room-card666__type"></span><span class="room-card__price room-card666__price">5000</span><span class="room-card__price2 room-card666__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card666__review-container">
+                          <div class="rate-button rate-button-room-card666">
+                            <div class="rate-button__star-source rate-button-room-card666__star-source">
+                              <svg class="rate-button__star rate-button-room-card666__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card666__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card666__container">
+                              <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="5" id="rate-button-room-card666-5">
+                              <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-5">
+                                <svg class="rate-button__starhref rate-button-room-card666__starhref">
+                                  <use xlink:href="#rate-button-room-card666__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="4" id="rate-button-room-card666-4">
+                              <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-4">
+                                <svg class="rate-button__starhref rate-button-room-card666__starhref">
+                                  <use xlink:href="#rate-button-room-card666__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="3" id="rate-button-room-card666-3" checked>
+                              <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-3">
+                                <svg class="rate-button__starhref rate-button-room-card666__starhref">
+                                  <use xlink:href="#rate-button-room-card666__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="2" id="rate-button-room-card666-2">
+                              <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-2">
+                                <svg class="rate-button__starhref rate-button-room-card666__starhref">
+                                  <use xlink:href="#rate-button-room-card666__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card666__input" type="radio" name="star" value="1" id="rate-button-room-card666-1">
+                              <label class="rate-button__label rate-button-room-card666__label" for="rate-button-room-card666-1">
+                                <svg class="rate-button__starhref rate-button-room-card666__starhref">
+                                  <use xlink:href="#rate-button-room-card666__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card666__review-container2"> <span class="room-card__reviews room-card666__reviews">25</span><span class="room-card__reviews2 room-card666__reviews2">Отзывов</span></div>
+                    </div>
+                  </div>
+                  <div class="room-card room-card444">
+                    <div class="room-card__photos room-card444__photos">
+                      <div class="splide" id="room-card444__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card444__container-price"><span class="room-card__number room-card444__number">№444</span><span class="room-card__type room-card444__type"></span><span class="room-card__price room-card444__price">5000</span><span class="room-card__price2 room-card444__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card444__review-container">
+                          <div class="rate-button rate-button-room-card444">
+                            <div class="rate-button__star-source rate-button-room-card444__star-source">
+                              <svg class="rate-button__star rate-button-room-card444__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card444__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card444__container">
+                              <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="5" id="rate-button-room-card444-5">
+                              <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-5">
+                                <svg class="rate-button__starhref rate-button-room-card444__starhref">
+                                  <use xlink:href="#rate-button-room-card444__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="4" id="rate-button-room-card444-4">
+                              <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-4">
+                                <svg class="rate-button__starhref rate-button-room-card444__starhref">
+                                  <use xlink:href="#rate-button-room-card444__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="3" id="rate-button-room-card444-3" checked>
+                              <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-3">
+                                <svg class="rate-button__starhref rate-button-room-card444__starhref">
+                                  <use xlink:href="#rate-button-room-card444__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="2" id="rate-button-room-card444-2">
+                              <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-2">
+                                <svg class="rate-button__starhref rate-button-room-card444__starhref">
+                                  <use xlink:href="#rate-button-room-card444__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card444__input" type="radio" name="star" value="1" id="rate-button-room-card444-1">
+                              <label class="rate-button__label rate-button-room-card444__label" for="rate-button-room-card444-1">
+                                <svg class="rate-button__starhref rate-button-room-card444__starhref">
+                                  <use xlink:href="#rate-button-room-card444__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card444__review-container2"> <span class="room-card__reviews room-card444__reviews">15</span><span class="room-card__reviews2 room-card444__reviews2">Отзывов</span></div>
+                    </div>
+                  </div>
+                  <div class="room-card room-card352">
+                    <div class="room-card__photos room-card352__photos">
+                      <div class="splide" id="room-card352__splide">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
+                            <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="room-card__container-price room-card352__container-price"><span class="room-card__number room-card352__number">№980</span><span class="room-card__type room-card352__type"></span><span class="room-card__price room-card352__price">8500</span><span class="room-card__price2 room-card352__price2">₽ в сутки</span></div>
+                    <div class="room-card__review-container room-card352__review-container">
+                          <div class="rate-button rate-button-room-card352">
+                            <div class="rate-button__star-source rate-button-room-card352__star-source">
+                              <svg class="rate-button__star rate-button-room-card352__star" xmlns="http://www.w3.org/2000/svg">
+                                <symbol id="rate-button-room-card352__stars">
+                                  <path d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z"></path>
+                                  <defs> 
+                                    <linearGradient id="gradient" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#BC9CFF"/> 
+                                      <stop offset="1" stop-color="#8BA4F9"/>
+                                    </linearGradient>
+                                  </defs>
+                                </symbol>
+                              </svg>
+                            </div>
+                            <div class="rate-button__container rate-button-room-card352__container">
+                              <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="5" id="rate-button-room-card352-5">
+                              <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-5">
+                                <svg class="rate-button__starhref rate-button-room-card352__starhref">
+                                  <use xlink:href="#rate-button-room-card352__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="4" id="rate-button-room-card352-4">
+                              <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-4">
+                                <svg class="rate-button__starhref rate-button-room-card352__starhref">
+                                  <use xlink:href="#rate-button-room-card352__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="3" id="rate-button-room-card352-3" checked>
+                              <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-3">
+                                <svg class="rate-button__starhref rate-button-room-card352__starhref">
+                                  <use xlink:href="#rate-button-room-card352__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="2" id="rate-button-room-card352-2">
+                              <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-2">
+                                <svg class="rate-button__starhref rate-button-room-card352__starhref">
+                                  <use xlink:href="#rate-button-room-card352__stars"/>
+                                </svg>
+                              </label>
+                              <input class="rate-button__input rate-button-room-card352__input" type="radio" name="star" value="1" id="rate-button-room-card352-1">
+                              <label class="rate-button__label rate-button-room-card352__label" for="rate-button-room-card352-1">
+                                <svg class="rate-button__starhref rate-button-room-card352__starhref">
+                                  <use xlink:href="#rate-button-room-card352__stars"/>
+                                </svg>
+                              </label>
+                            </div>
+                          </div>
+                      <div class="room-card__review-container2 room-card352__review-container2"> <span class="room-card__reviews room-card352__reviews">55</span><span class="room-card__reviews2 room-card352__reviews2">Отзывов</span></div>
+                    </div>
+                  </div>
+            </div>
           </div>
               <div class="pagination">
                 <div class="pagination__data"></div>
@@ -1078,8 +1083,8 @@
                       </ul>
                     </div>
                     <div class="textfield textfield--subscription">
-                      <label class="textfield textfield--subscription__label" for="textfield textfield--subscription__input">
-                        <input class="textfield textfield--subscription__input" type="text" placeholder="Email">
+                      <label class="textfield__label textfield--subscription__label" for="textfield__input textfield--subscription__input">
+                        <input class="textfield__input textfield--subscription__input" type="text" placeholder="Email">
                       </label>
                     </div>
               </div>

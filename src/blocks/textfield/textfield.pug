@@ -1,6 +1,7 @@
 mixin textlabel(lclass,title,placeholder)
+	- var lclass_spl=lclass.split(' ');
 	- var lclass_input= lclass + '__input'
 	- var lclass_label= lclass + '__label'
 	div(class=lclass)
-		label(class=lclass_label,for=lclass_input)=title
-			input(class=lclass_input,type="text",placeholder=placeholder)&attributes(attributes)
+		label(class=lclass_spl.map((item)=>`${item}__label`).join(' '),for=lclass_spl.map((item)=>`${item}__input`).join(' '))=title
+			input(class=lclass_spl.map((item)=>`${item}__input`).join(' '),type="text",placeholder=placeholder)&attributes(attributes)

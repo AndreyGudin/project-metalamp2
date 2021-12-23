@@ -15,9 +15,11 @@ html(lang="ru")
       +header('header','')
       .search-room-page__container-body
         .search-room-page__container-filter
-          +textlabel('textfield textfield--date-dropdown','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
+          +textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
           +quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Гости','0')
-          +range-slider('range-slider','Диапазон цены')
+          .search-room-page__container-range-slider
+            +range-slider('range-slider','Диапазон цены')
+            label.search-room-page__range-slider-label Стоимость за сутки пребывания в номере
           +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','Правила дома',
           ['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])(open)
           +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--rich-checkbox-buttons','Доступность',
@@ -25,19 +27,20 @@ html(lang="ru")
           +quantity-dropdown('Спальни','Кровати','Ванные комнаты','rooms','Удобства номера','1')
           +expandable-chckbox-list('expandable-chckbox-list','Дополнительные удобства',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])        
         .search-room-page__container
-          label.search-room-page__container-rooms-label Номера, которые мы для вас подобрали
           .search-room-page__container-rooms
-            +room-card('room-card',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'888','Люкс','9990','145','3')  
-            +room-card('room-card room-card840',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'840','','9990','65','3')
-            +room-card('room-card room-card980',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'980','','8500','35','3')
-            +room-card('room-card room-card856',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'856','','7300','19','3')
-            +room-card('room-card room-card740',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'740','','6000','44','3')
-            +room-card('room-card room-card982',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'982','','5800','56','3')
-            +room-card('room-card room-card678',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'678','','5500','45','3')
-            +room-card('room-card room-card450',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'450','','5300','39','3')
-            +room-card('room-card room-card350',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'350','','5000','77','3')
-            +room-card('room-card room-card666',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'666','','5000','25','3')
-            +room-card('room-card room-card444',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'444','','5000','15','3')
-            +room-card('room-card room-card352',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'980','','8500','55','3')
+            label.search-room-page__container-rooms-label Номера, которые мы для вас подобрали
+            .search-room-page__container-only-rooms
+              +room-card('room-card',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'888','Люкс','9990','145','3')  
+              +room-card('room-card room-card840',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'840','','9990','65','3')
+              +room-card('room-card room-card980',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'980','','8500','35','3')
+              +room-card('room-card room-card856',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'856','','7300','19','3')
+              +room-card('room-card room-card740',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'740','','6000','44','3')
+              +room-card('room-card room-card982',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'982','','5800','56','3')
+              +room-card('room-card room-card678',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'678','','5500','45','3')
+              +room-card('room-card room-card450',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'450','','5300','39','3')
+              +room-card('room-card room-card350',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'350','','5000','77','3')
+              +room-card('room-card room-card666',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'666','','5000','25','3')
+              +room-card('room-card room-card444',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'444','','5000','15','3')
+              +room-card('room-card room-card352',['../../../blocks/room-card/img/room.png','../../../blocks/room-card/img/room2.png','../../../blocks/room-card/img/room3.png'],'980','','8500','55','3')
           +pagination('pagination')
       +footer('footer','')

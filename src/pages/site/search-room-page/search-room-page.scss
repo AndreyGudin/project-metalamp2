@@ -10,33 +10,71 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
-.search-room-page__container-body{
+.search-room-page__container-body {
   display: flex;
 }
 
-.search-room-page__container-filter{
+.search-room-page__container-filter {
   height: 100%;
   width: 366px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px ;
+  gap: 30px;
 }
 
-.search-room-page__container{
+.search-room-page__container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 }
 
-.search-room-page__container-rooms{
-  width: 900px;
-  height: 100%;
+.search-room-page__container-rooms {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-self: center;
 }
 
-.guest-dropdown-block,.guest-dropdown__title,.guest-dropdown.iqdropdown,.textfield.textfield--date-dropdown__input,.textfield.textfield--date-dropdown__label,.textfield.textfield--date-dropdown{
+.search-room-page__container-only-rooms{
+  width: 834px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 12px;
+}
+
+.search-room-page__container-rooms-label{
+  margin: 30px 0px 20px 0px;
+  font:$font-widget-title;
+}
+
+.pagination{
+  align-self: center;
+}
+
+.guest-dropdown-block,
+.guest-dropdown__title,
+.guest-dropdown.iqdropdown,
+.textfield.textfield--date-dropdown__input,
+.textfield.textfield--date-dropdown__label,
+.textfield.textfield--date-dropdown {
   width: 260px;
 }
 
+.guest-dropdown-block{
+  margin-bottom: 0px;
+}
+
+.search-room-page__container-range-slider{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-room-page__range-slider-label{
+  font:$font-h3;
+  color:$color-ds50;
+}
