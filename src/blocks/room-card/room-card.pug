@@ -6,12 +6,9 @@ mixin room-card(rclass,rpath,rnumber,rtype,rprice,rreviews,rstars)
       div(class='splide',id=`${rclassarr[rclassarr.length -1]}__splide`)
         div(class='splide__track')
           ul(class='splide__list')
-            li(class='splide__slide')
-              img(src=rpath[0])
-            li(class='splide__slide')
-              img(src=rpath[1])
-            li(class='splide__slide')
-              img(src=rpath[2])
+            each val in rpath
+              li(class='splide__slide')
+                img(src=val)
     div(class=rclassarr.map((item)=>`${item}__container-price`).join(' '))
       span(class=rclassarr.map((item)=>`${item}__number`).join(' '))=`№${rnumber}`
       span(class=rclassarr.map((item)=>`${item}__type`).join(' '))=rtype 
