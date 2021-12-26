@@ -10,18 +10,25 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
+.search-room-page{
+  display: flex;
+  flex-direction: column;
+}
 .search-room-page__container-body {
   display: flex;
+  width: 1200px;
+  align-self: center;
 }
 
 .search-room-page__container-filter {
   height: 100%;
-  width: 366px;
+  width: 266px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px ;
   gap: 30px;
+  margin-right: 60px;
 }
 
 .search-room-page__container {
