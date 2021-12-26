@@ -14,6 +14,8 @@ require("../../../blocks/textfield/textfield--filter-date-dropdown/textfield--fi
 
 require("../../../blocks/like-button/like-button.js");
 
+require("../../../blocks/rate-button/rate-button.js");
+
 require("../../../blocks/range-slider/nouislider.js");
 
 require("../../../blocks/range-slider/range-slider.js");
