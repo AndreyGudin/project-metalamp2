@@ -39,3 +39,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:focus ~ .rate-
 input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rate-button__label.rate-button-room-card840__label svg.rate-button__starhref.rate-button-room-card840__starhref {
   fill: url(#gradient);
 }
+
+.fillgrad {
+  fill: url(#gradient);
+}

@@ -11,16 +11,16 @@ mixin rate-button(rclass,rchecked)
               stop(offset="1",stop-color="#8BA4F9")/
     div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
       -var i=0;
-      -var j=5-(parseInt(rchecked)-1);
+      -var j=5-parseInt(rchecked);
       while (i<5)
-        if (j==(5-i))
-          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`, checked)
-          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '))
-            svg(class=rclassArr.map((item)=>`${item}__starhref`).join(' '))
+        if (j<=i)
+          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`)
+          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '), id=`${rclassArr[rclassArr.length-1]}__label-${5-i}`)
+            svg(class=rclassArr.map((item)=>`${item}__starhref`+' fillgrad').join(' '))
               use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
         else
           input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`)
-          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '))
+          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '), id=`${rclassArr[rclassArr.length-1]}__label-${5-i}`)
             svg(class=rclassArr.map((item)=>`${item}__starhref`).join(' '))
               use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
         -i++

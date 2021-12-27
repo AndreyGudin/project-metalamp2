@@ -16,6 +16,6 @@ mixin room-card(rclass,rpath,rnumber,rtype,rprice,rreviews,rstars)
       span(class=rclassarr.map((item)=>`${item}__price2`).join(' '))='₽ в сутки'  
     div(class=rclassarr.map((item)=>`${item}__review-container`).join(' '))
       +rate-button(`rate-button rate-button-${rclassarr[rclassarr.length -1]}`,rstars)
-      div(class=rclassarr.map((item)=>`${item}__review-container2`).join(' ')) 
+      div(class=rclassarr.map((item)=>`${item}__review-container2`).join(' '))
         span(class=rclassarr.map((item)=>`${item}__reviews`).join(' '))=rreviews 
         span(class=rclassarr.map((item)=>`${item}__reviews2`).join(' '))='Отзывов'

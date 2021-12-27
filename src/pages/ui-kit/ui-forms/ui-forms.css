@@ -701,6 +701,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   fill: url(#gradient);
 }
 
+.fillgrad {
+  fill: url(#gradient);
+}
+
 .range-slider__range::before {
   content: "";
 }

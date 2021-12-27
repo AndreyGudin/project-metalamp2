@@ -1,7 +1,9 @@
 "use strict";
 
 $(document).ready(function () {
-  $(document).one("click", ".rate-button-room-card980__label", function () {
-    $('.rate-button-room-card980__input').attr('checked', true);
+  $(document).on("click", ".rate-button__label", function () {
+    $(this).prevAll().children().removeClass("fillgrad");
+    $(this).nextAll().children().addClass("fillgrad");
+    $(this).children().addClass("fillgrad");
   });
 });
