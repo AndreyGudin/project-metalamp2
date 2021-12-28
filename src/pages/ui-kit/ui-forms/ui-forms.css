@@ -116,6 +116,23 @@
   visibility: hidden;
 }
 
+.iqdropdown .iqdropdown-selection::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC41OTM4IDAuNTc4MTI1TDEyIDEuOTg0MzhMNiA3Ljk4NDM4TDAgMS45ODQzOEwxLjQwNjI1IDAuNTc4MTI1TDYgNS4xNzE4OEwxMC41OTM4IDAuNTc4MTI1WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
+  width: 12px;
+  height: 12px;
+  top: 35%;
+}
+
+.iqdropdown.menu-open .iqdropdown-selection::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjQwNjIgNy40MjE4OEwwIDYuMDE1NjJMNiAwLjAxNTYyMDJMMTIgNi4wMTU2MkwxMC41OTM4IDcuNDIxODhMNiAyLjgyODEyTDEuNDA2MiA3LjQyMTg4WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
+  width: 12px;
+  height: 12px;
+}
+
+.rooms.iqdropdown .iqdropdown-selection::after {
+  top: -5px;
+}
+
 .textfield {
   width: 320px;
   height: 67px;

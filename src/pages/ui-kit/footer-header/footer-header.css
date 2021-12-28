@@ -701,6 +701,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   fill: url(#gradient);
 }
 
+.fillgrad {
+  fill: url(#gradient);
+}
+
 .range-slider__range::before {
   content: "";
 }
@@ -1171,16 +1175,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   position: static;
 }
 
-.textfield.textfield--subscription__input, .textfield.textfield--subscription__label,
-.textfield--subscription {
+.textfield__input.textfield--subscription__input.textfield--subscription--footer__input, .textfield__label.textfield--subscription__label.textfield--subscription--footer__label,
+.textfield.textfield--subscription--footer {
   width: 260px;
 }
 
-.textfield.textfield--subscription__input {
+.textfield__input.textfield--subscription__input.textfield--subscription--footer__input {
   position: relative;
 }
 
-.textfield.textfield--subscription__label::after {
+.textfield__label.textfield--subscription__label.textfield--subscription--footer__label::after {
   height: 67px;
   top: 7px;
 }
