@@ -110,9 +110,10 @@
           </div>
       <div class="search-room-page__container-body">
         <div class="search-room-page__container-filter">
-              <div class="textfield textfield--date-dropdown search-room__data-of-arrival">
-                <label class="textfield__label textfield--date-dropdown__label search-room__data-of-arrival__label" for="textfield__input textfield--date-dropdown__input search-room__data-of-arrival__input">Дата пребывания в отеле
-                  <input class="textfield__input textfield--date-dropdown__input search-room__data-of-arrival__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+          <!--+textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)-->
+              <div class="textfield textfield--filter-date-dropdown search-room__data-of-arrival">
+                <label class="textfield__label textfield--filter-date-dropdown__label search-room__data-of-arrival__label" for="textfield__input textfield--filter-date-dropdown__input search-room__data-of-arrival__input">Дата пребывания в отеле
+                  <input class="textfield__input textfield--filter-date-dropdown__input search-room__data-of-arrival__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - " data-range="true">
                 </label>
               </div>
               <div class="guest-dropdown-block">

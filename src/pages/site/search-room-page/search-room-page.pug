@@ -15,7 +15,8 @@ html(lang="ru")
       +header('header','')
       .search-room-page__container-body
         .search-room-page__container-filter
-          +textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
+          //+textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
+          +textlabel('textfield textfield--filter-date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly,data-multiple-dates-separator=" - ",data-range="true")
           +quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Гости','0')
           .search-room-page__container-range-slider
             +range-slider('range-slider','Диапазон цены')
