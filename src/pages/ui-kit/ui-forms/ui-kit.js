@@ -10,6 +10,4 @@ import "../../../blocks/range-slider/nouislider.js";
 import "../../../blocks/range-slider/range-slider.js";
 import "../../../blocks/pagination/pagination.min.js";
 import "../../../blocks/pagination/paginationblock.js";
-import "../../../blocks/graph-reviews/chart.min.js";
-import "../../../blocks/graph-reviews/graph-reviews.js";
 import "../../../blocks/textfield/textfield--masked/textfield--masked.js";

@@ -1,0 +1,31 @@
+@import "../../ui-kit/ui-forms/ui-forms.scss";
+@import "../../../blocks/findroom-card/findroom-card.scss";
+@import "../../../blocks/account-registration/account-registration.scss";
+@import "../../../blocks/login-card/login-card.scss";
+@import "../../../blocks/booking-room-card/booking-room-card.scss";
+@import "../../../blocks/room-card/room-card.scss";
+@import "../../../blocks/room-card/splide.min.css";
+@import "../../../blocks/header/header.scss";
+@import "../../../blocks/header/--logined-user/logined-user.scss";
+@import "../../../blocks/footer/footer.scss";
+@import "../../../blocks/footer-creative/footer-creative.scss";
+
+.room-details-page__room-images-container{
+  display: flex;
+}
+.room-details-side-page__side-room-images-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details-page__image2,.room-details-page__image3{
+  height: 50%;
+}
+
+.room-details-page__image1-main,.room-details-page__image2-side,.room-details-page__image3-side{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.icon-text-list__label{
+font:$font-widget-title;}
