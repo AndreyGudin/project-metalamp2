@@ -10,12 +10,21 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
-.room-details-page__room-images-container{
+.room-details-page__room-images-container,.room-details-page__room-details-part,.room-details-page__rules-part{
   display: flex;
 }
 .room-details-side-page__side-room-images-container{
   display: flex;
   flex-direction: column;
+}
+
+.room-details-page__room-details-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details-page__room-details-booking-container{
+  display: flex;
 }
 
 .room-details-page__image2,.room-details-page__image3{
@@ -27,5 +36,5 @@
   height: 100%;
   object-fit: fill;
 }
-.icon-text-list__label{
+.icon-text-list__label,.room-details-page__reviews-part__label{
 font:$font-widget-title;}

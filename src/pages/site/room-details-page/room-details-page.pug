@@ -9,8 +9,8 @@ html(lang="ru")
     link(href="room-details-page.css" rel="stylesheet")
   body
     include ../../ui-kit/ui-forms/ui-kit-inc.pug
+    +header('header','')
     .room-details-page
-      +header('header','')
       .room-details-page__room-images-container
         .room-details-page__image1
           img(src="img/image1.png", class="room-details-page__image1-main")
@@ -19,12 +19,24 @@ html(lang="ru")
             img(src="img/image2.png", class="room-details-page__image2-side")
           .room-details-page__image3
             img(src="img/image3.png", class="room-details-page__image3-side")
-      .room-details-page__room-details-container
-        .room-details-page__room-details-part
-          label(class='icon-text-list__label') Сведения о номере
-          +icon-text-list('icon-text-list',{'Комфорт':'Шумопоглащающие стены','Удобство':'Окно в каждой спальне','Уют':'Номер оснащен камином'},['../../../blocks/icon-text-list/svg/insert_emoticon.svg','../../../blocks/icon-text-list/svg/location_city.svg','../../../blocks/icon-text-list/svg/whatshot.svg'])
-          +graph-reviews('graph-reviews','260')
-          +review-card('review-card','../../../blocks/review-card/img/image.png','Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-          +review-card('review-card','../../../blocks/review-card/img/image.png','Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+      .room-details-page__room-details-booking-container
+        .room-details-page__room-details-container
+          .room-details-page__room-details-part
+            .room-details-page__room-details-part-details
+              label(class='icon-text-list__label') Сведения о номере
+              +icon-text-list('icon-text-list',{'Комфорт':'Шумопоглащающие стены','Удобство':'Окно в каждой спальне','Уют':'Номер оснащен камином'},['../../../blocks/icon-text-list/svg/insert_emoticon.svg','../../../blocks/icon-text-list/svg/location_city.svg','../../../blocks/icon-text-list/svg/whatshot.svg'])
+            +graph-reviews('graph-reviews','260')
+          .room-details-page__reviews-part
+            .room-details-page__reviews-part-labels
+              label(class='room-details-page__reviews-part__label') Отзывы посетителей номера
+              label(class='room-details-page__reviews-part__number-of-reviews-label') 2 отзыва
+            +review-card('review-card','../../../blocks/review-card/img/image.png','Мурад Сарафанов','5 дней назад','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+            +review-card('review-card','../../../blocks/review-card/img/image4.png','Патрисия Стёклышкова','неделю назад','Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.')
+          .room-details-page__rules-part
+            +bullet-list('bullet-list','Правила',['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия - после 13:00, а выезд до 12:00'])
+            .room-details-page__rules-part-cancel
+              label(class='room-details-page__rules-part__cancel-label') Отмена
+              label(class='room-details-page__reviews-part__cancel-label2') Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
         .room-details-page__room-booking-part
-      +footer('footer','')    
+          +booking-room-card('booking-room-card','888','Люкс','9990')
+    +footer('footer','')    
