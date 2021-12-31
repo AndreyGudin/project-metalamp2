@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+
+  
+  :last-child{
+    border: none;
+  }
+
 }
 
 .icon-text-list__box {

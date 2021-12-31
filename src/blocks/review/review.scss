@@ -1,12 +1,18 @@
-.review-card__container {
+.review{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review__container {
   display: flex;
 }
-.review-card__box {
+.review__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.review-card__textarea {
+.review__textarea {
   width: 653px;
   height: auto;
 }
@@ -15,17 +21,17 @@
   text-align: center;
 }
 
-.review-card__imagebox,
-.review-card__likebox {
+.review__imagebox,
+.review__likebox {
   width: 50px;
   height: 50px;
 }
 
-.review-card__time,
-.review-card__textarea {
+.review__time,
+.review__textarea {
   @extend %font-body;
 }
 
-.review-card__name {
+.review__name {
   @extend %font-title;
 }

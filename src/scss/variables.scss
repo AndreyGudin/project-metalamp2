@@ -53,6 +53,11 @@ $font-label: 12px 'Conv_Montserrat-Bold';
 	text-transform: uppercase;
 }
 
+%font-title-19px{
+	font:$font-inside-title;
+	text-transform: uppercase;
+}
+
 %font-label{
 	font:$font-label;
 	text-transform: uppercase;

@@ -1,0 +1,14 @@
+mixin review(rclass,imagepath,rname,rtime,rtext)
+  include ..\like-button\like-button.pug
+  - var rclassArr=rclass.split(' ')
+  div(class=rclass)
+    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
+      div(class=rclassArr.map((item)=>`${item}__imagebox`).join(' '))
+        img(class=rclassArr.map((item)=>`${item}__image`).join(' '),src=imagepath)
+      div( class=rclassArr.map((item)=>`${item}__box`).join(' '))
+        span(class=rclassArr.map((item)=>`${item}__name`).join(' '))=rname
+        span(class=rclassArr.map((item)=>`${item}__time`).join(' '))=rtime
+    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
+      div(class=rclassArr.map((item)=>`${item}__likebox`).join(' '))
+        +like-button(`like-button like-button--${rclassArr[rclassArr.length-1]}`,'2')
+      label(class=rclassArr.map((item)=>`${item}__textarea`).join(' '))=rtext

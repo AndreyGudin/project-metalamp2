@@ -16,13 +16,13 @@
   font-weight: normal;
   font-style: normal;
 }
-.review-card__time,
-.review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.review__time,
+.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.review-card__name, .icon-text-list__title {
+.review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -900,15 +900,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .bullet-list {
   width: 300px;
-  height: 150px;
+  height: auto;
 }
 
 .bullet-list__ul {
   padding-inline-start: 25px;
+  margin: 22px 0 0 0;
 }
 
 .bullet-list__li {
-  margin-bottom: 13px;
+  margin-top: 13px;
 }
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
@@ -927,6 +928,9 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.icon-text-list :last-child {
+  border: none;
 }
 
 .icon-text-list__box {
@@ -949,17 +953,23 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 68px;
 }
 
-.review-card__container {
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review__container {
   display: flex;
 }
 
-.review-card__box {
+.review__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.review-card__textarea {
+.review__textarea {
   width: 653px;
   height: auto;
 }
@@ -968,8 +978,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   text-align: center;
 }
 
-.review-card__imagebox,
-.review-card__likebox {
+.review__imagebox,
+.review__likebox {
   width: 50px;
   height: 50px;
 }

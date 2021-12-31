@@ -1,15 +1,16 @@
 .bullet-list {
   width: 300px;
-  height: 150px;
+  height: auto;
 }
 
 .bullet-list__ul {
   padding-inline-start: 25px;
+  margin: 22px 0 0 0;
 }
 
 .bullet-list__li {
   @extend %font-body;
-  margin-bottom: 13px;
+  margin-top: 13px;
 
   &::marker {
     color: $color-ds50;

@@ -17,16 +17,16 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
+.room-details-page__reviews-part__cancel-label2, .footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
 .booking-room-card__addtnl-service-fee-container,
-.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review-card__time,
-.review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
+.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.booking-room-guest-dropdown__title, .booking-room-card__total-price-container, .review-card__name, .icon-text-list__title {
+.booking-room-guest-dropdown__title, .booking-room-card__total-price-container, .review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -904,15 +904,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .bullet-list {
   width: 300px;
-  height: 150px;
+  height: auto;
 }
 
 .bullet-list__ul {
   padding-inline-start: 25px;
+  margin: 22px 0 0 0;
 }
 
 .bullet-list__li {
-  margin-bottom: 13px;
+  margin-top: 13px;
 }
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
@@ -931,6 +932,9 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.icon-text-list :last-child {
+  border: none;
 }
 
 .icon-text-list__box {
@@ -953,17 +957,23 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 68px;
 }
 
-.review-card__container {
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review__container {
   display: flex;
 }
 
-.review-card__box {
+.review__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.review-card__textarea {
+.review__textarea {
   width: 653px;
   height: auto;
 }
@@ -972,8 +982,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   text-align: center;
 }
 
-.review-card__imagebox,
-.review-card__likebox {
+.review__imagebox,
+.review__likebox {
   width: 50px;
   height: 50px;
 }
@@ -1616,13 +1626,29 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 20px;
 }
 
+.room-details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
 .room-details-page__room-images-container, .room-details-page__room-details-part, .room-details-page__rules-part {
   display: flex;
+}
+
+.room-details-page__room-images-container {
+  margin-bottom: 70px;
 }
 
 .room-details-side-page__side-room-images-container {
   display: flex;
   flex-direction: column;
+}
+
+.room-details-page__room-details-part {
+  margin-bottom: 30px;
+  gap: 70px;
 }
 
 .room-details-page__room-details-container {
@@ -1632,6 +1658,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .room-details-page__room-details-booking-container {
   display: flex;
+  gap: 70px;
 }
 
 .room-details-page__image2, .room-details-page__image3 {
@@ -1644,6 +1671,36 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   object-fit: fill;
 }
 
+.room-details-page__reviews-part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
 .icon-text-list__label, .room-details-page__reviews-part__label {
-  font: 24px "Conv_Montserrat-Bold";
+  font: 19px "Conv_Montserrat-Bold";
+}
+
+.room-details-page__reviews-part-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details-page__reviews-part__number-of-reviews-label {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room-details-page__rules-part-cancel {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details-page__rules-part-cancel, .room-details-page__reviews-part__cancel-label2 {
+  width: 341px;
+}
+
+.room-details-page__reviews-part__cancel-label2 {
+  margin-top: 20px;
 }

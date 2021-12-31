@@ -10,12 +10,29 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
+.room-details-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
 .room-details-page__room-images-container,.room-details-page__room-details-part,.room-details-page__rules-part{
   display: flex;
 }
+
+.room-details-page__room-images-container{
+  margin-bottom: 70px;
+}
+
 .room-details-side-page__side-room-images-container{
   display: flex;
   flex-direction: column;
+}
+
+.room-details-page__room-details-part{
+  margin-bottom: 30px;
+  gap: 70px;
 }
 
 .room-details-page__room-details-container{
@@ -25,6 +42,7 @@
 
 .room-details-page__room-details-booking-container{
   display: flex;
+  gap: 70px;
 }
 
 .room-details-page__image2,.room-details-page__image3{
@@ -36,5 +54,37 @@
   height: 100%;
   object-fit: fill;
 }
+
+.room-details-page__reviews-part{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
 .icon-text-list__label,.room-details-page__reviews-part__label{
-font:$font-widget-title;}
+font:$font-inside-title;}
+
+.room-details-page__reviews-part-labels{
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details-page__reviews-part__number-of-reviews-label{
+  font:$font-body;
+  color: $color-ds50;
+}
+
+.room-details-page__rules-part-cancel{
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details-page__rules-part-cancel,.room-details-page__reviews-part__cancel-label2{
+  width: 341px;
+}
+
+.room-details-page__reviews-part__cancel-label2{
+  @extend %font-body;
+  margin-top: 20px;
+}
