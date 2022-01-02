@@ -1,4 +1,5 @@
 .login-card {
+  background-color: white;
   width: 380px;
   height: 358px;
   border-radius: 4px;
@@ -37,4 +38,12 @@
 .button.button-with-arrow.login-button {
   margin-top: 20px;
   align-self: center;
+}
+
+.login-card--textfield__label{
+  height: auto;
+}
+.login-card--textfield {
+  height: auto;
+  margin-bottom: 5px;
 }

@@ -16,14 +16,14 @@
             <form class="findroom-card__form">
               <label class="findroom-card__title">Найдём номера под ваши пожелания</label>
               <div class="findroom-card__container">
-                    <div class="textfield textfield--date-dropdown">
-                      <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Прибытие
-                        <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                    <div class="textfield textfield--date-dropdown findroom-card__label-arrival">
+                      <label class="textfield__label textfield--date-dropdown__label findroom-card__label-arrival__label" for="textfield__input textfield--date-dropdown__input findroom-card__label-arrival__input">Прибытие
+                        <input class="textfield__input textfield--date-dropdown__input findroom-card__label-arrival__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
                       </label>
                     </div>
-                    <div class="textfield textfield--date-dropdown">
-                      <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Выезд
-                        <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                    <div class="textfield textfield--date-dropdown findroom-card__label-exit">
+                      <label class="textfield__label textfield--date-dropdown__label findroom-card__label-exit__label" for="textfield__input textfield--date-dropdown__input findroom-card__label-exit__input">Выезд
+                        <input class="textfield__input textfield--date-dropdown__input findroom-card__label-exit__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
                       </label>
                     </div>
               </div>
@@ -59,13 +59,13 @@
             <label class="account-registration__title">Регистрация аккаунта</label>
             <form class="account-registration__reg-form">
                   <div class="textfield acc-reg-textfield">
-                    <label class="textfield acc-reg-textfield__label" for="textfield acc-reg-textfield__input">
-                      <input class="textfield acc-reg-textfield__input" type="text" placeholder="Имя">
+                    <label class="textfield__label acc-reg-textfield__label" for="textfield__input acc-reg-textfield__input">
+                      <input class="textfield__input acc-reg-textfield__input" type="text" placeholder="Имя">
                     </label>
                   </div>
                   <div class="textfield acc-reg-textfield">
-                    <label class="textfield acc-reg-textfield__label" for="textfield acc-reg-textfield__input">
-                      <input class="textfield acc-reg-textfield__input" type="text" placeholder="Фамилия">
+                    <label class="textfield__label acc-reg-textfield__label" for="textfield__input acc-reg-textfield__input">
+                      <input class="textfield__input acc-reg-textfield__input" type="text" placeholder="Фамилия">
                     </label>
                   </div>
                   <div class="radio-buttons">
@@ -82,20 +82,20 @@
                     </div>
                   </div>
                   <div class="textfield textfield--masked">
-                    <label class="textfield textfield--masked__label" for="textfield textfield--masked__input">Дата Рождения
-                      <input class="textfield textfield--masked__input" type="text" placeholder="ДД.ММ.ГГГГ">
+                    <label class="textfield__label textfield--masked__label" for="textfield__input textfield--masked__input">Дата Рождения
+                      <input class="textfield__input textfield--masked__input" type="text" placeholder="ДД.ММ.ГГГГ">
                     </label>
                   </div>
             </form>
             <form class="account-registration__login-form">
                   <div class="textfield acc-reg-textfield">
-                    <label class="textfield acc-reg-textfield__label" for="textfield acc-reg-textfield__input">Данные для входа в сервис
-                      <input class="textfield acc-reg-textfield__input" type="text" placeholder="Email">
+                    <label class="textfield__label acc-reg-textfield__label" for="textfield__input acc-reg-textfield__input">Данные для входа в сервис
+                      <input class="textfield__input acc-reg-textfield__input" type="text" placeholder="Email">
                     </label>
                   </div>
                   <div class="textfield acc-reg-textfield">
-                    <label class="textfield acc-reg-textfield__label" for="textfield acc-reg-textfield__input">
-                      <input class="textfield acc-reg-textfield__input" type="text" placeholder="Пароль">
+                    <label class="textfield__label acc-reg-textfield__label" for="textfield__input acc-reg-textfield__input">
+                      <input class="textfield__input acc-reg-textfield__input" type="text" placeholder="Пароль">
                     </label>
                   </div>
                   <details class="expandable-chckbox-list expandable-chckbox-list--checkbox-buttons expandable-chckbox-list--toogle" open>
@@ -121,14 +121,14 @@
           <div class="login-card">
             <label class="login-card__title">Войти</label>
             <form class="login-card__form">
-                  <div class="textfield">
-                    <label class="textfield__label" for="textfield__input">
-                      <input class="textfield__input" type="text" placeholder="Email">
+                  <div class="textfield login-card--textfield">
+                    <label class="textfield__label login-card--textfield__label" for="textfield__input login-card--textfield__input">
+                      <input class="textfield__input login-card--textfield__input" type="text" placeholder="Email">
                     </label>
                   </div>
-                  <div class="textfield">
-                    <label class="textfield__label" for="textfield__input">
-                      <input class="textfield__input" type="text" placeholder="Пароль">
+                  <div class="textfield login-card--textfield">
+                    <label class="textfield__label login-card--textfield__label" for="textfield__input login-card--textfield__input">
+                      <input class="textfield__input login-card--textfield__input" type="text" placeholder="Пароль">
                     </label>
                   </div>
                   <div class="button button-with-arrow login-button">
@@ -138,7 +138,7 @@
             <div class="login-card__container">
               <label class="login-card__label">Уже есть аккаунт на Toxin</label>
                   <div class="button button-without-fill">
-                    <button class="button__button button-without-fill__button">Войти</button>
+                    <button class="button__button button-without-fill__button">Создать</button>
                   </div>
             </div>
           </div>
@@ -147,13 +147,13 @@
               <div class="booking-room-card__title-container"><span class="booking-room-card__number">№ 888</span><span class="booking-room-card__type">Люкс</span><span class="booking-room-card__price">9990₽</span><span class="booking-room-card__price2"> в сутки</span></div>
               <div class="booking-room-card__container">
                     <div class="textfield textfield--date-dropdown">
-                      <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Прибытие
-                        <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <label class="textfield__label textfield--date-dropdown__label" for="textfield__input textfield--date-dropdown__input">Прибытие
+                        <input class="textfield__input textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
                       </label>
                     </div>
                     <div class="textfield textfield--date-dropdown">
-                      <label class="textfield textfield--date-dropdown__label" for="textfield textfield--date-dropdown__input">Выезд
-                        <input class="textfield textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <label class="textfield__label textfield--date-dropdown__label" for="textfield__input textfield--date-dropdown__input">Выезд
+                        <input class="textfield__input textfield--date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
                       </label>
                     </div>
               </div>
@@ -196,9 +196,9 @@
               <div class="splide" id="room-card__splide">
                 <div class="splide__track">
                   <ul class="splide__list">
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room.png"></li>
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room2.png"></li>
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room3.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/888/888-1.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/888/888-2.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/888/888-3.png"></li>
                   </ul>
                 </div>
               </div>
@@ -221,38 +221,38 @@
                     </div>
                     <div class="rate-button__container rate-button-room-card__container">
                       <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="5" id="rate-button-room-card-5">
-                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-5">
+                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-5" id="rate-button-room-card__label-5">
                         <svg class="rate-button__starhref rate-button-room-card__starhref">
                           <use xlink:href="#rate-button-room-card__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="4" id="rate-button-room-card-4">
-                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-4">
+                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-4" id="rate-button-room-card__label-4">
                         <svg class="rate-button__starhref rate-button-room-card__starhref">
                           <use xlink:href="#rate-button-room-card__stars"/>
                         </svg>
                       </label>
-                      <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="3" id="rate-button-room-card-3" checked>
-                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-3">
-                        <svg class="rate-button__starhref rate-button-room-card__starhref">
+                      <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="3" id="rate-button-room-card-3">
+                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-3" id="rate-button-room-card__label-3">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="2" id="rate-button-room-card-2">
-                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-2">
-                        <svg class="rate-button__starhref rate-button-room-card__starhref">
+                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-2" id="rate-button-room-card__label-2">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card__input" type="radio" name="star" value="1" id="rate-button-room-card-1">
-                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-1">
-                        <svg class="rate-button__starhref rate-button-room-card__starhref">
+                      <label class="rate-button__label rate-button-room-card__label" for="rate-button-room-card-1" id="rate-button-room-card__label-1">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card__stars"/>
                         </svg>
                       </label>
                     </div>
                   </div>
-              <div class="room-card__review-container2"> <span class="room-card__reviews">145</span><span class="room-card__reviews2">Отзывов</span></div>
+              <div class="room-card__review-container2"><span class="room-card__reviews">145</span><span class="room-card__reviews2">Отзывов</span></div>
             </div>
           </div>
           <div class="room-card room-card840">
@@ -260,9 +260,9 @@
               <div class="splide" id="room-card840__splide">
                 <div class="splide__track">
                   <ul class="splide__list">
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room2-1.png"></li>
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room2-2.png"></li>
-                    <li class="splide__slide"><img src="../../../blocks/room-card/img/room2-3.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/840/840-1.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/840/840-2.png"></li>
+                    <li class="splide__slide"><img src="../../../blocks/room-card/img/840/840-3.png"></li>
                   </ul>
                 </div>
               </div>
@@ -285,38 +285,38 @@
                     </div>
                     <div class="rate-button__container rate-button-room-card840__container">
                       <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="5" id="rate-button-room-card840-5">
-                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-5">
+                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-5" id="rate-button-room-card840__label-5">
                         <svg class="rate-button__starhref rate-button-room-card840__starhref">
                           <use xlink:href="#rate-button-room-card840__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="4" id="rate-button-room-card840-4">
-                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-4">
-                        <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-4" id="rate-button-room-card840__label-4">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card840__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card840__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="3" id="rate-button-room-card840-3">
-                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-3">
-                        <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-3" id="rate-button-room-card840__label-3">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card840__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card840__stars"/>
                         </svg>
                       </label>
-                      <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="2" id="rate-button-room-card840-2" checked>
-                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-2">
-                        <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                      <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="2" id="rate-button-room-card840-2">
+                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-2" id="rate-button-room-card840__label-2">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card840__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card840__stars"/>
                         </svg>
                       </label>
                       <input class="rate-button__input rate-button-room-card840__input" type="radio" name="star" value="1" id="rate-button-room-card840-1">
-                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-1">
-                        <svg class="rate-button__starhref rate-button-room-card840__starhref">
+                      <label class="rate-button__label rate-button-room-card840__label" for="rate-button-room-card840-1" id="rate-button-room-card840__label-1">
+                        <svg class="rate-button__starhref fillgrad rate-button-room-card840__starhref fillgrad">
                           <use xlink:href="#rate-button-room-card840__stars"/>
                         </svg>
                       </label>
                     </div>
                   </div>
-              <div class="room-card__review-container2 room-card840__review-container2"> <span class="room-card__reviews room-card840__reviews">65</span><span class="room-card__reviews2 room-card840__reviews2">Отзывов</span></div>
+              <div class="room-card__review-container2 room-card840__review-container2"><span class="room-card__reviews room-card840__reviews">65</span><span class="room-card__reviews2 room-card840__reviews2">Отзывов</span></div>
             </div>
           </div>
     </div>

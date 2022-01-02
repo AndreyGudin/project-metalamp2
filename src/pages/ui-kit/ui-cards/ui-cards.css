@@ -20,13 +20,13 @@
 .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
 .booking-room-card__addtnl-service-fee-container,
-.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review-card__time,
-.review-card__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
+.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.booking-room-guest-dropdown__title, .booking-room-card__total-price-container, .review-card__name, .icon-text-list__title {
+.booking-room-guest-dropdown__title, .booking-room-card__total-price-container, .review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -118,6 +118,23 @@
 
 .button-clear {
   visibility: hidden;
+}
+
+.iqdropdown .iqdropdown-selection::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC41OTM4IDAuNTc4MTI1TDEyIDEuOTg0MzhMNiA3Ljk4NDM4TDAgMS45ODQzOEwxLjQwNjI1IDAuNTc4MTI1TDYgNS4xNzE4OEwxMC41OTM4IDAuNTc4MTI1WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
+  width: 12px;
+  height: 12px;
+  top: 35%;
+}
+
+.iqdropdown.menu-open .iqdropdown-selection::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjQwNjIgNy40MjE4OEwwIDYuMDE1NjJMNiAwLjAxNTYyMDJMMTIgNi4wMTU2MkwxMC41OTM4IDcuNDIxODhMNiAyLjgyODEyTDEuNDA2MiA3LjQyMTg4WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
+  width: 12px;
+  height: 12px;
+}
+
+.rooms.iqdropdown .iqdropdown-selection::after {
+  top: -5px;
 }
 
 .textfield {
@@ -705,6 +722,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   fill: url(#gradient);
 }
 
+.fillgrad {
+  fill: url(#gradient);
+}
+
 .range-slider__range::before {
   content: "";
 }
@@ -883,15 +904,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .bullet-list {
   width: 300px;
-  height: 150px;
+  height: auto;
 }
 
 .bullet-list__ul {
   padding-inline-start: 25px;
+  margin: 22px 0 0 0;
 }
 
 .bullet-list__li {
-  margin-bottom: 13px;
+  margin-top: 13px;
 }
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
@@ -910,6 +932,9 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.icon-text-list :last-child {
+  border: none;
 }
 
 .icon-text-list__box {
@@ -932,17 +957,23 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 68px;
 }
 
-.review-card__container {
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review__container {
   display: flex;
 }
 
-.review-card__box {
+.review__box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.review-card__textarea {
+.review__textarea {
   width: 653px;
   height: auto;
 }
@@ -951,8 +982,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   text-align: center;
 }
 
-.review-card__imagebox,
-.review-card__likebox {
+.review__imagebox,
+.review__likebox {
   width: 50px;
   height: 50px;
 }
@@ -1000,6 +1031,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .findroom-card,
@@ -1033,6 +1065,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .account-registration {
+  background-color: white;
   width: 380px;
   height: 646px;
   border-radius: 4px;
@@ -1112,6 +1145,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .login-card {
+  background-color: white;
   width: 380px;
   height: 358px;
   border-radius: 4px;
@@ -1149,6 +1183,15 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .button.button-with-arrow.login-button {
   margin-top: 20px;
   align-self: center;
+}
+
+.login-card--textfield__label {
+  height: auto;
+}
+
+.login-card--textfield {
+  height: auto;
+  margin-bottom: 5px;
 }
 
 .booking-room-card {

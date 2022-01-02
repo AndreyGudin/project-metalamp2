@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js")
+    script(src="../../../blocks/textfield/textfield--masked/textfield--masked.js")
+    script(type="module" src="../../ui-kit/ui-forms/ui-kit.js")
+    link(href="sign-in-page.css" rel="stylesheet")
+  body
+    include ../../ui-kit/ui-forms/ui-kit-inc.pug
+    +header('header','')
+    .sign-in-page 
+      +login-card('login-card','Войти')
+    +footer('footer')

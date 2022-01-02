@@ -1,0 +1,23 @@
+@import "../../ui-kit/ui-forms/ui-forms.scss";
+@import "../../../blocks/findroom-card/findroom-card.scss";
+@import "../../../blocks/account-registration/account-registration.scss";
+@import "../../../blocks/login-card/login-card.scss";
+@import "../../../blocks/booking-room-card/booking-room-card.scss";
+@import "../../../blocks/room-card/room-card.scss";
+@import "../../../blocks/room-card/splide.min.css";
+@import "../../../blocks/header/header.scss";
+@import "../../../blocks/header/--logined-user/logined-user.scss";
+@import "../../../blocks/footer/footer.scss";
+@import "../../../blocks/footer-creative/footer-creative.scss";
+
+.sign-in-page{
+  background:no-repeat url('img/sign-in-page-background.png');
+  background-size: cover;
+  background-size:100% 100%;
+  height: 753px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
