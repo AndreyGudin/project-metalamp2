@@ -2,7 +2,6 @@ $(document).on("click", ".like-button__button.add", function () {
   $(this).addClass("active").removeClass("add");
   $(this).children("span").html(function (numberp) {
     numberp = parseInt($(this).text());
-    console.log($(this).text());
     numberp++;
     return numberp.toString();
   });
