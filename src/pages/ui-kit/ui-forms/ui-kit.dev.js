@@ -23,5 +23,3 @@ require("../../../blocks/range-slider/range-slider.js");
 require("../../../blocks/pagination/pagination.min.js");
 
 require("../../../blocks/pagination/paginationblock.js");
-
-require("../../../blocks/textfield/textfield--masked/textfield--masked.js");

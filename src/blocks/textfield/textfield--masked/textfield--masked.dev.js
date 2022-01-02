@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $('.textfield.textfield--masked__input').inputmask({
+  $('.textfield__input.textfield--masked__input').inputmask({
     alias: "datetime",
     inputFormat: "dd.mm.yyyy",
     placeholder: "ДД.ММ.ГГГГ",
