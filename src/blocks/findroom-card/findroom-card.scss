@@ -7,8 +7,8 @@
 }
 .findroom-card,
 .findroom-card__form {
-  width: 380px;
-  height: 374px;
+  max-width: 380px;
+  min-height: 374px;
 }
 
 .findroom-card__form {

@@ -43,7 +43,7 @@ body._lock {
 
 @media (max-width: 501px) {
   .header svg {
-    z-index: 2;
+    z-index: 6;
   }
 
   .header__nav {
@@ -58,6 +58,7 @@ body._lock {
     background-color: rgba(255, 255, 255, 0.9);
     transition: left 0.3s ease 0s;
     overflow: auto;
+    z-index: 5;
 
     &::before {
       content: "";

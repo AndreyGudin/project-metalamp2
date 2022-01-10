@@ -10,24 +10,53 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
-.landing-page__container-finding-room{
+.landing-page__container-finding-room {
   width: 100%;
   height: 870px;
-  background:no-repeat url('img/landing-page-background.png');
+  background: no-repeat url("img/landing-page-background.png");
   background-size: cover;
-  background-position:center center;
+  background-position: center center;
   background-attachment: local;
   display: flex;
   flex-direction: column;
 }
 
-.findroom-card{
+.findroom-card {
   margin: 70px 0px 0px 140px;
 }
 
-.landing-page__label{
+.landing-page__label {
   @extend %font-body;
   width: 297px;
   text-align: right;
-  margin:auto 134px 18px auto;
+  margin: auto 134px 18px auto;
+}
+
+@media (max-width: 769px) {
+  .findroom-card {
+    margin: 70px 0 0 0;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+
+  .findroom-card__container {
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .guest-dropdown-block,
+  .iqdropdown,
+  .iqdropdown-menu,
+  .iqdropdown .iqdropdown-menu-option,
+  .guest-dropdown.iqdropdown-menu,
+  .button.button-with-arrow,
+  .button-with-arrow__button {
+    width: 280px;
+  }
+
+  .button-with-arrow__button::after{
+    left:250px;
+  }
 }

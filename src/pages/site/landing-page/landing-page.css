@@ -1036,8 +1036,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .findroom-card,
 .findroom-card__form {
-  width: 380px;
-  height: 374px;
+  max-width: 380px;
+  min-height: 374px;
 }
 
 .findroom-card__form {
@@ -1452,7 +1452,7 @@ body._lock {
 }
 @media (max-width: 501px) {
   .header svg {
-    z-index: 2;
+    z-index: 6;
   }
 
   .header__nav {
@@ -1467,6 +1467,7 @@ body._lock {
     background-color: rgba(255, 255, 255, 0.9);
     transition: left 0.3s ease 0s;
     overflow: auto;
+    z-index: 5;
   }
   .header__nav::before {
     content: "";
@@ -1573,11 +1574,20 @@ body._lock {
   margin-bottom: 0;
 }
 
-.header-menu-expandable-services[open] .header-menu-expandable-services__container,
+.header-menu-expandable-services[open] .expandable-chckbox-list.expandable-chckbox-list__container.header-menu-expandable-services__container,
 .header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container {
   background-color: white;
   position: absolute;
-  width: auto;
+  left: 10px;
+  top: 20px;
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 10px 10px;
+  z-index: 6;
+}
+
+.expandable-chckbox-list__box, .expandable-chckbox-list {
+  max-width: 200px;
 }
 
 .header-menu-expandable-services,
@@ -1648,28 +1658,62 @@ body._lock {
   flex-direction: column;
 }
 
+.footer-col {
+  width: 20%;
+}
+
 .footer__nav-footer {
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   height: 372px;
-  padding: 0px 140px;
+  padding: 100px 100px;
+  gap: 20px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-.footer__nav-navigation,
+.footer__nav-footer-copyrights {
+  justify-content: space-between;
+  padding: 26px 140px;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer__nav-footer {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 40px 20px;
+  }
+
+  .footer__nav-footer > * {
+    flex: 0 0 260px;
+  }
+
+  .footer__description {
+    width: 267px;
+  }
+}
+@media (max-width: 425px) {
+  .footer__nav-footer {
+    padding: 50px 20px;
+  }
+
+  .footer__nav-footer-copyrights {
+    padding: 26px 28px;
+  }
+}
 .bl-nav,
 .bl-nav__ul,
-.footer__nav-about,
 .bl-about,
 .bl-about__ul,
-.footer__nav-service,
 .bl-service,
 .bl-service__ul {
   width: auto;
 }
 
-.footer__nav-subscribe,
 .bl-subscribe,
 .bl-subscribe__ul {
   width: 260px;
@@ -1678,11 +1722,6 @@ body._lock {
 .bl-subscribe,
 .bl-subscribe__ul {
   height: auto;
-}
-
-.footer__nav-description {
-  width: 260px;
-  height: 132px;
 }
 
 .bl-nav__li,
@@ -1722,11 +1761,6 @@ body._lock {
 
 .footer__description {
   margin-top: 20px;
-}
-
-.footer__nav-footer-copyrights {
-  justify-content: space-between;
-  margin: auto 140px;
 }
 
 .footer__nav-footer-copyrights-icons {
@@ -1769,4 +1803,33 @@ body._lock {
   width: 297px;
   text-align: right;
   margin: auto 134px 18px auto;
+}
+
+@media (max-width: 769px) {
+  .findroom-card {
+    margin: 70px 0 0 0;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+
+  .findroom-card__container {
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .guest-dropdown-block,
+.iqdropdown,
+.iqdropdown-menu,
+.iqdropdown .iqdropdown-menu-option,
+.guest-dropdown.iqdropdown-menu,
+.button.button-with-arrow,
+.button-with-arrow__button {
+    width: 280px;
+  }
+
+  .button-with-arrow__button::after {
+    left: 250px;
+  }
 }
