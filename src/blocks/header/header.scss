@@ -42,6 +42,7 @@ body._lock {
 }
 
 @media (max-width: 501px) {
+
   .header svg {
     z-index: 6;
   }
@@ -195,9 +196,9 @@ body._lock {
   z-index: 6;
 }
 
-.expandable-chckbox-list__box,.expandable-chckbox-list{
-  max-width: 200px;
-}
+// .expandable-chckbox-list__box,.expandable-chckbox-list{
+//   max-width: 280px;
+// }
 
 
 .header-menu-expandable-services,

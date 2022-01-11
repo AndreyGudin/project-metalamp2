@@ -10,10 +10,11 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
-.registration-page{
-  background:no-repeat url('img/registration-page-background.png');
+.registration-page {
+  background: no-repeat url("img/registration-page-background.png");
   background-size: cover;
-  background-size:100% 100%;
+  background-position: center center;
+  background-attachment: local;
   height: 753px;
   display: flex;
   flex-direction: column;
@@ -21,3 +22,40 @@
   justify-content: center;
 }
 
+@media (max-width: 425px) {
+  .account-registration {
+    width: 90%;
+    max-width: 380px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+
+  .acc-reg-textfield,
+  .textfield--masked,
+  .button.button-with-arrow.reg-button,
+  .account-registration__container,.expandable-chckbox-list--toogle {
+    width: 90%;
+  }
+
+  .acc-reg-textfield__label,
+  .textfield__input.acc-reg-textfield__input,
+  .textfield--masked__label,
+  .textfield__input.textfield--masked__input,
+  .reg-button__button {
+    width: 100%;
+  }
+  .account-registration__label{
+    line-height: normal;
+  }
+
+  .expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle,
+  .expandable-chckbox-list--toogle__container,.expandable-chckbox-list--toogle__box{
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .expandable-chckbox-list--toogle{
+    padding: 10px 0 0 5%;
+  }
+}

@@ -1036,8 +1036,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .findroom-card,
 .findroom-card__form {
-  width: 380px;
-  height: 374px;
+  max-width: 380px;
+  min-height: 374px;
 }
 
 .findroom-card__form {
@@ -1410,19 +1410,136 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 24px;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .header {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   justify-content: space-around;
 }
 
-.header__container,
+.header__nav,
 .header {
   display: flex;
   height: 70px;
   align-items: center;
 }
 
-.header__container {
+.header__burger {
+  display: none;
+}
+
+.header-menu-expandable-services[open],
+.header-menu-expandable-agreements[open] {
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .header__nav {
+    min-height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 501px) {
+  .header svg {
+    z-index: 6;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    padding: 100px 0 0 20px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+    z-index: 5;
+  }
+  .header__nav::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #fff;
+  }
+
+  .header__nav._active {
+    left: 0;
+  }
+
+  .header__burger {
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .header__burger::before, .header__burger::after,
+.header__burger span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header__burger._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .header__burger._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .header__burger._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .header__nav--auth-buttons {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.header__nav {
+  gap: 20px;
+}
+
+.header__nav--auth-buttons {
+  display: flex;
   gap: 20px;
 }
 
@@ -1457,15 +1574,21 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-bottom: 0;
 }
 
+.header-menu-expandable-services[open] .expandable-chckbox-list.expandable-chckbox-list__container.header-menu-expandable-services__container,
+.header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container {
+  background-color: white;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 10px 10px;
+  z-index: 6;
+}
+
 .header-menu-expandable-services,
 .header-menu-expandable-agreements {
   align-items: center;
-}
-
-.header-menu-expandable-services[open],
-.header-menu-expandable-agreements[open] {
-  position: relative;
-  top: 90px;
 }
 
 .header-menu-expandable-services,
@@ -1531,28 +1654,62 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   flex-direction: column;
 }
 
+.footer-col {
+  width: 20%;
+}
+
 .footer__nav-footer {
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   height: 372px;
-  padding: 0px 140px;
+  padding: 100px 100px;
+  gap: 20px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-.footer__nav-navigation,
+.footer__nav-footer-copyrights {
+  justify-content: space-between;
+  padding: 26px 140px;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer__nav-footer {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 40px 20px;
+  }
+
+  .footer__nav-footer > * {
+    flex: 0 0 260px;
+  }
+
+  .footer__description {
+    width: 267px;
+  }
+}
+@media (max-width: 425px) {
+  .footer__nav-footer {
+    padding: 50px 20px;
+  }
+
+  .footer__nav-footer-copyrights {
+    padding: 26px 28px;
+  }
+}
 .bl-nav,
 .bl-nav__ul,
-.footer__nav-about,
 .bl-about,
 .bl-about__ul,
-.footer__nav-service,
 .bl-service,
 .bl-service__ul {
   width: auto;
 }
 
-.footer__nav-subscribe,
 .bl-subscribe,
 .bl-subscribe__ul {
   width: 260px;
@@ -1561,11 +1718,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .bl-subscribe,
 .bl-subscribe__ul {
   height: auto;
-}
-
-.footer__nav-description {
-  width: 260px;
-  height: 132px;
 }
 
 .bl-nav__li,
@@ -1607,11 +1759,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-top: 20px;
 }
 
-.footer__nav-footer-copyrights {
-  justify-content: space-between;
-  margin: auto 140px;
-}
-
 .footer__nav-footer-copyrights-icons {
   display: flex;
   gap: 20px;
@@ -1636,10 +1783,49 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .registration-page {
   background: no-repeat url("img/registration-page-background.png");
   background-size: cover;
-  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: local;
   height: 753px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .account-registration {
+    width: 90%;
+    max-width: 380px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .acc-reg-textfield,
+.textfield--masked,
+.button.button-with-arrow.reg-button,
+.account-registration__container, .expandable-chckbox-list--toogle {
+    width: 90%;
+  }
+
+  .acc-reg-textfield__label,
+.textfield__input.acc-reg-textfield__input,
+.textfield--masked__label,
+.textfield__input.textfield--masked__input,
+.reg-button__button {
+    width: 100%;
+  }
+
+  .account-registration__label {
+    line-height: normal;
+  }
+
+  .expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle,
+.expandable-chckbox-list--toogle__container, .expandable-chckbox-list--toogle__box {
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .expandable-chckbox-list--toogle {
+    padding: 10px 0 0 5%;
+  }
 }
