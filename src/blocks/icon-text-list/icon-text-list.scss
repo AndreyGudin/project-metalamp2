@@ -19,7 +19,7 @@
 }
 .icon-text-list__container {
   display: flex;
-  width: 291px;
+  max-width: 291px;
   height: 80px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }

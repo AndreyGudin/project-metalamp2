@@ -899,7 +899,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .bullet-list {
-  width: 300px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -943,7 +943,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .icon-text-list__container {
   display: flex;
-  width: 291px;
+  max-width: 291px;
   height: 80px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
@@ -970,7 +970,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .review__textarea {
-  width: 653px;
+  max-width: 653px;
+  padding-left: 10px;
   height: auto;
 }
 

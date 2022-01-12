@@ -903,7 +903,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .bullet-list {
-  width: 300px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -947,7 +947,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .icon-text-list__container {
   display: flex;
-  width: 291px;
+  max-width: 291px;
   height: 80px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
@@ -974,7 +974,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .review__textarea {
-  width: 653px;
+  max-width: 653px;
+  padding-left: 10px;
   height: auto;
 }
 
@@ -1196,8 +1197,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .booking-room-card {
   background-color: white;
-  width: 380px;
-  height: 512px;
+  max-width: 380px;
+  min-height: 512px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -1799,12 +1800,46 @@ body._lock {
 }
 
 @media (max-width: 1024px) {
+  .booking-room-card {
+    width: 90%;
+  }
+
   .room-details-page__room-details-booking-container {
     flex-direction: column-reverse;
   }
 
   .booking-room-card {
     margin: 0 auto;
+  }
+
+  .booking-room-guest-dropdown-block, .button.button-with-arrow.booking-button {
+    width: 90%;
+  }
+
+  .booking-room-guest-dropdown.iqdropdown, .booking-room-guest-dropdown.iqdropdown-menu, .iqdropdown .iqdropdown-menu-option, .booking-button__button {
+    width: 100%;
+  }
+
+  .button-with-arrow__button::after {
+    left: 87%;
+  }
+}
+@media (max-width: 425px) {
+  .graph-reviews {
+    display: none;
+  }
+
+  .room-details-page__room-details-container {
+    padding: 0px 20px 20px;
+    align-items: center;
+  }
+
+  .room-details-page__rules-part, .room-details-page__room-details-part, .booking-room-card__container {
+    flex-direction: column;
+  }
+
+  .room-details-page__rules-part {
+    gap: 20px;
   }
 }
 .room-details-page__room-images-container {
@@ -1873,7 +1908,7 @@ body._lock {
 
 .room-details-page__rules-part-cancel,
 .room-details-page__reviews-part__cancel-label2 {
-  width: 341px;
+  max-width: 341px;
 }
 
 .room-details-page__reviews-part__cancel-label2 {

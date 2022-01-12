@@ -13,7 +13,8 @@
   justify-content: space-evenly;
 }
 .review__textarea {
-  width: 653px;
+  max-width: 653px;
+  padding-left: 10px;
   height: auto;
 }
 
