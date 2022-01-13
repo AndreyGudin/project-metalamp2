@@ -971,7 +971,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .review__textarea {
   max-width: 653px;
-  padding-left: 10px;
   height: auto;
 }
 

@@ -29,10 +29,6 @@
 
 @media (max-width:1024px) {
 
-  .booking-room-card{
-    width: 90%;
-  }
-
   .room-details-page__room-details-booking-container{
     flex-direction: column-reverse;
   }
@@ -42,17 +38,7 @@
     margin: 0 auto;
   }
 
-  .booking-room-guest-dropdown-block,.button.button-with-arrow.booking-button{
-    width: 90%;
-  }
-
-  .booking-room-guest-dropdown.iqdropdown,.booking-room-guest-dropdown.iqdropdown-menu,.iqdropdown .iqdropdown-menu-option,.booking-button__button{
-    width: 100%;
-  }
-
-  .button-with-arrow__button::after{
-    left:87%;
-  }
+  
 
   // .booking-room-card{
   //   position: fixed;
@@ -83,7 +69,8 @@
 @media (max-width:425px) {
 
   .graph-reviews{
-    display: none;
+    width: 90%;
+    height: 270px;
   }
   
 
@@ -96,9 +83,62 @@
     flex-direction: column;
   }
 
+
+  .booking-room-card__container{
+    align-self: flex-start;
+    padding-left: 5%;
+  }
+
   .room-details-page__rules-part{
     gap: 20px;
   }
+
+  .review__textarea {
+    padding-left: 10px;
+}
+
+.booking-room-card{
+  width: 90%;
+  max-width: 380px;
+  padding-bottom: 20px;
+}
+
+.booking-room-guest-dropdown-block,.button.button-with-arrow.booking-button{
+  width: 90%;
+}
+
+.booking-room-guest-dropdown.iqdropdown,.booking-room-guest-dropdown.iqdropdown-menu,.iqdropdown .iqdropdown-menu-option,.booking-button__button{
+  width: 100%;
+}
+
+.button-with-arrow__button::after{
+  left:87%;
+}
+
+.booking-room-card__price-for-days-container, .booking-room-card__service-fee-container, .booking-room-card__addtnl-service-fee-container, .booking-room-card__total-price-container{
+  margin: 0 5% 10px;
+}
+
+.booking-room-card__service-fee-title{
+  display: inline-block;
+  width: 175px;
+
+  &::after{
+    left: 20%;
+    bottom: -1px;
+  }
+}
+
+
+.booking-room-card__addtnl-service-fee-title::after{
+  left: 20%;
+  bottom: -1px;
+}
+
+.graph-reviews__box {
+  margin-top: -195px;
+  margin-left: 77px;
+}
 
 }
 

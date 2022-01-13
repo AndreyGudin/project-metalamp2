@@ -27,61 +27,122 @@ window.onload = function () {
   gradient3Legend.addColorStop(1, "#8BA4F9");
   gradient4Legend.addColorStop(0, "#909090");
   gradient4Legend.addColorStop(1, "#3D4975");
-  var myChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
-      datasets: [{
-        label: "My First Dataset",
-        data: [130, 65, 65, 0],
-        backgroundColor: [gradient1, gradient2, gradient3, gradient4]
-      }]
-    },
-    options: {
-      cutout: "90%",
-      radius: 60,
-      maintainAspectRatio: false,
-      rotation: 180,
-      plugins: {
-        legend: {
-          display: true,
-          position: "right",
-          align: "end",
-          maxWidth: 200,
-          labels: {
-            boxHeight: 10,
-            boxWidth: 10,
-            usePointStyle: true,
-            pointStyle: "circle",
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    var myChart = new Chart(ctx, {
+      type: "doughnut",
+      data: {
+        labels: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
+        datasets: [{
+          label: "My First Dataset",
+          data: [130, 65, 65, 0],
+          backgroundColor: [gradient1, gradient2, gradient3, gradient4]
+        }]
+      },
+      options: {
+        cutout: "90%",
+        radius: 60,
+        maintainAspectRatio: false,
+        rotation: 180,
+        plugins: {
+          legend: {
+            display: true,
+            position: "bottom",
+            align: "start",
+            maxWidth: 200,
+            labels: {
+              boxHeight: 10,
+              boxWidth: 10,
+              usePointStyle: true,
+              pointStyle: "circle",
+              font: {
+                size: 16
+              }
+            }
+          },
+          title: {
+            display: true,
+            position: "top",
+            text: "Впечатления от номера",
             font: {
-              size: 14
+              size: 19,
+              family: "Conv_Montserrat-Bold"
+            },
+            padding: {
+              bottom: 15
             }
           }
-        },
-        title: {
-          display: true,
-          position: "top",
-          text: "Впечатления от номера",
-          font: {
-            size: 19,
-            family: "Conv_Montserrat-Bold"
+        }
+      },
+      plugins: [{
+        beforeDraw: function beforeDraw(c) {
+          var legends = c.legend.legendItems;
+          var gradients = [gradient1Legend, gradient2Legend, gradient3Legend, gradient4Legend];
+          var i = 0;
+          legends.forEach(function (e) {
+            e.fillStyle = gradients[i];
+            i++;
+          });
+        }
+      }]
+    });
+  } else {
+    var _myChart = new Chart(ctx, {
+      type: "doughnut",
+      data: {
+        labels: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
+        datasets: [{
+          label: "My First Dataset",
+          data: [130, 65, 65, 0],
+          backgroundColor: [gradient1, gradient2, gradient3, gradient4]
+        }]
+      },
+      options: {
+        cutout: "90%",
+        radius: 60,
+        maintainAspectRatio: false,
+        rotation: 180,
+        plugins: {
+          legend: {
+            display: true,
+            position: "right",
+            align: "end",
+            maxWidth: 200,
+            labels: {
+              boxHeight: 10,
+              boxWidth: 10,
+              usePointStyle: true,
+              pointStyle: "circle",
+              font: {
+                size: 14
+              }
+            }
           },
-          padding: {
-            bottom: 15
+          title: {
+            display: true,
+            position: "top",
+            text: "Впечатления от номера",
+            font: {
+              size: 19,
+              family: "Conv_Montserrat-Bold"
+            },
+            padding: {
+              bottom: 15
+            }
           }
         }
-      }
-    },
-    plugins: [{
-      beforeDraw: function beforeDraw(c) {
-        var legends = c.legend.legendItems;
-        var gradients = [gradient1Legend, gradient2Legend, gradient3Legend, gradient4Legend];
-        var i = 0;
-        legends.forEach(function (e) {
-          e.fillStyle = gradients[i];
-          i++;
-        });
-      }
-    }]
-  });
+      },
+      plugins: [{
+        beforeDraw: function beforeDraw(c) {
+          var legends = c.legend.legendItems;
+          var gradients = [gradient1Legend, gradient2Legend, gradient3Legend, gradient4Legend];
+          var i = 0;
+          legends.forEach(function (e) {
+            e.fillStyle = gradients[i];
+            i++;
+          });
+        }
+      }]
+    });
+  }
 };
