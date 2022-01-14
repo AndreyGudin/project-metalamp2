@@ -13,13 +13,15 @@ html(lang="ru")
     +header('header','')
     .room-details-page
       .room-details-page__room-images-container
-        .room-details-page__image1
-          img(src="img/image1.png", class="room-details-page__image1-main")
-        .room-details-side-page__side-room-images-container
-          .room-details-page__image2
-            img(src="img/image2.png", class="room-details-page__image2-side")
-          .room-details-page__image3
-            img(src="img/image3.png", class="room-details-page__image3-side")
+        #room-details-page__room-images-container__splide
+          .splide__track
+            ul(class='splide__list')
+              li(class='splide__slide')
+                img(src='img/image1.png')
+              li(class='splide__slide')
+                img(src='img/image2.png')
+              li(class='splide__slide')
+                img(src='img/image3.png')
       .room-details-page__room-details-booking-container
         .room-details-page__room-details-container
           .room-details-page__room-details-part

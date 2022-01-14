@@ -1794,6 +1794,22 @@ body._lock {
   display: flex;
 }
 
+.room-details-page__room-images-container {
+  width: 100%;
+}
+
+.splide__slide {
+  width: fit-content;
+  height: fit-content;
+}
+
+.splide__track > ul {
+  display: flex;
+  height: 485px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .room-details-page__room-booking-part__button-hide {
   display: none;
 }
