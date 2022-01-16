@@ -27,7 +27,7 @@ gradient3Legend.addColorStop(1, "#8BA4F9");
 gradient4Legend.addColorStop(0, "#909090");
 gradient4Legend.addColorStop(1, "#3D4975");
 
-if ( screen.width <= 425 ) {
+if ( screen.width <= 1230 ) {
   const myChart = new Chart(ctx, {
     type: "doughnut",
     data: {
