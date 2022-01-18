@@ -9,4 +9,7 @@ if ( screen.width <= 425 ) {
     autoplay: "true",
   } ).mount();
 }
+
+window.onresize = function(){ location.reload(); }
+
 })

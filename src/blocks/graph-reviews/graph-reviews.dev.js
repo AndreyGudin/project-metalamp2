@@ -86,6 +86,7 @@ window.onload = function () {
         }
       }]
     });
+    myChart.update();
   } else {
     var _myChart = new Chart(ctx, {
       type: "doughnut",
@@ -144,5 +145,11 @@ window.onload = function () {
         }
       }]
     });
+
+    _myChart.update();
   }
+
+  window.onresize = function () {
+    location.reload();
+  };
 };

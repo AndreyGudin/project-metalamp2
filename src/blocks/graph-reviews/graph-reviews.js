@@ -94,6 +94,7 @@ if ( screen.width <= 1230 ) {
       },
     ],
   });
+  myChart.update();
 } else {
   const myChart = new Chart(ctx, {
     type: "doughnut",
@@ -161,8 +162,10 @@ if ( screen.width <= 1230 ) {
       },
     ],
   });
+  myChart.update();
 }
 
+window.onresize = function(){ location.reload(); }
 
 
 }

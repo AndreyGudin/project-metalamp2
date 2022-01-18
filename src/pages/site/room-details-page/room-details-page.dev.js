@@ -10,4 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: "true"
     }).mount();
   }
+
+  window.onresize = function () {
+    location.reload();
+  };
 });
