@@ -12,13 +12,9 @@
 
 .search-room-page{
   display: flex;
-  flex-direction: column;
-}
-.search-room-page__container-body {
-  display: flex;
-  width: 1200px;
-  align-self: center;
-  margin-bottom: 70px;
+  max-width: 1200px;
+  justify-content: center;
+  margin:0px auto 70px;
 }
 
 .search-room-page__container-filter {
@@ -30,6 +26,68 @@
   margin-top: 30px ;
   gap: 30px;
   margin-right: 60px;
+}
+
+.search-room-page__button-hiding-filter{
+  display: none;
+}
+
+@media (max-width:878px) {
+  .search-room-page__container-filter{
+    position: fixed;
+    padding: 100px 0 0 20px;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+    z-index: 5;
+  }
+
+  .search-room-page__container-filter._active{
+    left: 0;
+  }
+
+  .search-room-page__button-hiding-filter{
+    display: block;
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $color-purple;
+    transition: left 0.3s ease 0s;
+
+    &::after {
+      content: "";
+      left: 3px;
+      bottom: 6px;
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      transition: all 0.3s ease 0s;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+    }
+
+    &::after{
+      transform: rotate(45deg);
+    }
+
+    &._active{
+      left:320px;
+    }
+  }
+
+  
+
+  .search-room-page__container-only-rooms{
+    justify-content: center;
+  }
+
 }
 
 .search-room-page__container {
@@ -45,7 +103,7 @@
 }
 
 .search-room-page__container-only-rooms{
-  width: 834px;
+  max-width: 834px;
   height: 100%;
   display: flex;
   flex-direction: row;
