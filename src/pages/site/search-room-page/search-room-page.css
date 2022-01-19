@@ -1804,6 +1804,10 @@ body._lock {
 }
 
 @media (max-width: 878px) {
+  .search-room-page__button-hiding-filter-container {
+    position: relative;
+  }
+
   .search-room-page__container-filter {
     position: fixed;
     padding: 100px 0 0 20px;
@@ -1812,9 +1816,9 @@ body._lock {
     width: 320px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    transition: left 0.3s ease 0s;
-    overflow: auto;
+    overflow: scroll;
     z-index: 5;
+    transition: all 0.3s ease 0s;
   }
 
   .search-room-page__container-filter._active {
@@ -1825,21 +1829,21 @@ body._lock {
     display: block;
     z-index: 5;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
     background-color: #BC9CFF;
-    transition: left 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    left: 0;
   }
   .search-room-page__button-hiding-filter::after {
     content: "";
-    left: 3px;
-    bottom: 6px;
+    left: 7px;
+    bottom: 13px;
     position: absolute;
     height: 50%;
     width: 50%;
-    transition: all 0.3s ease 0s;
     border-top: 2px solid white;
     border-right: 2px solid white;
   }

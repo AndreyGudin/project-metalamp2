@@ -16,7 +16,8 @@ html(lang="ru")
     include ../../ui-kit/ui-forms/ui-kit-inc.pug 
     +header('header','')
     .search-room-page
-      button.search-room-page__button-hiding-filter
+      .search-room-page__button-hiding-filter-container
+        button.search-room-page__button-hiding-filter
       .search-room-page__container-filter
         //+textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
         +textlabel('textfield textfield--filter-date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly,data-multiple-dates-separator=" - ",data-range="true")
