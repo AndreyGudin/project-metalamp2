@@ -1,6 +1,6 @@
 "use strict";
 
-var iconMenu = document.querySelector('.search-room-page__button-hiding-filter');
+var iconMenu = document.querySelector('.search-room-page__button-hiding-filter-container');
 
 if (iconMenu) {
   var headerNav = document.querySelector('.search-room-page__container-filter');

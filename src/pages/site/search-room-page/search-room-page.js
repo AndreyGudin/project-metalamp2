@@ -1,4 +1,4 @@
-const iconMenu = document.querySelector('.search-room-page__button-hiding-filter');
+const iconMenu = document.querySelector('.search-room-page__button-hiding-filter-container');
 if (iconMenu) {
   const headerNav=document.querySelector('.search-room-page__container-filter');
   iconMenu.addEventListener("click",function(e){

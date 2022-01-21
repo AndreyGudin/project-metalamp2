@@ -903,7 +903,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .bullet-list {
-  width: 300px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -947,7 +947,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .icon-text-list__container {
   display: flex;
-  width: 291px;
+  max-width: 291px;
   height: 80px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
@@ -974,7 +974,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .review__textarea {
-  width: 653px;
+  max-width: 653px;
   height: auto;
 }
 
@@ -1195,8 +1195,9 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 }
 
 .booking-room-card {
+  background-color: white;
   width: 380px;
-  height: 512px;
+  min-height: 512px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -1484,7 +1485,7 @@ body._lock {
   }
 
   .header__burger {
-    align-self: flex-end;
+    align-self: center;
     border: none;
     background-color: transparent;
     z-index: 5;
@@ -1493,7 +1494,6 @@ body._lock {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    margin-right: 20px;
   }
   .header__burger::before, .header__burger::after,
 .header__burger span {
@@ -1615,6 +1615,17 @@ body._lock {
 .header-menu-expandable-services__label,
 .header-menu-expandable-agreements__label {
   margin-left: 0px;
+}
+
+.search-room-page__button-hiding-filter-container {
+  display: none;
+}
+
+.header__menus-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-self: flex-end;
 }
 
 .header--logined-user-reg-button,

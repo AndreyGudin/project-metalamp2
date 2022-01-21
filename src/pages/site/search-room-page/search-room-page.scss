@@ -13,8 +13,10 @@
 .search-room-page{
   display: flex;
   max-width: 1200px;
-  justify-content: center;
+  justify-content: space-between;
   margin:0px auto 70px;
+  gap: 20px;
+  padding-left: 30px;
 }
 
 .search-room-page__container-filter {
@@ -25,7 +27,6 @@
   align-items: center;
   margin-top: 30px ;
   gap: 30px;
-  margin-right: 60px;
 }
 
 .search-room-page__button-hiding-filter{
@@ -40,60 +41,91 @@
 
   .search-room-page__container-filter{
     position: fixed;
-    padding: 100px 0 0 20px;
+    align-items: center;
+    padding: 30vh 0 0 10px;
+    margin: 0;
     top: 0;
     left: -100%;
     width: 320px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow: scroll;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: auto;
     z-index: 5;
     transition: all 0.3s ease 0s;
+
+ 
+
   }
+
+
 
   .search-room-page__container-filter._active{
     left: 0;
-  }
 
-  .search-room-page__button-hiding-filter{
-    display: block;
-    z-index: 5;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: $color-purple;
-    transition: all 0.3s ease 0s;
-    left: 0;
-
-    &::after {
+    &::before {
       content: "";
-      left: 7px;
-      bottom: 13px;
-      position: absolute;
-      height: 50%;
-      width: 50%;
-      border-top: 2px solid white;
-      border-right: 2px solid white;
-    }
+      position: fixed;
+      width: 320px;
+      top: 0;
+      left: 0;
+      height: 125px;
+      background-color: #fff;
+      z-index: 5;
+}
 
-    &::after{
-      transform: rotate(45deg);
-    }
+
+
+  }
+  .search-room-page__button-hiding-filter-container{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 6;
 
     &._active{
-      left:320px;
+      .search-room-page__button-hiding-filter-container__box:nth-child(2),
+      .search-room-page__button-hiding-filter-container__box:nth-child(4),
+      .search-room-page__button-hiding-filter-container__box:nth-child(6),
+      .search-room-page__button-hiding-filter-container__box:nth-child(8){
+        opacity: 0;
+      }
     }
-  }
 
+  }
+  .search-room-page__button-hiding-filter-container__box{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin: 3px 3px;
   
-
-  .search-room-page__container-only-rooms{
-    justify-content: center;
   }
 
+  .header__menus-buttons{
+    width: 100%;
+    align-content: center;
+  }
+  
 }
+
+@media (max-width:769px) {
+  .search-room-page__button-hiding-filter-container{
+    bottom:55px;
+  }
+  
+}
+
+@media (max-width:769px) {
+
+  .search-room-page__button-hiding-filter-container{
+    bottom:0;
+  }
+}
+
 
 .search-room-page__container {
   display: flex;
@@ -115,6 +147,7 @@
   flex-wrap: wrap;
   align-self: center;
   gap: 12px;
+  justify-content: center;
 }
 
 .search-room-page__container-rooms-label{

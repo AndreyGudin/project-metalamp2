@@ -30,5 +30,16 @@ mixin header(hclass,huser)
         +button(`button button-without-fill ${hclass}-login-button`,'Войти')
         +button(`button header-menu-item-button ${hclass}-reg-button`,'Зарегистрироваться')
       label(class=hclass_spl.map((item)=>`${item}__user`).join(' '))=huser
-    button(class=hclass_spl.map((item)=>`${item}__burger`).join(' '))
-      span
+    .header__menus-buttons
+      .search-room-page__button-hiding-filter-container
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+        .search-room-page__button-hiding-filter-container__box
+      button(class=hclass_spl.map((item)=>`${item}__burger`).join(' '))
+        span

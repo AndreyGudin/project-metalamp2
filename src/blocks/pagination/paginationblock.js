@@ -22,6 +22,7 @@ $(".pagination__pagination").pagination({
   showNavigator: true,
   formatNavigator: "<%= totalNumber %> вариантов аренды",
   showPrevious: false,
+  pageRange: 1,
   callback: function (data, pagination) {
     // template method of yourself
     var html = template(data);
