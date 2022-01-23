@@ -1814,6 +1814,11 @@ body._lock {
   display: none;
 }
 
+@media (max-width: 1150px) {
+  .search-room-page__container-rooms-label {
+    text-align: center;
+  }
+}
 @media (max-width: 878px) {
   .search-room-page__button-hiding-filter-container {
     position: relative;
@@ -1877,15 +1882,19 @@ body._lock {
     width: 100%;
     align-content: center;
   }
-}
-@media (max-width: 769px) {
+
   .search-room-page__button-hiding-filter-container {
-    bottom: 55px;
+    bottom: 120px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 501px) {
   .search-room-page__button-hiding-filter-container {
     bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  .search-room-page {
+    padding-left: 0px;
   }
 }
 .search-room-page__container {
