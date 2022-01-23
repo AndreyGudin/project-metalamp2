@@ -118,8 +118,7 @@
   .splide__track > ul {
     height: 228px;
   }
-}
-@media (max-width: 768px) {
+
   .room-details-page__room-booking-part {
     padding-right: 0px;
   }
@@ -127,9 +126,6 @@
 
 .room-details-page__room-booking-part__button-hide {
   display: none;
-}
-
-@media (max-width: 768px) {
 }
 
 @media (max-width: 425px) {
