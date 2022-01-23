@@ -10,8 +10,8 @@
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
-.sign-in-page{
-  background:no-repeat url('img/sign-in-page-background.png');
+.sign-in-page {
+  background: no-repeat url("img/sign-in-page-background.png");
   background-size: cover;
   background-position: center center;
   background-attachment: local;
@@ -22,30 +22,30 @@
   justify-content: center;
 }
 
-@media (max-width:415px) {
-  .login-card{
+@media (max-width: 415px) {
+  .login-card {
     width: 90%;
     max-width: 380px;
   }
 
-  .login-card__container{
+  .login-card__container {
     width: 90%;
     max-width: 320px;
   }
 
-  .textfield.login-card--textfield,.button.button-with-arrow.login-button{
+  .textfield.login-card--textfield,
+  .button.button-with-arrow.login-button {
     width: 90%;
   }
-  .textfield__input.login-card--textfield__input,.login-button__button{
+  .textfield__input.login-card--textfield__input,
+  .login-button__button {
     width: 100%;
   }
 
-  .login-button__button::after{
-    left:90%;
+  .login-button__button::after {
+    left: 90%;
   }
-  .login-card__label{
+  .login-card__label {
     line-height: initial;
   }
-
-
 }
