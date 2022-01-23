@@ -13,7 +13,8 @@
 .sign-in-page{
   background:no-repeat url('img/sign-in-page-background.png');
   background-size: cover;
-  background-size:100% 100%;
+  background-position: center center;
+  background-attachment: local;
   height: 753px;
   display: flex;
   flex-direction: column;
@@ -21,3 +22,30 @@
   justify-content: center;
 }
 
+@media (max-width:415px) {
+  .login-card{
+    width: 90%;
+    max-width: 380px;
+  }
+
+  .login-card__container{
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .textfield.login-card--textfield,.button.button-with-arrow.login-button{
+    width: 90%;
+  }
+  .textfield__input.login-card--textfield__input,.login-button__button{
+    width: 100%;
+  }
+
+  .login-button__button::after{
+    left:90%;
+  }
+  .login-card__label{
+    line-height: initial;
+  }
+
+
+}
