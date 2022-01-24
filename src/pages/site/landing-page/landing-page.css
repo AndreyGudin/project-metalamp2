@@ -17,7 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.landing-page__label, .footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
+.landing-page__slogan-label, .footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
 .booking-room-card__addtnl-service-fee-container,
 .booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
@@ -1806,7 +1806,7 @@ body._lock {
   margin: 70px 0px 0px 140px;
 }
 
-.landing-page__label {
+.landing-page__slogan-label {
   width: 297px;
   text-align: right;
   margin: auto 134px 18px auto;
