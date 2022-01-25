@@ -3,8 +3,9 @@
   height: 67px;
   display: flex;
   flex-direction: column;
+}
 
-  input {
+.textfield__input {
     width: 320px;
     height: 44px;
     border-radius: 5px;
@@ -18,7 +19,7 @@
     }
   }
 
-  label {
+.textfield__label {
     @extend %font-label;
   }
-}
+

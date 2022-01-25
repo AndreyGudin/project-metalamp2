@@ -17,7 +17,7 @@
   font-style: normal;
 }
 .review__time,
-.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield__input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield label, .button-apply,
+.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield__label, .button-apply,
 .button-clear, .iqdropdown-item, .guest-dropdown__title, .iqdropdown .iqdropdown-item-controls .counter {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
@@ -139,17 +139,19 @@
   display: flex;
   flex-direction: column;
 }
-.textfield input {
+
+.textfield__input {
   width: 320px;
   height: 44px;
   border-radius: 5px;
   opacity: 0.25;
   margin-top: 5px;
 }
-.textfield input:hover,
-.textfield input :focus {
+.textfield__input:hover,
+.textfield__input :focus {
   opacity: 0.75;
 }
+
 .rooms-block {
   width: 266px;
   height: 65px;
