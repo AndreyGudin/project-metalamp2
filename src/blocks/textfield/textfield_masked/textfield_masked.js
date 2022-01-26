@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.textfield__input.textfield--masked__input').inputmask({
+  $('.textfield__input.textfield_masked__input').inputmask({
     alias:"datetime",
     inputFormat:"dd.mm.yyyy",
     placeholder:"ДД.ММ.ГГГГ",

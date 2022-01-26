@@ -2,8 +2,8 @@ mixin login-card(lclass,ltitle)
   div(class=lclass)
     label(class=lclass + '__title')=ltitle
     form(class=lclass + '__form')
-      +textlabel('textfield login-card--textfield','','Email') 
-      +textlabel('textfield login-card--textfield','','Пароль')
+      +textfield({className:'textfield login-card--textfield',title:'',placeholder:'Email'}) 
+      +textfield({className:'textfield login-card--textfield',title:'',placeholder:'Пароль'})
       +button('button button-with-arrow login-button','Перейти к оплате')
     div(class=lclass + '__container')
       label(class=lclass + '__label') Уже есть аккаунт на Toxin

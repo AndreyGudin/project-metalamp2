@@ -1,9 +1,9 @@
 import "../../../blocks/guest-dropdown/index.js";
 import "../../../blocks/guest-dropdown/guest-dropdown.js";
 import "../../../blocks/guest-dropdown/--rooms/guest-dropdown--rooms.js";
-import "../../../blocks/textfield/textfield--date-dropdown/datepicker.min.js";
-import "../../../blocks/textfield/textfield--date-dropdown/textfield--date-dropdown.js";
-import "../../../blocks/textfield/textfield--filter-date-dropdown/textfield--filter-date-dropdown.js";
+import "../../../blocks/textfield/textfield_date-dropdown/datepicker.min.js";
+import "../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js";
+import "../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js";
 import "../../../blocks/like-button/like-button.js";
 import "../../../blocks/rate-button/rate-button.js";
 import "../../../blocks/range-slider/nouislider.js";

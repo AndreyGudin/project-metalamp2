@@ -1,5 +1,5 @@
-mixin textlabel(className,title,placeholder)
-	- var classNameDivided=className.split(' ');
-	div(class=className)
-		label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=title
-			input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=placeholder)&attributes(attributes)
+mixin textfield(options)
+	- var classNameDivided=options.className.split(' ');
+	div(class=options.className)
+		label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+			input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)

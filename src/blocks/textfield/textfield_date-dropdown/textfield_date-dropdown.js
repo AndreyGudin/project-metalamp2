@@ -1,4 +1,4 @@
-$(".textfield--date-dropdown__input").datepicker({
+$(".textfield_date-dropdown__input").datepicker({
   clearButton: true,
   navTitles: { days: "MM yyyy" },
   nextHtml:

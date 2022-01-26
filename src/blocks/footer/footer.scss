@@ -118,16 +118,16 @@
   position: static;
 }
 
-.textfield__input.textfield--subscription__input.textfield--subscription--footer__input,.textfield__label.textfield--subscription__label.textfield--subscription--footer__label,
-.textfield.textfield--subscription--footer {
+.textfield__input.textfield_subscription__input.textfield_subscription--footer__input,.textfield__label.textfield_subscription__label.textfield_subscription--footer__label,
+.textfield.textfield_subscription--footer {
   width: 260px;
 }
 
-.textfield__input.textfield--subscription__input.textfield--subscription--footer__input {
+.textfield__input.textfield_subscription__input.textfield_subscription--footer__input {
   position: relative;
 }
 
-.textfield__label.textfield--subscription__label.textfield--subscription--footer__label::after {
+.textfield__label.textfield_subscription__label.textfield_subscription--footer__label::after {
   height: 67px;
   top: 7px;
 }

@@ -1,4 +1,4 @@
-$(".textfield--filter-date-dropdown__input").datepicker({
+$(".textfield_filter-date-dropdown__input").datepicker({
   dateFormat: "d M",
   clearButton: true,
   navTitles: { days: "MM yyyy" },
