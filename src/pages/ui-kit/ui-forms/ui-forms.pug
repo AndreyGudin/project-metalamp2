@@ -11,7 +11,7 @@ html(lang="ru")
 		include ui-kit-inc.pug
 		.main
 			+textfield({className:'textfield',title:'Text field',placeholder:'Email'})
-			+guest-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Dropdown','0')
+			+guest-dropdown({className:'guest-dropdown',title:'Dropdown',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
 			+textfield({className:'textfield textfield_masked',title:'Text field',placeholder:'ДД.ММ.ГГГГ'})
 			+guest-dropdown('Спальни','Кровати','Ванные комнаты','rooms','Dropdown','1')
 			+textfield({className:'textfield textfield_date-dropdown',title:'Dropdown',placeholder:'ДД.ММ.ГГГГ'})(readonly)

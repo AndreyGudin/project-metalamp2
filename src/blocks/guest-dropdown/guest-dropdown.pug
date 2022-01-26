@@ -1,4 +1,17 @@
-mixin guest-dropdown(flabel,slabel,tlabel,cls,dtitle,hide)
+mixin guest-dropdown(options)
+  - var i=1
+  - var mas=[...options.menuItems]
+  div(class=`${options.className}-block`)
+  label(class=`${options.className}__title`)=options.title
+  div(class = `${options.className} iqdropdown`)
+    p.iqdropdown-selection
+    div(class = `${options.className} iqdropdown-menu`, data-hide = options.hide)
+      each item in options.menuItems
+        .iqdropdown-menu-option(data-id=`item${i}`)
+          div
+            p.iqdropdown-item=item
+            - i++
+//-mixin guest-dropdown(flabel,slabel,tlabel,cls,dtitle,hide)
   -var i = cls + ' iqdropdown'
   -var ii = cls + ' iqdropdown-menu'
   div(class=cls + "-block")
