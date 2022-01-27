@@ -22,10 +22,10 @@ mixin header(hclass,huser)
           stop(offset="1" stop-color="#8BA4F9")/
     nav(class=hclass_spl.map((item)=>`${item}__nav`).join(' '))
       label(class=hclass_spl.map((item)=>`${item}__label-about`).join(' ') for="") О нас
-      +expandable-chckbox-list('expandable-chckbox-list header-menu-expandable-services','Услуги',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']) 
+      +expandable-checkbox-list('expandable-checkbox-list header-menu-expandable-services','Услуги',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']) 
       label(class=hclass_spl.map((item)=>`${item}__label-jobs`).join(' ') for="") Вакансии
       label(class=hclass_spl.map((item)=>`${item}__label-news`).join(' ') for="") Новости
-      +expandable-chckbox-list('expandable-chckbox-list header-menu-expandable-agreements','Соглашения',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']) 
+      +expandable-checkbox-list('expandable-checkbox-list header-menu-expandable-agreements','Соглашения',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']) 
       div(class=hclass_spl.map((item)=>`${item}__nav--auth-buttons`).join(' '))
         +button(`button button-without-fill ${hclass}-login-button`,'Войти')
         +button(`button header-menu-item-button ${hclass}-reg-button`,'Зарегистрироваться')

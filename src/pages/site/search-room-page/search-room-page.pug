@@ -18,21 +18,22 @@ html(lang="ru")
     .search-room-page
       .search-room-page__container-filter
         //+textlabel('textfield textfield_date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)
-        +textlabel('textfield textfield_filter-date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly,data-multiple-dates-separator=" - ",data-range="true")
-        +quantity-dropdown('Взрослые','Дети','Младенцы','guest-dropdown','Гости','0')
+        +textfield({className:'textfield textfield_filter-date-dropdown',title:'Dropdown',placeholder:''})(readonly,data-multiple-dates-separator=" - ",data-range="true")
+        //+textlabel('textfield textfield_filter-date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly,data-multiple-dates-separator=" - ",data-range="true")
+        +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
         .search-room-page__container-range-slider
           +range-slider('range-slider','Диапазон цены')
           label.search-room-page__range-slider-label Стоимость за сутки пребывания в номере
-        +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons','Правила дома',
+        +expandable-checkbox-list('expandable-checkbox-list expandable-checkbox-list_checkbox-buttons','Правила дома',
         ['Можно курить','Можно с питомцами','Можно пригласить гостей (до 10 человек)'])(open)
-        +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--rich-checkbox-buttons','Доступность',
+        +expandable-checkbox-list('expandable-checkbox-list expandable-checkbox-list--rich-checkbox-buttons','Доступность',
         {'Широкий коридор':'Ширина коридоров в номере не менее 91см','Помощник для инвалидов':'На 1 этаже вас встретит специалист  и проводит до номера.'})(open)
-        +quantity-dropdown('Спальни','Кровати','Ванные комнаты','rooms','Удобства номера','1')
-        +expandable-chckbox-list('expandable-chckbox-list','Дополнительные удобства',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])        
+        +guest-dropdown({className:'guest-dropdown guest-dropdown_rooms',title:'Удобства номера',menuItems:['Спальни','Кровати','Ванные комнаты'],hide:'1'})
+        +expandable-checkbox-list('expandable-checkbox-list','Дополнительные удобства',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'])        
       .search-room-page__container
-        .search-room-page__container-rooms
-          label.search-room-page__container-rooms-label Номера, которые мы для вас подобрали
-          .search-room-page__container-only-rooms
+        .search-room-page__container-guest-dropdown_rooms
+          label.search-room-page__container-guest-dropdown_rooms-label Номера, которые мы для вас подобрали
+          .search-room-page__container-only-guest-dropdown_rooms
             +room-card('room-card',['../../../blocks/room-card/img/888/888-1.png','../../../blocks/room-card/img/888/888-2.png','../../../blocks/room-card/img/888/888-3.png','../../../blocks/room-card/img/888/888-4.png'],'888','Люкс','9990','145','5')  
             +room-card('room-card room-card840',['../../../blocks/room-card/img/840/840-1.png','../../../blocks/room-card/img/840/840-2.png','../../../blocks/room-card/img/840/840-3.png','../../../blocks/room-card/img/840/840-4.png'],'840','','9990','65','4')
             +room-card('room-card room-card980',['../../../blocks/room-card/img/980/980-1.png','../../../blocks/room-card/img/980/980-2.png','../../../blocks/room-card/img/980/980-3.png','../../../blocks/room-card/img/980/980-4.png'],'980','','8500','35','3')

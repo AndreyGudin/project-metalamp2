@@ -1,0 +1,19 @@
+mixin expandable-checkbox-list(options)
+  - var classNameDivided=options.className.split(' ')
+  - var i=0;
+  details(class=options.className)&attributes(attributes)
+    summary(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
+    div(class=classNameDivided.map((item)=>`${item}__list`).join(' '))
+      -if (Array.isArray(options.listItems))
+        each val in options.listItems
+          div(class=classNameDivided.map((item)=>`${item}__list-item`).join(' '))
+            input(class=classNameDivided.map((item)=>`${item}__input`).join(' '), type="checkbox", name=classNameDivided.map((item)=>`${item}__input`).join(' '))
+            label(class=classNameDivided.map((item)=>`${item}__label`).join(' '), for=classNameDivided.map((item)=>`${item}__input`).join(' '))=val
+              span
+      -else
+        each val,keys in options.listItems
+          div(class=classNameDivided.map((item)=>`${item}__list-item`).join(' '))
+            input(class=classNameDivided.map((item)=>`${item}__input`).join(' '), type="checkbox", name=classNameDivided.map((item)=>`${item}__input`).join(' '))
+            label(class=classNameDivided.map((item)=>`${item}__label`).join(' '), for=classNameDivided.map((item)=>`${item}__input`).join(' '))=keys
+              span
+              p(class=classNameDivided.map((item)=>`${item}__p`).join(' '))=val

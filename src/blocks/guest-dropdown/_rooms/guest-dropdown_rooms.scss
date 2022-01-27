@@ -1,4 +1,4 @@
-.rooms-block {
+.guest-dropdown_rooms-block {
   // Стиль контейнера для дропдауна
   width: 266px;
   height: 65px;
@@ -6,16 +6,16 @@
   flex-direction: column;
 }
 
-.rooms.iqdropdown {
+.guest-dropdown_rooms.iqdropdown {
   width: 266px;
 }
 
-.rooms__title {
+.guest-dropdown_rooms__title {
   @extend %font-label;
   margin-bottom: 5px;
 }
 
-.rooms.iqdropdown-menu {
+.guest-dropdown_rooms.iqdropdown-menu {
   width: 266px;
   height: 119px;
 

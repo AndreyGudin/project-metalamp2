@@ -1,30 +1,13 @@
 mixin guest-dropdown(options)
   - var i=1
-  - var mas=[...options.menuItems]
-  div(class=`${options.className}-block`)
-  label(class=`${options.className}__title`)=options.title
-  div(class = `${options.className} iqdropdown`)
-    p.iqdropdown-selection
-    div(class = `${options.className} iqdropdown-menu`, data-hide = options.hide)
-      each item in options.menuItems
-        .iqdropdown-menu-option(data-id=`item${i}`)
-          div
-            p.iqdropdown-item=item
-            - i++
-//-mixin guest-dropdown(flabel,slabel,tlabel,cls,dtitle,hide)
-  -var i = cls + ' iqdropdown'
-  -var ii = cls + ' iqdropdown-menu'
-  div(class=cls + "-block")
-    label(class=cls + "__title")=dtitle
-    div(class = i)
+  - var classNameDivided=options.className.split(' ');
+  div(class=classNameDivided.map((item)=>`${item}-block`).join(' '))
+    label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
+    div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown`)
       p.iqdropdown-selection
-      div(class = ii, data-hide = hide) 
-        .iqdropdown-menu-option(data-id="item1")
-          div
-            p.iqdropdown-item=flabel
-        .iqdropdown-menu-option(data-id="item2")
-          div
-            p.iqdropdown-item=slabel
-        .iqdropdown-menu-option(data-id="item3")
-          div
-            p.iqdropdown-item=tlabel
+      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu`, data-hide = options.hide)
+        each item in options.menuItems
+          .iqdropdown-menu-option(data-id=`item${i}`)
+            div
+              p.iqdropdown-item=item
+              - i++

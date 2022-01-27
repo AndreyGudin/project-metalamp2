@@ -183,7 +183,7 @@ body._lock {
 }
 
 
-.header-menu-expandable-services[open] .expandable-chckbox-list.expandable-chckbox-list__container.header-menu-expandable-services__container,
+.header-menu-expandable-services[open] .expandable-checkbox-list.expandable-checkbox-list__list.header-menu-expandable-services__container,
 .header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container{
   background-color: white;
   position: absolute;
@@ -195,7 +195,7 @@ body._lock {
   z-index: 6;
 }
 
-// .expandable-chckbox-list__box,.expandable-chckbox-list{
+// .expandable-checkbox-list__list-item,.expandable-checkbox-list{
 //   max-width: 280px;
 // }
 

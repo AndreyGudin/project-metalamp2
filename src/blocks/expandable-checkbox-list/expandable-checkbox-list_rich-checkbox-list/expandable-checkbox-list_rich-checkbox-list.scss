@@ -1,4 +1,4 @@
-.expandable-chckbox-list--rich-checkbox-buttons__title {
+.expandable-checkbox-list_rich-checkbox-list__title {
   pointer-events: none;
 
   &::after {
@@ -6,7 +6,7 @@
   }
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__label {
+.expandable-checkbox-list_rich-checkbox-list__label {
   line-height: normal;
   max-width: 230px;
   height: 51px;
@@ -15,7 +15,7 @@
   color: $color-ds75;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__p {
+.expandable-checkbox-list_rich-checkbox-list__p {
   font: $font-h3;
   color: $color-ds50;
   margin: 0;
