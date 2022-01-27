@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield__label, .button-apply,
+.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .guest-dropdown_rooms__title, .textfield__label, .button-apply,
 .button-clear, .iqdropdown-item, .guest-dropdown__title, .iqdropdown .iqdropdown-item-controls .counter {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
@@ -129,7 +129,7 @@
   height: 12px;
 }
 
-.rooms.iqdropdown .iqdropdown-selection::after {
+.guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
   top: -5px;
 }
 
@@ -152,26 +152,26 @@
   opacity: 0.75;
 }
 
-.rooms-block {
+.guest-dropdown_rooms-block {
   width: 266px;
   height: 65px;
   display: flex;
   flex-direction: column;
 }
 
-.rooms.iqdropdown {
+.guest-dropdown_rooms.iqdropdown {
   width: 266px;
 }
 
-.rooms__title {
+.guest-dropdown_rooms__title {
   margin-bottom: 5px;
 }
 
-.rooms.iqdropdown-menu {
+.guest-dropdown_rooms.iqdropdown-menu {
   width: 266px;
   height: 119px;
 }
-.rooms.iqdropdown-menu .iqdropdown-menu-option {
+.guest-dropdown_rooms.iqdropdown-menu .iqdropdown-menu-option {
   width: 266px;
 }
 
@@ -377,7 +377,7 @@
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.25) 0%, rgba(188, 156, 255, 0.25) 100%);
 }
 
-.expandable-chckbox-list {
+.expandable-checkbox-list {
   width: 266px;
 }
 
@@ -431,7 +431,7 @@ details[open] summary ~ * {
     opacity: 1;
   }
 }
-.expandable-chckbox-list__container {
+.expandable-checkbox-list__list {
   width: 280px;
   height: auto;
   display: flex;
@@ -440,18 +440,18 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.expandable-chckbox-list__box {
+.expandable-checkbox-list__list-item {
   display: flex;
   flex-direction: row;
   margin-bottom: 9px;
 }
 
-.expandable-chckbox-list__label {
+.expandable-checkbox-list__label {
   margin: auto 0;
   margin-left: 10px;
 }
 
-.expandable-chckbox-list__input {
+.expandable-checkbox-list__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -466,7 +466,7 @@ details[open] summary ~ * {
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
-.expandable-chckbox-list__input:after {
+.expandable-checkbox-list__input:after {
   content: "";
   display: block;
   left: 0;
@@ -485,7 +485,7 @@ details[open] summary ~ * {
   top: 4px;
   transform: rotate(var(--r, 20deg));
 }
-.expandable-chckbox-list__input:checked {
+.expandable-checkbox-list__input:checked {
   --bc: var(--active);
   --d-o: 0.3s;
   --d-t: 0.6s;
@@ -496,7 +496,7 @@ details[open] summary ~ * {
   border-radius: 4px;
 }
 
-.expandable-chckbox-list__input + .expandable-chckbox-list__label {
+.expandable-checkbox-list__input + .expandable-checkbox-list__label {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -520,15 +520,15 @@ details[open] summary ~ * {
   background: url(../../../blocks/textfield/textfield_subscription/svg/arrow_forward.svg) no-repeat 12px 12px;
 }
 
-.expandable-chckbox-list--checkbox-buttons {
+.expandable-checkbox-list_checkbox-buttons {
   height: auto;
 }
 
-.expandable-chckbox-list--checkbox-buttons__title {
+.expandable-checkbox-list_checkbox-buttons__title {
   pointer-events: none;
 }
 
-.expandable-chckbox-list--checkbox-buttons__title::after {
+.expandable-checkbox-list_checkbox-buttons__title::after {
   visibility: hidden;
   width: 0;
   height: 0;
@@ -537,19 +537,19 @@ details[open] summary ~ * {
   border: 0;
 }
 
-.expandable-chckbox-list--checkbox-buttons__label {
+.expandable-checkbox-list_checkbox-buttons__label {
   max-width: 190px;
   hyphens: auto;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__title {
+.expandable-checkbox-list_rich-checkbox-list__title {
   pointer-events: none;
 }
-.expandable-chckbox-list--rich-checkbox-buttons__title::after {
+.expandable-checkbox-list_rich-checkbox-list__title::after {
   visibility: hidden;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__label {
+.expandable-checkbox-list_rich-checkbox-list__label {
   line-height: normal;
   max-width: 230px;
   height: 51px;
@@ -558,7 +558,7 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__p {
+.expandable-checkbox-list_rich-checkbox-list__p {
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   margin: 0;
@@ -629,11 +629,11 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-chckbox-list--toogle__input {
+.expandable-checkbox-list_toogle__input {
   width: 40px;
   border-radius: 10px;
 }
-.expandable-chckbox-list--toogle__input:after {
+.expandable-checkbox-list_toogle__input:after {
   opacity: 1;
   border-radius: 50%;
   width: 12px;
@@ -643,13 +643,13 @@ details[open] summary ~ * {
   left: 3px;
   transform: translateX(var(--x, 0));
 }
-.expandable-chckbox-list--toogle__input:checked {
+.expandable-checkbox-list_toogle__input:checked {
   --x: 17px;
   border-radius: 10px;
   --bcg: #bc9cff;
 }
 
-.expandable-chckbox-list--toogle__label {
+.expandable-checkbox-list_toogle__label {
   color: rgba(31, 32, 65, 0.75);
 }
 

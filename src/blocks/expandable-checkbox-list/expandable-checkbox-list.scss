@@ -1,4 +1,4 @@
-.expandable-chckbox-list{
+.expandable-checkbox-list{
   width: 266px;
 }
 summary {
@@ -57,7 +57,7 @@ details[open] summary ~ * {
   }
 }
 
-.expandable-chckbox-list__container {
+.expandable-checkbox-list__list {
   width: 280px;
   height: auto;
   display: flex;
@@ -66,18 +66,18 @@ details[open] summary ~ * {
   color: $color-ds50;
 }
 
-.expandable-chckbox-list__box {
+.expandable-checkbox-list__list-item {
   display: flex;
   flex-direction: row;
   margin-bottom: 9px;
 }
 
-.expandable-chckbox-list__label {
+.expandable-checkbox-list__label {
   margin: auto 0;
   margin-left: 10px;
 }
 
-.expandable-chckbox-list__input {
+.expandable-checkbox-list__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -129,7 +129,7 @@ details[open] summary ~ * {
   }
 }
 
-.expandable-chckbox-list__input + .expandable-chckbox-list__label {
+.expandable-checkbox-list__input + .expandable-checkbox-list__label {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;

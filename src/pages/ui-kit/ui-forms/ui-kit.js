@@ -1,6 +1,6 @@
 import "../../../blocks/guest-dropdown/index.js";
 import "../../../blocks/guest-dropdown/guest-dropdown.js";
-import "../../../blocks/guest-dropdown/--rooms/guest-dropdown--rooms.js";
+import "../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js";
 import "../../../blocks/textfield/textfield_date-dropdown/datepicker.min.js";
 import "../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js";
 import "../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js";

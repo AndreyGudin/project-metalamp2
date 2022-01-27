@@ -4,7 +4,7 @@ require("../../../blocks/guest-dropdown/index.js");
 
 require("../../../blocks/guest-dropdown/guest-dropdown.js");
 
-require("../../../blocks/guest-dropdown/--rooms/guest-dropdown--rooms.js");
+require("../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js");
 
 require("../../../blocks/textfield/textfield_date-dropdown/datepicker.min.js");
 

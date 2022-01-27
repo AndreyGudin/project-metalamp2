@@ -1,0 +1,21 @@
+.expandable-checkbox-list_checkbox-buttons {
+  height: auto;
+}
+
+.expandable-checkbox-list_checkbox-buttons__title {
+  pointer-events: none;
+}
+
+.expandable-checkbox-list_checkbox-buttons__title::after {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.expandable-checkbox-list_checkbox-buttons__label {
+  max-width: 190px;
+  hyphens: auto;
+}

@@ -10,7 +10,7 @@ mixin account-registration(aclass,atitle)
     form(class=aclass_spl.map((item)=>`${item}__login-form`).join(' '))
       +textfield({className:'textfield acc-reg-textfield',title:'Данные для входа в сервис',placeholder:'Email'}) 
       +textfield({className:'textfield acc-reg-textfield',title:'',placeholder:'Пароль'})
-      +expandable-chckbox-list('expandable-chckbox-list expandable-chckbox-list--checkbox-buttons expandable-chckbox-list--toogle'
+      +expandable-checkbox-list('expandable-checkbox-list expandable-checkbox-list_checkbox-buttons expandable-checkbox-list_toogle'
       ,'',['Получать спецпредложения'])(open)
       +button('button button-with-arrow reg-button','Перейти к оплате')
     div(class=aclass_spl.map((item)=>`${item}__container`).join(' '))

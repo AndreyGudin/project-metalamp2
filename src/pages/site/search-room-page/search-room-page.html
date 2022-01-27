@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js"></script>
-    <script src="../../../blocks/textfield/textfield--masked/textfield--masked.js"></script>
+    <script src="../../../blocks/textfield/textfield_masked/jquery.inputmask.js"></script>
+    <script src="../../../blocks/textfield/textfield_masked/textfield_masked.js"></script>
     <script type="module" src="../../ui-kit/ui-forms/ui-kit.js"></script>
     <script type="module" src="search-room-page.js"></script>
     <script src="../../../blocks/room-card/splide.js"></script>
@@ -128,17 +128,18 @@
         </header>
     <div class="search-room-page">
       <div class="search-room-page__container-filter">
-        <!--+textlabel('textfield textfield--date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)-->
-            <div class="textfield textfield--filter-date-dropdown search-room__data-of-arrival">
-              <label class="textfield__label textfield--filter-date-dropdown__label search-room__data-of-arrival__label" for="textfield__input textfield--filter-date-dropdown__input search-room__data-of-arrival__input">Дата пребывания в отеле
-                <input class="textfield__input textfield--filter-date-dropdown__input search-room__data-of-arrival__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - " data-range="true">
+        <!--+textlabel('textfield textfield_date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly)-->
+            <div class="textfield textfield_filter-date-dropdown">
+              <label class="textfield__label textfield_filter-date-dropdown__label" for="textfield__input textfield_filter-date-dropdown__input">Dropdown
+                <input class="textfield__input textfield_filter-date-dropdown__input" type="text" placeholder="" readonly data-multiple-dates-separator=" - " data-range="true">
               </label>
             </div>
+        <!--+textlabel('textfield textfield_filter-date-dropdown search-room__data-of-arrival','Дата пребывания в отеле','ДД.ММ.ГГГГ')(readonly,data-multiple-dates-separator=" - ",data-range="true")-->
             <div class="guest-dropdown-block">
               <label class="guest-dropdown__title">Гости</label>
               <div class="guest-dropdown iqdropdown">
                 <p class="iqdropdown-selection"></p>
-                <div class="guest-dropdown iqdropdown-menu" data-hide="0"> 
+                <div class="guest-dropdown iqdropdown-menu" data-hide="0">
                   <div class="iqdropdown-menu-option" data-id="item1">
                     <div>
                       <p class="iqdropdown-item">Взрослые</p>
@@ -200,11 +201,11 @@
                 </div>
               </div>
             </details>
-            <div class="rooms-block">
-              <label class="rooms__title">Удобства номера</label>
-              <div class="rooms iqdropdown">
+            <div class="guest-dropdown-block guest-dropdown_rooms-block">
+              <label class="guest-dropdown__title guest-dropdown_rooms__title">Удобства номера</label>
+              <div class="guest-dropdown_rooms iqdropdown">
                 <p class="iqdropdown-selection"></p>
-                <div class="rooms iqdropdown-menu" data-hide="1"> 
+                <div class="guest-dropdown_rooms iqdropdown-menu" data-hide="1">
                   <div class="iqdropdown-menu-option" data-id="item1">
                     <div>
                       <p class="iqdropdown-item">Спальни</p>
@@ -254,9 +255,9 @@
             </details>
       </div>
       <div class="search-room-page__container">
-        <div class="search-room-page__container-rooms">
-          <label class="search-room-page__container-rooms-label">Номера, которые мы для вас подобрали</label>
-          <div class="search-room-page__container-only-rooms">
+        <div class="search-room-page__container-guest-dropdown_rooms">
+          <label class="search-room-page__container-guest-dropdown_rooms-label">Номера, которые мы для вас подобрали</label>
+          <div class="search-room-page__container-only-guest-dropdown_rooms">
                 <div class="room-card">
                   <div class="room-card__photos">
                     <div class="splide" id="room-card__splide">
@@ -1113,9 +1114,9 @@
                       <li class="bullet-list__li bl-subscribe__li"><span class="bullet-list__span bl-subscribe__span">Получайте специальные предложения и новости сервиса</span></li>
                     </ul>
                   </div>
-                  <div class="textfield textfield--subscription textfield--subscription--footer">
-                    <label class="textfield__label textfield--subscription__label textfield--subscription--footer__label" for="textfield__input textfield--subscription__input textfield--subscription--footer__input">
-                      <input class="textfield__input textfield--subscription__input textfield--subscription--footer__input" type="text" placeholder="Email">
+                  <div class="textfield textfield_subscription textfield_subscription--footer">
+                    <label class="textfield__label textfield_subscription__label textfield_subscription--footer__label" for="textfield__input textfield_subscription__input textfield_subscription--footer__input">
+                      <input class="textfield__input textfield_subscription__input textfield_subscription--footer__input" type="text" placeholder="Email">
                     </label>
                   </div>
             </div>

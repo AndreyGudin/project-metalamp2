@@ -9,7 +9,7 @@ mixin booking-room-card(bclass,bnumber,btype,bprice)
       div(class=bclass + "__container")
         +textfield({className:'textfield textfield_date-dropdown',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
         +textfield({className:'textfield textfield_date-dropdown',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
-      +quantity-dropdown('Взрослые','Дети','Младенцы','booking-room-guest-dropdown','Гости','0')
+      +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
       div(class=`${bclass}__price-for-days-container`)
         span(class=`${bclass}__price-for-days`)=`${bprice}₽ х 4 суток`
         span(class=`${bclass}__total-price`)='39 660₽'

@@ -34,7 +34,7 @@
   .acc-reg-textfield,
   .textfield--masked,
   .button.button-with-arrow.reg-button,
-  .account-registration__container,.expandable-chckbox-list--toogle {
+  .account-registration__container,.expandable-checkbox-list_toogle {
     width: 90%;
   }
 
@@ -49,13 +49,13 @@
     line-height: normal;
   }
 
-  .expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle,
-  .expandable-chckbox-list--toogle__container,.expandable-chckbox-list--toogle__box{
+  .expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle,
+  .expandable-checkbox-list_toogle__container,.expandable-checkbox-list_toogle__box{
     margin: 0;
     max-width: 280px;
   }
 
-  .expandable-chckbox-list--toogle{
+  .expandable-checkbox-list_toogle{
     padding: 10px 0 0 5%;
   }
 }
