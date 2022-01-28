@@ -13,7 +13,7 @@
   visibility: hidden;
 }
 
-.rate-button__container {
+.rate-button__rate-stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;

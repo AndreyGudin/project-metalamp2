@@ -3,13 +3,13 @@
   height: auto;
 }
 
-.radio-buttons__container {
+.radio-buttons__radio-buttons {
   display: flex;
   width: 225px;
   height: auto;
   margin-top: 16px;
 }
-.radio-buttons__box {
+.radio-buttons__radio-button {
   margin-right: 20px;
   display: flex;
 }
@@ -17,13 +17,13 @@
   @extend %font-label;
 }
 
-.radio-buttons__btitle {
+.radio-buttons__radio-label {
   font: $font-body;
   color: $color-ds50;
   margin-left: 10px;
 }
 
-.radio-buttons__button {
+.radio-buttons__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -69,6 +69,6 @@
   }
 }
 
-.radio-buttons__button:checked + .radio-buttons__btitle {
+.radio-buttons__input:checked + .radio-buttons__radio-label {
   color: $color-ds75;
 }

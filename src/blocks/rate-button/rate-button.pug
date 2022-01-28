@@ -1,26 +1,26 @@
-mixin rate-button(rclass,rchecked)
-  - var rclassArr=rclass.split(' ')
-  div(class=rclass)
-    div(class=rclassArr.map((item)=>`${item}__star-source`).join(' '))
-      svg(class=rclassArr.map((item)=>`${item}__star`).join(' '),xmlns="http://www.w3.org/2000/svg")
-        symbol(id=`${rclassArr[rclassArr.length-1]}__stars`)
+mixin rate-button(options)
+  - var classNameDivided=options.className.split(' ')
+  div(class=options.className)
+    div(class=classNameDivided.map((item)=>`${item}__star-source`).join(' '))
+      svg(class=classNameDivided.map((item)=>`${item}__star`).join(' '),xmlns="http://www.w3.org/2000/svg")
+        symbol(id=`${classNameDivided[classNameDivided.length-1]}__stars`)
           path(d="M10 13.4321L5.66197 16L6.81221 11.1852L3 7.94321L8.02817 7.52593L10 3L11.9718 7.52593L17 7.94321L13.1878 11.1852L14.338 16L10 13.4321Z")
           defs 
             linearGradient(id='gradient',x1="10",y1="-2",x2="10",y2="22",gradientUnits="userSpaceOnUse")
               stop(stop-color="#BC9CFF")/ 
               stop(offset="1",stop-color="#8BA4F9")/
-    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
+    div(class=classNameDivided.map((item)=>`${item}__rate-stars`).join(' '))
       -var i=0;
-      -var j=5-parseInt(rchecked);
+      -var j=5-parseInt(options.checked);
       while (i<5)
         if (j<=i)
-          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`)
-          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '), id=`${rclassArr[rclassArr.length-1]}__label-${5-i}`)
-            svg(class=rclassArr.map((item)=>`${item}__starhref`+' fillgrad').join(' '))
-              use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
+          input(type="radio" name="star", class=classNameDivided.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${classNameDivided[classNameDivided.length-1]}-${5-i}`)
+          label(for=`${classNameDivided[classNameDivided.length-1]}-${5-i}`, class=classNameDivided.map((item)=>`${item}__label`).join(' '), id=`${classNameDivided[classNameDivided.length-1]}__label-${5-i}`)
+            svg(class=classNameDivided.map((item)=>`${item}__starhref`+' fillgrad').join(' '))
+              use(xlink:href=`#${classNameDivided[classNameDivided.length-1]}__stars`)/
         else
-          input(type="radio" name="star", class=rclassArr.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${rclassArr[rclassArr.length-1]}-${5-i}`)
-          label(for=`${rclassArr[rclassArr.length-1]}-${5-i}`, class=rclassArr.map((item)=>`${item}__label`).join(' '), id=`${rclassArr[rclassArr.length-1]}__label-${5-i}`)
-            svg(class=rclassArr.map((item)=>`${item}__starhref`).join(' '))
-              use(xlink:href=`#${rclassArr[rclassArr.length-1]}__stars`)/
+          input(type="radio" name="star", class=classNameDivided.map((item)=>`${item}__input`).join(' '), value=5-i, id=`${classNameDivided[classNameDivided.length-1]}-${5-i}`)
+          label(for=`${classNameDivided[classNameDivided.length-1]}-${5-i}`, class=classNameDivided.map((item)=>`${item}__label`).join(' '), id=`${classNameDivided[classNameDivided.length-1]}__label-${5-i}`)
+            svg(class=classNameDivided.map((item)=>`${item}__starhref`).join(' '))
+              use(xlink:href=`#${classNameDivided[classNameDivided.length-1]}__stars`)/
         -i++

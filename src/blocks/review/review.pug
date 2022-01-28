@@ -10,5 +10,5 @@ mixin review(rclass,imagepath,rname,rtime,rtext)
         span(class=rclassArr.map((item)=>`${item}__time`).join(' '))=rtime
     div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
       div(class=rclassArr.map((item)=>`${item}__likebox`).join(' '))
-        +like-button(`like-button like-button--${rclassArr[rclassArr.length-1]}`,'2')
+        +like-button({className:`like-button like-button_${rclassArr[rclassArr.length-1]}`,checked:'2'})
       label(class=rclassArr.map((item)=>`${item}__textarea`).join(' '))=rtext
