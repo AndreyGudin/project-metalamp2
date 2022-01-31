@@ -1,29 +1,29 @@
-mixin booking-room-card(bclass,bnumber,btype,bprice)
-  div(class=bclass)
-    form(class=`${bclass}__form`)
-      div(class=`${bclass}__title-container`)
-        span(class=`${bclass}__number`)=`№ ${bnumber}` 
-        span(class=`${bclass}__type`)=btype
-        span(class=`${bclass}__price`)=`${bprice}₽`
-        span(class=`${bclass}__price2`)=' в сутки'
-      div(class=bclass + "__container")
+mixin booking-room-card(options)
+  div(class=options.className)
+    form(class=`${options.className}__form`)
+      div(class=`${options.className}__title-container`)
+        span(class=`${options.className}__number`)=`№ ${options.roomNumber}` 
+        span(class=`${options.className}__type`)=options.roomType
+        span(class=`${options.className}__price`)=`${options.dayPrice}₽`
+        span(class=`${options.className}__price2`)=' в сутки'
+      div(class=options.className + "__booking-date-container")
         +textfield({className:'textfield textfield_date-dropdown',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
         +textfield({className:'textfield textfield_date-dropdown',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
       +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
-      div(class=`${bclass}__price-for-days-container`)
-        span(class=`${bclass}__price-for-days`)=`${bprice}₽ х 4 суток`
-        span(class=`${bclass}__total-price`)='39 660₽'
-      div(class=`${bclass}__service-fee-container`)
-        span(class=`${bclass}__service-fee-title`)=`Сбор за услуги: скидка 2 179₽`
-        span(class=`${bclass}__total-service-fee`)='39 660₽'
-      div(class=`${bclass}__addtnl-service-fee-container`)
-        span(class=`${bclass}__addtnl-service-fee-title`)='Сбор за дополнительные услуги'
-        span(class=`${bclass}__total-addtnl-service-fee`)='300₽'
-      div(class=`${bclass}__total-price-container`)
-        span(class=`${bclass}__total-price-title`)='Итого'
-        div(class=`${bclass}__total-price-dots`)
-        span(class=`${bclass}__total-price`)='38 081₽'
-      +button('button button_with-arrow booking-button','Забронировать')
+      div(class=`${options.className}__price-for-days-container`)
+        span(class=`${options.className}__price-for-days`)=`${options.dayPrice}₽ х 4 суток`
+        span(class=`${options.className}__total-price`)='39 660₽'
+      div(class=`${options.className}__service-fee-container`)
+        span(class=`${options.className}__service-fee-title`)=`Сбор за услуги: скидка 2 179₽`
+        span(class=`${options.className}__total-service-fee`)='39 660₽'
+      div(class=`${options.className}__additional-service-fee-container`)
+        span(class=`${options.className}__additional-service-fee-title`)='Сбор за дополнительные услуги'
+        span(class=`${options.className}__total-additional-service-fee`)='300₽'
+      div(class=`${options.className}__total-price-container`)
+        span(class=`${options.className}__total-price-title`)='Итого'
+        div(class=`${options.className}__total-price-dots`)
+        span(class=`${options.className}__total-price`)='38 081₽'
+      +button({className:'button button_with-arrow booking-button',title:'Забронировать'})
       
         
 

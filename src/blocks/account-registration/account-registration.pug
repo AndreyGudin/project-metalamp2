@@ -10,9 +10,8 @@ mixin account-registration(options)
     form(class=classNameDivided.map((item)=>`${item}__login-form`).join(' '))
       +textfield({className:'textfield textfield_reg-acc',title:'Данные для входа в сервис',placeholder:'Email'}) 
       +textfield({className:'textfield textfield_reg-acc',title:'',placeholder:'Пароль'})
-      +expandable-checkbox-list('expandable-checkbox-list expandable-checkbox-list_checkbox-buttons expandable-checkbox-list_toogle'
-      ,'',['Получать спецпредложения'])(open)
-      +button('button button_with-arrow reg-button','Перейти к оплате')
+      +expandable-checkbox-list({className:'expandable-checkbox-list expandable-checkbox-list_checkbox-buttons expandable-checkbox-list_toogle',title:'',listItems:['Получать спецпредложения']})(open)
+      +button({className:'button button_with-arrow reg-button',title:'Перейти к оплате'})
     form(class=classNameDivided.map((item)=>`${item}__exist-login-form`).join(' '))
       label(class=classNameDivided.map((item)=>`${item}__label`).join(' ')) Уже есть аккаунт на Toxin
-      +button('button button_without-fill','Войти')
+      +button({className:'button button_without-fill',title:'Войти'})

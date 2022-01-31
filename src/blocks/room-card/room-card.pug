@@ -1,21 +1,20 @@
-mixin room-card(rclass,rpath,rnumber,rtype,rprice,rreviews,rstars)
-  -var rclassarr=rclass.split(' ')
-  -var rclassc_chngd=''
-  div(class=rclass)
-    div(class=rclassarr.map((item)=>`${item}__photos`).join(' '))
-      div(class='splide',id=`${rclassarr[rclassarr.length -1]}__splide`)
+mixin room-card(options)
+  -var classNameDivided=options.className.split(' ')
+  div(class=options.className)
+    div(class=classNameDivided.map((item)=>`${item}__photos`).join(' '))
+      div(class='splide',id=`${classNameDivided[classNameDivided.length -1]}__splide`)
         div(class='splide__track')
           ul(class='splide__list')
-            each val in rpath
+            each val in options.imagePaths
               li(class='splide__slide')
                 img(src=val)
-    div(class=rclassarr.map((item)=>`${item}__container-price`).join(' '))
-      span(class=rclassarr.map((item)=>`${item}__number`).join(' '))=`№${rnumber}`
-      span(class=rclassarr.map((item)=>`${item}__type`).join(' '))=rtype 
-      span(class=rclassarr.map((item)=>`${item}__price`).join(' '))=rprice
-      span(class=rclassarr.map((item)=>`${item}__price2`).join(' '))='₽ в сутки'  
-    div(class=rclassarr.map((item)=>`${item}__review-container`).join(' '))
-      +rate-button(`rate-button rate-button-${rclassarr[rclassarr.length -1]}`,rstars)
-      div(class=rclassarr.map((item)=>`${item}__review-container2`).join(' '))
-        span(class=rclassarr.map((item)=>`${item}__reviews`).join(' '))=rreviews 
-        span(class=rclassarr.map((item)=>`${item}__reviews2`).join(' '))='Отзывов'
+    div(class=classNameDivided.map((item)=>`${item}__container-price`).join(' '))
+      span(class=classNameDivided.map((item)=>`${item}__number`).join(' '))=`№${options.roomNumber}`
+      span(class=classNameDivided.map((item)=>`${item}__type`).join(' '))=options.roomType 
+      span(class=classNameDivided.map((item)=>`${item}__price`).join(' '))=options.roomPrice
+      span(class=classNameDivided.map((item)=>`${item}__price2`).join(' '))='₽ в сутки'  
+    div(class=classNameDivided.map((item)=>`${item}__review-container`).join(' '))
+      +rate-button({className:`rate-button rate-button-${classNameDivided[classNameDivided.length -1]}`,checked:options.rating})
+      div(class=classNameDivided.map((item)=>`${item}__review-container2`).join(' '))
+        span(class=classNameDivided.map((item)=>`${item}__reviews`).join(' '))=options.reviewsNumber
+        span(class=classNameDivided.map((item)=>`${item}__reviews2`).join(' '))='Отзывов'
