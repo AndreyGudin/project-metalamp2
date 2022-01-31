@@ -1,11 +1,11 @@
-mixin icon-text-list(iclass,itexts,ipaths)
+mixin icon-text-list(options)
   - var i=0
-  div(class=iclass)
-    each val,keys in itexts
-      div(class=iclass + "__container")
-        img(src=ipaths[i],class=iclass +"__img")
-        div(class=iclass + "__box")
-          span(class=iclass+"__title")=keys
-          span(class=iclass+"__text")=val
+  div(class=options.className)
+    each val,keys in options.listItems
+      div(class=`${options.className}__item-advantage`)
+        img(src=options.imagePaths[i],class=`${options.className}__img`)
+        div(class=`${options.className}__listItems`)
+          span(class=`${options.className}__title`)=keys
+          span(class=`${options.className}__text`)=val
         -i++
 

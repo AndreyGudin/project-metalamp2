@@ -1,14 +1,14 @@
-mixin review(rclass,imagepath,rname,rtime,rtext)
+mixin review(options)
   include ..\like-button\like-button.pug
-  - var rclassArr=rclass.split(' ')
-  div(class=rclass)
-    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
-      div(class=rclassArr.map((item)=>`${item}__imagebox`).join(' '))
-        img(class=rclassArr.map((item)=>`${item}__image`).join(' '),src=imagepath)
-      div( class=rclassArr.map((item)=>`${item}__box`).join(' '))
-        span(class=rclassArr.map((item)=>`${item}__name`).join(' '))=rname
-        span(class=rclassArr.map((item)=>`${item}__time`).join(' '))=rtime
-    div(class=rclassArr.map((item)=>`${item}__container`).join(' '))
-      div(class=rclassArr.map((item)=>`${item}__likebox`).join(' '))
-        +like-button({className:`like-button like-button_${rclassArr[rclassArr.length-1]}`,checked:'2'})
-      label(class=rclassArr.map((item)=>`${item}__textarea`).join(' '))=rtext
+  - var classNameDivided=options.className.split(' ')
+  div(class=options.className)
+    div(class=classNameDivided.map((item)=>`${item}__author`).join(' '))
+      div(class=classNameDivided.map((item)=>`${item}__imagebox`).join(' '))
+        img(class=classNameDivided.map((item)=>`${item}__image`).join(' '),src=options.imagePath)
+      div( class=classNameDivided.map((item)=>`${item}__box`).join(' '))
+        span(class=classNameDivided.map((item)=>`${item}__name`).join(' '))=options.name
+        span(class=classNameDivided.map((item)=>`${item}__time`).join(' '))=options.publicationDate
+    div(class=classNameDivided.map((item)=>`${item}__text-with-like`).join(' '))
+      div(class=classNameDivided.map((item)=>`${item}__likebox`).join(' '))
+        +like-button({className:`like-button like-button_${classNameDivided[classNameDivided.length-1]}`,checked:'2'})
+      label(class=classNameDivided.map((item)=>`${item}__textarea`).join(' '))=options.textReview

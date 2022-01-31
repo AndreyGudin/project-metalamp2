@@ -935,7 +935,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border: none;
 }
 
-.icon-text-list__box {
+.icon-text-list__listItems {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
@@ -943,7 +943,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 5px;
 }
 
-.icon-text-list__container {
+.icon-text-list__item-advantage {
   display: flex;
   max-width: 291px;
   height: 80px;
@@ -961,7 +961,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 15px;
 }
 
-.review__container {
+.review__text-with-like, .review__author {
   display: flex;
 }
 
@@ -992,7 +992,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 170px;
 }
 
-.graph-reviews__box {
+.graph-reviews__votes-number {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -1012,7 +1012,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   text-align: center;
 }
 
-.graph-reviews__voices {
+.graph-reviews__votes {
   font: 14px "Conv_Montserrat-Bold";
   color: #BC9CFF;
   text-align: center;

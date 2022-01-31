@@ -10,14 +10,14 @@
 
 }
 
-.icon-text-list__box {
+.icon-text-list__listItems {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   justify-content: center;
   gap: 5px;
 }
-.icon-text-list__container {
+.icon-text-list__item-advantage {
   display: flex;
   max-width: 291px;
   height: 80px;

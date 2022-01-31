@@ -1,6 +1,6 @@
-mixin graph-reviews(gclass,gcount)
-  div(class=gclass)
-      canvas(class=gclass + "__canvas")
-      div(class=gclass + "__box")
-        label(class=gclass + "__count")=gcount
-        label(class=gclass + "__voices") голосов
+mixin graph-reviews(options)
+  div(class=options.className)
+      canvas(class=`${options.className}__canvas`)
+      div(class=`${options.className}__votes-number`)
+        label(class=`${options.className}__count`)=options.count
+        label(class=`${options.className}__votes`) голосов

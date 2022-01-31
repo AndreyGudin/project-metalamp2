@@ -5,6 +5,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../../blocks/textfield/textfield_masked/jquery.inputmask.js"></script>
     <script src="../../../blocks/textfield/textfield_masked/textfield_masked.js"></script>
+    <script src="../../../blocks/graph-reviews/chart.min.js"></script>
+    <script src="../../../blocks/graph-reviews/graph-reviews.js"></script>
     <script type="module" src="ui-kit.js"></script>
     <link href="ui-forms.css" rel="stylesheet">
   </head>
@@ -253,19 +255,19 @@
             </ul>
           </div>
           <div class="icon-text-list">
-            <div class="icon-text-list__container"><img class="icon-text-list__img" src="../../../blocks/icon-text-list/svg/insert_emoticon.svg">
-              <div class="icon-text-list__box"><span class="icon-text-list__title">Комфорт</span><span class="icon-text-list__text">Шумопоглащающие стены</span></div>
+            <div class="icon-text-list__item-advantage"><img class="icon-text-list__img" src="../../../blocks/icon-text-list/svg/insert_emoticon.svg">
+              <div class="icon-text-list__listItems"><span class="icon-text-list__title">Комфорт</span><span class="icon-text-list__text">Шумопоглащающие стены</span></div>
             </div>
-            <div class="icon-text-list__container"><img class="icon-text-list__img" src="../../../blocks/icon-text-list/svg/location_city.svg">
-              <div class="icon-text-list__box"><span class="icon-text-list__title">Удобство</span><span class="icon-text-list__text">Окно в каждой спальне</span></div>
+            <div class="icon-text-list__item-advantage"><img class="icon-text-list__img" src="../../../blocks/icon-text-list/svg/location_city.svg">
+              <div class="icon-text-list__listItems"><span class="icon-text-list__title">Удобство</span><span class="icon-text-list__text">Окно в каждой спальне</span></div>
             </div>
           </div>
           <div class="review">
-            <div class="review__container">
+            <div class="review__author">
               <div class="review__imagebox"><img class="review__image" src="../../../blocks/review/img/image.png"></div>
               <div class="review__box"><span class="review__name">Мурад Сарафанов</span><span class="review__time">5 дней назад</span></div>
             </div>
-            <div class="review__container">
+            <div class="review__text-with-like">
               <div class="review__likebox">
                     <div class="like-button like-button_review">
                       <button class="like-button__button like-button_review__button add">
@@ -280,9 +282,9 @@
           </div>
           <div class="graph-reviews">
             <canvas class="graph-reviews__canvas"></canvas>
-            <div class="graph-reviews__box">
+            <div class="graph-reviews__votes-number">
               <label class="graph-reviews__count">260</label>
-              <label class="graph-reviews__voices">голосов</label>
+              <label class="graph-reviews__votes">голосов</label>
             </div>
           </div>
     </div>

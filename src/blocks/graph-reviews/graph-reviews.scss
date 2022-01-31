@@ -4,7 +4,7 @@
   height: 170px;
 }
 
-.graph-reviews__box {
+.graph-reviews__votes-number {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.graph-reviews__voices {
+.graph-reviews__votes {
   font: $font-checkbox-label;
   color: $color-purple;
   text-align: center;
