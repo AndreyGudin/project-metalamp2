@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "../../../blocks/guest-dropdown/item-quantity-dropdown.min.css";
-@import "../../../blocks/textfield/textfield--date-dropdown/datepicker.min.css";
+@import "../../../blocks/textfield/textfield_date-dropdown/datepicker.min.css";
 @import "../../../blocks/range-slider/nouislider.css";
 @import "../../../blocks/room-card/splide.min.css";
 @font-face {
@@ -21,7 +21,7 @@
 .booking-room-card__service-fee-container,
 .booking-room-card__addtnl-service-fee-container,
 .booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
-.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield--filter-date-dropdown__input, .datepicker-here, .textfield .textfield--date-dropdown__input, .textfield input, .iqdropdown .iqdropdown-selection {
+.review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .datepicker-here, .textfield .textfield_date-dropdown__input, .textfield__input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
@@ -31,7 +31,7 @@
   text-transform: uppercase;
 }
 
-.room-card__type, .booking-room-card__type, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .rooms__title, .textfield label, .button-apply,
+.room-card__type, .booking-room-card__type, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .datepicker--button, .guest-dropdown_rooms__title, .textfield__label, .button-apply,
 .button-clear, .iqdropdown-item, .guest-dropdown__title, .iqdropdown .iqdropdown-item-controls .counter {
   font: 12px "Conv_Montserrat-Bold";
   text-transform: uppercase;
@@ -133,7 +133,7 @@
   height: 12px;
 }
 
-.rooms.iqdropdown .iqdropdown-selection::after {
+.guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
   top: -5px;
 }
 
@@ -143,54 +143,56 @@
   display: flex;
   flex-direction: column;
 }
-.textfield input {
+
+.textfield__input {
   width: 320px;
   height: 44px;
   border-radius: 5px;
   opacity: 0.25;
   margin-top: 5px;
 }
-.textfield input:hover,
-.textfield input :focus {
+.textfield__input:hover,
+.textfield__input :focus {
   opacity: 0.75;
 }
-.rooms-block {
+
+.guest-dropdown_rooms-block {
   width: 266px;
   height: 65px;
   display: flex;
   flex-direction: column;
 }
 
-.rooms.iqdropdown {
+.guest-dropdown_rooms.iqdropdown {
   width: 266px;
 }
 
-.rooms__title {
+.guest-dropdown_rooms__title {
   margin-bottom: 5px;
 }
 
-.rooms.iqdropdown-menu {
+.guest-dropdown_rooms.iqdropdown-menu {
   width: 266px;
   height: 119px;
 }
-.rooms.iqdropdown-menu .iqdropdown-menu-option {
+.guest-dropdown_rooms.iqdropdown-menu .iqdropdown-menu-option {
   width: 266px;
 }
 
-.textfield--date-dropdown,
-.textfield--date-dropdown__label {
+.textfield_date-dropdown,
+.textfield_date-dropdown__label {
   width: 150px;
 }
 
-.textfield .textfield--date-dropdown__input {
+.textfield .textfield_date-dropdown__input {
   width: 150px;
   height: 44px;
   padding-left: 15px;
-  background: url(../../../blocks/textfield/textfield--date-dropdown/svg/expand_more.svg) no-repeat 120px 18px;
+  background: url(../../../blocks/textfield/textfield_date-dropdown/svg/expand_more.svg) no-repeat 120px 18px;
   cursor: pointer;
   opacity: 1;
 }
-.textfield .textfield--date-dropdown__input:hover {
+.textfield .textfield_date-dropdown__input:hover {
   opacity: 1;
 }
 
@@ -301,15 +303,15 @@
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
 }
 
-.textfield .textfield--filter-date-dropdown__input {
+.textfield .textfield_filter-date-dropdown__input {
   width: 266px;
   height: 44px;
   padding-left: 15px;
-  background: url(../../../blocks/textfield/textfield--filter-date-dropdown/svg/expand_more.svg) no-repeat 236px 18px;
+  background: url(../../../blocks/textfield/textfield_filter-date-dropdown/svg/expand_more.svg) no-repeat 236px 18px;
   cursor: pointer;
   opacity: 1;
 }
-.textfield .textfield--filter-date-dropdown__input:hover {
+.textfield .textfield_filter-date-dropdown__input:hover {
   opacity: 1;
 }
 
@@ -379,7 +381,7 @@
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.25) 0%, rgba(188, 156, 255, 0.25) 100%);
 }
 
-.expandable-chckbox-list {
+.expandable-checkbox-list {
   width: 266px;
 }
 
@@ -433,7 +435,7 @@ details[open] summary ~ * {
     opacity: 1;
   }
 }
-.expandable-chckbox-list__container {
+.expandable-checkbox-list__list {
   width: 280px;
   height: auto;
   display: flex;
@@ -442,18 +444,18 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.expandable-chckbox-list__box {
+.expandable-checkbox-list__list-item {
   display: flex;
   flex-direction: row;
   margin-bottom: 9px;
 }
 
-.expandable-chckbox-list__label {
+.expandable-checkbox-list__label {
   margin: auto 0;
   margin-left: 10px;
 }
 
-.expandable-chckbox-list__input {
+.expandable-checkbox-list__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -468,7 +470,7 @@ details[open] summary ~ * {
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
-.expandable-chckbox-list__input:after {
+.expandable-checkbox-list__input:after {
   content: "";
   display: block;
   left: 0;
@@ -487,7 +489,7 @@ details[open] summary ~ * {
   top: 4px;
   transform: rotate(var(--r, 20deg));
 }
-.expandable-chckbox-list__input:checked {
+.expandable-checkbox-list__input:checked {
   --bc: var(--active);
   --d-o: 0.3s;
   --d-t: 0.6s;
@@ -498,7 +500,7 @@ details[open] summary ~ * {
   border-radius: 4px;
 }
 
-.expandable-chckbox-list__input + .expandable-chckbox-list__label {
+.expandable-checkbox-list__input + .expandable-checkbox-list__label {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -506,11 +508,11 @@ details[open] summary ~ * {
   cursor: pointer;
 }
 
-.textfield--subscription__label {
+.textfield_subscription__label {
   position: relative;
 }
 
-.textfield--subscription__label:after {
+.textfield_subscription__label:after {
   content: "";
   display: block;
   position: absolute;
@@ -519,18 +521,18 @@ details[open] summary ~ * {
   width: 44px;
   height: 44px;
   cursor: pointer;
-  background: url(../../../blocks/textfield/textfield--subscription/svg/arrow_forward.svg) no-repeat 12px 12px;
+  background: url(../../../blocks/textfield/textfield_subscription/svg/arrow_forward.svg) no-repeat 12px 12px;
 }
 
-.expandable-chckbox-list--checkbox-buttons {
+.expandable-checkbox-list_checkbox-buttons {
   height: auto;
 }
 
-.expandable-chckbox-list--checkbox-buttons__title {
+.expandable-checkbox-list_checkbox-buttons__title {
   pointer-events: none;
 }
 
-.expandable-chckbox-list--checkbox-buttons__title::after {
+.expandable-checkbox-list_checkbox-buttons__title::after {
   visibility: hidden;
   width: 0;
   height: 0;
@@ -539,19 +541,19 @@ details[open] summary ~ * {
   border: 0;
 }
 
-.expandable-chckbox-list--checkbox-buttons__label {
+.expandable-checkbox-list_checkbox-buttons__label {
   max-width: 190px;
   hyphens: auto;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__title {
+.expandable-checkbox-list_rich-checkbox-list__title {
   pointer-events: none;
 }
-.expandable-chckbox-list--rich-checkbox-buttons__title::after {
+.expandable-checkbox-list_rich-checkbox-list__title::after {
   visibility: hidden;
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__label {
+.expandable-checkbox-list_rich-checkbox-list__label {
   line-height: normal;
   max-width: 230px;
   height: 51px;
@@ -560,7 +562,7 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-chckbox-list--rich-checkbox-buttons__p {
+.expandable-checkbox-list_rich-checkbox-list__p {
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   margin: 0;
@@ -571,25 +573,25 @@ details[open] summary ~ * {
   height: auto;
 }
 
-.radio-buttons__container {
+.radio-buttons__radio-buttons {
   display: flex;
   width: 225px;
   height: auto;
   margin-top: 16px;
 }
 
-.radio-buttons__box {
+.radio-buttons__radio-button {
   margin-right: 20px;
   display: flex;
 }
 
-.radio-buttons__btitle {
+.radio-buttons__radio-label {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
   margin-left: 10px;
 }
 
-.radio-buttons__button {
+.radio-buttons__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 20px;
@@ -603,7 +605,7 @@ details[open] summary ~ * {
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHJ4PSI5LjUiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNCQzlDRkYiLz4NCjwvc3ZnPg0K") no-repeat;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
-.radio-buttons__button:after {
+.radio-buttons__input:after {
   content: "";
   display: block;
   left: 0px;
@@ -618,7 +620,7 @@ details[open] summary ~ * {
   background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
   transform: scale(var(--s, 0.7));
 }
-.radio-buttons__button:checked {
+.radio-buttons__input:checked {
   --d-o: 0.3s;
   --d-t: 0.6s;
   --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
@@ -627,15 +629,15 @@ details[open] summary ~ * {
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHJ4PSI5LjUiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNCQzlDRkYiLz4NCjwvc3ZnPg0K") no-repeat;
 }
 
-.radio-buttons__button:checked + .radio-buttons__btitle {
+.radio-buttons__input:checked + .radio-buttons__radio-label {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-chckbox-list--toogle__input {
+.expandable-checkbox-list_toogle__input {
   width: 40px;
   border-radius: 10px;
 }
-.expandable-chckbox-list--toogle__input:after {
+.expandable-checkbox-list_toogle__input:after {
   opacity: 1;
   border-radius: 50%;
   width: 12px;
@@ -645,13 +647,13 @@ details[open] summary ~ * {
   left: 3px;
   transform: translateX(var(--x, 0));
 }
-.expandable-chckbox-list--toogle__input:checked {
+.expandable-checkbox-list_toogle__input:checked {
   --x: 17px;
   border-radius: 10px;
   --bcg: #bc9cff;
 }
 
-.expandable-chckbox-list--toogle__label {
+.expandable-checkbox-list_toogle__label {
   color: rgba(31, 32, 65, 0.75);
 }
 
@@ -695,7 +697,7 @@ details[open] summary ~ * {
   visibility: hidden;
 }
 
-.rate-button__container {
+.rate-button__rate-stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
@@ -724,6 +726,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .fillgrad {
   fill: url(#gradient);
+}
+
+.range-slider {
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-slider__range::before {
@@ -762,11 +769,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   left: 5px;
 }
 
-.range-slider__box {
-  display: flex;
-  justify-content: space-between;
-}
-
 .range-slider {
   display: flex;
   flex-direction: column;
@@ -795,17 +797,17 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
 
-.button-without-fill__button {
+.button_without-fill__button {
   background: transparent;
   color: #BC9CFF;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
-.button-without-fill__button:active {
+.button_without-fill__button:active {
   background: transparent;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
 
-.button-hypertext__button {
+.button_hypertext__button {
   background: transparent;
   color: #BC9CFF;
   width: auto;
@@ -813,20 +815,20 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border-radius: 0px;
   padding: 0px;
 }
-.button-hypertext__button:active {
+.button_hypertext__button:active {
   background: transparent;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.button.button-with-arrow {
+.button.button_with-arrow {
   width: 320px;
 }
 
-.button-with-arrow__button {
+.button_with-arrow__button {
   width: 320px;
   position: relative;
 }
-.button-with-arrow__button::after {
+.button_with-arrow__button::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -937,7 +939,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border: none;
 }
 
-.icon-text-list__box {
+.icon-text-list__listItems {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
@@ -945,7 +947,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 5px;
 }
 
-.icon-text-list__container {
+.icon-text-list__item-advantage {
   display: flex;
   max-width: 291px;
   height: 80px;
@@ -963,7 +965,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 15px;
 }
 
-.review__container {
+.review__text-with-like, .review__author {
   display: flex;
 }
 
@@ -994,7 +996,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 170px;
 }
 
-.graph-reviews__box {
+.graph-reviews__votes-number {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -1014,7 +1016,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   text-align: center;
 }
 
-.graph-reviews__voices {
+.graph-reviews__votes {
   font: 14px "Conv_Montserrat-Bold";
   color: #BC9CFF;
   text-align: center;
@@ -1046,7 +1048,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
-.findroom-card__container {
+.findroom-card__booking-time {
   display: flex;
   align-self: stretch;
   justify-content: space-evenly;
@@ -1105,28 +1107,28 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-top: 0px;
 }
 
-.acc-reg-textfield__label {
+.textfield_reg-acc__label {
   height: auto;
 }
 
-.acc-reg-textfield {
+.textfield_reg-acc {
   height: auto;
   margin-bottom: 5px;
 }
 
-.expandable-chckbox-list.expandable-chckbox-list__title.expandable-chckbox-list--checkbox-buttons__title.expandable-chckbox-list--toogle__title {
+.expandable-checkbox-list.expandable-checkbox-list__title.expandable-checkbox-list_checkbox-buttons__title.expandable-checkbox-list_toogle__title {
   display: none;
 }
 
-.expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle {
+.expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle {
   margin: 5px 0px 0px 30px;
 }
 
-.expandable-chckbox-list.expandable-chckbox-list__box.expandable-chckbox-list--checkbox-buttons__box.expandable-chckbox-list--toogle__box {
+.expandable-checkbox-list.expandable-checkbox-list__list-item.expandable-checkbox-list_checkbox-buttons__box.expandable-checkbox-list_toogle__box {
   margin-bottom: 0;
 }
 
-.button.button-with-arrow.reg-button {
+.button.button_with-arrow.reg-button {
   margin-top: 20px;
   align-self: center;
 }
@@ -1180,7 +1182,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   line-height: 44px;
 }
 
-.button.button-with-arrow.login-button {
+.button.button_with-arrow.login-button {
   margin-top: 20px;
   align-self: center;
 }
@@ -1574,7 +1576,7 @@ body._lock {
   margin-bottom: 0;
 }
 
-.header-menu-expandable-services[open] .expandable-chckbox-list.expandable-chckbox-list__container.header-menu-expandable-services__container,
+.header-menu-expandable-services[open] .expandable-checkbox-list.expandable-checkbox-list__list.header-menu-expandable-services__container,
 .header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container {
   background-color: white;
   position: absolute;
@@ -1752,16 +1754,16 @@ body._lock {
   position: static;
 }
 
-.textfield__input.textfield--subscription__input.textfield--subscription--footer__input, .textfield__label.textfield--subscription__label.textfield--subscription--footer__label,
-.textfield.textfield--subscription--footer {
+.textfield__input.textfield_subscription__input.textfield_subscription--footer__input, .textfield__label.textfield_subscription__label.textfield_subscription--footer__label,
+.textfield.textfield_subscription--footer {
   width: 260px;
 }
 
-.textfield__input.textfield--subscription__input.textfield--subscription--footer__input {
+.textfield__input.textfield_subscription__input.textfield_subscription--footer__input {
   position: relative;
 }
 
-.textfield__label.textfield--subscription__label.textfield--subscription--footer__label::after {
+.textfield__label.textfield_subscription__label.textfield_subscription--footer__label::after {
   height: 67px;
   top: 7px;
 }
@@ -1811,15 +1813,15 @@ body._lock {
     padding-bottom: 20px;
   }
 
-  .acc-reg-textfield,
+  .textfield_reg-acc,
 .textfield--masked,
 .button.button-with-arrow.reg-button,
-.account-registration__container, .expandable-chckbox-list--toogle {
+.account-registration__container, .expandable-checkbox-list_toogle {
     width: 90%;
   }
 
-  .acc-reg-textfield__label,
-.textfield__input.acc-reg-textfield__input,
+  .textfield_reg-acc__label,
+.textfield__input.textfield_reg-acc__input,
 .textfield--masked__label,
 .textfield__input.textfield--masked__input,
 .reg-button__button {
@@ -1830,13 +1832,13 @@ body._lock {
     line-height: normal;
   }
 
-  .expandable-chckbox-list.expandable-chckbox-list--checkbox-buttons.expandable-chckbox-list--toogle,
-.expandable-chckbox-list--toogle__container, .expandable-chckbox-list--toogle__box {
+  .expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle,
+.expandable-checkbox-list_toogle__container, .expandable-checkbox-list_toogle__box {
     margin: 0;
     max-width: 280px;
   }
 
-  .expandable-chckbox-list--toogle {
+  .expandable-checkbox-list_toogle {
     padding: 10px 0 0 5%;
   }
 }

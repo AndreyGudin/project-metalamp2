@@ -1,18 +1,18 @@
-mixin account-registration(aclass,atitle)
-  - var aclass_spl=aclass.split(' ');
-  div(class=aclass)
-    label(class=aclass_spl.map((item)=>`${item}__title`).join(' '))=atitle 
-    form(class=aclass_spl.map((item)=>`${item}__reg-form`).join(' '))
-      +textfield({className:'textfield acc-reg-textfield',title:'',placeholder:'Имя'})
-      +textfield({className:'textfield acc-reg-textfield',title:'',placeholder:'Фамилия'})
-      +radio-buttons('radio-buttons','','Мужчины','Женщины')
+mixin account-registration(options)
+  - var classNameDivided=options.className.split(' ');
+  div(class=options.className)
+    label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title 
+    form(class=classNameDivided.map((item)=>`${item}__reg-form`).join(' '))
+      +textfield({className:'textfield textfield_reg-acc',title:'',placeholder:'Имя'})
+      +textfield({className:'textfield textfield_reg-acc',title:'',placeholder:'Фамилия'})
+      +radio-buttons({className:'radio-buttons',title:'',radioButtonsTitles:['Мужчины','Женщины']})
       +textfield({className:'textfield textfield_masked',title:'Дата Рождения',placeholder:'ДД.ММ.ГГГГ'})
-    form(class=aclass_spl.map((item)=>`${item}__login-form`).join(' '))
-      +textfield({className:'textfield acc-reg-textfield',title:'Данные для входа в сервис',placeholder:'Email'}) 
-      +textfield({className:'textfield acc-reg-textfield',title:'',placeholder:'Пароль'})
+    form(class=classNameDivided.map((item)=>`${item}__login-form`).join(' '))
+      +textfield({className:'textfield textfield_reg-acc',title:'Данные для входа в сервис',placeholder:'Email'}) 
+      +textfield({className:'textfield textfield_reg-acc',title:'',placeholder:'Пароль'})
       +expandable-checkbox-list('expandable-checkbox-list expandable-checkbox-list_checkbox-buttons expandable-checkbox-list_toogle'
       ,'',['Получать спецпредложения'])(open)
       +button('button button_with-arrow reg-button','Перейти к оплате')
-    div(class=aclass_spl.map((item)=>`${item}__container`).join(' '))
-      label(class=aclass_spl.map((item)=>`${item}__label`).join(' ')) Уже есть аккаунт на Toxin
+    form(class=classNameDivided.map((item)=>`${item}__exist-login-form`).join(' '))
+      label(class=classNameDivided.map((item)=>`${item}__label`).join(' ')) Уже есть аккаунт на Toxin
       +button('button button_without-fill','Войти')

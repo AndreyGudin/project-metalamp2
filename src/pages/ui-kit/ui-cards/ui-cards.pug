@@ -12,9 +12,9 @@ html(lang="ru")
   body
     include ../ui-forms/ui-kit-inc.pug
     .main
-      +findroom-card('findroom-card','Найдём номера под ваши пожелания')
-      +account-registration('account-registration','Регистрация аккаунта')
-      +login-card('login-card','Войти')
+      +findroom-card({className:'findroom-card',title:'Найдём номера под ваши пожелания'})
+      +account-registration({className:'account-registration',title:'Регистрация аккаунта'})
+      +login-card({className:'login-card',title:'Войти'})
       +booking-room-card('booking-room-card','888','Люкс','9990')
       +room-card('room-card',['../../../blocks/room-card/img/888/888-1.png','../../../blocks/room-card/img/888/888-2.png','../../../blocks/room-card/img/888/888-3.png'],'888','Люкс','9990','145','3')
       +room-card('room-card room-card840',['../../../blocks/room-card/img/840/840-1.png','../../../blocks/room-card/img/840/840-2.png','../../../blocks/room-card/img/840/840-3.png'],'840','','9990','65','4')

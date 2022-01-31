@@ -1,9 +1,9 @@
-mixin findroom-card(fclass, ftitle)
-  div(class=fclass)
-    form(class=fclass + '__form')
-      label(class=fclass + '__title')=ftitle
-      div(class=fclass + "__container")
-        +textfield({className:'textfield textfield_date-dropdown findroom-card__label-arrival',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
-        +textfield({className:'textfield textfield_date-dropdown findroom-card__label-exit',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
+mixin findroom-card(options)
+  div(class=options.className)
+    form(class=`${options.className}__form`)
+      label(class=`${options.className}__title`)=options.title
+      div(class=`${options.className}__booking-time`)
+        +textfield({className:'textfield textfield_date-dropdown date-arrival',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
+        +textfield({className:'textfield textfield_date-dropdown date-exit',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
       +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
-      +button('button button_with-arrow','Подобрать номер')
+      +button({className:'button button_with-arrow',title:'Подобрать номер'})

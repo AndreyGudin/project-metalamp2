@@ -21,7 +21,7 @@
   margin: 40px 0px 20px 30px;
 }
 
-.login-card__container {
+.login-card__exist-login-form {
   display: flex;
   width: 320px;
   height: 44px;
@@ -40,10 +40,10 @@
   align-self: center;
 }
 
-.login-card--textfield__label{
+.login-textfield__label{
   height: auto;
 }
-.login-card--textfield {
+.login-textfield {
   height: auto;
   margin-bottom: 5px;
 }
