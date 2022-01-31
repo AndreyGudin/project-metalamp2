@@ -1,4 +1,4 @@
-mixin pagination(pclass)
-  div(class=pclass)
-    div(class=pclass + '__data')
-    div(class=pclass + '__pagination')
+mixin pagination(options)
+  div(class=options.className)
+    div(class=`${options.className}__data`)
+    div(class=`${options.className}__pagination`)

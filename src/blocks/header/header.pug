@@ -27,7 +27,7 @@ mixin header(hclass,huser)
       label(class=hclass_spl.map((item)=>`${item}__label-news`).join(' ') for="") Новости
       +expandable-checkbox-list('expandable-checkbox-list header-menu-expandable-agreements','Соглашения',['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']) 
       div(class=hclass_spl.map((item)=>`${item}__nav--auth-buttons`).join(' '))
-        +button(`button button-without-fill ${hclass}-login-button`,'Войти')
+        +button(`button button_without-fill ${hclass}-login-button`,'Войти')
         +button(`button header-menu-item-button ${hclass}-reg-button`,'Зарегистрироваться')
       label(class=hclass_spl.map((item)=>`${item}__user`).join(' '))=huser
     .header__menus-buttons

@@ -693,7 +693,7 @@ details[open] summary ~ * {
   visibility: hidden;
 }
 
-.rate-button__container {
+.rate-button__rate-stars {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
@@ -722,6 +722,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .fillgrad {
   fill: url(#gradient);
+}
+
+.range-slider {
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-slider__range::before {
@@ -760,11 +765,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   left: 5px;
 }
 
-.range-slider__box {
-  display: flex;
-  justify-content: space-between;
-}
-
 .range-slider {
   display: flex;
   flex-direction: column;
@@ -793,17 +793,17 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
 
-.button-without-fill__button {
+.button_without-fill__button {
   background: transparent;
   color: #BC9CFF;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
-.button-without-fill__button:active {
+.button_without-fill__button:active {
   background: transparent;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
 
-.button-hypertext__button {
+.button_hypertext__button {
   background: transparent;
   color: #BC9CFF;
   width: auto;
@@ -811,20 +811,20 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border-radius: 0px;
   padding: 0px;
 }
-.button-hypertext__button:active {
+.button_hypertext__button:active {
   background: transparent;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.button.button-with-arrow {
+.button.button_with-arrow {
   width: 320px;
 }
 
-.button-with-arrow__button {
+.button_with-arrow__button {
   width: 320px;
   position: relative;
 }
-.button-with-arrow__button::after {
+.button_with-arrow__button::after {
   content: "";
   width: 18px;
   height: 18px;
