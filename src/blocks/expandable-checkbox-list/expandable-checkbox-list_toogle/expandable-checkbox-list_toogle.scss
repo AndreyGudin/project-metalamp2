@@ -1,3 +1,15 @@
+.expandable-checkbox-list_toogle__title{
+  display: none;
+}
+
+.expandable-checkbox-list_toogle__list{
+  width: fit-content;
+}
+
+.expandable-checkbox-list_toogle__list-item{
+  margin-bottom: 0px;
+}
+
 .expandable-checkbox-list_toogle__input {
   width: 40px;
   border-radius: 10px;
@@ -23,4 +35,6 @@
 
 .expandable-checkbox-list_toogle__label{
   color:$color-ds75;
+  width: fit-content;
+  max-width: none;
 }

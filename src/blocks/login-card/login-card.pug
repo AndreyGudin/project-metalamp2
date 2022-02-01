@@ -1,10 +1,10 @@
-mixin login-card(lclass,ltitle)
-  div(class=lclass)
-    label(class=lclass + '__title')=ltitle
-    form(class=lclass + '__form')
+mixin login-card(options)
+  div(class=options.className)
+    label(class=`${options.className}__title`)=options.title
+    form(class=`${options.className}__form`)
       +textfield({className:'textfield login-textfield',title:'',placeholder:'Email'}) 
       +textfield({className:'textfield login-textfield',title:'',placeholder:'Пароль'})
       +button({className:'button button_with-arrow login-button',title:'Перейти к оплате'})
-    form(class=lclass + '__exist-login-form')
-      label(class=lclass + '__label') Уже есть аккаунт на Toxin
+    form(class=`${options.className}__exist-login-form`)
+      label(class=`${options.className}__label`) Уже есть аккаунт на Toxin
       +button({className:'button button_without-fill',title:'Создать'})

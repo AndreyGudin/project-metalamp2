@@ -577,7 +577,6 @@ details[open] summary ~ * {
   display: flex;
   width: 225px;
   height: auto;
-  margin-top: 16px;
 }
 
 .radio-buttons__radio-button {
@@ -633,6 +632,18 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
+.expandable-checkbox-list_toogle__title {
+  display: none;
+}
+
+.expandable-checkbox-list_toogle__list {
+  width: fit-content;
+}
+
+.expandable-checkbox-list_toogle__list-item {
+  margin-bottom: 0px;
+}
+
 .expandable-checkbox-list_toogle__input {
   width: 40px;
   border-radius: 10px;
@@ -655,6 +666,8 @@ details[open] summary ~ * {
 
 .expandable-checkbox-list_toogle__label {
   color: rgba(31, 32, 65, 0.75);
+  width: fit-content;
+  max-width: none;
 }
 
 .like-button {
@@ -1263,7 +1276,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-left: 3px;
 }
 
-.booking-room-guest-dropdown-block {
+.booking-room-card__form .guest-dropdown-block {
   align-self: center;
   margin-bottom: 20px;
 }
