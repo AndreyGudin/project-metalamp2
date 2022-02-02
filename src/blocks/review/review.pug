@@ -10,5 +10,5 @@ mixin review(options)
         span(class=classNameDivided.map((item)=>`${item}__time`).join(' '))=options.publicationDate
     div(class=classNameDivided.map((item)=>`${item}__text-with-like`).join(' '))
       div(class=classNameDivided.map((item)=>`${item}__likebox`).join(' '))
-        +like-button({className:`like-button like-button_${classNameDivided[classNameDivided.length-1]}`,checked:'2'})
+        +like-button({className:`like-button like-button_${classNameDivided[classNameDivided.length-1]}`,count:options.count})
       label(class=classNameDivided.map((item)=>`${item}__textarea`).join(' '))=options.textReview
