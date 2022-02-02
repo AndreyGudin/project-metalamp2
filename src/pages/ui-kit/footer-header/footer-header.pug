@@ -13,7 +13,7 @@ html(lang="ru")
     link(href="footer-header.css" rel="stylesheet")
   body
     include ../ui-forms/ui-kit-inc.pug
-    +header('header','')
-    +header('header header--logined-user','Юлий Цезарь')
-    +footer('footer')
+    +header({className:'header',userName:''})
+    +header({className:'header header_logined-user',userName:'Юлий Цезарь'})
+    +footer({className:'footer'})
     //- +footer-creative('footer-creative')
