@@ -19,7 +19,7 @@
 }
 .footer__copyrights-label, .footer__nav-description, .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
-.booking-room-card__addtnl-service-fee-container,
+.booking-room-card__additional-service-fee-container,
 .booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .datepicker-here, .textfield .textfield_date-dropdown__input, .textfield__input, .iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
@@ -577,7 +577,6 @@ details[open] summary ~ * {
   display: flex;
   width: 225px;
   height: auto;
-  margin-top: 16px;
 }
 
 .radio-buttons__radio-button {
@@ -633,6 +632,18 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
+.expandable-checkbox-list_toogle__title {
+  display: none;
+}
+
+.expandable-checkbox-list_toogle__list {
+  width: fit-content;
+}
+
+.expandable-checkbox-list_toogle__list-item {
+  margin-bottom: 0px;
+}
+
 .expandable-checkbox-list_toogle__input {
   width: 40px;
   border-radius: 10px;
@@ -655,6 +666,8 @@ details[open] summary ~ * {
 
 .expandable-checkbox-list_toogle__label {
   color: rgba(31, 32, 65, 0.75);
+  width: fit-content;
+  max-width: none;
 }
 
 .like-button {
@@ -1133,7 +1146,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-self: center;
 }
 
-.account-registration__container {
+.account-registration__exist-login-form {
   display: flex;
   width: 320px;
   height: 44px;
@@ -1169,7 +1182,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin: 40px 0px 20px 30px;
 }
 
-.login-card__container {
+.login-card__exist-login-form {
   display: flex;
   width: 320px;
   height: 44px;
@@ -1187,11 +1200,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-self: center;
 }
 
-.login-card--textfield__label {
+.login-textfield__label {
   height: auto;
 }
 
-.login-card--textfield {
+.login-textfield {
   height: auto;
   margin-bottom: 5px;
 }
@@ -1211,7 +1224,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   flex-direction: column;
 }
 
-.booking-room-card__container {
+.booking-room-card__booking-date-container {
   display: flex;
   align-self: stretch;
   justify-content: space-evenly;
@@ -1227,7 +1240,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
-.booking-room-card__addtnl-service-fee-container,
+.booking-room-card__additional-service-fee-container,
 .booking-room-card__total-price-container {
   display: flex;
   justify-content: space-between;
@@ -1263,18 +1276,18 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-left: 3px;
 }
 
-.booking-room-guest-dropdown-block {
+.booking-room-card__form .guest-dropdown-block {
   align-self: center;
   margin-bottom: 20px;
 }
 
 .booking-room-card__service-fee-container,
-.booking-room-card__addtnl-service-fee-container {
+.booking-room-card__additional-service-fee-container {
   position: relative;
 }
 
 .booking-room-card__service-fee-title,
-.booking-room-card__addtnl-service-fee-title {
+.booking-room-card__additional-service-fee-title {
   max-width: 215px;
 }
 
@@ -1289,7 +1302,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   left: 218px;
 }
 
-.booking-room-card__addtnl-service-fee-title::after {
+.booking-room-card__additional-service-fee-title::after {
   content: "";
   background: no-repeat url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==");
   width: 20px;
@@ -1630,12 +1643,12 @@ body._lock {
   align-self: flex-end;
 }
 
-.header--logined-user-reg-button,
-.header--logined-user-login-button {
+.header_logined-user-reg-button,
+.header_logined-user-login-button {
   display: none;
 }
 
-.header--logined-user__user {
+.header_logined-user__user {
   width: auto;
   height: 30px;
   font: 14px "Conv_Montserrat-Regular";
@@ -1814,18 +1827,22 @@ body._lock {
   }
 
   .textfield_reg-acc,
-.textfield--masked,
-.button.button-with-arrow.reg-button,
+.textfield_masked,
+.button.button_with-arrow.reg-button,
 .account-registration__container, .expandable-checkbox-list_toogle {
     width: 90%;
   }
 
   .textfield_reg-acc__label,
 .textfield__input.textfield_reg-acc__input,
-.textfield--masked__label,
-.textfield__input.textfield--masked__input,
+.textfield_masked__label,
+.textfield__input.textfield_masked__input,
 .reg-button__button {
     width: 100%;
+  }
+
+  .account-registration__exist-login-form {
+    width: 90%;
   }
 
   .account-registration__label {

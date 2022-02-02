@@ -11,7 +11,7 @@ html(lang="ru")
     link(href="registration-page.css" rel="stylesheet")
   body
     include ../../ui-kit/ui-forms/ui-kit-inc.pug
-    +header('header','')
+    +header({className:'header',userName:''})
     .registration-page 
-      +account-registration('account-registration','Регистрация аккаунта') 
-    +footer('footer')
+      +account-registration({className:'account-registration',title:'Регистрация аккаунта'}) 
+    +footer({className:'footer'})

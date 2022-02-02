@@ -6,7 +6,7 @@
 @import "../../../blocks/room-card/room-card.scss";
 @import "../../../blocks/room-card/splide.min.css";
 @import "../../../blocks/header/header.scss";
-@import "../../../blocks/header/--logined-user/logined-user.scss";
+@import "../../../blocks/header/_logined-user/logined-user.scss";
 @import "../../../blocks/footer/footer.scss";
 @import "../../../blocks/footer-creative/footer-creative.scss";
 
@@ -32,19 +32,24 @@
 
 
   .textfield_reg-acc,
-  .textfield--masked,
-  .button.button-with-arrow.reg-button,
+  .textfield_masked,
+  .button.button_with-arrow.reg-button,
   .account-registration__container,.expandable-checkbox-list_toogle {
     width: 90%;
   }
 
   .textfield_reg-acc__label,
   .textfield__input.textfield_reg-acc__input,
-  .textfield--masked__label,
-  .textfield__input.textfield--masked__input,
+  .textfield_masked__label,
+  .textfield__input.textfield_masked__input,
   .reg-button__button {
     width: 100%;
   }
+
+  .account-registration__exist-login-form{
+    width: 90%;
+  }
+
   .account-registration__label{
     line-height: normal;
   }
