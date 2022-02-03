@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".guest-dropdown,.booking-room-guest-dropdown").iqDropdown({
+  $(".guest-dropdown").iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';
