@@ -7,12 +7,20 @@
   height: 20px;
   border-radius: 10px;
   color: var(--cc, $color-ds25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .like-button__svg {
   stroke-width: 1px;
   stroke: var(--sc, $color-ds25);
   fill: var(--fc, none);
+}
+
+.like-button__span{
+  font: 10px 'Conv_Montserrat-Regular';
+  line-height: 10px;
 }
 
 .like-button__button.active {

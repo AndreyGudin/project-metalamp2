@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 if ( screen.width <= 425 ) {
-  new Splide( '#room-details-page__room-images-container__splide', {
+  new Splide( '#room-details-page__room-images__splide', {
     width: 425,
     height: 228,
     type: "loop",
