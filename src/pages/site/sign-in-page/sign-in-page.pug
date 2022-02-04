@@ -10,7 +10,7 @@ html(lang="ru")
     link(href="sign-in-page.css" rel="stylesheet")
   body
     include ../../ui-kit/ui-forms/ui-kit-inc.pug
-    +header('header','')
+    +header({className:'header',userName:''})
     .sign-in-page 
-      +login-card('login-card','Войти')
-    +footer('footer')
+      +login-card({className:'login-card',title:'Войти'})
+    +footer({className:'footer'})

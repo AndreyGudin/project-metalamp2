@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../../blocks/textfield/textfield--masked/jquery.inputmask.js"></script>
-    <script src="../../../blocks/textfield/textfield--masked/textfield--masked.js"></script>
+    <script src="../../../blocks/textfield/textfield_masked/jquery.inputmask.js"></script>
+    <script src="../../../blocks/textfield/textfield_masked/textfield_masked.js"></script>
     <script type="module" src="../../ui-kit/ui-forms/ui-kit.js"></script>
     <link href="sign-in-page.css" rel="stylesheet">
   </head>
@@ -37,69 +37,69 @@
           </svg>
           <nav class="header__nav">
             <label class="header__label-about" for="">О нас</label>
-                <details class="expandable-chckbox-list header-menu-expandable-services">
-                  <summary class="expandable-chckbox-list expandable-chckbox-list__title header-menu-expandable-services__title">Услуги</summary>
-                  <div class="expandable-chckbox-list expandable-chckbox-list__container header-menu-expandable-services__container">
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Завтрак<span></span></label>
+                <details class="expandable-checkbox-list header-menu-expandable-services">
+                  <summary class="expandable-checkbox-list__title header-menu-expandable-services__title">Услуги</summary>
+                  <div class="expandable-checkbox-list__list header-menu-expandable-services__list">
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Завтрак<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Письменный стол<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Письменный стол<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Столик для кормления<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Столик для кормления<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Кроватка<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Кроватка<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Телевизор<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Телевизор<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-services__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-services__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-services__input">Шампунь<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-services__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-services__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-services__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-services__label" for="expandable-checkbox-list__input header-menu-expandable-services__input">Шампунь<span></span></label>
                     </div>
                   </div>
                 </details>
             <label class="header__label-jobs" for="">Вакансии</label>
             <label class="header__label-news" for="">Новости</label>
-                <details class="expandable-chckbox-list header-menu-expandable-agreements">
-                  <summary class="expandable-chckbox-list expandable-chckbox-list__title header-menu-expandable-agreements__title">Соглашения</summary>
-                  <div class="expandable-chckbox-list expandable-chckbox-list__container header-menu-expandable-agreements__container">
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Завтрак<span></span></label>
+                <details class="expandable-checkbox-list header-menu-expandable-agreements">
+                  <summary class="expandable-checkbox-list__title header-menu-expandable-agreements__title">Соглашения</summary>
+                  <div class="expandable-checkbox-list__list header-menu-expandable-agreements__list">
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Завтрак<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Письменный стол<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Письменный стол<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Столик для кормления<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Столик для кормления<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Кроватка<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Кроватка<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Телевизор<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Телевизор<span></span></label>
                     </div>
-                    <div class="expandable-chckbox-list expandable-chckbox-list__box header-menu-expandable-agreements__box">
-                      <input class="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">
-                      <label class="expandable-chckbox-list expandable-chckbox-list__label header-menu-expandable-agreements__label" for="expandable-chckbox-list expandable-chckbox-list__input header-menu-expandable-agreements__input">Шампунь<span></span></label>
+                    <div class="expandable-checkbox-list__list-item header-menu-expandable-agreements__list-item">
+                      <input class="expandable-checkbox-list__input header-menu-expandable-agreements__input" type="checkbox" name="expandable-checkbox-list__input header-menu-expandable-agreements__input">
+                      <label class="expandable-checkbox-list__label header-menu-expandable-agreements__label" for="expandable-checkbox-list__input header-menu-expandable-agreements__input">Шампунь<span></span></label>
                     </div>
                   </div>
                 </details>
             <div class="header__nav--auth-buttons">
-                  <div class="button button-without-fill header-login-button">
-                    <button class="button__button button-without-fill__button header-login-button__button">Войти</button>
+                  <div class="button button_without-fill header-login-button">
+                    <button class="button__button button_without-fill__button header-login-button__button">Войти</button>
                   </div>
                   <div class="button header-menu-item-button header-reg-button">
                     <button class="button__button header-menu-item-button__button header-reg-button__button">Зарегистрироваться</button>
@@ -126,26 +126,26 @@
           <div class="login-card">
             <label class="login-card__title">Войти</label>
             <form class="login-card__form">
-                  <div class="textfield login-card--textfield">
-                    <label class="textfield__label login-card--textfield__label" for="textfield__input login-card--textfield__input">
-                      <input class="textfield__input login-card--textfield__input" type="text" placeholder="Email">
+                  <div class="textfield login-textfield">
+                    <label class="textfield__label login-textfield__label" for="textfield__input login-textfield__input">
+                      <input class="textfield__input login-textfield__input" type="text" placeholder="Email">
                     </label>
                   </div>
-                  <div class="textfield login-card--textfield">
-                    <label class="textfield__label login-card--textfield__label" for="textfield__input login-card--textfield__input">
-                      <input class="textfield__input login-card--textfield__input" type="text" placeholder="Пароль">
+                  <div class="textfield login-textfield">
+                    <label class="textfield__label login-textfield__label" for="textfield__input login-textfield__input">
+                      <input class="textfield__input login-textfield__input" type="text" placeholder="Пароль">
                     </label>
                   </div>
-                  <div class="button button-with-arrow login-button">
-                    <button class="button__button button-with-arrow__button login-button__button">Перейти к оплате</button>
+                  <div class="button button_with-arrow login-button">
+                    <button class="button__button button_with-arrow__button login-button__button">Перейти к оплате</button>
                   </div>
             </form>
-            <div class="login-card__container">
+            <form class="login-card__exist-login-form">
               <label class="login-card__label">Уже есть аккаунт на Toxin</label>
-                  <div class="button button-without-fill">
-                    <button class="button__button button-without-fill__button">Создать</button>
+                  <div class="button button_without-fill">
+                    <button class="button__button button_without-fill__button">Создать</button>
                   </div>
-            </div>
+            </form>
           </div>
     </div>
         <footer class="footer">
@@ -216,9 +216,9 @@
                       <li class="bullet-list__li bl-subscribe__li"><span class="bullet-list__span bl-subscribe__span">Получайте специальные предложения и новости сервиса</span></li>
                     </ul>
                   </div>
-                  <div class="textfield textfield--subscription textfield--subscription--footer">
-                    <label class="textfield__label textfield--subscription__label textfield--subscription--footer__label" for="textfield__input textfield--subscription__input textfield--subscription--footer__input">
-                      <input class="textfield__input textfield--subscription__input textfield--subscription--footer__input" type="text" placeholder="Email">
+                  <div class="textfield textfield_subscription textfield_subscription--footer">
+                    <label class="textfield__label textfield_subscription__label textfield_subscription--footer__label" for="textfield__input textfield_subscription__input textfield_subscription--footer__input">
+                      <input class="textfield__input textfield_subscription__input textfield_subscription--footer__input" type="text" placeholder="Email">
                     </label>
                   </div>
             </div>
