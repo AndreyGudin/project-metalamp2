@@ -52,6 +52,15 @@
   height: 47px;
 }
 
+.range-slider__title-range{
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider__title,.range-slider__range{
+  display: inline-block;
+}
+
 .range-slider__title {
   $font-label: 12px "Conv_Montserrat-Bold";
   @extend %font-label;
@@ -61,5 +70,4 @@
   text-align: right;
   color: $color-ds50;
   font: $font-h3;
-  margin-bottom: 20px;
 }

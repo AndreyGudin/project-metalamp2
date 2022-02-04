@@ -1,5 +1,6 @@
 mixin range-slider(options)
   div(class=options.className)
-    label(class=`${options.className}__title`)=options.title
-    span(class=`${options.className}__range`)
+    div(class=`${options.className}__title-range`)
+      label(class=`${options.className}__title`)=options.title
+      span(class=`${options.className}__range`)
     div(class=`${options.className}__slider`)

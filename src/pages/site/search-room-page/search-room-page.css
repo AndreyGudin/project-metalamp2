@@ -797,11 +797,19 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   height: 47px;
 }
 
+.range-slider__title-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider__title, .range-slider__range {
+  display: inline-block;
+}
+
 .range-slider__range {
   text-align: right;
   color: rgba(31, 32, 65, 0.5);
   font: 12px "Conv_Montserrat-Regular";
-  margin-bottom: 20px;
 }
 
 .button__button {
@@ -1917,6 +1925,8 @@ body._lock {
 .guest-dropdown-block,
 .guest-dropdown__title,
 .guest-dropdown.iqdropdown,
+.guest-dropdown.iqdropdown-menu,
+.guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option,
 .textfield__input.textfield_date-dropdown__input.search-room__data-of-arrival__input,
 .search-room__data-of-arrival__label,
 .search-room__data-of-arrival {
