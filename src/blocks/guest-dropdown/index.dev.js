@@ -174,7 +174,7 @@
         var $item = $(this);
         var id = $item.data('id');
         var defaultCount = Number($item.data('defaultcount') || '0');
-        hide = Number($('.iqdropdown-menu').data('hide')); //************************ */
+        hide = Number($(".".concat(classDropdown[0], ".iqdropdown-menu")).data('hide')); //************************ */
 
         itemCount[id] = defaultCount;
         totalItems += defaultCount;
