@@ -1,12 +1,9 @@
-import "../../../blocks/guest-dropdown/index.js";
-import "../../../blocks/guest-dropdown/guest-dropdown.js";
-import "../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js";
-import "../../../blocks/textfield/textfield_date-dropdown/datepicker.min.js";
-import "../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js";
-import "../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js";
-import "../../../blocks/like-button/like-button.js";
-import "../../../blocks/rate-button/rate-button.js";
-import "../../../blocks/range-slider/nouislider.js";
-import "../../../blocks/range-slider/range-slider.js";
-import "../../../blocks/pagination/pagination.min.js";
-import "../../../blocks/pagination/paginationblock.js";
+import * as foo2 from './../../../blocks/guest-dropdown/index.js';
+import Inputmask from "inputmask";
+import {foo} from './../../../blocks/guest-dropdown/guest-dropdown.js';
+import {foo3} from './../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js';
+import {foo4} from './../../../blocks/textfield/textfield_masked/textfield_masked.js';
+
+foo();
+foo3();
+foo4();

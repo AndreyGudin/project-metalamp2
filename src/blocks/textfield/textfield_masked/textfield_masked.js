@@ -1,4 +1,4 @@
-$(document).ready(function(){
+export function foo4(){$(document).ready(function(){
   $('.textfield__input.textfield_masked__input').inputmask({
     alias:"datetime",
     inputFormat:"dd.mm.yyyy",
@@ -7,4 +7,4 @@ $(document).ready(function(){
     max:"31.12.3000",
     clearIncomplete: true,
   });
-  })
+  })}
