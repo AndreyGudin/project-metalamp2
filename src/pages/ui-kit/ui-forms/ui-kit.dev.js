@@ -2,6 +2,8 @@
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+require("./ui-forms.scss");
+
 var foo2 = _interopRequireWildcard(require("./../../../blocks/guest-dropdown/index.js"));
 
 var _inputmask = _interopRequireDefault(require("inputmask"));

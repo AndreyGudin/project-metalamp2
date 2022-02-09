@@ -4,15 +4,15 @@
 @import "../../../blocks/range-slider/nouislider.css";
 @font-face {
   font-family: "Conv_Montserrat-Regular";
-  src: url("../../../fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("../../../fonts/Montserrat-Regular.woff") format("woff"), url("../../../fonts/Montserrat-Regular.ttf") format("truetype"), url("../../../fonts/Montserrat-Regular.svg") format("svg");
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Montserrat-Bold";
-  src: url("../../../fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("../../../fonts/Montserrat-Bold.woff") format("woff"), url("../../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../../fonts/Montserrat-Bold.svg") format("svg");
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -184,7 +184,7 @@
   width: 150px;
   height: 44px;
   padding-left: 15px;
-  background: url(../../../blocks/textfield/textfield_date-dropdown/svg/expand_more.svg) no-repeat 120px 18px;
+  background: url(svg/expand_more.svg) no-repeat 120px 18px;
   cursor: pointer;
   opacity: 1;
 }
@@ -303,7 +303,7 @@
   width: 266px;
   height: 44px;
   padding-left: 15px;
-  background: url(../../../blocks/textfield/textfield_filter-date-dropdown/svg/expand_more.svg) no-repeat 236px 18px;
+  background: url(svg/expand_more.svg) no-repeat 236px 18px;
   cursor: pointer;
   opacity: 1;
 }
