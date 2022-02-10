@@ -1,4 +1,4 @@
-export function foo3(){$(document).ready(function () {
+function guestDropDownRooms(){$(document).ready(function () {
   $(".guest-dropdown_rooms").iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
@@ -25,3 +25,5 @@ export function foo3(){$(document).ready(function () {
   });
 });
 }
+
+export {guestDropDownRooms};

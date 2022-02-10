@@ -1,3 +1,5 @@
+@use '../../../scss/variables';
+
 .expandable-checkbox-list_rich-checkbox-list__title {
   pointer-events: none;
 
@@ -11,12 +13,12 @@
   max-width: 230px;
   height: 51px;
   hyphens: auto;
-  font: $font-checkbox-label;
-  color: $color-ds75;
+  font: variables.$font-checkbox-label;
+  color: variables.$color-ds75;
 }
 
 .expandable-checkbox-list_rich-checkbox-list__p {
-  font: $font-h3;
-  color: $color-ds50;
+  font: variables.$font-h3;
+  color: variables.$color-ds50;
   margin: 0;
 }

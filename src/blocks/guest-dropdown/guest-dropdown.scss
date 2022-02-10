@@ -1,4 +1,4 @@
-
+@use "../../scss/variables";
 .guest-dropdown-block {
   width: 320px;
   height: 65px;
@@ -100,7 +100,7 @@
 .button-apply,
 .button-clear {
   @extend %font-label;
-  color: $color-ds25;
+  color: variables.$color-ds25;
 }
 
 .button-clear {

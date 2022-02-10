@@ -1,4 +1,4 @@
-export function foo(){
+function guestDropdown(){
 $(document).ready(function () {
   $(".guest-dropdown").iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
@@ -17,3 +17,5 @@ $(document).ready(function () {
   });
 });
 }
+
+export {guestDropdown};

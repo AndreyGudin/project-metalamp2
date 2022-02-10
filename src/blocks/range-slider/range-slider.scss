@@ -1,3 +1,5 @@
+@use '../../scss/variables';
+
 .range-slider{
   display: flex;
   justify-content: space-between;
@@ -68,6 +70,6 @@
 
 .range-slider__range {
   text-align: right;
-  color: $color-ds50;
-  font: $font-h3;
+  color: variables.$color-ds50;
+  font: variables.$font-h3;
 }

@@ -1,3 +1,5 @@
+@use '../../scss/variables';
+
 .like-button {
   width: 40px;
   height: 20px;
@@ -6,7 +8,7 @@
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  color: var(--cc, $color-ds25);
+  color: var(--cc, variables.$color-ds25);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +16,7 @@
 
 .like-button__svg {
   stroke-width: 1px;
-  stroke: var(--sc, $color-ds25);
+  stroke: var(--sc, variables.$color-ds25);
   fill: var(--fc, none);
 }
 

@@ -1,3 +1,5 @@
+@use '../../scss/variables';
+
 .graph-reviews {
   position: relative;
   width: 350px;
@@ -18,13 +20,13 @@
   margin-bottom: 5px;
   margin-top: 0;
   margin-bottom: 0;
-  font: $font-widget-title;
-  color: $color-purple;
+  font: variables.$font-widget-title;
+  color: variables.$color-purple;
   text-align: center;
 }
 
 .graph-reviews__votes {
-  font: $font-checkbox-label;
-  color: $color-purple;
+  font: variables.$font-checkbox-label;
+  color: variables.$color-purple;
   text-align: center;
 }

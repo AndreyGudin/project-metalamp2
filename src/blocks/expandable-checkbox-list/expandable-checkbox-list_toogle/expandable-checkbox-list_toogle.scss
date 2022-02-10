@@ -1,3 +1,5 @@
+@use '../../../scss/variables';
+
 .expandable-checkbox-list_toogle__title{
   display: none;
 }
@@ -19,7 +21,7 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background: var(--bcg, $color-ds25);
+    background: var(--bcg, variables.$color-ds25);
     border: none;
     left: 3px;
     transform: translateX(var(--x, 0));
@@ -34,7 +36,7 @@
 }
 
 .expandable-checkbox-list_toogle__label{
-  color:$color-ds75;
+  color:variables.$color-ds75;
   width: fit-content;
   max-width: none;
 }

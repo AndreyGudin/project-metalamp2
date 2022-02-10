@@ -1,3 +1,5 @@
+@use '../../scss/variables';
+
 .expandable-checkbox-list{
   width: 266px;
 }
@@ -29,8 +31,8 @@ summary {
     width: 6px;
     height: 6px;
     position: absolute;
-    border-left: 2px solid $color-ds50;
-    border-bottom: 2px solid $color-ds50;
+    border-left: 2px solid variables.$color-ds50;
+    border-bottom: 2px solid variables.$color-ds50;
     transform: rotate(-45deg);
   }
 }
@@ -62,8 +64,8 @@ details[open] summary ~ * {
   height: auto;
   display: flex;
   flex-direction: column;
-  font: $font-body;
-  color: $color-ds50;
+  font: variables.$font-body;
+  color: variables.$color-ds50;
 }
 
 .expandable-checkbox-list__list-item {
@@ -88,7 +90,7 @@ details[open] summary ~ * {
   position: relative;
   margin: 0;
   cursor: pointer;
-  border: 1px solid $color-ds25;
+  border: 1px solid variables.$color-ds25;
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 
@@ -124,7 +126,7 @@ details[open] summary ~ * {
     --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
     --o: 1;
     --r: 43deg;
-    border: 1px solid $color-purple;
+    border: 1px solid variables.$color-purple;
     border-radius: 4px;
   }
 }

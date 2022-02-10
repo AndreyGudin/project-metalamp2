@@ -3038,19 +3038,6 @@
 
 /***/ }),
 
-/***/ "./src/pages/ui-kit/ui-forms/ui-forms.scss":
-/*!*************************************************!*\
-  !*** ./src/pages/ui-kit/ui-forms/ui-forms.scss ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./src/blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js":
 /*!******************************************************************!*\
   !*** ./src/blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js ***!
@@ -3402,26 +3389,24 @@ var __webpack_exports__ = {};
   !*** ./src/pages/ui-kit/ui-forms/ui-kit.js ***!
   \*********************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ui_forms_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-forms.scss */ "./src/pages/ui-kit/ui-forms/ui-forms.scss");
-/* harmony import */ var _blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/index.js */ "./src/blocks/guest-dropdown/index.js");
-/* harmony import */ var _blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! inputmask */ "./node_modules/inputmask/dist/inputmask.js");
-/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/guest-dropdown.js */ "./src/blocks/guest-dropdown/guest-dropdown.js");
-/* harmony import */ var _blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js */ "./src/blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js");
-/* harmony import */ var _blocks_textfield_textfield_masked_textfield_masked_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../blocks/textfield/textfield_masked/textfield_masked.js */ "./src/blocks/textfield/textfield_masked/textfield_masked.js");
+/* harmony import */ var _blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/index.js */ "./src/blocks/guest-dropdown/index.js");
+/* harmony import */ var _blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_guest_dropdown_index_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! inputmask */ "./node_modules/inputmask/dist/inputmask.js");
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/guest-dropdown.js */ "./src/blocks/guest-dropdown/guest-dropdown.js");
+/* harmony import */ var _blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js */ "./src/blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js");
+/* harmony import */ var _blocks_textfield_textfield_masked_textfield_masked_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../blocks/textfield/textfield_masked/textfield_masked.js */ "./src/blocks/textfield/textfield_masked/textfield_masked.js");
 
 
 
 
 
 
-
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_3__.foo)();
-(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_4__.foo3)();
-(0,_blocks_textfield_textfield_masked_textfield_masked_js__WEBPACK_IMPORTED_MODULE_5__.foo4)();
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_2__.foo)();
+(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_3__.foo3)();
+(0,_blocks_textfield_textfield_masked_textfield_masked_js__WEBPACK_IMPORTED_MODULE_4__.foo4)();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=uiformsScripts.7dee2bde4ed8b58fd649.js.map
+//# sourceMappingURL=uiformsScripts.9eb525ef12b3f75f2411.js.map

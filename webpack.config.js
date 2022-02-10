@@ -23,10 +23,11 @@ module.exports={
   },
   devtool: 'source-map',
   plugins:[
-    new PugPlugin(),
-    new MiniCssExtractPlugin({
-      filename: 'ui-forms.css',
-    })
+    new PugPlugin({
+      modules:[
+        PugPlugin.extractCss(),
+      ]
+    }),
   ],
   module: {
     rules:[
@@ -36,8 +37,11 @@ module.exports={
       },
       {
         test: /\.scss$/,
+        type:'asset/resource',
+        generator:{
+          filename:'assets/css/[name].[hash:8].css'
+        },
         use:[
-          MiniCssExtractPlugin.loader,
           "css-loader",
           "resolve-url-loader",
           {
@@ -52,10 +56,17 @@ module.exports={
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type:'asset/resource',
         exclude: path.resolve(__dirname, './src/fonts'),
+        generator: {
+          filename: '/assets/img/[hash][ext][query]'
+        }
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type:'asset/resource',
+        include: path.resolve(__dirname, './src/fonts'),
+        generator: {
+          filename: '/assets/fonts/[hash][ext][query]'
+        }
       }
     ]
   },

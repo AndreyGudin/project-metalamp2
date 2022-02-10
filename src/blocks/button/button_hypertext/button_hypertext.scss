@@ -1,6 +1,8 @@
+@use '../../../scss/variables';
+
 .button_hypertext__button {
   background: transparent;
-  color: $color-purple;
+  color: variables.$color-purple;
   width: auto;
   height: 15px;
   border-radius: 0px;
@@ -8,6 +10,6 @@
 
   &:active {
     background: transparent;
-    color: $color-ds50;
+    color: variables.$color-ds50;
   }
 }

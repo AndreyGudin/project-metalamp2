@@ -1,3 +1,5 @@
+@use '../../scss/variables';
+
 .radio-buttons{
   width: 225px;
   height: auto;
@@ -17,8 +19,8 @@
 }
 
 .radio-buttons__radio-label {
-  font: $font-body;
-  color: $color-ds50;
+  font: variables.$font-body;
+  color: variables.$color-ds50;
   margin-left: 10px;
 }
 
@@ -69,5 +71,5 @@
 }
 
 .radio-buttons__input:checked + .radio-buttons__radio-label {
-  color: $color-ds75;
+  color: variables.$color-ds75;
 }

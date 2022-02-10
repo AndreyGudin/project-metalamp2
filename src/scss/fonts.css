@@ -13,38 +13,3 @@
   font-weight: normal;
   font-style: normal;
 }
-.bullet-list__li {
-  font: 14px "Conv_Montserrat-Regular";
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.bullet-list__title {
-  font: 12px "Conv_Montserrat-Bold";
-  text-transform: uppercase;
-}
-
-.bullet-list {
-  max-width: 300px;
-  height: auto;
-}
-
-.bullet-list__ul {
-  padding-inline-start: 25px;
-  margin: 22px 0 0 0;
-}
-
-.bullet-list__li {
-  margin-top: 13px;
-}
-.bullet-list__li::marker {
-  color: rgba(31, 32, 65, 0.5);
-  line-height: 0px;
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-
-.bullet-list__span {
-  position: relative;
-  right: 8px;
-  bottom: 3px;
-}
