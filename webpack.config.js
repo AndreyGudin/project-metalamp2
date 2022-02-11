@@ -25,7 +25,9 @@ module.exports={
   plugins:[
     new PugPlugin({
       modules:[
-        PugPlugin.extractCss(),
+        PugPlugin.extractCss({
+          filename: 'assets/css/[name].[contenthash:8].css',
+        }),
       ]
     }),
   ],
@@ -34,22 +36,15 @@ module.exports={
       {
         test: /\.pug$/,
         loader: PugPlugin.loader,
+        options:{
+          method: 'render',
+        }
       },
       {
         test: /\.scss$/,
         type:'asset/resource',
-        generator:{
-          filename:'assets/css/[name].[hash:8].css'
-        },
         use:[
-          "css-loader",
-          "resolve-url-loader",
-          {
-          loader:"sass-loader",
-          options:{
-            sourceMap: true,
-          },
-          }
+          "css-loader","sass-loader"
         ]
       },
       {
@@ -57,15 +52,14 @@ module.exports={
         type:'asset/resource',
         exclude: path.resolve(__dirname, './src/fonts'),
         generator: {
-          filename: '/assets/img/[hash][ext][query]'
+          filename: 'assets/img/[hash][ext][query]'
         }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type:'asset/resource',
-        include: path.resolve(__dirname, './src/fonts'),
         generator: {
-          filename: '/assets/fonts/[hash][ext][query]'
+          filename: 'assets/fonts/[hash][ext][query]'
         }
       }
     ]
