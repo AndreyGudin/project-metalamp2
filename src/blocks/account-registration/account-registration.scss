@@ -1,3 +1,4 @@
+@use "../../scss/variables";
 .account-registration {
   background-color: white;
   width: 380px;
@@ -11,7 +12,7 @@
 }
 
 .account-registration__title {
-  font: $font-widget-title;
+  font: variables.$font-widget-title;
   text-align: center;
   margin: 40px 0px 15px 0px;
 }

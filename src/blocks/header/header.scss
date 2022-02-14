@@ -1,3 +1,5 @@
+@use "../../scss/variables";
+
 body._lock {
   overflow: hidden;
 }
@@ -159,7 +161,7 @@ body._lock {
   width: 87px;
   height: 34px;
   background: transparent;
-  color: $color-purple;
+  color: variables.$color-purple;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 
   &:active {
@@ -169,15 +171,15 @@ body._lock {
 }
 
 .header__label-about {
-  font: $font-checkbox-label;
+  font: variables.$font-checkbox-label;
 }
 
 .header-menu-expandable-services__title,
 .header-menu-expandable-agreements__title,
 .header__label-jobs,
 .header__label-news {
-  font: $font-body;
-  color: $color-ds50;
+  font: variables.$font-body;
+  color: variables.$color-ds50;
   text-transform: none;
   margin-bottom: 0;
 }

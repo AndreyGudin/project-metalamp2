@@ -1,14 +1,15 @@
-@import "../../ui-kit/ui-forms/ui-forms.scss";
-@import "../../../blocks/findroom-card/findroom-card.scss";
-@import "../../../blocks/account-registration/account-registration.scss";
-@import "../../../blocks/login-card/login-card.scss";
-@import "../../../blocks/booking-room-card/booking-room-card.scss";
-@import "../../../blocks/room-card/room-card.scss";
-@import "../../../blocks/room-card/splide.min.css";
-@import "../../../blocks/header/header.scss";
-@import "../../../blocks/header/_logined-user/logined-user.scss";
-@import "../../../blocks/footer/footer.scss";
-@import "../../../blocks/footer-creative/footer-creative.scss";
+@use "../../../scss/variables";
+@use "../../ui-kit/ui-forms/ui-forms.scss";
+@use "../../../blocks/findroom-card/findroom-card.scss";
+@use "../../../blocks/account-registration/account-registration.scss";
+@use "../../../blocks/login-card/login-card.scss";
+@use "../../../blocks/booking-room-card/booking-room-card.scss";
+@use "../../../blocks/room-card/room-card.scss";
+@use "../../../blocks/room-card/splide.min.css";
+@use "../../../blocks/header/header.scss";
+@use "../../../blocks/header/_logined-user/logined-user.scss";
+@use "../../../blocks/footer/footer.scss";
+@use "../../../blocks/footer-creative/footer-creative.scss";
 
 .search-room-page{
   display: flex;
@@ -155,8 +156,8 @@
 }
 
 .search-room-page__range-slider-title{
-  font:$font-h3;
-  color:$color-ds50;
+  font:variables.$font-h3;
+  color:variables.$color-ds50;
 }
 
 .search-room-page__room-cards-pagination {
@@ -174,7 +175,7 @@
 
 .search-room-page__room-cards-label{
   margin: 30px 0px 20px 0px;
-  font:$font-widget-title;
+  font:variables.$font-widget-title;
 }
 
 .search-room-page__room-cards-result{

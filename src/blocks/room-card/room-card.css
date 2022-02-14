@@ -1,3 +1,23 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.room-card__type {
+  font: 12px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
+}
+
 .room-card {
   width: 270px;
   height: 257px;
@@ -32,4 +52,61 @@
 
 .splide__slide {
   border-radius: 4px;
+}
+
+.room-card__number {
+  font: 24px "Conv_Montserrat-Bold";
+}
+.room-card__number::first-letter {
+  font-size: 14px;
+}
+
+.room-card__container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px 20px 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.room-card__type {
+  color: #BC9CFF;
+  margin-right: auto;
+  margin-left: 3px;
+}
+
+.room-card__price,
+.room-card__price2::first-letter,
+.room-card__reviews {
+  font: 14px "Conv_Montserrat-Bold";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room-card__price2,
+.room-card__reviews2 {
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 3px;
+}
+
+.room-card__review-container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin: 10px 20px 0px 20px;
+}
+
+.room-card__review-container2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.room-card__reviews {
+  margin-left: auto;
+}
+
+.rate-button {
+  width: 105px;
+  height: 24px;
 }

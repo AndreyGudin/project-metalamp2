@@ -1,3 +1,5 @@
+@use "../../scss/variables";
+
 .room-card {
   width: 270px;
   height: 257px;
@@ -33,7 +35,7 @@
 }
 
 .room-card__number {
-  font: $font-widget-title;
+  font: variables.$font-widget-title;
   &::first-letter {
     font-size: 14px;
   }
@@ -50,7 +52,7 @@
 
 .room-card__type {
   @extend %font-label;
-  color: $color-purple;
+  color: variables.$color-purple;
   margin-right: auto;
   margin-left: 3px;
 }
@@ -58,14 +60,14 @@
 .room-card__price,
 .room-card__price2::first-letter,
 .room-card__reviews {
-  font: $font-checkbox-label;
-  color: $color-ds50;
+  font: variables.$font-checkbox-label;
+  color: variables.$color-ds50;
 }
 
 .room-card__price2,
 .room-card__reviews2 {
-  font: $font-h3;
-  color: $color-ds50;
+  font: variables.$font-h3;
+  color: variables.$color-ds50;
   margin-left: 3px;
 }
 

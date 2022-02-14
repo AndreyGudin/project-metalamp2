@@ -1,3 +1,5 @@
+@use "../../scss/variables";
+
 .booking-room-card {
   background-color: white;
   width: 380px;
@@ -44,7 +46,7 @@
 }
 
 .booking-room-card__number {
-  font: $font-widget-title;
+  font: variables.$font-widget-title;
 
   &::first-letter {
     font-size: 14px;
@@ -53,19 +55,19 @@
 
 .booking-room-card__type {
   @extend %font-label;
-  color: $color-purple;
+  color: variables.$color-purple;
   margin-right: auto;
   margin-left: 8px;
 }
 
 .booking-room-card__price {
-  font: $font-checkbox-label;
-  color: $color-ds50;
+  font: variables.$font-checkbox-label;
+  color: variables.$color-ds50;
 }
 
 .booking-room-card__price2 {
-  font: $font-h3;
-  color: $color-ds50;
+  font: variables.$font-h3;
+  color: variables.$color-ds50;
   margin-left: 3px;
 }
 

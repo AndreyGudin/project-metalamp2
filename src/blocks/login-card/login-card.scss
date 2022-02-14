@@ -1,3 +1,5 @@
+@use "../../scss/variables";
+
 .login-card {
   background-color: white;
   width: 380px;
@@ -17,7 +19,7 @@
 }
 
 .login-card__title {
-  font: $font-widget-title;
+  font: variables.$font-widget-title;
   margin: 40px 0px 20px 30px;
 }
 
