@@ -27,34 +27,34 @@ module.exports = {
     uiformsScripts: './src/pages/ui-kit/ui-forms/ui-kit.js'
   },
   devtool: 'source-map',
-  plugins: [new PugPlugin(), new MiniCssExtractPlugin({
-    filename: 'ui-forms.css'
+  plugins: [new PugPlugin({
+    modules: [PugPlugin.extractCss({
+      filename: 'assets/css/[name].[contenthash:8].css'
+    })]
   })],
   module: {
     rules: [{
       test: /\.pug$/,
-      loader: PugPlugin.loader
+      loader: PugPlugin.loader,
+      options: {
+        method: 'render'
+      }
     }, {
       test: /\.scss$/,
-      use: [MiniCssExtractPlugin.loader, "css-loader", "resolve-url-loader", {
-        loader: "sass-loader",
-        options: {
-          sourceMap: true
-        }
-      }]
+      use: ["css-loader", "sass-loader"]
     }, {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: 'asset/resource',
       exclude: path.resolve(__dirname, './src/fonts'),
       generator: {
-        filename: 'img/[hash][ext][query]'
+        filename: 'assets/img/[hash][ext][query]'
       }
     }, {
-      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
       type: 'asset/resource',
       include: path.resolve(__dirname, './src/fonts'),
       generator: {
-        filename: 'fonts/[hash][ext][query]'
+        filename: 'assets/fonts/[hash][ext][query]'
       }
     }]
   }

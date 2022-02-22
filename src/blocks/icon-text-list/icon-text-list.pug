@@ -3,7 +3,7 @@ mixin icon-text-list(options)
   div(class=options.className)
     each val,keys in options.listItems
       div(class=`${options.className}__item-advantage`)
-        img(src=options.imagePaths[i],class=`${options.className}__img`)
+        img(src=require(options.imagePaths[i]),class=`${options.className}__img`)
         div(class=`${options.className}__listItems`)
           span(class=`${options.className}__title`)=keys
           span(class=`${options.className}__text`)=val

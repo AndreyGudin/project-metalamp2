@@ -1,16 +1,15 @@
 function graphReviews(query) {
-  window.onload = function(){
     Chart.defaults.font.family =
       "Conv_Montserrat-Regular,Conv_Montserrat-Bold,Tahoma, Arial, sans-serif";
     const ctx = document.querySelector(`${query}__canvas`).getContext("2d");
-    var gradient1 = ctx.createLinearGradient(54, 46, 54, 163);
-    var gradient2 = ctx.createLinearGradient(120, 45, 120, 100);
-    var gradient3 = ctx.createLinearGradient(110, 106, 110, 161);
-    var gradient4 = ctx.createLinearGradient(100, 100, 100, 250);
-    var gradient1Legend = ctx.createLinearGradient(182, 79, 182, 87);
-    var gradient2Legend = ctx.createLinearGradient(182, 100, 182, 111);
-    var gradient3Legend = ctx.createLinearGradient(182, 123, 182, 135);
-    var gradient4Legend = ctx.createLinearGradient(182, 147, 182, 159);
+    let gradient1 = ctx.createLinearGradient(54, 46, 54, 163);
+    let gradient2 = ctx.createLinearGradient(120, 45, 120, 100);
+    let gradient3 = ctx.createLinearGradient(110, 106, 110, 161);
+    let gradient4 = ctx.createLinearGradient(100, 100, 100, 250);
+    let gradient1Legend = ctx.createLinearGradient(182, 79, 182, 87);
+    let gradient2Legend = ctx.createLinearGradient(182, 100, 182, 111);
+    let gradient3Legend = ctx.createLinearGradient(182, 123, 182, 135);
+    let gradient4Legend = ctx.createLinearGradient(182, 147, 182, 159);
     gradient1.addColorStop(0, "#FFE39C");
     gradient1.addColorStop(1, "#FFBA9C");
     gradient2.addColorStop(0, "#6FCF97");
@@ -79,7 +78,7 @@ function graphReviews(query) {
         plugins: [
           {
             beforeDraw: function (c) {
-              var legends = c.legend.legendItems;
+              let legends = c.legend.legendItems;
               let gradients = [
                 gradient1Legend,
                 gradient2Legend,
@@ -147,7 +146,7 @@ function graphReviews(query) {
         plugins: [
           {
             beforeDraw: function (c) {
-              var legends = c.legend.legendItems;
+              let legends = c.legend.legendItems;
               let gradients = [
                 gradient1Legend,
                 gradient2Legend,
@@ -164,7 +163,6 @@ function graphReviews(query) {
         ],
       });
       myChart.update();
-    }
     }
 }
 

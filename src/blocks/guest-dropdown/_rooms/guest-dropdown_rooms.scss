@@ -1,4 +1,4 @@
-@use '../../../scss/variables';
+@use "../../../scss/variables";
 
 .guest-dropdown_rooms-block {
   // Стиль контейнера для дропдауна
@@ -17,14 +17,33 @@
   margin-bottom: 5px;
 }
 
+.guest-dropdown_rooms.iqdropdown >.iqdropdown-selection {
+  @extend %font-body;
+}
+
 .guest-dropdown_rooms.iqdropdown-menu {
   width: 266px;
   height: 119px;
 
-  .iqdropdown-menu-option{
+  .iqdropdown-menu-option {
     width: 266px;
   }
 }
 
+.guest-dropdown_rooms.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-content
+  > .iqdropdown-item,
+.guest-dropdown_rooms.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-item-controls
+  > .counter {
+  @extend %font-label;
+}
 
-
+.guest-dropdown_rooms.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-item-controls
+  > .counter{
+    line-height: 37px;
+  }

@@ -11,22 +11,22 @@ console.log(mode + 'mode')
 module.exports={
   mode: mode,
   output:{
-    filename:'[name].[contenthash].js',
+    filename:'[name].js',
     path:path.resolve(__dirname,'dist'),
-    publicPath:'/',
+    publicPath:'',
     assetModuleFilename:'assets/[hash][ext][query]',
     clean: true,
   },
   entry:{
     uiforms:'./src/pages/ui-kit/ui-forms/ui-forms.pug',
-    uiformsScripts:'./src/pages/ui-kit/ui-forms/ui-kit.js'
+    'assets/js/uiforms':'./src/pages/ui-kit/ui-forms/ui-kit.js',
   },
   devtool: 'source-map',
   plugins:[
     new PugPlugin({
       modules:[
         PugPlugin.extractCss({
-          filename: 'assets/css/[name].[contenthash:8].css',
+          filename: '[name].[contenthash:8].css',
         }),
       ]
     }),
@@ -42,7 +42,6 @@ module.exports={
       },
       {
         test: /\.scss$/,
-        type:'asset/resource',
         use:[
           "css-loader","sass-loader"
         ]
@@ -58,10 +57,12 @@ module.exports={
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type:'asset/resource',
+        include: path.resolve(__dirname, './src/fonts'),
         generator: {
           filename: 'assets/fonts/[hash][ext][query]'
         }
-      }
+      },
+    
     ]
   },
 };

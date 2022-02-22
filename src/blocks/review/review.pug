@@ -4,7 +4,7 @@ mixin review(options)
   div(class=options.className)
     div(class=classNameDivided.map((item)=>`${item}__author`).join(' '))
       div(class=classNameDivided.map((item)=>`${item}__imagebox`).join(' '))
-        img(class=classNameDivided.map((item)=>`${item}__image`).join(' '),src=options.imagePath)
+        img(class=classNameDivided.map((item)=>`${item}__image`).join(' '),src=require(options.imagePath))
       div( class=classNameDivided.map((item)=>`${item}__box`).join(' '))
         span(class=classNameDivided.map((item)=>`${item}__name`).join(' '))=options.name
         span(class=classNameDivided.map((item)=>`${item}__time`).join(' '))=options.publicationDate

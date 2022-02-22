@@ -25,10 +25,6 @@
     margin: -8px -1px -1px;
   }
 
-  .iqdropdown-selection {
-    @extend %font-body;
-  }
-
   .iqdropdown-item-controls {
     align-items: center;
 
@@ -71,13 +67,17 @@
 
   .icon-decrement::after,
   .icon-decrement.icon-increment::before {
-    // Стиль плюса и минуса 
+    // Стиль плюса и минуса
     background-color: #1f2041;
     width: 7px;
     height: 1px;
     top: 7px;
     left: 4px;
   }
+}
+
+.guest-dropdown.iqdropdown .iqdropdown-selection {
+  @extend %font-body;
 }
 
 .guest-dropdown__title {
@@ -92,10 +92,23 @@
   margin-top: 20px;
   padding: 0px 15px 0px 15px;
 }
-
-.iqdropdown-item {
+.guest-dropdown.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-content
+  > .iqdropdown-item,
+.guest-dropdown.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-item-controls
+  > .counter {
   @extend %font-label;
 }
+
+.guest-dropdown.iqdropdown-menu
+  > .iqdropdown-menu-option
+  > .iqdropdown-item-controls
+  > .counter{
+    line-height: 37px;
+  }
 
 .button-apply,
 .button-clear {
@@ -107,19 +120,18 @@
   visibility: hidden;
 }
 
-.iqdropdown .iqdropdown-selection::after{
+.iqdropdown .iqdropdown-selection::after {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC41OTM4IDAuNTc4MTI1TDEyIDEuOTg0MzhMNiA3Ljk4NDM4TDAgMS45ODQzOEwxLjQwNjI1IDAuNTc4MTI1TDYgNS4xNzE4OEwxMC41OTM4IDAuNTc4MTI1WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
   width: 12px;
   height: 12px;
-  top:35%;
+  top: 35%;
 }
-.iqdropdown.menu-open .iqdropdown-selection::after{
-  background-image:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjQwNjIgNy40MjE4OEwwIDYuMDE1NjJMNiAwLjAxNTYyMDJMMTIgNi4wMTU2MkwxMC41OTM4IDcuNDIxODhMNiAyLjgyODEyTDEuNDA2MiA3LjQyMTg4WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
+.iqdropdown.menu-open .iqdropdown-selection::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjQwNjIgNy40MjE4OEwwIDYuMDE1NjJMNiAwLjAxNTYyMDJMMTIgNi4wMTU2MkwxMC41OTM4IDcuNDIxODhMNiAyLjgyODEyTDEuNDA2MiA3LjQyMTg4WiIgZmlsbD0iIzFGMjA0MSIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPC9zdmc+Cg==");
   width: 12px;
   height: 12px;
-
 }
 
-.guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after{
-  top:-5px;
+.guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
+  top: -5px;
 }
