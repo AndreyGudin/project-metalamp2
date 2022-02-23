@@ -4,7 +4,7 @@
 @use "../../../blocks/textfield/textfield.scss";
 @use "../../../blocks/textfield/textfield_masked/textfield_masked.scss";
 @use "../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.scss";
-@use "../../../blocks/textfield/textfield_date-dropdown/datepicker.min.css";
+@use "~air-datepicker/air-datepicker";
 @use "../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.scss";
 @use "../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.scss";
 @use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list.scss";
@@ -15,7 +15,7 @@
 @use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list_toogle/expandable-checkbox-list_toogle.scss";
 @use "../../../blocks/like-button/like-button.scss";
 @use "../../../blocks/rate-button/rate-button.scss";
-@use "../../../blocks/range-slider/nouislider.css";
+@use "~nouislider/dist/nouislider";
 @use "../../../blocks/range-slider/range-slider.scss";
 @use "../../../blocks/button/button.scss";
 @use "../../../blocks/button/button_without-fill/button_without-fill.scss";

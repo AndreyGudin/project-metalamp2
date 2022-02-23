@@ -1,6 +1,4 @@
-
 function rangeSlider(query) {
-  window.onload = function(){
     let slider = document.querySelector(`${query}__slider`);
     let rangeSliderValueElement = document.querySelector(`${query}__range`);
     noUiSlider.create(slider, {
@@ -15,7 +13,6 @@ function rangeSlider(query) {
     slider.noUiSlider.on("update", function (values) {
       rangeSliderValueElement.innerHTML = values.join("₽ - ").concat("₽");
     });
-}
 }
 
 export {rangeSlider};
