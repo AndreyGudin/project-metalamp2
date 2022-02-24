@@ -20,6 +20,8 @@ module.exports={
   entry:{
     uiforms:'./src/pages/ui-kit/ui-forms/ui-forms.pug',
     'assets/js/uiforms':'./src/pages/ui-kit/ui-forms/ui-kit.js',
+    uicards:'./src/pages/ui-kit/ui-cards/ui-cards.pug',
+    'assets/js/uicards':'./src/pages/ui-kit/ui-cards/ui-cards.js',
   },
   devtool: 'source-map',
   plugins:[

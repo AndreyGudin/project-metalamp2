@@ -7,7 +7,7 @@ mixin room-card(options)
           ul(class='splide__list')
             each val in options.imagePaths
               li(class='splide__slide')
-                img(src=val)
+                img(src=require(val))
     div(class=classNameDivided.map((item)=>`${item}__container-price`).join(' '))
       span(class=classNameDivided.map((item)=>`${item}__number`).join(' '))=`№${options.roomNumber}`
       span(class=classNameDivided.map((item)=>`${item}__type`).join(' '))=options.roomType 

@@ -7,8 +7,8 @@ mixin booking-room-card(options)
         span(class=`${options.className}__price`)=`${options.dayPrice}₽`
         span(class=`${options.className}__price2`)=' в сутки'
       div(class=options.className + "__booking-date-container")
-        +textfield({className:'textfield textfield_date-dropdown',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
-        +textfield({className:'textfield textfield_date-dropdown',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
+        +textfield({className:'textfield textfield_date-dropdown booking-room-date-arrival',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
+        +textfield({className:'textfield textfield_date-dropdown booking-room-date-exit',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
       +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
       div(class=`${options.className}__price-for-days-container`)
         span(class=`${options.className}__price-for-days`)=`${options.dayPrice}₽ х 4 суток`

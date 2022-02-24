@@ -3,12 +3,8 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-    script(src="../../../blocks/textfield/textfield_masked/jquery.inputmask.js")
-    script(src="../../../blocks/textfield/textfield_masked/textfield_masked.js")
-    script(type="module" src="../ui-forms/ui-kit.js")
-    script(src="../../../blocks/room-card/splide.js")
-    script(src="../../../blocks/room-card/room-card.js")
-    link(href="ui-cards.css" rel="stylesheet")
+    script(type="module" src="assets/js/uicards.js")
+    link(href=require("./ui-cards.scss") rel="stylesheet")
   body
     include ../ui-forms/ui-kit-inc.pug
     .main
@@ -16,5 +12,5 @@ html(lang="ru")
       +account-registration({className:'account-registration',title:'Регистрация аккаунта'})
       +login-card({className:'login-card',title:'Войти'})
       +booking-room-card({className:'booking-room-card',roomNumber:'888',roomType:'Люкс',dayPrice:'9990'})
-      +room-card({className:'room-card',roomNumber:'888',roomType:'Люкс',roomPrice:'9990',reviewsNumber:'145',rating:'3',imagePaths:['../../../blocks/room-card/img/888/888-1.png','../../../blocks/room-card/img/888/888-2.png','../../../blocks/room-card/img/888/888-3.png']})
-      +room-card({className:'room-card room-card840',roomNumber:'840',roomType:'',roomPrice:'9990',reviewsNumber:'65',rating:'4',imagePaths:['../../../blocks/room-card/img/840/840-1.png','../../../blocks/room-card/img/840/840-2.png','../../../blocks/room-card/img/840/840-3.png']})
+      +room-card({className:'room-card',roomNumber:'888',roomType:'Люкс',roomPrice:'9990',reviewsNumber:'145',rating:'3',imagePaths:['../../blocks/room-card/img/888/888-1.png','../../blocks/room-card/img/888/888-2.png','../../blocks/room-card/img/888/888-3.png']})
+      +room-card({className:'room-card room-card840',roomNumber:'840',roomType:'',roomPrice:'9990',reviewsNumber:'65',rating:'4',imagePaths:['../../blocks/room-card/img/840/840-1.png','../../blocks/room-card/img/840/840-2.png','../../blocks/room-card/img/840/840-3.png']})
