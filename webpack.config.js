@@ -22,6 +22,8 @@ module.exports={
     'assets/js/uiforms':'./src/pages/ui-kit/ui-forms/ui-kit.js',
     uicards:'./src/pages/ui-kit/ui-cards/ui-cards.pug',
     'assets/js/uicards':'./src/pages/ui-kit/ui-cards/ui-cards.js',
+    footerheader:'./src/pages/ui-kit/footer-header/footer-header.pug',
+    'assets/js/footerheader':'./src/pages/ui-kit/footer-header/footer-header.js'
   },
   devtool: 'source-map',
   plugins:[
