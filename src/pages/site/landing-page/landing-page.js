@@ -2,7 +2,7 @@ import AirDatepicker from 'air-datepicker';
 
 import * as itemQuantityDropdown from '../../../blocks/guest-dropdown/item-quantity-dropdown.js';
 
-import {headerBurgerMenu} from "../../../blocks/header/header.js";
+import {headerBurgerMenu} from "../../../blocks/header/header-burger-menu.js";
 import {textfieldDateDropdown} from './../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js';
 import {guestDropdown} from './../../../blocks/guest-dropdown/guest-dropdown.js';
 

@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/blocks/header/header.js":
-/*!*************************************!*\
-  !*** ./src/blocks/header/header.js ***!
-  \*************************************/
+/***/ "./src/blocks/header/header-burger-menu.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/header/header-burger-menu.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,10 +92,10 @@ var __webpack_exports__ = {};
   !*** ./src/pages/ui-kit/footer-header/footer-header.js ***!
   \*********************************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _blocks_header_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../blocks/header/header.js */ "./src/blocks/header/header.js");
+/* harmony import */ var _blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../blocks/header/header-burger-menu.js */ "./src/blocks/header/header-burger-menu.js");
 
 
-(0,_blocks_header_header_js__WEBPACK_IMPORTED_MODULE_0__.headerBurgerMenu)('.header');
+(0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__.headerBurgerMenu)('.header');
 
 })();
 

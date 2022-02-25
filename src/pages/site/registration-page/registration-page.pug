@@ -4,11 +4,8 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")    
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-    script(src="../../../blocks/textfield/textfield_masked/jquery.inputmask.js")
-    script(src="../../../blocks/textfield/textfield_masked/textfield_masked.js")
-    script(type="module" src="../../../blocks/header/header.js")
-    script(type="module" src="../../ui-kit/ui-forms/ui-kit.js")
-    link(href="registration-page.css" rel="stylesheet")
+    script(type="module" src="assets/js/registration-page.js")
+    link(href=require("./registration-page.scss") rel="stylesheet")
   body
     include ../../ui-kit/ui-forms/ui-kit-inc.pug
     +header({className:'header',userName:''})

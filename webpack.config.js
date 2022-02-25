@@ -26,6 +26,8 @@ module.exports={
     'assets/js/footerheader':'./src/pages/ui-kit/footer-header/footer-header.js',
     landingPage:'./src/pages/site/landing-page/landing-page.pug',
     'assets/js/landing-page':'./src/pages/site/landing-page/landing-page.js',
+    registrationPage:'./src/pages/site/registration-page/registration-page.pug',
+    'assets/js/registration-page':'./src/pages/site/registration-page/registration-page.js',
 
   },
   devtool: 'source-map',

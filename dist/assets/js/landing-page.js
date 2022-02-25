@@ -241,10 +241,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./src/blocks/header/header.js":
-/*!*************************************!*\
-  !*** ./src/blocks/header/header.js ***!
-  \*************************************/
+/***/ "./src/blocks/header/header-burger-menu.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/header/header-burger-menu.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -384,7 +384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/index.es.js");
 /* harmony import */ var _blocks_guest_dropdown_item_quantity_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../blocks/guest-dropdown/item-quantity-dropdown.js */ "./src/blocks/guest-dropdown/item-quantity-dropdown.js");
 /* harmony import */ var _blocks_guest_dropdown_item_quantity_dropdown_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_guest_dropdown_item_quantity_dropdown_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _blocks_header_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/header/header.js */ "./src/blocks/header/header.js");
+/* harmony import */ var _blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../blocks/header/header-burger-menu.js */ "./src/blocks/header/header-burger-menu.js");
 /* harmony import */ var _blocks_textfield_textfield_date_dropdown_textfield_date_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js */ "./src/blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js");
 /* harmony import */ var _blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/guest-dropdown.js */ "./src/blocks/guest-dropdown/guest-dropdown.js");
 
@@ -395,7 +395,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-(0,_blocks_header_header_js__WEBPACK_IMPORTED_MODULE_2__.headerBurgerMenu)('.header');
+(0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_2__.headerBurgerMenu)('.header');
 (0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)();
 window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_0__["default"];
 window.onload = function(){
