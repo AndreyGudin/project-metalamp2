@@ -30,6 +30,8 @@ module.exports={
     'assets/js/registration-page':'./src/pages/site/registration-page/registration-page.js',
     roomDetailsPage:'./src/pages/site/room-details-page/room-details-page.pug',
     'assets/js/room-details-page':'./src/pages/site/room-details-page/room-details-page.js',
+    searchRoomPage:'./src/pages/site/search-room-page/search-room-page.pug',
+    'assets/js/search-room-page':'./src/pages/site/search-room-page/search-room-page.js',
 
   },
   devtool: 'source-map',
