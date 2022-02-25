@@ -185,8 +185,8 @@ body._lock {
 }
 
 
-.header-menu-expandable-services[open] .expandable-checkbox-list.expandable-checkbox-list__list.header-menu-expandable-services__container,
-.header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container{
+.header-menu-expandable-services[open] .expandable-checkbox-list__list.header-menu-expandable-services__list,
+.header-menu-expandable-agreements[open] .expandable-checkbox-list__list.header-menu-expandable-agreements__list{
   background-color: white;
   position: absolute;
   left: 10px;

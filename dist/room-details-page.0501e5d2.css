@@ -3313,8 +3313,8 @@ body._lock {
   margin-bottom: 0;
 }
 
-.header-menu-expandable-services[open] .expandable-checkbox-list.expandable-checkbox-list__list.header-menu-expandable-services__container,
-.header-menu-expandable-agreements[open] .header-menu-expandable-agreements__container {
+.header-menu-expandable-services[open] .expandable-checkbox-list__list.header-menu-expandable-services__list,
+.header-menu-expandable-agreements[open] .expandable-checkbox-list__list.header-menu-expandable-agreements__list {
   background-color: white;
   position: absolute;
   left: 10px;
@@ -3790,4 +3790,4 @@ body._lock {
 .room-details-page__reviews-part__cancel-label2 {
   margin-top: 20px;
 }
-/*# sourceMappingURL=room-details-page.e0375ec9.css.map */
+/*# sourceMappingURL=room-details-page.0501e5d2.css.map */
