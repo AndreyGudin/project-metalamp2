@@ -28,6 +28,8 @@ module.exports={
     'assets/js/landing-page':'./src/pages/site/landing-page/landing-page.js',
     registrationPage:'./src/pages/site/registration-page/registration-page.pug',
     'assets/js/registration-page':'./src/pages/site/registration-page/registration-page.js',
+    roomDetailsPage:'./src/pages/site/room-details-page/room-details-page.pug',
+    'assets/js/room-details-page':'./src/pages/site/room-details-page/room-details-page.js',
 
   },
   devtool: 'source-map',
