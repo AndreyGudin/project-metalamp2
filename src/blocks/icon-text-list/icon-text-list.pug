@@ -1,4 +1,8 @@
 mixin icon-text-list(options)
+  - options = options || {};
+  - options.className = options.className || 'icon-text-list' ;
+  - options.listItems = options.listItems || {'Комфорт':'Шумопоглащающие стены','Удобство':'Окно в каждой спальне'};
+  - options.imagePaths = options.imagePaths || ['../../blocks/icon-text-list/svg/insert_emoticon.svg','../../blocks/icon-text-list/svg/location_city.svg'];
   - var i=0
   div(class=options.className)
     each val,keys in options.listItems
@@ -8,4 +12,3 @@ mixin icon-text-list(options)
           span(class=`${options.className}__title`)=keys
           span(class=`${options.className}__text`)=val
         -i++
-
