@@ -1,4 +1,7 @@
 mixin graph-reviews(options)
+  - options = options || {};
+  - options.className = options.className || 'graph-reviews' ;
+  - options.count = options.count || '260' ;
   div(class=options.className)
       canvas(class=`${options.className}__canvas`)
       div(class=`${options.className}__votes-number`)
