@@ -1,4 +1,7 @@
 mixin header(options)
+  - options = options || {};
+  - options.className = options.className || 'header' ;
+  - options.userName = options.userName || '';
   - var classNameDivided=options.className.split(' ');
   header(class=options.className)
     svg( width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -42,4 +45,4 @@ mixin header(options)
         .search-room-page__button-hiding-filter-container__box
         .search-room-page__button-hiding-filter-container__box
       button(class=classNameDivided.map((item)=>`${item}__burger`).join(' '))
-        span
+        span     
