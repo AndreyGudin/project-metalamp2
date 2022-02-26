@@ -1,4 +1,7 @@
 mixin range-slider(options)
+  - options = options || {};
+  - options.className = options.className || 'range-slider' ;
+  - options.title = options.title || 'range slider';
   div(class=options.className)
     div(class=`${options.className}__title-range`)
       label(class=`${options.className}__title`)=options.title
