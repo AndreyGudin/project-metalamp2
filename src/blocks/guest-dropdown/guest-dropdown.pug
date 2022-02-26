@@ -1,4 +1,9 @@
 mixin guest-dropdown(options)
+  - options = options || {};
+  - options.className = options.className || 'guest-dropdown' ;
+  - options.title = options.title || 'Dropdown';
+  - options.menuItems = options.menuItems || ['Взрослые','Дети','Младенцы'];
+  - options.hide = options.hide || '0';
   - var i=1
   - var classNameDivided=options.className.split(' ');
   div(class=classNameDivided.map((item)=>`${item}-block`).join(' '))
@@ -11,3 +16,4 @@ mixin guest-dropdown(options)
             div
               p.iqdropdown-item=item
               - i++
++guest-dropdown({className:'guest-dropdown',title:'Dropdown',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})              
