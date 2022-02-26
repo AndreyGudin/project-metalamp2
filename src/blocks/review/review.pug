@@ -1,5 +1,12 @@
 mixin review(options)
   include ..\like-button\like-button.pug
+  - options = options || {};
+  - options.className = options.className || 'review' ;
+  - options.imagePath = options.imagePath || '../../blocks/review/img/image.png';
+  - options.name = options.name || 'Мурад Сарафанов';
+  - options.publicationDate = options.publicationDate || '5 дней назад';
+  - options.textReview = options.textReview || 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.';
+  - options.count = options.count || '15';
   - var classNameDivided=options.className.split(' ')
   div(class=options.className)
     div(class=classNameDivided.map((item)=>`${item}__author`).join(' '))
