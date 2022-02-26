@@ -1,4 +1,9 @@
 mixin booking-room-card(options)
+  - options = options || {};
+  - options.className = options.className || 'booking-room-card' ;
+  - options.roomNumber = options.roomNumber || '888';
+  - options.roomType = options.roomType || 'Люкс';
+  - options.dayPrice = options.className || '9990' ;
   div(class=options.className)
     form(class=`${options.className}__form`)
       div(class=`${options.className}__title-container`)
