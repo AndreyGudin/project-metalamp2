@@ -1,4 +1,7 @@
 mixin rate-button(options)
+  - options = options || {};
+  - options.className = options.className || 'rate-button' ;
+  - options.checked = options.checked || '3';
   - var classNameDivided=options.className.split(' ')
   div(class=options.className)
     div(class=classNameDivided.map((item)=>`${item}__star-source`).join(' '))
