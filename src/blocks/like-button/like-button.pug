@@ -1,4 +1,7 @@
 mixin like-button(options)
+  - options = options || {};
+  - options.className = options.className || 'like-button' ;
+  - options.count = options.count || '12';
   - var classNameDivided=options.className.split(' ')
   div(class=options.className)
     if (classNameDivided.length === 1) 
