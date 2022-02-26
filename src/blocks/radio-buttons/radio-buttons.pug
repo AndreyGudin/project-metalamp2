@@ -1,8 +1,12 @@
 mixin radio-buttons(options)
+  - options = options || {};
+  - options.className = options.className || 'radio-buttons' ;
+  - options.title = options.title || 'Radio buttons';
+  - options.radioButtonsTitles = options.radioButtonsTitles || ['Мужчины','Женщины'];
   div(class=options.className)
     label(class=`${options.className}__title`)=options.title
     div(class=`${options.className}__radio-buttons`)
       each val in options.radioButtonsTitles
         div(class=`${options.className}__radio-button`)
           input(type="radio",class=`${options.className}__input`,name="sex")
-          label(class=`${options.className}__radio-label`, for=`${options.className}__input`)=val
+          label(class=`${options.className}__radio-label`, for=`${options.className}__input`)=val         
