@@ -1,4 +1,8 @@
 mixin bullet-list(options)
+  - options = options || {};
+  - options.className = options.className || 'bullet-list' ;
+  - options.title = options.title || 'Bullet list';
+  - options.listItems = options.listItems || ['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия - после 13:00, а выезд до 12:00'];
   - var classNameDivided=options.className.split(' ');
   div(class=options.className)
     label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
