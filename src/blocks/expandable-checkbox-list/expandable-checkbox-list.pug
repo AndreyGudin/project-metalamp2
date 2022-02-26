@@ -1,4 +1,8 @@
 mixin expandable-checkbox-list(options)
+  - options = options || {};
+  - options.className = options.className || 'expandable-checkbox-list' ;
+  - options.title = options.title || 'Expandable CheckBox List';
+  - options.listItems = options.listItems || ['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь'];
   - var classNameDivided=options.className.split(' ')
   - var i=0;
   details(class=options.className)&attributes(attributes)
