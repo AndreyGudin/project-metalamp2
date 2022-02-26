@@ -1,4 +1,7 @@
 mixin pagination(options)
+  - options = options || {};
+  - options.className = options.className || 'pagination';
   div(class=options.className)
     div(class=`${options.className}__data`)
     div(class=`${options.className}__pagination`)
+
