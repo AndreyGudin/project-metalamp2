@@ -1,4 +1,12 @@
 mixin room-card(options)
+  - options = options || {};
+  - options.className = options.className || 'room-card' ;
+  - options.roomNumber = options.roomNumber || '888';
+  - options.roomType = options.roomType || 'Люкс';
+  - options.roomPrice = options.roomPrice || '9990' ;
+  - options.reviewsNumber = options.reviewsNumber || '145';
+  - options.rating = options.rating || '3';
+  - options.imagePaths = options.imagePaths || ['../../blocks/room-card/img/888/888-1.png','../../blocks/room-card/img/888/888-2.png','../../blocks/room-card/img/888/888-3.png'];
   -var classNameDivided=options.className.split(' ')
   div(class=options.className)
     div(class=classNameDivided.map((item)=>`${item}__photos`).join(' '))
