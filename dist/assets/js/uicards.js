@@ -6286,12 +6286,11 @@ function roomCardSlider(arraySliderQuery) {
     cover: "true",
     autoplay: "true",
   };
- 
+
   for (var i = 0; i < arraySliderQuery.length; i++) {
     new Splide(arraySliderQuery[i]).mount();
   }
 }
-
 
 
 

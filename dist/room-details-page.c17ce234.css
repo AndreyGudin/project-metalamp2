@@ -13,10 +13,10 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__copyrights-label, .booking-room-card__price-for-days-container,
+.room-details-page__reviews-part__cancel-label2, .footer__nav-description, .footer__copyrights-label, .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
 .booking-room-card__additional-service-fee-container,
-.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
+.booking-room-card__total-price-container, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -2474,174 +2474,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 50px;
 }
 
-.findroom-card {
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  background-color: white;
-}
-
-.findroom-card,
-.findroom-card__form {
-  max-width: 380px;
-  min-height: 374px;
-}
-
-.findroom-card__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.findroom-card__booking-time {
-  display: flex;
-  align-self: stretch;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-}
-
-.findroom-card__title {
-  font: 24px "Conv_Montserrat-Bold";
-  text-align: center;
-  margin: 40px 0px 20px 0px;
-}
-
-.guest-dropdown-block {
-  justify-self: center;
-  margin-bottom: 30px;
-}
-
-.account-registration {
-  background-color: white;
-  width: 380px;
-  height: 646px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.account-registration__title {
-  font: 24px "Conv_Montserrat-Bold";
-  text-align: center;
-  margin: 40px 0px 15px 0px;
-}
-
-.account-registration__reg-form,
-.account-registration__login-form {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.account-registration__login-form {
-  margin-top: 17px;
-}
-
-.textfield {
-  align-self: center;
-}
-
-.radio-buttons {
-  margin: 5px 0px 20px 30px;
-}
-
-.radio-buttons__container {
-  margin-top: 0px;
-}
-
-.textfield_reg-acc__label {
-  height: auto;
-}
-
-.textfield_reg-acc {
-  height: auto;
-  margin-bottom: 5px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__title.expandable-checkbox-list_checkbox-buttons__title.expandable-checkbox-list_toogle__title {
-  display: none;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle {
-  margin: 5px 0px 0px 30px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__list-item.expandable-checkbox-list_checkbox-buttons__box.expandable-checkbox-list_toogle__box {
-  margin-bottom: 0;
-}
-
-.button.button_with-arrow.reg-button {
-  margin-top: 20px;
-  align-self: center;
-}
-
-.account-registration__exist-login-form {
-  display: flex;
-  width: 320px;
-  height: 44px;
-  justify-content: space-between;
-  margin-top: 30px;
-  align-self: center;
-}
-
-.account-registration__label {
-  line-height: 44px;
-}
-
-.login-card {
-  background-color: white;
-  width: 380px;
-  height: 358px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.login-card__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.login-card__title {
-  font: 24px "Conv_Montserrat-Bold";
-  margin: 40px 0px 20px 30px;
-}
-
-.login-card__exist-login-form {
-  display: flex;
-  width: 320px;
-  height: 44px;
-  justify-content: space-between;
-  margin-top: 30px;
-  align-self: center;
-}
-
-.login-card__label {
-  line-height: 44px;
-}
-
-.button.button_with-arrow.login-button {
-  margin-top: 20px;
-  align-self: center;
-}
-
-.login-textfield__label {
-  height: auto;
-}
-
-.login-textfield {
-  height: auto;
-  margin-bottom: 5px;
-}
-
 .booking-room-card {
   background-color: white;
   width: 380px;
@@ -3530,165 +3362,264 @@ body._lock {
   gap: 20px;
 }
 
-.search-room-page {
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-  margin: 0px auto 70px;
-  gap: 20px;
-  padding-left: 30px;
-}
-
-.search-room-page__filter {
-  height: 100%;
-  width: 266px;
+.room-details-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  gap: 30px;
+  margin-bottom: 70px;
 }
 
-.search-room-page__button-hiding-filter {
+.room-details-page__room-images,
+.room-details-page__room-tips-impressions,
+.room-details-page__rules {
+  display: flex;
+}
+
+.room-details-page__room-images {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.splide__slide {
+  width: fit-content;
+  height: fit-content;
+}
+
+.splide__track,
+#room-details-page__room-images__splide {
+  width: 100%;
+}
+
+.splide__track > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1979px) {
+  .splide__track > ul {
+    height: 760px;
+  }
+}
+@media (max-width: 1978px) {
+  .splide__track > ul {
+    height: 587px;
+  }
+}
+@media (max-width: 1440px) {
+  .splide__track > ul {
+    height: 427px;
+  }
+}
+.splide__track > ul li:nth-child(1) {
+  height: 100%;
+  width: 60%;
+}
+
+.splide__track > ul li:nth-child(2),
+.splide__track > ul li:nth-child(3) {
+  width: 40%;
+  height: 50%;
+  align-self: stretch;
+}
+
+.splide__track > ul li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__arrow svg {
+  fill: white;
+}
+
+.splide__arrow {
+  background: transparent;
+  opacity: 1;
+}
+
+.splide__pagination {
+  left: auto;
+}
+
+.splide__pagination__page {
+  opacity: 1;
+  background: transparent;
+  border: solid 1px white;
+}
+
+.splide__pagination__page.is-active {
+  transform: none;
+}
+
+.splide__slide {
+  border-radius: 4px;
+}
+
+.splide__pagination,
+.splide__arrows {
   display: none;
 }
 
-@media (max-width: 1150px) {
-  .search-room-page__room-cards-label {
-    text-align: center;
-  }
-}
-@media (max-width: 878px) {
-  .header__menus-buttons {
-    width: 100%;
-    align-content: center;
+@media (max-width: 1230px) {
+  .graph-reviews {
+    width: 226px;
+    height: 270px;
   }
 
-  .search-room-page__button-hiding-filter-container {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    flex-wrap: wrap-reverse;
+  .graph-reviews__votes-number {
+    margin-top: -195px;
+    margin-left: 77px;
+  }
+
+  .room-details-page__room-details {
+    padding: 0 20px;
+  }
+
+  .room-details-page__room-booking {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .room-details-page__room-details-booking {
+    flex-direction: column-reverse;
+  }
+
+  .room-details-page__room-tips-impressions {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .booking-room-card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .splide__track > ul {
+    height: 228px;
+  }
+
+  .room-details-page__room-booking {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .room-details-page__room-details {
+    padding: 0px 20px 20px;
     align-items: center;
-    cursor: pointer;
-    z-index: 6;
-    bottom: 120px;
-  }
-  .search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(2),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(4),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(6),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(8) {
-    opacity: 0;
   }
 
-  .search-room-page__button-hiding-filter-container__box {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    margin: 3px 3px;
+  .room-details-page__rules,
+.room-details-page__room-tips-impressions,
+.booking-room-card__booking-date-container {
+    flex-direction: column;
   }
 
-  .search-room-page__filter {
-    position: fixed;
-    align-items: center;
-    padding: 30vh 0 0 10px;
-    margin: 0;
-    top: 0;
-    left: -100%;
-    width: 320px;
-    height: 100%;
-    background-color: white;
-    overflow: auto;
-    z-index: 5;
-    transition: all 0.3s ease 0s;
+  .review__textarea {
+    padding-left: 10px;
   }
 
-  .search-room-page__filter._active {
-    left: 0;
+  .room-details-page__rules {
+    gap: 20px;
   }
-  .search-room-page__filter._active::before {
-    content: "";
-    position: fixed;
-    width: 320px;
-    top: 0;
-    left: 0;
-    height: 125px;
-    background-color: #fff;
-    z-index: 5;
+
+  .booking-room-card {
+    width: 90%;
+    max-width: 380px;
+    padding-bottom: 20px;
   }
-}
-@media (max-width: 501px) {
-  .search-room-page__button-hiding-filter-container {
-    bottom: 0;
+
+  .booking-room-card__booking-date-container {
+    align-self: flex-start;
+    padding-left: 5%;
   }
-}
-@media (max-width: 320px) {
-  .search-room-page {
-    padding-left: 0px;
+
+  .booking-room-card__form .guest-dropdown-block,
+.button.button_with-arrow.booking-button {
+    width: 90%;
   }
-}
-.guest-dropdown-block,
-.guest-dropdown__title,
-.guest-dropdown.iqdropdown,
+
+  .guest-dropdown.iqdropdown,
 .guest-dropdown.iqdropdown-menu,
-.guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option,
-.textfield__input.textfield_date-dropdown__input.search-room__data-of-arrival__input,
-.search-room__data-of-arrival__label,
-.search-room__data-of-arrival {
-  width: 260px;
+.iqdropdown .iqdropdown-menu-option,
+.booking-button__button {
+    width: 100%;
+  }
+
+  .button_with-arrow__button::after {
+    left: 87%;
+  }
+
+  .booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container {
+    margin: 0 5% 10px;
+  }
+
+  .booking-room-card__service-fee-title {
+    display: inline-block;
+    width: 175px;
+  }
+  .booking-room-card__service-fee-title::after {
+    left: 20%;
+    bottom: -1px;
+  }
+
+  .booking-room-card__additional-service-fee-title::after {
+    left: 20%;
+    bottom: -1px;
+  }
+}
+.room-details-page__room-details-booking {
+  display: flex;
+  gap: 70px;
 }
 
-.textfield__input.textfield_date-dropdown__input.search-room__data-of-arrival__input {
-  background-position-x: 230px;
-}
-
-.guest-dropdown-block {
-  margin-bottom: 0px;
-}
-
-.search-room-page__range-slider {
+.room-details-page__room-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.search-room-page__range-slider-title {
-  font: 12px "Conv_Montserrat-Regular";
+.room-details-page__room-tips-impressions {
+  margin-bottom: 30px;
+  gap: 70px;
+}
+
+.room-details-page__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.icon-text-list__tips-label,
+.room-details-page__reviews__label {
+  font: 19px "Conv_Montserrat-Bold";
+}
+
+.room-details-page__reviews-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details-page__reviews__number-of-reviews-label {
+  font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
 }
 
-.search-room-page__room-cards-pagination {
+.room-details-page__rules-cancel {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 
-.search-room-page__room-cards {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.room-details-page__rules-cancel,
+.room-details-page__reviews-part__cancel-label2 {
+  max-width: 341px;
 }
 
-.search-room-page__room-cards-label {
-  margin: 30px 0px 20px 0px;
-  font: 24px "Conv_Montserrat-Bold";
+.room-details-page__reviews-part__cancel-label2 {
+  margin-top: 20px;
 }
-
-.search-room-page__room-cards-result {
-  max-width: 834px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: center;
-  gap: 12px;
-  justify-content: center;
-}
-
-.pagination {
-  align-self: center;
-}
-/*# sourceMappingURL=search-room-page.7d254c80.css.map */
+/*# sourceMappingURL=room-details-page.c17ce234.css.map */
