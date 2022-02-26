@@ -1,4 +1,6 @@
 mixin footer(options)
+  - options = options || {};
+  - options.className = options.className || 'footer' ;
   footer(class=options.className)
     div(class=`${options.className}__nav-footer`)
       div(class=`${options.className}__nav-description` + ' footer-col')
