@@ -1,9 +1,9 @@
 mixin textfield(options)
-	- options = options || {};
-	- options.className = options.className || 'textfield' ;
-	- options.title = options.title || 'Text field';
-	- options.placeholder = options.placeholder || 'Email';
-	- var classNameDivided=options.className.split(' ');
-	div(class=options.className)
-		label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
-			input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)
+  - options = options || {};
+  - options.className = options.className || 'textfield' ;
+  - options.title = options.title || 'Text field';
+  - options.placeholder = options.placeholder || 'Email';
+  - var classNameDivided=options.className.split(' ');
+  div(class=options.className)
+    label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+      input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)

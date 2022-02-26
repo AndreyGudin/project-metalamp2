@@ -1,5 +1,8 @@
 mixin account-registration(options)
   - var classNameDivided=options.className.split(' ');
+  - options = options || {};
+  - options.className = options.className || 'account-registration' ;
+  - options.title = options.title || 'Регистрация аккаунта';
   div(class=options.className)
     label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title 
     form(class=classNameDivided.map((item)=>`${item}__reg-form`).join(' '))
