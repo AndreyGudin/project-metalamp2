@@ -1,4 +1,7 @@
 mixin login-card(options)
+  - options = options || {};
+  - options.className = options.className || 'login-card' ;
+  - options.title = options.title || 'Войти';
   div(class=options.className)
     label(class=`${options.className}__title`)=options.title
     form(class=`${options.className}__form`)
