@@ -1,6 +1,0 @@
-.button-without-fill__button {
-  background: transparent;
-  border: 2px solid transparent;
-  border-image: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
-  border-image-slice: 1;
-}

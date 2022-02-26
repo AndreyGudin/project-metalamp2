@@ -1,4 +1,7 @@
 mixin findroom-card(options)
+  - options = options || {};
+  - options.className = options.className || 'findroom-card' ;
+  - options.title = options.title || 'Найдём номера под ваши пожелания';
   div(class=options.className)
     form(class=`${options.className}__form`)
       label(class=`${options.className}__title`)=options.title
@@ -6,4 +9,4 @@ mixin findroom-card(options)
         +textfield({className:'textfield textfield_date-dropdown date-arrival',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
         +textfield({className:'textfield textfield_date-dropdown date-exit',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
       +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
-      +button({className:'button button_with-arrow',title:'Подобрать номер'})
+      +button({className:'button button_with-arrow',title:'Подобрать номер'})    
