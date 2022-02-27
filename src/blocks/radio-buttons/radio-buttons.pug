@@ -1,7 +1,7 @@
 mixin radio-buttons(options)
   - options = options || {};
   - options.className = options.className || 'radio-buttons' ;
-  - options.title = options.title || 'Radio buttons';
+  - options.title = options.title || '';
   - options.radioButtonsTitles = options.radioButtonsTitles || ['Мужчины','Женщины'];
   div(class=options.className)
     label(class=`${options.className}__title`)=options.title

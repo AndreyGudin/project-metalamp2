@@ -8,6 +8,7 @@ import {headerBurgerMenu} from "../../../blocks/header/header-burger-menu.js";
 import {guestDropdown} from './../../../blocks/guest-dropdown/guest-dropdown.js';
 import {textfieldDateDropdown} from './../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js';
 import {graphReviews} from '../../../blocks/graph-reviews/graph-reviews.js';
+import {likeButton} from '../../../blocks/like-button/like-button.js';
 
 window.AirDatepicker = AirDatepicker;
 window.Chart = Chart;
@@ -15,6 +16,7 @@ window.Splide = Splide;
 
 headerBurgerMenu('.header');
 guestDropdown();
+likeButton('');
 
 window.onload = function(){
   textfieldDateDropdown('.textfield__input.textfield_date-dropdown__input.date-arrival__input');
