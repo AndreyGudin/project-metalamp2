@@ -1,4 +1,4 @@
-function paginationjsBlock() {
+function paginationjsBlock(query = '.pagination') {
   var generateData = function (number) {
     var result = [];
   
@@ -18,7 +18,7 @@ function paginationjsBlock() {
     return html;
   }
   
-  $(".pagination__pagination").pagination({
+  $(`${query}__pagination`).pagination({
     dataSource: generateData(150),
     showNavigator: true,
     formatNavigator: "<%= totalNumber %> вариантов аренды",
@@ -27,27 +27,27 @@ function paginationjsBlock() {
     callback: function (data, pagination) {
       // template method of yourself
       var html = template(data);
-      $("pagination__data").html(html);
+      $(`${query}__data`).html(html);
     },
     afterPageOnClick: function () {
-      let result = $(".pagination__pagination").pagination("getSelectedPageData");
-      let pagenumb = $(".pagination__pagination").pagination(
+      let result = $(`${query}__pagination"`).pagination("getSelectedPageData");
+      let pagenumb = $(`${query}__pagination`).pagination(
         "getSelectedPageNum"
       );
       let sum = 1;
       sum = result.length * pagenumb;
-      let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+      let totalPage = $(`${query}__pagination`).pagination("getTotalPage");
       $(".paginationjs-nav.J-paginationjs-nav").prepend(
         `${sum - result.length + 1} - ${sum} из `
       );
     },
   });
   
-  let result = $(".pagination__pagination").pagination("getSelectedPageData");
-  let pagenumb = $(".pagination__pagination").pagination("getSelectedPageNum");
+  let result = $(`${query}__pagination`).pagination("getSelectedPageData");
+  let pagenumb = $(`${query}__pagination`).pagination("getSelectedPageNum");
   let sum = 1;
   sum = result.length * pagenumb;
-  let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+  let totalPage = $(`${query}__pagination`).pagination("getTotalPage");
   $(".paginationjs-nav.J-paginationjs-nav").prepend(
     `${sum - result.length + 1} - ${sum} из `
   );

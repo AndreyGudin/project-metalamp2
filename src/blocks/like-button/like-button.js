@@ -1,5 +1,5 @@
-function likeButton() {
-  $(document).on("click", ".like-button__button.add", function () {
+function likeButton(query = '.like-button') {
+  $(document).on("click", `${query}__button.add`, function () {
     $(this).addClass("active").removeClass("add");
     $(this).children("span").html(function (numberp) {
       numberp = parseInt($(this).text());

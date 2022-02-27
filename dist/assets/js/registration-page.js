@@ -3049,7 +3049,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "headerBurgerMenu": () => (/* binding */ headerBurgerMenu)
 /* harmony export */ });
-function headerBurgerMenu(query) {
+function headerBurgerMenu(query = '.header') {
   const iconMenu = document.querySelector(`${query}__burger`);
   if (iconMenu) {
     const headerNav=document.querySelector(`${query}__nav`);

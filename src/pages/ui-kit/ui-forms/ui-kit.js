@@ -21,9 +21,9 @@ import {graphReviews} from '../../../blocks/graph-reviews/graph-reviews.js';
 window.AirDatepicker = AirDatepicker;
 window.noUiSlider = noUiSlider;
 window.Chart = Chart;
-guestDropdown();
-guestDropDownRooms();
-likeButton();
+guestDropdown('.guest-dropdown');
+guestDropDownRooms('.guest-dropdown_rooms');
+likeButton('.like-button');
 rateButton('.rate-button');
 window.onload = function(){
   textfieldMasked('.textfield__input.textfield_masked__input');
@@ -31,5 +31,5 @@ window.onload = function(){
   textfieldFilterDateDropdown('.textfield__input.textfield_filter-date-dropdown__input');
   rangeSlider('.range-slider');
   graphReviews('.graph-reviews');
-  paginationjsBlock();
+  paginationjsBlock('.pagination');
 }

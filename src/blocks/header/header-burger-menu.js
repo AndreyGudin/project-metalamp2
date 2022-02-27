@@ -1,4 +1,4 @@
-function headerBurgerMenu(query) {
+function headerBurgerMenu(query = '.header') {
   const iconMenu = document.querySelector(`${query}__burger`);
   if (iconMenu) {
     const headerNav=document.querySelector(`${query}__nav`);

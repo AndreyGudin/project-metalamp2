@@ -5,6 +5,10 @@
   justify-content: space-between;
 }
 
+.range-slider__slider{
+  cursor: pointer;
+}
+
 .range-slider__range::before {
   content: "";
 }
@@ -28,6 +32,7 @@
   );
   box-shadow: none;
   right: -7px;
+  cursor: pointer;
 }
 
 .noUi-handle:before,

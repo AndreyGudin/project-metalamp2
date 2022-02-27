@@ -1,4 +1,4 @@
-function graphReviews(query) {
+function graphReviews(query = '.graph-reviews') {
     Chart.defaults.font.family =
       "Conv_Montserrat-Regular,Conv_Montserrat-Bold,Tahoma, Arial, sans-serif";
     const ctx = document.querySelector(`${query}__canvas`).getContext("2d");

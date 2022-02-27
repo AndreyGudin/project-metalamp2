@@ -17,12 +17,12 @@ window.AirDatepicker = AirDatepicker;
 window.noUiSlider = noUiSlider;
 window.Splide = Splide;
 headerBurgerMenu('.header');
-guestDropdown();
-guestDropDownRooms();
+guestDropdown('.guest-dropdown');
+guestDropDownRooms('.guest-dropdown_rooms');
 rateButton('.rate-button');
 window.onload = function(){
   rangeSlider('.range-slider');
-  paginationjsBlock();
+  paginationjsBlock('.pagination');
   roomCardSlider([
     "#room-card__splide",
     "#room-card840__splide",

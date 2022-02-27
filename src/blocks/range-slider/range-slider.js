@@ -1,4 +1,4 @@
-function rangeSlider(query) {
+function rangeSlider(query = '.range-slider') {
     let slider = document.querySelector(`${query}__slider`);
     let rangeSliderValueElement = document.querySelector(`${query}__range`);
     noUiSlider.create(slider, {

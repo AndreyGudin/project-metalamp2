@@ -1,4 +1,4 @@
-function roomCardSlider(arraySliderQuery) {
+function roomCardSlider(arraySliderQuery = ["#room-card__splide"]) {
   Splide.defaults = {
     width: 271,
     height: 152,

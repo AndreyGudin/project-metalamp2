@@ -15,8 +15,8 @@ window.Chart = Chart;
 window.Splide = Splide;
 
 headerBurgerMenu('.header');
-guestDropdown();
-likeButton('');
+guestDropdown('.guest-dropdown');
+likeButton('.like-button');
 
 window.onload = function(){
   textfieldDateDropdown('.textfield__input.textfield_date-dropdown__input.date-arrival__input');

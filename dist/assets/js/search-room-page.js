@@ -6343,31 +6343,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropDownRooms": () => (/* binding */ guestDropDownRooms)
 /* harmony export */ });
-function guestDropDownRooms(){$(document).ready(function () {
-  $(".guest-dropdown_rooms").iqDropdown({
-    setSelectionText: function (itemCount, totalItems) {
-      let t = ["гость", "гостя", "гостей"];
-      let spln = ["спальня", "спальни"];
-      let beds = ["кровать", "кровати"];
-      let vankom = ["ванная комнаты", "ванные комнаты"];
-      let sum = "";
-      if (totalItems == 0) return "";
-      if (itemCount["item1"] == 1)
-        sum = sum + itemCount["item1"] + " " + spln[0] + ",";
-      if (itemCount["item1"] > 1)
-        sum = sum + itemCount["item1"] + " " + spln[1] + ",";
-      if (itemCount["item2"] == 1)
-        sum = sum + itemCount["item2"] + " " + beds[0] + ",";
-      if (itemCount["item2"] > 1)
-        sum = sum + itemCount["item2"] + " " + beds[1] + ",";
-      if (itemCount["item3"] == 1)
-        sum = sum + itemCount["item3"] + " " + vankom[0];
-      if (itemCount["item3"] > 1)
-        sum = sum + itemCount["item3"] + " " + vankom[1];
-      if (sum.length > 20) sum = sum.slice(0, 20) + "...";
-      return sum;
-    },
-  });
+function guestDropDownRooms(query = '.guest-dropdown_rooms'){
+  $(document).ready(function () {
+    $(query).iqDropdown({
+      setSelectionText: function (itemCount, totalItems) {
+        let t = ["гость", "гостя", "гостей"];
+        let spln = ["спальня", "спальни"];
+        let beds = ["кровать", "кровати"];
+        let vankom = ["ванная комнаты", "ванные комнаты"];
+        let sum = "";
+        if (totalItems == 0) return "";
+        if (itemCount["item1"] == 1)
+          sum = sum + itemCount["item1"] + " " + spln[0] + ",";
+        if (itemCount["item1"] > 1)
+          sum = sum + itemCount["item1"] + " " + spln[1] + ",";
+        if (itemCount["item2"] == 1)
+          sum = sum + itemCount["item2"] + " " + beds[0] + ",";
+        if (itemCount["item2"] > 1)
+          sum = sum + itemCount["item2"] + " " + beds[1] + ",";
+        if (itemCount["item3"] == 1)
+          sum = sum + itemCount["item3"] + " " + vankom[0];
+        if (itemCount["item3"] > 1)
+          sum = sum + itemCount["item3"] + " " + vankom[1];
+        if (sum.length > 20) sum = sum.slice(0, 20) + "...";
+        return sum;
+      },
+    });
 });
 }
 
@@ -6386,9 +6387,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropdown": () => (/* binding */ guestDropdown)
 /* harmony export */ });
-function guestDropdown(){
+function guestDropdown(query = '.guest-dropdown'){
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(query).iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';
@@ -6598,7 +6599,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "headerBurgerMenu": () => (/* binding */ headerBurgerMenu)
 /* harmony export */ });
-function headerBurgerMenu(query) {
+function headerBurgerMenu(query = '.header') {
   const iconMenu = document.querySelector(`${query}__burger`);
   if (iconMenu) {
     const headerNav=document.querySelector(`${query}__nav`);
@@ -6626,7 +6627,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "paginationjsBlock": () => (/* binding */ paginationjsBlock)
 /* harmony export */ });
-function paginationjsBlock() {
+function paginationjsBlock(query = '.pagination') {
   var generateData = function (number) {
     var result = [];
   
@@ -6646,7 +6647,7 @@ function paginationjsBlock() {
     return html;
   }
   
-  $(".pagination__pagination").pagination({
+  $(`${query}__pagination`).pagination({
     dataSource: generateData(150),
     showNavigator: true,
     formatNavigator: "<%= totalNumber %> вариантов аренды",
@@ -6655,27 +6656,27 @@ function paginationjsBlock() {
     callback: function (data, pagination) {
       // template method of yourself
       var html = template(data);
-      $("pagination__data").html(html);
+      $(`${query}__data`).html(html);
     },
     afterPageOnClick: function () {
-      let result = $(".pagination__pagination").pagination("getSelectedPageData");
-      let pagenumb = $(".pagination__pagination").pagination(
+      let result = $(`${query}__pagination"`).pagination("getSelectedPageData");
+      let pagenumb = $(`${query}__pagination`).pagination(
         "getSelectedPageNum"
       );
       let sum = 1;
       sum = result.length * pagenumb;
-      let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+      let totalPage = $(`${query}__pagination`).pagination("getTotalPage");
       $(".paginationjs-nav.J-paginationjs-nav").prepend(
         `${sum - result.length + 1} - ${sum} из `
       );
     },
   });
   
-  let result = $(".pagination__pagination").pagination("getSelectedPageData");
-  let pagenumb = $(".pagination__pagination").pagination("getSelectedPageNum");
+  let result = $(`${query}__pagination`).pagination("getSelectedPageData");
+  let pagenumb = $(`${query}__pagination`).pagination("getSelectedPageNum");
   let sum = 1;
   sum = result.length * pagenumb;
-  let totalPage = $(".pagination__pagination").pagination("getTotalPage");
+  let totalPage = $(`${query}__pagination`).pagination("getTotalPage");
   $(".paginationjs-nav.J-paginationjs-nav").prepend(
     `${sum - result.length + 1} - ${sum} из `
   );
@@ -6697,7 +6698,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rangeSlider": () => (/* binding */ rangeSlider)
 /* harmony export */ });
-function rangeSlider(query) {
+function rangeSlider(query = '.range-slider') {
     let slider = document.querySelector(`${query}__slider`);
     let rangeSliderValueElement = document.querySelector(`${query}__range`);
     noUiSlider.create(slider, {
@@ -6731,7 +6732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rateButton": () => (/* binding */ rateButton)
 /* harmony export */ });
-function rateButton(query) {
+function rateButton(query = '.rate-button') {
   $(document).ready(function () {
     $(document).on("click", `${query}__label`, function () {
       $(this).prevAll().children().removeClass("fillgrad");
@@ -6757,7 +6758,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "roomCardSlider": () => (/* binding */ roomCardSlider)
 /* harmony export */ });
-function roomCardSlider(arraySliderQuery) {
+function roomCardSlider(arraySliderQuery = ["#room-card__splide"]) {
   Splide.defaults = {
     width: 271,
     height: 152,
@@ -6885,12 +6886,12 @@ window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_1__["default"];
 window.noUiSlider = (nouislider__WEBPACK_IMPORTED_MODULE_0___default());
 window.Splide = _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__["default"];
 (0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_11__.headerBurgerMenu)('.header');
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__.guestDropdown)();
-(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_6__.guestDropDownRooms)();
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__.guestDropdown)('.guest-dropdown');
+(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_6__.guestDropDownRooms)('.guest-dropdown_rooms');
 (0,_blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_9__.rateButton)('.rate-button');
 window.onload = function(){
   (0,_blocks_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_7__.rangeSlider)('.range-slider');
-  (0,_blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_8__.paginationjsBlock)();
+  (0,_blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_8__.paginationjsBlock)('.pagination');
   (0,_blocks_room_card_room_card_slider_js__WEBPACK_IMPORTED_MODULE_10__.roomCardSlider)([
     "#room-card__splide",
     "#room-card840__splide",

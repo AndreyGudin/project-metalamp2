@@ -16132,7 +16132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "graphReviews": () => (/* binding */ graphReviews)
 /* harmony export */ });
-function graphReviews(query) {
+function graphReviews(query = '.graph-reviews') {
     Chart.defaults.font.family =
       "Conv_Montserrat-Regular,Conv_Montserrat-Bold,Tahoma, Arial, sans-serif";
     const ctx = document.querySelector(`${query}__canvas`).getContext("2d");
@@ -16316,9 +16316,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropdown": () => (/* binding */ guestDropdown)
 /* harmony export */ });
-function guestDropdown(){
+function guestDropdown(query = '.guest-dropdown'){
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(query).iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';
@@ -16528,7 +16528,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "headerBurgerMenu": () => (/* binding */ headerBurgerMenu)
 /* harmony export */ });
-function headerBurgerMenu(query) {
+function headerBurgerMenu(query = '.header') {
   const iconMenu = document.querySelector(`${query}__burger`);
   if (iconMenu) {
     const headerNav=document.querySelector(`${query}__nav`);
@@ -16538,6 +16538,45 @@ function headerBurgerMenu(query) {
       headerNav.classList.toggle('_active');
   })
 }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./src/blocks/like-button/like-button.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/like-button/like-button.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "likeButton": () => (/* binding */ likeButton)
+/* harmony export */ });
+function likeButton(query = '.like-button') {
+  $(document).on("click", `${query}__button.add`, function () {
+    $(this).addClass("active").removeClass("add");
+    $(this).children("span").html(function (numberp) {
+      numberp = parseInt($(this).text());
+      numberp++;
+      return numberp.toString();
+    });
+  });
+  
+  $(document).on("click", ".active", function () {
+    $(this).children("span").html(function (numberp) {
+      numberp = parseInt($(this).text());
+      if (numberp > 0) {
+        numberp--;
+        return numberp.toString();
+      }
+    });
+    $(this).removeClass("active").addClass("add");
+  });
+  
 }
 
 
@@ -16556,7 +16595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "textfieldDateDropdown": () => (/* binding */ textfieldDateDropdown)
 /* harmony export */ });
-function textfieldDateDropdown(query) {
+function textfieldDateDropdown(query = '.textfield__input.textfield_date-dropdown__input') {
     let button = {
       content: 'Применить',
       className: 'textfield_date-dropdown__button-apply',
@@ -16666,6 +16705,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/guest-dropdown.js */ "./src/blocks/guest-dropdown/guest-dropdown.js");
 /* harmony import */ var _blocks_textfield_textfield_date_dropdown_textfield_date_dropdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js */ "./src/blocks/textfield/textfield_date-dropdown/textfield_date-dropdown.js");
 /* harmony import */ var _blocks_graph_reviews_graph_reviews_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../blocks/graph-reviews/graph-reviews.js */ "./src/blocks/graph-reviews/graph-reviews.js");
+/* harmony import */ var _blocks_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../blocks/like-button/like-button.js */ "./src/blocks/like-button/like-button.js");
+
 
 
 
@@ -16682,7 +16723,8 @@ window.Chart = chart_js_auto__WEBPACK_IMPORTED_MODULE_1__["default"];
 window.Splide = _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__["default"];
 
 (0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_4__.headerBurgerMenu)('.header');
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__.guestDropdown)();
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__.guestDropdown)('.guest-dropdown');
+(0,_blocks_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_8__.likeButton)('.like-button');
 
 window.onload = function(){
   (0,_blocks_textfield_textfield_date_dropdown_textfield_date_dropdown_js__WEBPACK_IMPORTED_MODULE_6__.textfieldDateDropdown)('.textfield__input.textfield_date-dropdown__input.date-arrival__input');

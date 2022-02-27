@@ -1,4 +1,4 @@
-function textfieldFilterDateDropdown(query) {
+function textfieldFilterDateDropdown(query = '.textfield__input.textfield_filter-date-dropdown__input') {
   let button = {
     content: 'Применить',
     className: 'textfield_filter-date-dropdown__button-apply',

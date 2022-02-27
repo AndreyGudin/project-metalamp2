@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__copyrights-label, .account-registration__label, .review__time,
+.footer__nav-description, .footer__copyrights-label, .landing-page__slogan-label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -2168,6 +2168,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   justify-content: space-between;
 }
 
+.range-slider__slider {
+  cursor: pointer;
+}
+
 .range-slider__range::before {
   content: "";
 }
@@ -2189,6 +2193,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
   box-shadow: none;
   right: -7px;
+  cursor: pointer;
 }
 
 .noUi-handle:before,
@@ -2507,86 +2512,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .guest-dropdown-block {
   justify-self: center;
   margin-bottom: 30px;
-}
-
-.account-registration {
-  background-color: white;
-  width: 380px;
-  height: 646px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.account-registration__title {
-  font: 24px "Conv_Montserrat-Bold";
-  text-align: center;
-  margin: 40px 0px 15px 0px;
-}
-
-.account-registration__reg-form,
-.account-registration__login-form {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.account-registration__login-form {
-  margin-top: 17px;
-}
-
-.textfield {
-  align-self: center;
-}
-
-.radio-buttons {
-  margin: 5px 0px 20px 30px;
-}
-
-.radio-buttons__container {
-  margin-top: 0px;
-}
-
-.textfield_reg-acc__label {
-  height: auto;
-}
-
-.textfield_reg-acc {
-  height: auto;
-  margin-bottom: 5px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__title.expandable-checkbox-list_checkbox-buttons__title.expandable-checkbox-list_toogle__title {
-  display: none;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle {
-  margin: 5px 0px 0px 30px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__list-item.expandable-checkbox-list_checkbox-buttons__box.expandable-checkbox-list_toogle__box {
-  margin-bottom: 0;
-}
-
-.button.button_with-arrow.reg-button {
-  margin-top: 20px;
-  align-self: center;
-}
-
-.account-registration__exist-login-form {
-  display: flex;
-  width: 320px;
-  height: 44px;
-  justify-content: space-between;
-  margin-top: 30px;
-  align-self: center;
-}
-
-.account-registration__label {
-  line-height: 44px;
 }
 
 body._lock {
@@ -2969,57 +2894,53 @@ body._lock {
   gap: 20px;
 }
 
-.registration-page {
-  background: no-repeat url(assets/img/9b0f4a2ec9abb6fa403c.png);
+.landing-page {
+  width: 100%;
+  height: 870px;
+  background: no-repeat url(assets/img/9d6d7908ce1280c0533e.png);
   background-size: cover;
   background-position: center center;
   background-attachment: local;
-  height: 753px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-@media (max-width: 425px) {
-  .account-registration {
-    width: 90%;
-    max-width: 380px;
-    height: auto;
-    padding-bottom: 20px;
+.findroom-card {
+  margin: 70px 0px 0px 140px;
+}
+
+.landing-page__slogan-label {
+  width: 297px;
+  text-align: right;
+  margin: auto 134px 18px auto;
+}
+
+@media (max-width: 769px) {
+  .findroom-card {
+    margin: 70px 0 0 0;
+    align-self: center;
+    padding-bottom: 30px;
   }
 
-  .textfield_reg-acc,
-.textfield_masked,
-.button.button_with-arrow.reg-button,
-.account-registration__container, .expandable-checkbox-list_toogle {
-    width: 90%;
+  .findroom-card__booking-time {
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+    padding-left: 20px;
   }
 
-  .textfield_reg-acc__label,
-.textfield__input.textfield_reg-acc__input,
-.textfield_masked__label,
-.textfield__input.textfield_masked__input,
-.reg-button__button {
-    width: 100%;
+  .guest-dropdown-block,
+.iqdropdown,
+.iqdropdown-menu,
+.iqdropdown .iqdropdown-menu-option,
+.guest-dropdown.iqdropdown-menu,
+.button.button_with-arrow,
+.button_with-arrow__button {
+    width: 280px;
   }
 
-  .account-registration__exist-login-form {
-    width: 90%;
-  }
-
-  .account-registration__label {
-    line-height: normal;
-  }
-
-  .expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle,
-.expandable-checkbox-list_toogle__container, .expandable-checkbox-list_toogle__box {
-    margin: 0;
-    max-width: 280px;
-  }
-
-  .expandable-checkbox-list_toogle {
-    padding: 10px 0 0 5%;
+  .button_with-arrow__button::after {
+    left: 250px;
   }
 }
-/*# sourceMappingURL=registration-page.4f92265d.css.map */
+/*# sourceMappingURL=landing-page.4216fea0.css.map */

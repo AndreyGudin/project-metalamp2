@@ -1,6 +1,6 @@
-function guestDropdown(){
+function guestDropdown(query = '.guest-dropdown'){
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(query).iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';

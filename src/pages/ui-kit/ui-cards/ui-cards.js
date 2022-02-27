@@ -15,8 +15,8 @@ import {roomCardSlider} from '../../../blocks/room-card/room-card-slider.js'
 
 window.AirDatepicker = AirDatepicker;
 window.Splide = Splide;
-guestDropdown();
-guestDropDownRooms();
+guestDropdown('.guest-dropdown');
+guestDropDownRooms('.guest-dropdown_rooms');
 rateButton('.rate-button');
 window.onload = function(){
   textfieldMasked('.textfield__input.textfield_masked__input');

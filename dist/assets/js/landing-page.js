@@ -40,9 +40,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropdown": () => (/* binding */ guestDropdown)
 /* harmony export */ });
-function guestDropdown(){
+function guestDropdown(query = '.guest-dropdown'){
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(query).iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';
@@ -252,7 +252,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "headerBurgerMenu": () => (/* binding */ headerBurgerMenu)
 /* harmony export */ });
-function headerBurgerMenu(query) {
+function headerBurgerMenu(query = '.header') {
   const iconMenu = document.querySelector(`${query}__burger`);
   if (iconMenu) {
     const headerNav=document.querySelector(`${query}__nav`);
@@ -280,7 +280,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "textfieldDateDropdown": () => (/* binding */ textfieldDateDropdown)
 /* harmony export */ });
-function textfieldDateDropdown(query) {
+function textfieldDateDropdown(query = '.textfield__input.textfield_date-dropdown__input') {
     let button = {
       content: 'Применить',
       className: 'textfield_date-dropdown__button-apply',
@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_2__.headerBurgerMenu)('.header');
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)();
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)('.guest-dropdown');
 window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_0__["default"];
 window.onload = function(){
   (0,_blocks_textfield_textfield_date_dropdown_textfield_date_dropdown_js__WEBPACK_IMPORTED_MODULE_3__.textfieldDateDropdown)('.textfield__input.textfield_date-dropdown__input.date-arrival__input');

@@ -5997,31 +5997,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropDownRooms": () => (/* binding */ guestDropDownRooms)
 /* harmony export */ });
-function guestDropDownRooms(){$(document).ready(function () {
-  $(".guest-dropdown_rooms").iqDropdown({
-    setSelectionText: function (itemCount, totalItems) {
-      let t = ["гость", "гостя", "гостей"];
-      let spln = ["спальня", "спальни"];
-      let beds = ["кровать", "кровати"];
-      let vankom = ["ванная комнаты", "ванные комнаты"];
-      let sum = "";
-      if (totalItems == 0) return "";
-      if (itemCount["item1"] == 1)
-        sum = sum + itemCount["item1"] + " " + spln[0] + ",";
-      if (itemCount["item1"] > 1)
-        sum = sum + itemCount["item1"] + " " + spln[1] + ",";
-      if (itemCount["item2"] == 1)
-        sum = sum + itemCount["item2"] + " " + beds[0] + ",";
-      if (itemCount["item2"] > 1)
-        sum = sum + itemCount["item2"] + " " + beds[1] + ",";
-      if (itemCount["item3"] == 1)
-        sum = sum + itemCount["item3"] + " " + vankom[0];
-      if (itemCount["item3"] > 1)
-        sum = sum + itemCount["item3"] + " " + vankom[1];
-      if (sum.length > 20) sum = sum.slice(0, 20) + "...";
-      return sum;
-    },
-  });
+function guestDropDownRooms(query = '.guest-dropdown_rooms'){
+  $(document).ready(function () {
+    $(query).iqDropdown({
+      setSelectionText: function (itemCount, totalItems) {
+        let t = ["гость", "гостя", "гостей"];
+        let spln = ["спальня", "спальни"];
+        let beds = ["кровать", "кровати"];
+        let vankom = ["ванная комнаты", "ванные комнаты"];
+        let sum = "";
+        if (totalItems == 0) return "";
+        if (itemCount["item1"] == 1)
+          sum = sum + itemCount["item1"] + " " + spln[0] + ",";
+        if (itemCount["item1"] > 1)
+          sum = sum + itemCount["item1"] + " " + spln[1] + ",";
+        if (itemCount["item2"] == 1)
+          sum = sum + itemCount["item2"] + " " + beds[0] + ",";
+        if (itemCount["item2"] > 1)
+          sum = sum + itemCount["item2"] + " " + beds[1] + ",";
+        if (itemCount["item3"] == 1)
+          sum = sum + itemCount["item3"] + " " + vankom[0];
+        if (itemCount["item3"] > 1)
+          sum = sum + itemCount["item3"] + " " + vankom[1];
+        if (sum.length > 20) sum = sum.slice(0, 20) + "...";
+        return sum;
+      },
+    });
 });
 }
 
@@ -6040,9 +6041,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "guestDropdown": () => (/* binding */ guestDropdown)
 /* harmony export */ });
-function guestDropdown(){
+function guestDropdown(query = '.guest-dropdown'){
 $(document).ready(function () {
-  $(".guest-dropdown").iqDropdown({
+  $(query).iqDropdown({
     setSelectionText: function (itemCount, totalItems) {
       let t = ["гость", "гостя", "гостей"];
       let returnString='';
@@ -6252,7 +6253,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rateButton": () => (/* binding */ rateButton)
 /* harmony export */ });
-function rateButton(query) {
+function rateButton(query = '.rate-button') {
   $(document).ready(function () {
     $(document).on("click", `${query}__label`, function () {
       $(this).prevAll().children().removeClass("fillgrad");
@@ -6278,7 +6279,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "roomCardSlider": () => (/* binding */ roomCardSlider)
 /* harmony export */ });
-function roomCardSlider(arraySliderQuery) {
+function roomCardSlider(arraySliderQuery = ["#room-card__splide"]) {
   Splide.defaults = {
     width: 271,
     height: 152,
@@ -6307,7 +6308,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "textfieldDateDropdown": () => (/* binding */ textfieldDateDropdown)
 /* harmony export */ });
-function textfieldDateDropdown(query) {
+function textfieldDateDropdown(query = '.textfield__input.textfield_date-dropdown__input') {
     let button = {
       content: 'Применить',
       className: 'textfield_date-dropdown__button-apply',
@@ -6343,7 +6344,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "textfieldFilterDateDropdown": () => (/* binding */ textfieldFilterDateDropdown)
 /* harmony export */ });
-function textfieldFilterDateDropdown(query) {
+function textfieldFilterDateDropdown(query = '.textfield__input.textfield_filter-date-dropdown__input') {
   let button = {
     content: 'Применить',
     className: 'textfield_filter-date-dropdown__button-apply',
@@ -6504,8 +6505,8 @@ __webpack_require__.r(__webpack_exports__);
 
 window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_1__["default"];
 window.Splide = _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__["default"];
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)();
-(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_5__.guestDropDownRooms)();
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)('.guest-dropdown');
+(0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_5__.guestDropDownRooms)('.guest-dropdown_rooms');
 (0,_blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_9__.rateButton)('.rate-button');
 window.onload = function(){
   (0,_blocks_textfield_textfield_masked_textfield_masked_js__WEBPACK_IMPORTED_MODULE_6__.textfieldMasked)('.textfield__input.textfield_masked__input');
