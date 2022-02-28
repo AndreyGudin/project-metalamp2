@@ -1,6 +1,5 @@
 let mode='development';
 const PugPlugin= require('pug-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 if (process.env.NODE_ENV === 'production') {
   mode = 'production'
@@ -41,9 +40,9 @@ module.exports={
       modules:[
         PugPlugin.extractCss({
           filename: '[name].[contenthash:8].css',
-        }),
+        })
       ]
-    }),
+    })
   ],
   module: {
     rules:[
