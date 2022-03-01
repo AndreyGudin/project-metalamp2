@@ -1,5 +1,7 @@
 let mode='development';
 const PugPlugin= require('pug-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
+var assetsManifest = {};
 const path = require('path');
 if (process.env.NODE_ENV === 'production') {
   mode = 'production'
@@ -43,13 +45,32 @@ module.exports={
   },
   devtool: 'source-map',
   plugins:[
+    new WebpackAssetsManifest({
+      customize(entry, original, manifest, asset) {
+        assetsManifest[`${entry.key}`] = `${entry.value}`;
+        return {
+          key: `src/${entry.key}`,
+          value: `dist/${entry.value}`,
+        };
+      }
+    }),
     new PugPlugin({
       modules:[
         PugPlugin.extractCss({
           filename: '[name].[contenthash:8].css',
-        })
+        }),
+        {
+          test: /\.(pug)$/,
+          postprocess: (content, info, compilation) => {
+            let str = '';
+            str = JSON.stringify(assetsManifest);
+            console.log(`2 ${str}`);
+            return content.replace('World', 'Pug');
+          }
+        }
       ]
-    })
+    }),
+    
   ],
   module: {
     rules:[
