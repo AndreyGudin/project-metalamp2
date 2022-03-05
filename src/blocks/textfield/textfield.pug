@@ -5,5 +5,9 @@ mixin textfield(options)
   - options.placeholder = options.placeholder || '';
   - var classNameDivided=options.className.split(' ');
   div(class=options.className)
-    label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+    if (options.title == '')
       input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)
+    else
+      label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+      input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)
+    

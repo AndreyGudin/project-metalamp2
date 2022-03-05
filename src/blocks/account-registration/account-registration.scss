@@ -1,6 +1,6 @@
 @use "../../scss/variables";
 .account-registration {
-  background-color: green;
+  background-color: white;
   width: 380px;
   height: 646px;
   border-radius: 4px;
@@ -9,59 +9,26 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .account-registration__title {
   font: variables.$font-widget-title;
   text-align: center;
-  margin: 40px 0px 15px 0px;
+  margin: 40px 0px 0px;
 }
 
 .account-registration__reg-form,
 .account-registration__login-form {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.account-registration__login-form {
-  margin-top: 17px;
-}
-
-.textfield {
-  align-self: center;
-}
-
-.radio-buttons {
-  margin: 5px 0px 20px 30px;
-}
-
-.radio-buttons__container {
-  margin-top: 0px;
-}
-.textfield_reg-acc__label {
-  height: auto;
-}
-.textfield_reg-acc {
-  height: auto;
-  margin-bottom: 5px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__title.expandable-checkbox-list_checkbox-buttons__title.expandable-checkbox-list_toogle__title {
-  display: none;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle {
-  margin: 5px 0px 0px 30px;
-}
-
-.expandable-checkbox-list.expandable-checkbox-list__list-item.expandable-checkbox-list_checkbox-buttons__box.expandable-checkbox-list_toogle__box {
-  margin-bottom: 0;
-}
-
-.button.button_with-arrow.reg-button {
-  margin-top: 20px;
-  align-self: center;
+.account-registration__radio-buttons,.account-registration__toogle{
+  align-self: flex-start;
+  margin: 0px 30px 10px;
 }
 
 .account-registration__exist-login-form {
@@ -69,8 +36,8 @@
   width: 320px;
   height: 44px;
   justify-content: space-between;
-  margin-top: 30px;
   align-self: center;
+  margin-top: 10px;
 }
 
 .account-registration__label {

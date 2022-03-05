@@ -16,22 +16,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .findroom-card__booking-time {
   display: flex;
   align-self: stretch;
   justify-content: space-evenly;
-  margin-bottom: 20px;
 }
 
 .findroom-card__title {
   font: variables.$font-widget-title;
   text-align: center;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 0px;
 }
-
-.guest-dropdown-block {
-  justify-self: center;
-  margin-bottom: 30px;
+.findroom-card__button_with-arrow{
+  margin-top: 10px;
 }
