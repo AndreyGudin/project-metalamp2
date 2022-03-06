@@ -13,21 +13,28 @@
 .booking-room-card__form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px 0px;
 }
 
 .booking-room-card__booking-date-container {
   display: flex;
   align-self: stretch;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .booking-room-card__title-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 30px 30px 0px 30px;
 }
+
+.booking-room-card__price-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 
 .booking-room-card__price-for-days-container,
 .booking-room-card__service-fee-container,
@@ -36,13 +43,13 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0px 30px 10px 30px;
   @extend %font-body;
 }
 
 .booking-room-card__total-price-container {
-  @extend %font-title;
+  font: variables.$font-inside-title;
   color: black;
+  margin-top: 15px;
 }
 
 .booking-room-card__number {
@@ -73,7 +80,6 @@
 
 .booking-room-card__form .guest-dropdown-block {
   align-self: center;
-  margin-bottom: 20px;
 }
 .booking-room-card__service-fee-container,
 .booking-room-card__additional-service-fee-container {
@@ -118,11 +124,6 @@
 
 .booking-room-card__total-price {
   white-space: nowrap;
-}
-
-.booking-button {
-  align-self: center;
-  margin-top: 20px;
 }
 
 .booking-room-guest-dropdown__title {

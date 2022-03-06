@@ -412,9 +412,10 @@ body {
 
 .textfield {
   width: 320px;
-  height: 67px;
+  height: auto;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .textfield__input {
@@ -422,7 +423,6 @@ body {
   height: 44px;
   border-radius: 5px;
   opacity: 0.25;
-  margin-top: 5px;
 }
 
 .textfield__input:hover,
@@ -1712,7 +1712,7 @@ details[open] summary ~ * {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.expandable-checkbox-list_toogle__title {
+.expandable-checkbox-list__title.expandable-checkbox-list_checkbox-buttons__title.expandable-checkbox-list_toogle__title {
   display: none;
 }
 
@@ -2950,4 +2950,4 @@ body._lock {
   display: flex;
   gap: 20px;
 }
-/*# sourceMappingURL=footer-header.53dba384.css.map */
+/*# sourceMappingURL=footer-header.bb82e9d5.css.map */

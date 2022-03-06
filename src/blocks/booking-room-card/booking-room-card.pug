@@ -15,19 +15,20 @@ mixin booking-room-card(options)
         +textfield({className:'textfield textfield_date-dropdown booking-room-date-arrival',title:'Прибытие',placeholder:'ДД.ММ.ГГГГ'})(readonly)
         +textfield({className:'textfield textfield_date-dropdown booking-room-date-exit',title:'Выезд',placeholder:'ДД.ММ.ГГГГ'})(readonly)
       +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
-      div(class=`${options.className}__price-for-days-container`)
-        span(class=`${options.className}__price-for-days`)=`${options.dayPrice}₽ х 4 суток`
-        span(class=`${options.className}__total-price`)='39 660₽'
-      div(class=`${options.className}__service-fee-container`)
-        span(class=`${options.className}__service-fee-title`)=`Сбор за услуги: скидка 2 179₽`
-        span(class=`${options.className}__total-service-fee`)='39 660₽'
-      div(class=`${options.className}__additional-service-fee-container`)
-        span(class=`${options.className}__additional-service-fee-title`)='Сбор за дополнительные услуги'
-        span(class=`${options.className}__total-additional-service-fee`)='300₽'
-      div(class=`${options.className}__total-price-container`)
-        span(class=`${options.className}__total-price-title`)='Итого'
-        div(class=`${options.className}__total-price-dots`)
-        span(class=`${options.className}__total-price`)='38 081₽'
+      div(class=`${options.className}__price-container`)
+        div(class=`${options.className}__price-for-days-container`)
+          span(class=`${options.className}__price-for-days`)=`${options.dayPrice}₽ х 4 суток`
+          span(class=`${options.className}__total-price`)='39 660₽'
+        div(class=`${options.className}__service-fee-container`)
+          span(class=`${options.className}__service-fee-title`)=`Сбор за услуги: скидка 2 179₽`
+          span(class=`${options.className}__total-service-fee`)='39 660₽'
+        div(class=`${options.className}__additional-service-fee-container`)
+          span(class=`${options.className}__additional-service-fee-title`)='Сбор за дополнительные услуги'
+          span(class=`${options.className}__total-additional-service-fee`)='300₽'
+        div(class=`${options.className}__total-price-container`)
+          span(class=`${options.className}__total-price-title`)='Итого'
+          div(class=`${options.className}__total-price-dots`)
+          span(class=`${options.className}__total-price`)='38 081₽'
       +button({className:'button button_with-arrow booking-button',title:'Забронировать'})
       
         
