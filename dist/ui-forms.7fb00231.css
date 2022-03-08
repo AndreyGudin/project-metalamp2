@@ -400,7 +400,7 @@ body {
 }
 
 .guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
-  top: -5px;
+  top: 4px;
 }
 
 .textfield {
@@ -2245,6 +2245,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
 
+.button__button.long {
+  width: 196px;
+  height: 34px;
+}
+
+.button__button.small {
+  width: 87px;
+  height: 34px;
+}
+
 .button_without-fill__button {
   background: transparent;
   color: #BC9CFF;
@@ -2476,4 +2486,4 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 60px;
   align-items: center;
 }
-/*# sourceMappingURL=ui-forms.1ec028a0.css.map */
+/*# sourceMappingURL=ui-forms.7fb00231.css.map */

@@ -22,7 +22,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.booking-room-card__total-price-container, .booking-room-guest-dropdown__title, .review__name, .icon-text-list__title {
+.booking-room-guest-dropdown__title, .review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
@@ -403,7 +403,7 @@ body {
 }
 
 .guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
-  top: -5px;
+  top: 4px;
 }
 
 .textfield {
@@ -2248,6 +2248,16 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
 
+.button__button.long {
+  width: 196px;
+  height: 34px;
+}
+
+.button__button.small {
+  width: 87px;
+  height: 34px;
+}
+
 .button_without-fill__button {
   background: transparent;
   color: #BC9CFF;
@@ -2578,6 +2588,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .login-card__title {
@@ -2598,18 +2609,8 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   line-height: 44px;
 }
 
-.button.button_with-arrow.login-button {
-  margin-top: 20px;
-  align-self: center;
-}
-
-.login-textfield__label {
-  height: auto;
-}
-
-.login-textfield {
-  height: auto;
-  margin-bottom: 5px;
+.login-card__button-to-pay {
+  margin-top: 10px;
 }
 
 .booking-room-card {
@@ -2625,20 +2626,26 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .booking-room-card__form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px 0px;
 }
 
 .booking-room-card__booking-date-container {
   display: flex;
   align-self: stretch;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .booking-room-card__title-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 30px 30px 0px 30px;
+}
+
+.booking-room-card__price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .booking-room-card__price-for-days-container,
@@ -2648,11 +2655,12 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 0px 30px 10px 30px;
 }
 
 .booking-room-card__total-price-container {
+  font: 19px "Conv_Montserrat-Bold";
   color: black;
+  margin-top: 15px;
 }
 
 .booking-room-card__number {
@@ -2681,7 +2689,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .booking-room-card__form .guest-dropdown-block {
   align-self: center;
-  margin-bottom: 20px;
 }
 
 .booking-room-card__service-fee-container,
@@ -2725,11 +2732,6 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 .booking-room-card__total-price {
   white-space: nowrap;
-}
-
-.booking-button {
-  align-self: center;
-  margin-top: 20px;
 }
 
 .booking-room-guest-dropdown__title {
@@ -3115,15 +3117,10 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   margin-left: auto;
 }
 
-.rate-button {
-  width: 105px;
-  height: 24px;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
 }
-/*# sourceMappingURL=ui-cards.33a299f5.css.map */
+/*# sourceMappingURL=ui-cards.a819c837.css.map */

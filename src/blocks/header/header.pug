@@ -29,9 +29,14 @@ mixin header(options)
       label(class=classNameDivided.map((item)=>`${item}__label-jobs`).join(' ') for="") Вакансии
       label(class=classNameDivided.map((item)=>`${item}__label-news`).join(' ') for="") Новости
       +expandable-checkbox-list({className:'expandable-checkbox-list header-menu-expandable-agreements',title:'Соглашения',listItems:['Завтрак','Письменный стол','Столик для кормления', 'Кроватка', 'Телевизор', 'Шампунь']}) 
-      div(class=classNameDivided.map((item)=>`${item}__nav--auth-buttons`).join(' '))
-        +button({className:`button button_without-fill ${options.className}-login-button`,title:'Войти'})
-        +button({className:`button header-menu-item-button ${options.className}-reg-button`,title:'Зарегистрироваться'})
+      if (options.userName === '')
+        div(class=classNameDivided.map((item)=>`${item}__nav--auth-buttons`).join(' '))
+          +button({className:'button button_without-fill',title:'Войти',size:'small'})
+          +button({className:'button header-menu-item-button',title:'Зарегистрироваться',size:'long'})
+      else 
+        div(class=classNameDivided.map((item)=>`${item}__nav--auth-buttons` + '').join(' ') + ' hide')
+          +button({className:'button button_without-fill',title:'Войти',size:'small'})
+          +button({className:'button header-menu-item-button',title:'Зарегистрироваться',size:'long'})
       label(class=classNameDivided.map((item)=>`${item}__user`).join(' '))=options.userName
     .header__menus-buttons
       .search-room-page__button-hiding-filter-container

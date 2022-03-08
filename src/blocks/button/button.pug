@@ -2,6 +2,14 @@ mixin button(options)
   - options = options || {};
   - options.className = options.className || 'button' ;
   - options.title = options.title || 'Click me';
+  - options.size = options.size || '';
   - var classNameDivided=options.className.split(' ');
+  if options.size === 'long'
     div(class=options.className)
-      button(class=classNameDivided.map((item)=>`${item}__button`).join(' '))=options.title 
+      button(class=classNameDivided.map((item)=>`${item}__button`).join(' ') + ' long')=options.title
+  else if  options.size === 'small'
+    div(class=options.className)
+      button(class=classNameDivided.map((item)=>`${item}__button`).join(' ') + ' small')=options.title
+  else 
+    div(class=options.className)
+      button(class=classNameDivided.map((item)=>`${item}__button`).join(' '))=options.title

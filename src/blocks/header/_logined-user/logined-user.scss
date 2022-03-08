@@ -1,11 +1,10 @@
 @use "../../../scss/variables";
 
-.header_logined-user-reg-button,
-.header_logined-user-login-button {
+.header__nav--auth-buttons.hide{
   display: none;
 }
 
-.header_logined-user__user {
+.header_logined-user__user{
   width: auto;
   height: 30px;
   font: variables.$font-body;
