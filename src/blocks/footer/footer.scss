@@ -31,7 +31,7 @@
 .footer__nav-footer {
   align-items: flex-start;
   height: 372px;
-  padding: 100px 100px;
+  padding: 100px 140px;
   gap: 20px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   border-top: 1px solid rgba(31, 32, 65, 0.25);
@@ -76,62 +76,17 @@
 
 }
 
-.bl-nav,
-.bl-nav__ul,
-.bl-about,
-.bl-about__ul,
-.bl-service,
-.bl-service__ul {
-  width: auto;
+.footer__nav-subscribe-title{
+  @extend %font-label;
+  margin: 2px 0px 23px;
 }
 
-.bl-subscribe,
-.bl-subscribe__ul {
-  width: 260px;
+.footer__nav-subscribe-description{
+  margin-bottom: 20px;
 }
 
-.bl-subscribe,
-.bl-subscribe__ul {
-  height: auto;
-}
-
-.footer__nav-description {
+.footer__nav-description,.footer__nav-subscribe-description {
   @extend %font-body;
-}
-
-.bl-nav__li,
-.bl-about__li,
-.bl-service__li,
-.bl-subscribe__li {
-  list-style-type: none;
-}
-
-.bl-nav__ul,
-.bl-about__ul,
-.bl-service__ul,
-.bl-subscribe__ul {
-  padding-left: 0;
-}
-
-.bl-nav__span,
-.bl-about__span,
-.bl-service__span,
-.bl-subscribe__span {
-  position: static;
-}
-
-.textfield__input.textfield_subscription__input.textfield_subscription--footer__input,.textfield__label.textfield_subscription__label.textfield_subscription--footer__label,
-.textfield.textfield_subscription--footer {
-  width: 260px;
-}
-
-.textfield__input.textfield_subscription__input.textfield_subscription--footer__input {
-  position: relative;
-}
-
-.textfield__label.textfield_subscription__label.textfield_subscription--footer__label::after {
-  height: 67px;
-  top: 7px;
 }
 
 .footer__description {

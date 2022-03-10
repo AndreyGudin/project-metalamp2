@@ -3,11 +3,17 @@ mixin textfield(options)
   - options.className = options.className || 'textfield' ;
   - options.title = options.title || '';
   - options.placeholder = options.placeholder || '';
+  - options.type = options.type || '';
   - var classNameDivided=options.className.split(' ');
-  div(class=options.className)
-    if (options.title == '')
+  if (options.title == '') && !(options.className.includes('subscription'))
+    div(class=options.className)
       input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)
+  if ((options.className.includes('subscription')) || (options.title))
+    if (options.type == 'short')
+      div(class=options.className + ' short')
+        label(class=classNameDivided.map((item)=>`${item}__label`).join(' ') + ' short',for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+        input(class=classNameDivided.map((item)=>`${item}__input`).join(' ') + ' short',type="text",placeholder=options.placeholder)&attributes(attributes)
     else
-      label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
-      input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)
-    
+      div(class=options.className)
+        label(class=classNameDivided.map((item)=>`${item}__label`).join(' '),for=classNameDivided.map((item)=>`${item}__input`).join(' '))=options.title
+        input(class=classNameDivided.map((item)=>`${item}__input`).join(' '),type="text",placeholder=options.placeholder)&attributes(attributes)

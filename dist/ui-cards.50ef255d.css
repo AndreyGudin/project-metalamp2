@@ -13,18 +13,21 @@
   font-weight: normal;
   font-style: normal;
 }
-.review__time,
+.booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container, .login-card__label, .account-registration__label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.review__name, .icon-text-list__title {
+.booking-room-guest-dropdown__title, .review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
 
-.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
+.room-card__type, .booking-room-card__type, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .textfield__label, .iqdropdown .iqdropdown-item-controls .counter, .guest-dropdown__title, .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .button-apply,
 .button-clear {
@@ -2265,6 +2268,18 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
 
+.button_without-fill__button.small {
+  width: 87px;
+  height: 34px;
+  background: transparent;
+  color: #BC9CFF;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+}
+.button_without-fill__button.small:active {
+  background: transparent;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+}
+
 .button_hypertext__button {
   background: transparent;
   color: #BC9CFF;
@@ -2388,6 +2403,26 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   bottom: 3px;
 }
 
+.bullet-list.navlist {
+  width: auto;
+}
+
+.bullet-list__li.navlist {
+  list-style-type: none;
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 20px;
+}
+
+.bullet-list__ul.navlist {
+  width: auto;
+  padding-left: 0;
+}
+
+.bullet-list__span.navlist {
+  position: static;
+}
+
 .icon-text-list {
   display: flex;
   flex-direction: column;
@@ -2486,4 +2521,638 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 60px;
   align-items: center;
 }
-/*# sourceMappingURL=ui-forms.7fb00231.css.map */
+
+.findroom-card {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.findroom-card,
+.findroom-card__form {
+  max-width: 380px;
+  min-height: 374px;
+}
+
+.findroom-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.findroom-card__booking-time {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-evenly;
+}
+
+.findroom-card__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 0px;
+}
+
+.findroom-card__button_with-arrow {
+  margin-top: 10px;
+}
+
+.account-registration {
+  background-color: white;
+  width: 380px;
+  height: 646px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-registration__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 0px;
+}
+
+.account-registration__reg-form,
+.account-registration__login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-registration__radio-buttons, .account-registration__toogle {
+  align-self: flex-start;
+  margin: 0px 30px 10px;
+}
+
+.account-registration__exist-login-form {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.account-registration__label {
+  line-height: 44px;
+}
+
+.login-card {
+  background-color: white;
+  width: 380px;
+  height: 358px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-card__title {
+  font: 24px "Conv_Montserrat-Bold";
+  margin: 40px 0px 20px 30px;
+}
+
+.login-card__exist-login-form {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.login-card__label {
+  line-height: 44px;
+}
+
+.login-card__button-to-pay {
+  margin-top: 10px;
+}
+
+.booking-room-card {
+  background-color: white;
+  width: 380px;
+  min-height: 512px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.booking-room-card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px 0px;
+}
+
+.booking-room-card__booking-date-container {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.booking-room-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.booking-room-card__price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.booking-room-card__total-price-container {
+  font: 19px "Conv_Montserrat-Bold";
+  color: black;
+  margin-top: 15px;
+}
+
+.booking-room-card__number {
+  font: 24px "Conv_Montserrat-Bold";
+}
+.booking-room-card__number::first-letter {
+  font-size: 14px;
+}
+
+.booking-room-card__type {
+  color: #BC9CFF;
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+.booking-room-card__price {
+  font: 14px "Conv_Montserrat-Bold";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.booking-room-card__price2 {
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 3px;
+}
+
+.booking-room-card__form .guest-dropdown-block {
+  align-self: center;
+}
+
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container {
+  position: relative;
+}
+
+.booking-room-card__service-fee-title,
+.booking-room-card__additional-service-fee-title {
+  max-width: 215px;
+}
+
+.booking-room-card__service-fee-title::after {
+  content: "";
+  background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==);
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 218px;
+}
+
+.booking-room-card__additional-service-fee-title::after {
+  content: "";
+  background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==);
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 17px;
+  left: 218px;
+}
+
+.booking-room-card__total-price-dots {
+  width: 100%;
+  height: 15px;
+  align-self: stretch;
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+}
+
+.booking-room-card__total-price {
+  white-space: nowrap;
+}
+
+.booking-room-guest-dropdown__title {
+  margin-bottom: 5px;
+}
+
+.splide__container {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.splide__list {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform-style: preserve-3d;
+}
+
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: block;
+}
+
+.splide__pagination {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  pointer-events: none;
+}
+
+.splide__pagination li {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.splide__progress__bar {
+  width: 0;
+}
+
+.splide {
+  outline: none;
+  position: relative;
+  visibility: hidden;
+}
+
+.splide.is-initialized, .splide.is-rendered {
+  visibility: visible;
+}
+
+.splide__slide {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+  outline: none;
+  position: relative;
+}
+
+.splide__slide img {
+  vertical-align: bottom;
+}
+
+.splide__slider {
+  position: relative;
+}
+
+.splide__spinner {
+  animation: splide-loading 1s linear infinite;
+  border: 2px solid #999;
+  border-left-color: transparent;
+  border-radius: 50%;
+  bottom: 0;
+  contain: strict;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes splide-loading {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.splide--draggable > .splide__slider > .splide__track, .splide--draggable > .splide__track {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.splide--fade > .splide__slider > .splide__track > .splide__list, .splide--fade > .splide__track > .splide__list {
+  display: block;
+}
+
+.splide--fade > .splide__slider > .splide__track > .splide__list > .splide__slide, .splide--fade > .splide__track > .splide__list > .splide__slide {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.splide--fade > .splide__slider > .splide__track > .splide__list > .splide__slide.is-active, .splide--fade > .splide__track > .splide__list > .splide__slide.is-active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.splide--rtl {
+  direction: rtl;
+}
+
+.splide--ttb.is-active > .splide__slider > .splide__track > .splide__list, .splide--ttb.is-active > .splide__track > .splide__list {
+  display: block;
+}
+
+.splide__arrow {
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2em;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0.7;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2em;
+  z-index: 1;
+}
+
+.splide__arrow svg {
+  fill: #000;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.splide__arrow:hover {
+  opacity: 0.9;
+}
+
+.splide__arrow:focus {
+  outline: none;
+}
+
+.splide__arrow--prev {
+  left: 1em;
+}
+
+.splide__arrow--prev svg {
+  transform: scaleX(-1);
+}
+
+.splide__arrow--next {
+  right: 1em;
+}
+
+.splide__pagination {
+  bottom: 0.5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 3px;
+  opacity: 0.7;
+  padding: 0;
+  transition: transform 0.2s linear;
+  width: 8px;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff;
+  transform: scale(1.4);
+}
+
+.splide__pagination__page:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.splide__pagination__page:focus {
+  outline: none;
+}
+
+.splide__progress__bar {
+  background: #ccc;
+  height: 3px;
+}
+
+.splide--nav > .splide__slider > .splide__track > .splide__list > .splide__slide, .splide--nav > .splide__track > .splide__list > .splide__slide {
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.splide--nav > .splide__slider > .splide__track > .splide__list > .splide__slide.is-active, .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border: 3px solid #000;
+}
+
+.splide--nav > .splide__slider > .splide__track > .splide__list > .splide__slide:focus, .splide--nav > .splide__track > .splide__list > .splide__slide:focus {
+  outline: none;
+}
+
+.splide--rtl > .splide__arrows .splide__arrow--prev, .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev {
+  left: auto;
+  right: 1em;
+}
+
+.splide--rtl > .splide__arrows .splide__arrow--prev svg, .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev svg, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev svg {
+  transform: scaleX(1);
+}
+
+.splide--rtl > .splide__arrows .splide__arrow--next, .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--next {
+  left: 1em;
+  right: auto;
+}
+
+.splide--rtl > .splide__arrows .splide__arrow--next svg, .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next svg, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--next svg {
+  transform: scaleX(-1);
+}
+
+.splide--ttb > .splide__arrows .splide__arrow, .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow, .splide--ttb > .splide__track > .splide__arrows .splide__arrow {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.splide--ttb > .splide__arrows .splide__arrow--prev, .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev, .splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev {
+  top: 1em;
+}
+
+.splide--ttb > .splide__arrows .splide__arrow--prev svg, .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev svg, .splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev svg {
+  transform: rotate(-90deg);
+}
+
+.splide--ttb > .splide__arrows .splide__arrow--next, .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next, .splide--ttb > .splide__track > .splide__arrows .splide__arrow--next {
+  bottom: 1em;
+  top: auto;
+}
+
+.splide--ttb > .splide__arrows .splide__arrow--next svg, .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next svg, .splide--ttb > .splide__track > .splide__arrows .splide__arrow--next svg {
+  transform: rotate(90deg);
+}
+
+.splide--ttb > .splide__pagination, .splide--ttb > .splide__slider > .splide__pagination {
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: auto;
+  padding: 1em 0;
+  right: 0.5em;
+  top: 0;
+}
+
+.room-card {
+  width: 270px;
+  height: 257px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.splide__arrow svg {
+  fill: white;
+}
+
+.splide__arrow {
+  background: transparent;
+  opacity: 1;
+}
+
+.splide__pagination {
+  left: auto;
+}
+
+.splide__pagination__page {
+  opacity: 1;
+  background: transparent;
+  border: solid 1px white;
+}
+
+.splide__pagination__page.is-active {
+  transform: none;
+}
+
+.splide__slide {
+  border-radius: 4px;
+}
+
+.room-card__number {
+  font: 24px "Conv_Montserrat-Bold";
+}
+.room-card__number::first-letter {
+  font-size: 14px;
+}
+
+.room-card__container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px 20px 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.room-card__type {
+  color: #BC9CFF;
+  margin-right: auto;
+  margin-left: 3px;
+}
+
+.room-card__price,
+.room-card__price2::first-letter,
+.room-card__reviews {
+  font: 14px "Conv_Montserrat-Bold";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room-card__price2,
+.room-card__reviews2 {
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 3px;
+}
+
+.room-card__review-container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin: 10px 20px 0px 20px;
+}
+
+.room-card__review-container2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.room-card__reviews {
+  margin-left: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+/*# sourceMappingURL=ui-cards.50ef255d.css.map */

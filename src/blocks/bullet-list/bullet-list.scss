@@ -30,3 +30,23 @@
 .bullet-list__title {
   @extend %font-label;
 }
+
+.bullet-list.navlist{
+  width: auto;
+}
+
+.bullet-list__li.navlist {
+  list-style-type: none;
+  font: variables.$font-body;
+	color: variables.$color-ds50;
+  margin-top: 20px;
+}
+
+.bullet-list__ul.navlist{
+  width: auto;
+  padding-left: 0;
+}
+
+.bullet-list__span.navlist {
+  position: static;
+}

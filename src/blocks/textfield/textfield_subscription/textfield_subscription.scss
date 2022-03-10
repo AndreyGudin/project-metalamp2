@@ -12,3 +12,16 @@
   cursor: pointer;
   background: url("../../../blocks/textfield/textfield_subscription/svg/arrow_forward.svg") no-repeat 12px 12px;
 }
+
+.textfield.textfield_subscription.short,.textfield__input.textfield_subscription__input.short,.textfield__label.textfield_subscription__label.short{
+  width: 260px;
+}
+
+.textfield__input.textfield_subscription__input.short {
+  position: relative;
+}
+
+.textfield__label.textfield_subscription__label.short::after {
+  height: 67px;
+  top: 7px;
+}

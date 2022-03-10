@@ -25,14 +25,15 @@ mixin footer(options)
               stop(offset="1" stop-color="#8BA4F9")/ 
         label(class=`${options.className}__description`) Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
       div(class=`${options.className}__nav-navigation` + ' footer-col')
-        +bullet-list({className:'bullet-list bl-nav',title:'Навигация',listItems:['О нас','Новости','Служба поддержки','Услуги']}) 
+        +bullet-list({className:'bullet-list bl-nav',title:'Навигация',listItems:['О нас','Новости','Служба поддержки','Услуги'],listType:'navlist'}) 
       div(class=`${options.className}__nav-about` + ' footer-col')
-        +bullet-list({className:'bullet-list bl-about',title:'О нас',listItems:['О сервисе','Наша команда','Вакансии','Инвесторы']}) 
+        +bullet-list({className:'bullet-list bl-about',title:'О нас',listItems:['О сервисе','Наша команда','Вакансии','Инвесторы'],listType:'navlist'}) 
       div(class=`${options.className}__nav-service` + ' footer-col')
-        +bullet-list({className:'bullet-list bl-service',title:'Служба поддержки',listItems:['Соглашение','Сообщества','Связь с нами']}) 
+        +bullet-list({className:'bullet-list bl-service',title:'Служба поддержки',listItems:['Соглашение','Сообщества','Связь с нами'],listType:'navlist'}) 
       div(class=`${options.className}__nav-subscribe` + ' footer-col')
-        +bullet-list({className:'bullet-list bl-subscribe',title:'Подписка',listItems:['Получайте специальные предложения и новости сервиса']})
-        +textfield({className:'textfield textfield_subscription textfield_subscription--footer',title:'',placeholder:'Email'})
+        span(class=`${options.className}__nav-subscribe-title`) Подписка
+        span(class=`${options.className}__nav-subscribe-description`) Получайте специальные предложения и новости сервиса
+        +textfield({className:'textfield textfield_subscription textfield_subscription--footer',title:'',placeholder:'Email',type:'short'})
     div(class=`${options.className}__nav-footer-copyrights`)
       div(class=`${options.className}__nav-footer-copyrights-label`)
         label(class=`${options.className}__copyrights-label` for="") Copyright © 2018 Toxin отель. Все права защищены.

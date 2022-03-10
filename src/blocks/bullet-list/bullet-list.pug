@@ -3,10 +3,19 @@ mixin bullet-list(options)
   - options.className = options.className || 'bullet-list' ;
   - options.title = options.title || 'Bullet list';
   - options.listItems = options.listItems || ['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия - после 13:00, а выезд до 12:00'];
+  - options.listType = options.listType || ''
   - var classNameDivided=options.className.split(' ');
-  div(class=options.className)
-    label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
-    ul(class=classNameDivided.map((item)=>`${item}__ul`).join(' '))
-      each val in options.listItems
-        li(class=classNameDivided.map((item)=>`${item}__li`).join(' '))
-          span(class=classNameDivided.map((item)=>`${item}__span`).join(' '))=val
+  if (options.listType === 'navlist')  
+    div(class=options.className + ' navlist')
+      label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
+      ul(class=classNameDivided.map((item)=>`${item}__ul`).join(' ') + ' navlist')
+        each val in options.listItems
+          li(class=classNameDivided.map((item)=>`${item}__li`).join(' ') + ' navlist')
+            span(class=classNameDivided.map((item)=>`${item}__span`).join(' ') + ' navlist')=val
+  else 
+    div(class=options.className)
+      label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
+      ul(class=classNameDivided.map((item)=>`${item}__ul`).join(' '))
+        each val in options.listItems
+          li(class=classNameDivided.map((item)=>`${item}__li`).join(' '))
+            span(class=classNameDivided.map((item)=>`${item}__span`).join(' '))=val
