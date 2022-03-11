@@ -41,17 +41,15 @@
     padding-left: 20px;
   }
 
-  .guest-dropdown-block,
-  .iqdropdown,
-  .iqdropdown-menu,
-  .iqdropdown .iqdropdown-menu-option,
-  .guest-dropdown.iqdropdown-menu,
-  .button.button_with-arrow,
-  .button_with-arrow__button {
-    width: 280px;
+  .findroom-card-guest-dropdown-block,.findroom-card__button_with-arrow{
+    width: 90%;
   }
 
-  .button_with-arrow__button::after {
-    left: 250px;
+  .findroom-card-guest-dropdown.iqdropdown,.button.button_with-arrow.findroom-card-button_with-arrow,.findroom-card-button_with-arrow__button{
+    width: 100%;
+  }
+
+  .findroom-card-button_with-arrow__button::after {
+    left: 87%;
   }
 }
