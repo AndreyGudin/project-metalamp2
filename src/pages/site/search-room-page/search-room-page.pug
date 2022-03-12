@@ -11,7 +11,8 @@ html(lang="ru")
     +header({className:'header',userName:''})
     .search-room-page
       .search-room-page__filter
-        +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0'})
+        +textfield({className:'textfield textfield_filter-date-dropdown',title:'Дата пребывания в отеле',placeholder:'ДД.ММ - ДД.ММ'})(readonly)
+        +guest-dropdown({className:'guest-dropdown',title:'Гости',menuItems:['Взрослые','Дети','Младенцы'],hide:'0', type:'short'})
         .search-room-page__range-slider
           +range-slider({className:'range-slider',title:'Диапазон цены'})
           label.search-room-page__range-slider-title Стоимость за сутки пребывания в номере

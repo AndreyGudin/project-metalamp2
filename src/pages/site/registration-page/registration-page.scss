@@ -29,8 +29,7 @@
 
   .textfield_reg-acc,
   .textfield_masked,
-  .button.button_with-arrow.reg-button,
-  .account-registration__container,.expandable-checkbox-list_toogle {
+  .button.button_with-arrow.reg-button{
     width: 90%;
   }
 
@@ -48,6 +47,10 @@
 
   .account-registration__label{
     line-height: normal;
+  }
+
+  .account-registration__toogle{
+    margin: 0;
   }
 
   .expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle,

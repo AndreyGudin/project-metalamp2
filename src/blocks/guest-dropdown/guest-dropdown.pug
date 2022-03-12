@@ -4,15 +4,28 @@ mixin guest-dropdown(options)
   - options.title = options.title || 'Dropdown';
   - options.menuItems = options.menuItems || ['Взрослые','Дети','Младенцы'];
   - options.hide = options.hide || '0';
+  - options.type = options.type || '';
   - var i=1
   - var classNameDivided=options.className.split(' ');
-  div(class=classNameDivided.map((item)=>`${item}-block`).join(' '))
-    label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
-    div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown`)
-      p.iqdropdown-selection
-      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu`, data-hide = options.hide)
-        each item in options.menuItems
-          .iqdropdown-menu-option(data-id=`item${i}`)
-            div
-              p.iqdropdown-item=item
-              - i++
+  if (options.type == 'short')
+    div(class=classNameDivided.map((item)=>`${item}-block`).join(' ') + ' short')
+      label(class=classNameDivided.map((item)=>`${item}__title`).join(' ') + ' short')=options.title
+      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown short`)
+        p.iqdropdown-selection
+        div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu short`, data-hide = options.hide)
+          each item in options.menuItems
+            .iqdropdown-menu-option(data-id=`item${i}`)
+              div
+                p.iqdropdown-item=item
+                - i++
+  else 
+    div(class=classNameDivided.map((item)=>`${item}-block`).join(' '))
+      label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
+      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown`)
+        p.iqdropdown-selection
+        div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu`, data-hide = options.hide)
+          each item in options.menuItems
+            .iqdropdown-menu-option(data-id=`item${i}`)
+              div
+                p.iqdropdown-item=item
+                - i++  

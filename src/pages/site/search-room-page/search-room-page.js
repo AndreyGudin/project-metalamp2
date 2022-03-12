@@ -6,6 +6,7 @@ import * as paginationjs from 'paginationjs';
 import * as itemQuantityDropdown from '../../../blocks/guest-dropdown/item-quantity-dropdown.js';
 import {guestDropdown} from './../../../blocks/guest-dropdown/guest-dropdown.js';
 import {guestDropDownRooms} from './../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js';
+import {textfieldFilterDateDropdown} from './../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js';
 import {rangeSlider} from '../../../blocks/range-slider/range-slider.js';
 import {paginationjsBlock} from '../../../blocks/pagination/paginationblock.js';
 import {rateButton} from '../../../blocks/rate-button/rate-button.js';
@@ -21,6 +22,7 @@ guestDropdown('.guest-dropdown');
 guestDropDownRooms('.guest-dropdown_rooms');
 rateButton('.rate-button');
 window.onload = function(){
+  textfieldFilterDateDropdown('.textfield__input.textfield_filter-date-dropdown__input');
   rangeSlider('.range-slider');
   paginationjsBlock('.pagination');
   roomCardSlider([

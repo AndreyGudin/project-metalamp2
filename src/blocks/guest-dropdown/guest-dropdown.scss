@@ -135,3 +135,11 @@
 .guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
   top: 4px;
 }
+
+.guest-dropdown-block.short,
+.guest-dropdown__title.short,
+.guest-dropdown.iqdropdown.short,
+.guest-dropdown.iqdropdown-menu.short,
+.guest-dropdown.iqdropdown-menu.short > .iqdropdown-menu-option {
+  width: 260px;
+}

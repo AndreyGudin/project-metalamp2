@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.review__time,
+.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .login-card__label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 }
 
-.bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
+.footer__nav-subscribe-title, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .textfield__label, .iqdropdown .iqdropdown-item-controls .counter, .guest-dropdown__title, .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .button-apply,
 .button-clear {
@@ -401,6 +401,14 @@ body {
 
 .guest-dropdown_rooms.iqdropdown .iqdropdown-selection::after {
   top: 4px;
+}
+
+.guest-dropdown-block.short,
+.guest-dropdown__title.short,
+.guest-dropdown.iqdropdown.short,
+.guest-dropdown.iqdropdown-menu.short,
+.guest-dropdown.iqdropdown-menu.short > .iqdropdown-menu-option {
+  width: 260px;
 }
 
 .textfield {
@@ -1352,6 +1360,10 @@ body {
   grid-auto-columns: 93px;
   justify-content: space-between;
   padding-right: 15px;
+}
+
+.textfield.textfield_filter-date-dropdown {
+  width: 266px;
 }
 
 .textfield .textfield_filter-date-dropdown__input {
@@ -2531,4 +2543,403 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   gap: 60px;
   align-items: center;
 }
-/*# sourceMappingURL=ui-forms.46e4a663.css.map */
+
+.login-card {
+  background-color: white;
+  width: 380px;
+  height: 358px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-card__title {
+  font: 24px "Conv_Montserrat-Bold";
+  margin: 40px 0px 20px 30px;
+}
+
+.login-card__exist-login-form {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.login-card__label {
+  line-height: 44px;
+}
+
+.login-card__button-to-pay {
+  margin-top: 10px;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.header {
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  justify-content: space-around;
+}
+
+.header__nav,
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header-menu-expandable-services[open],
+.header-menu-expandable-agreements[open] {
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .header__nav {
+    min-height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 501px) {
+  .header svg {
+    z-index: 6;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    padding: 100px 0 0 20px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+    z-index: 5;
+  }
+  .header__nav::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #fff;
+  }
+
+  .header__nav._active {
+    left: 0;
+  }
+
+  .header__burger {
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .header__burger::before, .header__burger::after,
+.header__burger span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header__burger._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .header__burger._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .header__burger._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .header__nav--auth-buttons {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.header__nav {
+  gap: 20px;
+}
+
+.header__label-about {
+  font: 14px "Conv_Montserrat-Bold";
+}
+
+.header-menu-expandable-services__title,
+.header-menu-expandable-agreements__title,
+.header__label-jobs,
+.header__label-news {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.header-menu-expandable-services[open] .expandable-checkbox-list__list.header-menu-expandable-services__list,
+.header-menu-expandable-agreements[open] .expandable-checkbox-list__list.header-menu-expandable-agreements__list {
+  background-color: white;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 10px 10px;
+  z-index: 6;
+}
+
+.header-menu-expandable-services,
+.header-menu-expandable-agreements {
+  align-items: center;
+}
+
+.header-menu-expandable-services,
+.header-menu-expandable-services__title {
+  width: 74px;
+}
+
+.header-menu-expandable-services__title::after,
+.header-menu-expandable-agreements__title::after {
+  top: 4px;
+  right: 10px;
+}
+
+.header-menu-expandable-agreements,
+.header-menu-expandable-agreements__title {
+  width: 116px;
+}
+
+.header-menu-expandable-services__input,
+.header-menu-expandable-agreements__input {
+  display: none;
+}
+
+.header-menu-expandable-services__label,
+.header-menu-expandable-agreements__label {
+  margin-left: 0px;
+}
+
+.header__nav--auth-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.search-room-page__button-hiding-filter-container {
+  display: none;
+}
+
+.header__menus-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-self: flex-end;
+}
+
+.header__nav--auth-buttons.hide {
+  display: none;
+}
+
+.header_logined-user__user {
+  width: auto;
+  height: 30px;
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 30px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.footer,
+.footer__nav-footer,
+.footer__nav-description,
+.footer__nav-footer-copyrights {
+  display: flex;
+}
+
+.footer {
+  height: 443px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.footer__nav-description,
+.footer {
+  flex-direction: column;
+}
+
+.footer__nav-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col {
+  width: 20%;
+}
+
+.footer__nav-footer {
+  align-items: flex-start;
+  height: 372px;
+  padding: 100px 140px;
+  gap: 20px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.footer__nav-footer-copyrights {
+  justify-content: space-between;
+  padding: 26px 140px;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer__nav-footer {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 40px 20px;
+  }
+
+  .footer__nav-footer > * {
+    flex: 0 0 260px;
+  }
+
+  .footer__description {
+    width: 267px;
+  }
+}
+@media (max-width: 425px) {
+  .footer__nav-footer {
+    padding: 50px 20px;
+  }
+
+  .footer__nav-footer-copyrights {
+    padding: 26px 28px;
+  }
+}
+.footer__nav-subscribe-title {
+  margin: 2px 0px 23px;
+}
+
+.footer__nav-subscribe-description {
+  margin-bottom: 20px;
+}
+
+.footer__description {
+  margin-top: 20px;
+}
+
+.footer__nav-footer-copyrights-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-creative {
+  width: 768px;
+  height: 367px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  gap: 20px;
+}
+
+.footer-creative__socmedia-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.sign-in-page {
+  background: no-repeat url(/assets/img/9b0f4a2ec9abb6fa403c.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
+  height: 753px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 415px) {
+  .login-card {
+    width: 90%;
+    max-width: 380px;
+  }
+
+  .login-card__exist-login-form {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .textfield.login-textfield,
+.button.button_with-arrow.login-button {
+    width: 90%;
+  }
+
+  .textfield__input.login-textfield__input,
+.login-button__button {
+    width: 100%;
+  }
+
+  .login-button__button::after {
+    left: 90%;
+  }
+
+  .login-card__label {
+    line-height: initial;
+  }
+}
+/*# sourceMappingURL=sign-in-page.8255e591.css.map */
