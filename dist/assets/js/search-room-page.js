@@ -6774,6 +6774,44 @@ function roomCardSlider(arraySliderQuery = ["#room-card__splide"]) {
 
 
 
+/***/ }),
+
+/***/ "./src/blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js":
+/*!***********************************************************************************************!*\
+  !*** ./src/blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "textfieldFilterDateDropdown": () => (/* binding */ textfieldFilterDateDropdown)
+/* harmony export */ });
+function textfieldFilterDateDropdown(query = '.textfield__input.textfield_filter-date-dropdown__input') {
+  let button = {
+    content: 'Применить',
+    className: 'textfield_filter-date-dropdown__button-apply',
+    onClick: (dp) => {
+        dp.hide();
+    }}
+  
+  new AirDatepicker(query,{
+    classes:'textfield_filter-date-dropdown',
+    dateFormat:'d MMM',
+    navTitles: { days: "MMMM yyyy" },
+    buttons:['clear',button],
+    range: true,
+    multipleDatesSeparator:'-',
+    nextHtml:
+      '<svg xmlns="http://www.w3.org/2000/svg"><path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/></svg>',
+    prevHtml:
+      '<svg xmlns="http://www.w3.org/2000/svg"><path d="M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z" fill="#BC9CFF"/></svg>',
+  
+});
+}
+
+
+
 /***/ })
 
 /******/ 	});
@@ -6862,11 +6900,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_guest_dropdown_item_quantity_dropdown_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_guest_dropdown_item_quantity_dropdown_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/guest-dropdown.js */ "./src/blocks/guest-dropdown/guest-dropdown.js");
 /* harmony import */ var _blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js */ "./src/blocks/guest-dropdown/_rooms/guest-dropdown_rooms.js");
-/* harmony import */ var _blocks_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../blocks/range-slider/range-slider.js */ "./src/blocks/range-slider/range-slider.js");
-/* harmony import */ var _blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../blocks/pagination/paginationblock.js */ "./src/blocks/pagination/paginationblock.js");
-/* harmony import */ var _blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../blocks/rate-button/rate-button.js */ "./src/blocks/rate-button/rate-button.js");
-/* harmony import */ var _blocks_room_card_room_card_slider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../blocks/room-card/room-card-slider.js */ "./src/blocks/room-card/room-card-slider.js");
-/* harmony import */ var _blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../blocks/header/header-burger-menu.js */ "./src/blocks/header/header-burger-menu.js");
+/* harmony import */ var _blocks_textfield_textfield_filter_date_dropdown_textfield_filter_date_dropdown_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js */ "./src/blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.js");
+/* harmony import */ var _blocks_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../blocks/range-slider/range-slider.js */ "./src/blocks/range-slider/range-slider.js");
+/* harmony import */ var _blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../blocks/pagination/paginationblock.js */ "./src/blocks/pagination/paginationblock.js");
+/* harmony import */ var _blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../blocks/rate-button/rate-button.js */ "./src/blocks/rate-button/rate-button.js");
+/* harmony import */ var _blocks_room_card_room_card_slider_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../blocks/room-card/room-card-slider.js */ "./src/blocks/room-card/room-card-slider.js");
+/* harmony import */ var _blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../blocks/header/header-burger-menu.js */ "./src/blocks/header/header-burger-menu.js");
+
 
 
 
@@ -6885,14 +6925,15 @@ __webpack_require__.r(__webpack_exports__);
 window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_1__["default"];
 window.noUiSlider = (nouislider__WEBPACK_IMPORTED_MODULE_0___default());
 window.Splide = _splidejs_splide__WEBPACK_IMPORTED_MODULE_2__["default"];
-(0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_11__.headerBurgerMenu)('.header');
+(0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_12__.headerBurgerMenu)('.header');
 (0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_5__.guestDropdown)('.guest-dropdown');
 (0,_blocks_guest_dropdown_rooms_guest_dropdown_rooms_js__WEBPACK_IMPORTED_MODULE_6__.guestDropDownRooms)('.guest-dropdown_rooms');
-(0,_blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_9__.rateButton)('.rate-button');
+(0,_blocks_rate_button_rate_button_js__WEBPACK_IMPORTED_MODULE_10__.rateButton)('.rate-button');
 window.onload = function(){
-  (0,_blocks_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_7__.rangeSlider)('.range-slider');
-  (0,_blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_8__.paginationjsBlock)('.pagination');
-  (0,_blocks_room_card_room_card_slider_js__WEBPACK_IMPORTED_MODULE_10__.roomCardSlider)([
+  (0,_blocks_textfield_textfield_filter_date_dropdown_textfield_filter_date_dropdown_js__WEBPACK_IMPORTED_MODULE_7__.textfieldFilterDateDropdown)('.textfield__input.textfield_filter-date-dropdown__input');
+  (0,_blocks_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_8__.rangeSlider)('.range-slider');
+  (0,_blocks_pagination_paginationblock_js__WEBPACK_IMPORTED_MODULE_9__.paginationjsBlock)('.pagination');
+  (0,_blocks_room_card_room_card_slider_js__WEBPACK_IMPORTED_MODULE_11__.roomCardSlider)([
     "#room-card__splide",
     "#room-card840__splide",
     "#room-card980__splide",

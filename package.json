@@ -6,7 +6,9 @@
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve",
     "dev": "set NODE_ENV=development&&webpack",
-    "build": "set NODE_ENV=production&&webpack"
+    "build": "set NODE_ENV=production&&webpack",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/AndreyGudin/project-metalamp2/issues"
   },
-  "homepage": "https://github.com/AndreyGudin/project-metalamp2#readme",
+  "homepage": "https://andreygudin.github.io/project-metalamp2/",
   "dependencies": {
     "@splidejs/splide": "^3.6.9",
     "air-datepicker": "^3.1.1",

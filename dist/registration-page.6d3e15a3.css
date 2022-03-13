@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .login-card__label, .review__time,
+.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .account-registration__label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -2544,45 +2544,86 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
-.login-card {
+.findroom-card {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.findroom-card,
+.findroom-card__form {
+  max-width: 380px;
+  min-height: 374px;
+}
+
+.findroom-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.findroom-card__booking-time {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-evenly;
+}
+
+.findroom-card__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 0px;
+}
+
+.findroom-card__button_with-arrow {
+  margin-top: 10px;
+}
+
+.account-registration {
   background-color: white;
   width: 380px;
-  height: 358px;
+  height: 646px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
-.login-card__form {
+.account-registration__title {
+  font: 24px "Conv_Montserrat-Bold";
+  text-align: center;
+  margin: 40px 0px 0px;
+}
+
+.account-registration__reg-form,
+.account-registration__login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.login-card__title {
-  font: 24px "Conv_Montserrat-Bold";
-  margin: 40px 0px 20px 30px;
+.account-registration__radio-buttons, .account-registration__toogle {
+  align-self: flex-start;
+  margin: 0px 30px 10px;
 }
 
-.login-card__exist-login-form {
+.account-registration__exist-login-form {
   display: flex;
   width: 320px;
   height: 44px;
   justify-content: space-between;
-  margin-top: 30px;
   align-self: center;
-}
-
-.login-card__label {
-  line-height: 44px;
-}
-
-.login-card__button-to-pay {
   margin-top: 10px;
+}
+
+.account-registration__label {
+  line-height: 44px;
 }
 
 body._lock {
@@ -2901,7 +2942,7 @@ body._lock {
   gap: 20px;
 }
 
-.sign-in-page {
+.registration-page {
   background: no-repeat url(/assets/img/9b0f4a2ec9abb6fa403c.png);
   background-size: cover;
   background-position: center center;
@@ -2913,33 +2954,48 @@ body._lock {
   justify-content: center;
 }
 
-@media (max-width: 415px) {
-  .login-card {
+@media (max-width: 425px) {
+  .account-registration {
     width: 90%;
     max-width: 380px;
+    height: auto;
+    padding-bottom: 20px;
   }
 
-  .login-card__exist-login-form {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  .textfield.login-textfield,
-.button.button_with-arrow.login-button {
+  .textfield_reg-acc,
+.textfield_masked,
+.button.button_with-arrow.reg-button {
     width: 90%;
   }
 
-  .textfield__input.login-textfield__input,
-.login-button__button {
+  .textfield_reg-acc__label,
+.textfield__input.textfield_reg-acc__input,
+.textfield_masked__label,
+.textfield__input.textfield_masked__input,
+.reg-button__button {
     width: 100%;
   }
 
-  .login-button__button::after {
-    left: 90%;
+  .account-registration__exist-login-form {
+    width: 90%;
   }
 
-  .login-card__label {
-    line-height: initial;
+  .account-registration__label {
+    line-height: normal;
+  }
+
+  .account-registration__toogle {
+    margin: 0;
+  }
+
+  .expandable-checkbox-list.expandable-checkbox-list_checkbox-buttons.expandable-checkbox-list_toogle,
+.expandable-checkbox-list_toogle__container, .expandable-checkbox-list_toogle__box {
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .expandable-checkbox-list_toogle {
+    padding: 10px 0 0 5%;
   }
 }
-/*# sourceMappingURL=sign-in-page.8255e591.css.map */
+/*# sourceMappingURL=registration-page.6d3e15a3.css.map */

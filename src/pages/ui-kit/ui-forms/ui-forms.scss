@@ -9,10 +9,10 @@
 @use "../../../blocks/textfield/textfield_filter-date-dropdown/textfield_filter-date-dropdown.scss";
 @use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list.scss";
 @use "../../../blocks/textfield/textfield_subscription/textfield_subscription.scss";
-@use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list_checkbox-buttons/expandable-checkbox-list_checkbox-buttons.scss";
-@use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list_rich-checkbox-list/expandable-checkbox-list_rich-checkbox-list.scss";
+@use "../../../blocks/expandable-checkbox-list/_checkbox-buttons/_checkbox-buttons.scss";
+@use "../../../blocks/expandable-checkbox-list/_rich-checkbox-list/_rich-checkbox-list.scss";
 @use "../../../blocks/radio-buttons/radio-buttons.scss";
-@use "../../../blocks/expandable-checkbox-list/expandable-checkbox-list_toogle/expandable-checkbox-list_toogle.scss";
+@use "../../../blocks/expandable-checkbox-list/_toogle/_toogle.scss";
 @use "../../../blocks/like-button/like-button.scss";
 @use "../../../blocks/rate-button/rate-button.scss";
 @use "~nouislider/dist/nouislider";
