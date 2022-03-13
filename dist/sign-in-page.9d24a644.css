@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .landing-page__slogan-label, .review__time,
+.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .login-card__label, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -2544,40 +2544,44 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
-.findroom-card {
+.login-card {
+  background-color: white;
+  width: 380px;
+  height: 358px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.findroom-card,
-.findroom-card__form {
-  max-width: 380px;
-  min-height: 374px;
-}
-
-.findroom-card__form {
+.login-card__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
-.findroom-card__booking-time {
-  display: flex;
-  align-self: stretch;
-  justify-content: space-evenly;
-}
-
-.findroom-card__title {
+.login-card__title {
   font: 24px "Conv_Montserrat-Bold";
-  text-align: center;
-  margin: 40px 0px 0px;
+  margin: 40px 0px 20px 30px;
 }
 
-.findroom-card__button_with-arrow {
+.login-card__exist-login-form {
+  display: flex;
+  width: 320px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.login-card__label {
+  line-height: 44px;
+}
+
+.login-card__button-to-pay {
   margin-top: 10px;
 }
 
@@ -2897,51 +2901,45 @@ body._lock {
   gap: 20px;
 }
 
-.landing-page {
-  width: 100%;
-  height: 870px;
-  background: no-repeat url(/assets/img/9d6d7908ce1280c0533e.png);
+.sign-in-page {
+  background: no-repeat url(/assets/img/9b0f4a2ec9abb6fa403c.png);
   background-size: cover;
   background-position: center center;
   background-attachment: local;
+  height: 753px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.findroom-card {
-  margin: 70px 0px 0px 140px;
-}
-
-.landing-page__slogan-label {
-  width: 297px;
-  text-align: right;
-  margin: auto 134px 18px auto;
-}
-
-@media (max-width: 769px) {
-  .findroom-card {
-    margin: 70px 0 0 0;
-    align-self: center;
-    padding-bottom: 30px;
+@media (max-width: 415px) {
+  .login-card {
+    width: 90%;
+    max-width: 380px;
   }
 
-  .findroom-card__booking-time {
-    flex-direction: column;
-    align-self: flex-start;
-    gap: 20px;
-    padding-left: 20px;
+  .login-card__exist-login-form {
+    width: 90%;
+    max-width: 320px;
   }
 
-  .findroom-card-guest-dropdown-block, .findroom-card__button_with-arrow {
+  .textfield.login-textfield,
+.button.button_with-arrow.login-button {
     width: 90%;
   }
 
-  .findroom-card-guest-dropdown.iqdropdown, .button.button_with-arrow.findroom-card-button_with-arrow, .findroom-card-button_with-arrow__button {
+  .textfield__input.login-textfield__input,
+.login-button__button {
     width: 100%;
   }
 
-  .findroom-card-button_with-arrow__button::after {
-    left: 87%;
+  .login-button__button::after {
+    left: 90%;
+  }
+
+  .login-card__label {
+    line-height: initial;
   }
 }
-/*# sourceMappingURL=landing-page.67c6fc91.css.map */
+/*# sourceMappingURL=sign-in-page.9d24a644.css.map */

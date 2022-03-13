@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .login-card__label, .review__time,
+.footer__copyrights-label, .footer__nav-description, .footer__nav-subscribe-description, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
@@ -313,6 +313,7 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .iqdropdown .iqdropdown-menu {
   width: 320px;
   height: 160px;
@@ -322,9 +323,11 @@ body {
   border-bottom-right-radius: 5px;
   margin: -8px -1px -1px;
 }
+
 .iqdropdown .iqdropdown-item-controls {
   align-items: center;
 }
+
 .iqdropdown .iqdropdown-item-controls .counter {
   width: 30px;
   height: 37px;
@@ -335,6 +338,7 @@ body {
   border-bottom: 0px;
   border-top: 0px;
 }
+
 .iqdropdown .iqdropdown-item-controls button.button-decrement,
 .iqdropdown .iqdropdown-item-controls button.button-increment {
   border: 1px solid #1f2041;
@@ -344,15 +348,18 @@ body {
   padding: 0px 0px;
   border-radius: 50%;
 }
+
 .iqdropdown .iqdropdown-item-controls button.button-decrement {
   opacity: 0.1;
 }
+
 .iqdropdown .iqdropdown-menu-option {
   width: 320px;
   height: 35px;
   padding: 0 8px;
   margin-bottom: 3px;
 }
+
 .iqdropdown .icon-decrement::after,
 .iqdropdown .icon-decrement.icon-increment::before {
   background-color: #1f2041;
@@ -425,6 +432,7 @@ body {
   border-radius: 5px;
   opacity: 0.25;
 }
+
 .textfield__input:hover,
 .textfield__input :focus {
   opacity: 0.75;
@@ -449,6 +457,7 @@ body {
   width: 266px;
   height: 119px;
 }
+
 .guest-dropdown_rooms.iqdropdown-menu .iqdropdown-menu-option {
   width: 266px;
 }
@@ -1244,6 +1253,7 @@ body {
   cursor: pointer;
   opacity: 1;
 }
+
 .textfield .textfield_date-dropdown__input:hover {
   opacity: 1;
 }
@@ -1284,10 +1294,12 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .air-datepicker-nav--action svg {
   width: 17px;
   height: 18px;
 }
+
 .air-datepicker-nav--action path {
   margin: 0 auto;
   stroke-width: 0px;
@@ -1323,18 +1335,21 @@ body {
   font: 12px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
 }
+
 .air-datepicker-cell.-day-.-selected- {
   background: #8ba4f9;
   background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
   border-radius: 50%;
   color: white;
 }
+
 .air-datepicker-cell.-day-.-current- {
   background: #66d2ea;
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
   border-radius: 50%;
   color: white;
 }
+
 .air-datepicker-cell.-day-.-focus- {
   border-radius: 50%;
 }
@@ -1351,6 +1366,7 @@ body {
 .air-datepicker-button {
   color: #BC9CFF;
 }
+
 .air-datepicker-button:hover {
   color: #4eb5e6;
   background: white;
@@ -1374,6 +1390,7 @@ body {
   cursor: pointer;
   opacity: 1;
 }
+
 .textfield .textfield_filter-date-dropdown__input:hover {
   opacity: 1;
 }
@@ -1459,15 +1476,19 @@ summary {
   position: relative;
   margin-bottom: 18px;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
+
 summary::-moz-list-bullet {
   list-style-type: none;
 }
+
 summary::marker {
   display: none;
 }
+
 summary::after {
   content: "";
   top: 2px;
@@ -1536,6 +1557,7 @@ details[open] summary ~ * {
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
+
 .expandable-checkbox-list__input:after {
   content: "";
   display: block;
@@ -1555,6 +1577,7 @@ details[open] summary ~ * {
   top: 4px;
   transform: rotate(var(--r, 20deg));
 }
+
 .expandable-checkbox-list__input:checked {
   --bc: var(--active);
   --d-o: 0.3s;
@@ -1628,6 +1651,7 @@ details[open] summary ~ * {
 .expandable-checkbox-list_rich-checkbox-list__title {
   pointer-events: none;
 }
+
 .expandable-checkbox-list_rich-checkbox-list__title::after {
   visibility: hidden;
 }
@@ -1683,6 +1707,7 @@ details[open] summary ~ * {
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHJ4PSI5LjUiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNCQzlDRkYiLz4NCjwvc3ZnPg0K) no-repeat;
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
+
 .radio-buttons__input:after {
   content: "";
   display: block;
@@ -1698,6 +1723,7 @@ details[open] summary ~ * {
   background: linear-gradient(0deg, #8ba4f9 0%, #bc9cff 100%);
   transform: scale(var(--s, 0.7));
 }
+
 .radio-buttons__input:checked {
   --d-o: 0.3s;
   --d-t: 0.6s;
@@ -1727,6 +1753,7 @@ details[open] summary ~ * {
   width: 40px;
   border-radius: 10px;
 }
+
 .expandable-checkbox-list_toogle__input:after {
   opacity: 1;
   border-radius: 50%;
@@ -1737,6 +1764,7 @@ details[open] summary ~ * {
   left: 3px;
   transform: translateX(var(--x, 0));
 }
+
 .expandable-checkbox-list_toogle__input:checked {
   --x: 17px;
   border-radius: 10px;
@@ -2266,6 +2294,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border: none;
   cursor: pointer;
 }
+
 .button__button:active {
   background: linear-gradient(0deg, rgba(139, 164, 249, 0.5) 0%, rgba(188, 156, 255, 0.5) 100%);
 }
@@ -2285,6 +2314,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   color: #BC9CFF;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
+
 .button_without-fill__button:active {
   background: transparent;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="22" ry="22" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
@@ -2297,6 +2327,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   color: #BC9CFF;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
 }
+
 .button_without-fill__button.small:active {
   background: transparent;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="49.5" x2="49.5" y1="0" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="%23BC9CFF" offset="0"/><stop stop-color="%238BA4F9" offset="1"/></linearGradient></defs><rect opacity="0.5" x="0" y="0" width="100%" height="100%" style="height:calc(100%);width:calc(100%)" rx="17" ry="17" stroke-width="4" fill="transparent" stroke="url(%23Gradient)"/></svg>');
@@ -2310,6 +2341,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   border-radius: 0px;
   padding: 0px;
 }
+
 .button_hypertext__button:active {
   background: transparent;
   color: rgba(31, 32, 65, 0.5);
@@ -2323,6 +2355,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   width: 320px;
   position: relative;
 }
+
 .button_with-arrow__button::after {
   content: "";
   width: 18px;
@@ -2348,6 +2381,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   display: flex;
   padding: 0px;
 }
+
 .paginationjs-pages a {
   padding: 0px;
   line-height: 40px;
@@ -2379,9 +2413,11 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   background: #66d2ea;
   background: linear-gradient(0deg, #66d2ea 0%, #6fcf97 100%);
 }
+
 .paginationjs-next.J-paginationjs-next a {
   color: transparent;
 }
+
 .paginationjs-next.J-paginationjs-next a::after {
   content: "";
   top: 0px;
@@ -2412,6 +2448,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 .bullet-list__li {
   margin-top: 13px;
 }
+
 .bullet-list__li::marker {
   color: rgba(31, 32, 65, 0.5);
   line-height: 0px;
@@ -2450,6 +2487,7 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   flex-direction: column;
   gap: 5px;
 }
+
 .icon-text-list :last-child {
   border: none;
 }
@@ -2544,45 +2582,28 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
-.login-card {
-  background-color: white;
-  width: 380px;
-  height: 358px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Montserrat-Bold";
+  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.footer__copyrights-label, .footer__nav-description, .footer__nav-subscribe-description {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.75);
 }
 
-.login-card__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.login-card__title {
-  font: 24px "Conv_Montserrat-Bold";
-  margin: 40px 0px 20px 30px;
-}
-
-.login-card__exist-login-form {
-  display: flex;
-  width: 320px;
-  height: 44px;
-  justify-content: space-between;
-  margin-top: 30px;
-  align-self: center;
-}
-
-.login-card__label {
-  line-height: 44px;
-}
-
-.login-card__button-to-pay {
-  margin-top: 10px;
+.footer__nav-subscribe-title {
+  font: 12px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
 }
 
 body._lock {
@@ -2785,6 +2806,30 @@ body._lock {
   align-self: flex-end;
 }
 
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Montserrat-Bold";
+  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.footer__copyrights-label, .footer__nav-description, .footer__nav-subscribe-description {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__nav-subscribe-title {
+  font: 12px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
+}
+
 .header__nav--auth-buttons.hide {
   display: none;
 }
@@ -2797,6 +2842,30 @@ body._lock {
   line-height: 30px;
   padding-left: 20px;
   border-left: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+@font-face {
+  font-family: "Conv_Montserrat-Regular";
+  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Montserrat-Bold";
+  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label {
+  font: 14px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__nav-subscribe-title {
+  font: 12px "Conv_Montserrat-Bold";
+  text-transform: uppercase;
 }
 
 .footer,
@@ -2900,46 +2969,4 @@ body._lock {
   display: flex;
   gap: 20px;
 }
-
-.sign-in-page {
-  background: no-repeat url(/assets/img/9b0f4a2ec9abb6fa403c.png);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: local;
-  height: 753px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 415px) {
-  .login-card {
-    width: 90%;
-    max-width: 380px;
-  }
-
-  .login-card__exist-login-form {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  .textfield.login-textfield,
-.button.button_with-arrow.login-button {
-    width: 90%;
-  }
-
-  .textfield__input.login-textfield__input,
-.login-button__button {
-    width: 100%;
-  }
-
-  .login-button__button::after {
-    left: 90%;
-  }
-
-  .login-card__label {
-    line-height: initial;
-  }
-}
-/*# sourceMappingURL=sign-in-page.d607faaa.css.map */
+/*# sourceMappingURL=footer-header.f9c6517e.css.map */
