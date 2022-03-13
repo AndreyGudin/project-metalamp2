@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Conv_Montserrat-Regular";
-  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
-  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  src: url(assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Montserrat-Bold";
-  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
-  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  src: url(assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1249,7 +1249,7 @@ body {
   width: 150px;
   height: 44px;
   padding-left: 15px;
-  background: url(/assets/img/afc284d3c92092876cda.svg) no-repeat 120px 18px;
+  background: url(assets/img/afc284d3c92092876cda.svg) no-repeat 120px 18px;
   cursor: pointer;
   opacity: 1;
 }
@@ -1273,7 +1273,7 @@ body {
   border-radius: 5px;
   margin-top: 5px;
   padding-left: 15px;
-  background: url(/assets/img/afc284d3c92092876cda.svg) no-repeat 140px 20px;
+  background: url(assets/img/afc284d3c92092876cda.svg) no-repeat 140px 20px;
 }
 
 .air-datepicker-nav {
@@ -1386,7 +1386,7 @@ body {
   width: 266px;
   height: 44px;
   padding-left: 15px;
-  background: url(/assets/img/afc284d3c92092876cda.svg) no-repeat 236px 18px;
+  background: url(assets/img/afc284d3c92092876cda.svg) no-repeat 236px 18px;
   cursor: pointer;
   opacity: 1;
 }
@@ -1610,7 +1610,7 @@ details[open] summary ~ * {
   width: 44px;
   height: 44px;
   cursor: pointer;
-  background: url(/assets/img/8f2fdfdd62bc84032dd6.svg) no-repeat 12px 12px;
+  background: url(assets/img/8f2fdfdd62bc84032dd6.svg) no-repeat 12px 12px;
 }
 
 .textfield.textfield_subscription.short, .textfield__input.textfield_subscription__input.short, .textfield__label.textfield_subscription__label.short {
@@ -2584,15 +2584,15 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
 
 @font-face {
   font-family: "Conv_Montserrat-Regular";
-  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
-  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  src: url(assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Montserrat-Bold";
-  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
-  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  src: url(assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2808,15 +2808,15 @@ body._lock {
 
 @font-face {
   font-family: "Conv_Montserrat-Regular";
-  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
-  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  src: url(assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Montserrat-Bold";
-  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
-  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  src: url(assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2846,15 +2846,15 @@ body._lock {
 
 @font-face {
   font-family: "Conv_Montserrat-Regular";
-  src: url(/assets/fonts/5ce9af918dfe272afe4b.eot);
-  src: local("☺"), url(/assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(/assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(/assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
+  src: url(assets/fonts/5ce9af918dfe272afe4b.eot);
+  src: local("☺"), url(assets/fonts/47cc7a981764ba865be8.woff) format("woff"), url(assets/fonts/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/fonts/a3ec91b0dafe8a9effb5.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Conv_Montserrat-Bold";
-  src: url(/assets/fonts/555bdf5e257a575fcb15.eot);
-  src: local("☺"), url(/assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(/assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(/assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
+  src: url(assets/fonts/555bdf5e257a575fcb15.eot);
+  src: local("☺"), url(assets/fonts/15a68aa4989a5ac4dbdc.woff) format("woff"), url(assets/fonts/079ca05d3ded9bc107ab.ttf) format("truetype"), url(assets/fonts/e8dc1dc1a8ce2b0a4f6b.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
