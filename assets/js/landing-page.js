@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (0,_blocks_header_header_burger_menu_js__WEBPACK_IMPORTED_MODULE_2__.headerBurgerMenu)('.header');
-(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)('.guest-dropdown');
+(0,_blocks_guest_dropdown_guest_dropdown_js__WEBPACK_IMPORTED_MODULE_4__.guestDropdown)('.findroom-card-guest-dropdown');
 window.AirDatepicker = air_datepicker__WEBPACK_IMPORTED_MODULE_0__["default"];
 window.onload = function(){
   (0,_blocks_textfield_textfield_date_dropdown_textfield_date_dropdown_js__WEBPACK_IMPORTED_MODULE_3__.textfieldDateDropdown)('.textfield__input.textfield_date-dropdown__input.date-arrival__input');
