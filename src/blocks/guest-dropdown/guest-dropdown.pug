@@ -10,9 +10,9 @@ mixin guest-dropdown(options)
   if (options.type == 'short')
     div(class=classNameDivided.map((item)=>`${item}-block`).join(' ') + ' short')
       label(class=classNameDivided.map((item)=>`${item}__title`).join(' ') + ' short')=options.title
-      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown short`)
+      div(class = `${options.className} iqdropdown short`)
         p.iqdropdown-selection
-        div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu short`, data-hide = options.hide)
+        div(class = `${options.className} iqdropdown-menu short`, data-hide = options.hide)
           each item in options.menuItems
             .iqdropdown-menu-option(data-id=`item${i}`)
               div
@@ -21,9 +21,9 @@ mixin guest-dropdown(options)
   else 
     div(class=classNameDivided.map((item)=>`${item}-block`).join(' '))
       label(class=classNameDivided.map((item)=>`${item}__title`).join(' '))=options.title
-      div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown`)
+      div(class = `${options.className} iqdropdown`)
         p.iqdropdown-selection
-        div(class = `${classNameDivided[classNameDivided.length-1]} iqdropdown-menu`, data-hide = options.hide)
+        div(class = `${options.className} iqdropdown-menu`, data-hide = options.hide)
           each item in options.menuItems
             .iqdropdown-menu-option(data-id=`item${i}`)
               div

@@ -7,7 +7,7 @@ import {textfieldDateDropdown} from './../../../blocks/textfield/textfield_date-
 import {guestDropdown} from './../../../blocks/guest-dropdown/guest-dropdown.js';
 
 headerBurgerMenu('.header');
-guestDropdown('.guest-dropdown');
+guestDropdown('.findroom-card-guest-dropdown');
 window.AirDatepicker = AirDatepicker;
 window.onload = function(){
   textfieldDateDropdown('.textfield__input.textfield_date-dropdown__input.date-arrival__input');
