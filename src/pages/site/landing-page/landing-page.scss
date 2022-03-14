@@ -8,12 +8,18 @@
 .landing-page{
   width: 100%;
   height: 870px;
-  background: no-repeat url("img/landing-page-background.png");
   background-size: cover;
   background-position: center center;
   background-attachment: local;
   display: flex;
   flex-direction: column;
+  animation: changeBackgroundImage infinite ease-out 30s;
+}
+
+@keyframes changeBackgroundImage {
+  0%,15%,100%  {background-image: url("img/image-1.png");}
+  30%,45% {background-image: url("img/image-2.png");}
+  70%,85% {background-image: url("img/image-3.png");}
 }
 
 .findroom-card {
