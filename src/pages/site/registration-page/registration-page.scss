@@ -7,7 +7,6 @@
 @use "../../../blocks/footer-creative/footer-creative.scss";
 
 .registration-page {
-  background: no-repeat url("img/registration-page-background.png");
   background-size: cover;
   background-position: center center;
   background-attachment: local;
@@ -16,6 +15,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: changeBackgroundImage infinite ease-out 30s;
+}
+
+@keyframes changeBackgroundImage {
+  0%,30%,100%  {background-image: url("img/image-1.png");}
+  60%,90% {background-image: url("img/image-2.png");}
 }
 
 @media (max-width: 425px) {
