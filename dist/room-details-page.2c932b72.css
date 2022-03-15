@@ -13,18 +13,21 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .review__time,
+.room-details-page__reviews-part__cancel-label2, .footer__nav-description, .footer__nav-subscribe-description, .footer__copyrights-label, .booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container, .review__time,
 .review__textarea, .icon-text-list__text, .bullet-list__li, .paginationjs-nav.J-paginationjs-nav, .textfield .textfield_filter-date-dropdown__input, .textfield .textfield_date-dropdown__input, .air-datepicker-here, .guest-dropdown_rooms.iqdropdown > .iqdropdown-selection, .textfield__input, .guest-dropdown.iqdropdown .iqdropdown-selection {
   font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.75);
 }
 
-.review__name, .icon-text-list__title {
+.booking-room-guest-dropdown__title, .review__name, .icon-text-list__title {
   font: 14px "Conv_Montserrat-Bold";
   text-transform: uppercase;
 }
 
-.footer__nav-subscribe-title, .room-card__type, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
+.footer__nav-subscribe-title, .room-card__type, .booking-room-card__type, .bullet-list__title, .button__button, .range-slider__title, .radio-buttons__title, summary, .air-datepicker-button, .guest-dropdown_rooms__title, .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown_rooms.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .textfield__label, .iqdropdown .iqdropdown-item-controls .counter, .guest-dropdown__title, .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-content > .iqdropdown-item,
 .guest-dropdown.iqdropdown-menu > .iqdropdown-menu-option > .iqdropdown-item-controls > .counter, .button-apply,
 .button-clear {
@@ -1812,20 +1815,6 @@ details[open] summary ~ * {
   margin-left: -2px;
 }
 
-.rate-button__label.rate-button-room-card__label:hover ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref,
-svg.rate-button__starhref.rate-button-room-card__starhref:hover,
-input[class="rate-button__input rate-button-room-card__input"]:focus ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref,
-input[class="rate-button__input rate-button-room-card__input"]:checked ~ .rate-button__label.rate-button-room-card__label .rate-button__starhref.rate-button-room-card__starhref {
-  fill: url(#gradient);
-}
-
-.rate-button__label.rate-button-room-card840__label:hover ~ .rate-button__label.rate-button-room-card840__label .rate-button__starhref.rate-button-room-card840__starhref,
-svg.rate-button__starhref.rate-button-room-card840__starhref:hover,
-input[class="rate-button__input rate-button-room-card840__input"]:focus ~ .rate-button__label.rate-button-room-card840__label svg.rate-button__starhref.rate-button-room-card840__starhref,
-input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rate-button__label.rate-button-room-card840__label svg.rate-button__starhref.rate-button-room-card840__starhref {
-  fill: url(#gradient);
-}
-
 .fillgrad {
   fill: url(#gradient);
 }
@@ -2544,6 +2533,131 @@ input[class="rate-button__input rate-button-room-card840__input"]:checked ~ .rat
   align-items: center;
 }
 
+.booking-room-card {
+  background-color: white;
+  width: 380px;
+  min-height: 512px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.booking-room-card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px 0px;
+}
+
+.booking-room-card__booking-date-container {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.booking-room-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.booking-room-card__price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.booking-room-card__total-price-container {
+  font: 19px "Conv_Montserrat-Bold";
+  color: black;
+  margin-top: 15px;
+}
+
+.booking-room-card__number {
+  font: 24px "Conv_Montserrat-Bold";
+}
+.booking-room-card__number::first-letter {
+  font-size: 14px;
+}
+
+.booking-room-card__type {
+  color: #BC9CFF;
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+.booking-room-card__price {
+  font: 14px "Conv_Montserrat-Bold";
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.booking-room-card__price2 {
+  font: 12px "Conv_Montserrat-Regular";
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 3px;
+}
+
+.booking-room-card__form .guest-dropdown-block {
+  align-self: center;
+}
+
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container {
+  position: relative;
+}
+
+.booking-room-card__service-fee-title,
+.booking-room-card__additional-service-fee-title {
+  max-width: 215px;
+}
+
+.booking-room-card__service-fee-title::after {
+  content: "";
+  background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==);
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 218px;
+}
+
+.booking-room-card__additional-service-fee-title::after {
+  content: "";
+  background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMC41NTc2IiByPSI5LjUiIHN0cm9rZT0iIzFGMjA0MSIgc3Ryb2tlLW9wYWNpdHk9IjAuMjUiLz4KPHBhdGggZD0iTTkuMjU0NjMgOC4xMDE2MkgxMS4xMjY2VjE0LjU1NzZIOS4yNTQ2M1Y4LjEwMTYyWk0xMC4xOTA2IDcuMjAxNjJDOS44NDY2MyA3LjIwMTYyIDkuNTY2NjMgNy4xMDE2MiA5LjM1MDYzIDYuOTAxNjJDOS4xMzQ2MyA2LjcwMTYyIDkuMDI2NjMgNi40NTM2MiA5LjAyNjYzIDYuMTU3NjJDOS4wMjY2MyA1Ljg2MTYyIDkuMTM0NjMgNS42MTM2MiA5LjM1MDYzIDUuNDEzNjJDOS41NjY2MyA1LjIxMzYyIDkuODQ2NjMgNS4xMTM2MiAxMC4xOTA2IDUuMTEzNjJDMTAuNTM0NiA1LjExMzYyIDEwLjgxNDYgNS4yMDk2MiAxMS4wMzA2IDUuNDAxNjJDMTEuMjQ2NiA1LjU5MzYyIDExLjM1NDYgNS44MzM2MiAxMS4zNTQ2IDYuMTIxNjJDMTEuMzU0NiA2LjQzMzYyIDExLjI0NjYgNi42OTM2MiAxMS4wMzA2IDYuOTAxNjJDMTAuODE0NiA3LjEwMTYyIDEwLjUzNDYgNy4yMDE2MiAxMC4xOTA2IDcuMjAxNjJaIiBmaWxsPSIjMUYyMDQxIiBmaWxsLW9wYWNpdHk9IjAuMjUiLz4KPC9zdmc+Cg==);
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 17px;
+  left: 218px;
+}
+
+.booking-room-card__total-price-dots {
+  width: 100%;
+  height: 15px;
+  align-self: stretch;
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+}
+
+.booking-room-card__total-price {
+  white-space: nowrap;
+}
+
+.booking-room-guest-dropdown__title {
+  margin-bottom: 5px;
+}
+
 .splide__container {
   box-sizing: border-box;
   position: relative;
@@ -3239,154 +3353,276 @@ body._lock {
   gap: 20px;
 }
 
-.search-room-page {
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-  margin: 0px auto 70px;
-  gap: 20px;
-  padding-left: 30px;
-}
-
-.search-room-page__filter {
-  height: 100%;
-  width: 266px;
+.room-details-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  gap: 30px;
+  margin-bottom: 70px;
 }
 
-.search-room-page__button-hiding-filter {
+.room-details-page__room-images,
+.room-details-page__room-tips-impressions,
+.room-details-page__rules {
+  display: flex;
+}
+
+.room-details-page__room-images {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.splide__slide {
+  width: fit-content;
+  height: fit-content;
+}
+
+.splide__track,
+#room-details-page__room-images__splide {
+  width: 100%;
+}
+
+.splide__track > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1979px) {
+  .splide__track > ul {
+    height: 760px;
+  }
+}
+@media (max-width: 1978px) {
+  .splide__track > ul {
+    height: 587px;
+  }
+}
+@media (max-width: 1440px) {
+  .splide__track > ul {
+    height: 427px;
+  }
+}
+.splide__track > ul li:nth-child(1) {
+  height: 100%;
+  width: 60%;
+}
+
+.splide__track > ul li:nth-child(2),
+.splide__track > ul li:nth-child(3) {
+  width: 40%;
+  height: 50%;
+  align-self: stretch;
+}
+
+.splide__track > ul li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__arrow svg {
+  fill: white;
+}
+
+.splide__arrow {
+  background: transparent;
+  opacity: 1;
+}
+
+.splide__pagination {
+  left: auto;
+}
+
+.splide__pagination__page {
+  opacity: 1;
+  background: transparent;
+  border: solid 1px white;
+}
+
+.splide__pagination__page.is-active {
+  transform: none;
+}
+
+.splide__slide {
+  border-radius: 4px;
+}
+
+.splide__pagination,
+.splide__arrows {
   display: none;
 }
 
-@media (max-width: 1150px) {
-  .search-room-page__room-cards-label {
-    text-align: center;
-  }
-}
-@media (max-width: 878px) {
-  .header__menus-buttons {
-    width: 100%;
-    align-content: center;
+@media (max-width: 1230px) {
+  .graph-reviews {
+    width: 226px;
+    height: 270px;
   }
 
-  .search-room-page__button-hiding-filter-container {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    flex-wrap: wrap-reverse;
+  .graph-reviews__votes-number {
+    margin-top: -195px;
+    margin-left: 77px;
+  }
+
+  .room-details-page__room-details {
+    padding: 0 20px;
+  }
+
+  .room-details-page__room-booking {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .room-details-page__room-details-booking {
+    flex-direction: column-reverse;
+  }
+
+  .room-details-page__room-tips-impressions {
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 6;
-    bottom: 120px;
-  }
-  .search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(2),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(4),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(6),
-.search-room-page__button-hiding-filter-container._active .search-room-page__button-hiding-filter-container__box:nth-child(8) {
-    opacity: 0;
+    flex-wrap: wrap;
   }
 
-  .search-room-page__button-hiding-filter-container__box {
+  .booking-room-card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .splide__track > ul {
+    height: 228px;
+  }
+
+  .room-details-page__room-booking {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .room-details-page__room-details {
+    padding: 0px 20px 20px;
+    align-items: center;
+  }
+
+  .room-details-page__rules,
+.room-details-page__room-tips-impressions,
+.booking-room-card__booking-date-container {
+    flex-direction: column;
+  }
+
+  .booking-room-card__booking-date-container {
+    gap: 5px;
+  }
+
+  .review__textarea {
+    padding-left: 10px;
+  }
+
+  .room-details-page__rules {
+    gap: 20px;
+  }
+
+  .booking-room-card {
+    width: 90%;
+    max-width: 380px;
+    padding-bottom: 20px;
+  }
+
+  .booking-room-card__form {
+    padding: 40px 10px 0px;
+  }
+
+  .booking-room-card__booking-date-container {
+    align-self: flex-start;
+    padding-left: 5%;
+  }
+
+  .booking-room-card__form .guest-dropdown-block,
+.button.button_with-arrow.booking-button {
+    width: 90%;
+  }
+
+  .guest-dropdown.iqdropdown,
+.guest-dropdown.iqdropdown-menu,
+.iqdropdown .iqdropdown-menu-option,
+.booking-button__button {
+    width: 100%;
+  }
+
+  .button_with-arrow__button::after {
+    left: 87%;
+  }
+
+  .booking-room-card__price-for-days-container,
+.booking-room-card__service-fee-container,
+.booking-room-card__additional-service-fee-container,
+.booking-room-card__total-price-container {
+    margin: 0 5% 10px;
+  }
+
+  .booking-room-card__service-fee-title {
     display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    margin: 3px 3px;
+    width: 175px;
+  }
+  .booking-room-card__service-fee-title::after {
+    left: 20%;
+    bottom: -1px;
   }
 
-  .search-room-page__filter {
-    position: fixed;
-    align-items: center;
-    padding: 30vh 0 0 10px;
-    margin: 0;
-    top: 0;
-    left: -100%;
-    width: 320px;
-    height: 100%;
-    background-color: white;
-    overflow: auto;
-    z-index: 5;
-    transition: all 0.3s ease 0s;
+  .booking-room-card__additional-service-fee-title::after {
+    left: 20%;
+    bottom: -1px;
   }
 
-  .search-room-page__filter._active {
-    left: 0;
-  }
-  .search-room-page__filter._active::before {
-    content: "";
-    position: fixed;
-    width: 320px;
-    top: 0;
-    left: 0;
-    height: 125px;
-    background-color: #fff;
-    z-index: 5;
+  .booking-button {
+    align-self: center;
   }
 }
-@media (max-width: 501px) {
-  .search-room-page__button-hiding-filter-container {
-    bottom: 0;
-  }
-}
-@media (max-width: 320px) {
-  .search-room-page {
-    padding-left: 0px;
-  }
-}
-.textfield__input.textfield_date-dropdown__input.search-room__data-of-arrival__input {
-  background-position-x: 230px;
+.room-details-page__room-details-booking {
+  display: flex;
+  gap: 70px;
 }
 
-.guest-dropdown-block {
-  margin-bottom: 0px;
-}
-
-.search-room-page__range-slider {
+.room-details-page__room-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.search-room-page__range-slider-title {
-  font: 12px "Conv_Montserrat-Regular";
+.room-details-page__room-tips-impressions {
+  margin-bottom: 30px;
+  gap: 70px;
+}
+
+.room-details-page__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.icon-text-list__tips-label,
+.room-details-page__reviews__label {
+  font: 19px "Conv_Montserrat-Bold";
+}
+
+.room-details-page__reviews-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details-page__reviews__number-of-reviews-label {
+  font: 14px "Conv_Montserrat-Regular";
   color: rgba(31, 32, 65, 0.5);
 }
 
-.search-room-page__room-cards-pagination {
+.room-details-page__rules-cancel {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 
-.search-room-page__room-cards {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.room-details-page__rules-cancel,
+.room-details-page__reviews-part__cancel-label2 {
+  max-width: 341px;
 }
 
-.search-room-page__room-cards-label {
-  margin: 30px 0px 20px 0px;
-  font: 24px "Conv_Montserrat-Bold";
+.room-details-page__reviews-part__cancel-label2 {
+  margin-top: 20px;
 }
-
-.search-room-page__room-cards-result {
-  max-width: 834px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: center;
-  gap: 12px;
-  justify-content: center;
-}
-
-.pagination {
-  align-self: center;
-}
-/*# sourceMappingURL=search-room-page.62b459fc.css.map */
+/*# sourceMappingURL=room-details-page.2c932b72.css.map */
